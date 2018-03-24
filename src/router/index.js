@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import HelloWorld from "@/components/HelloWorld";
 
 Vue.use(Router);
 
@@ -8,8 +7,17 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "HelloWorld",
-      component: HelloWorld
+      name: "Home",
+      component(resolve) {
+        require(["../components/Home"], resolve);
+      }
+    },
+    {
+      path: "/guide/declarative-rendering",
+      name: "DeclarativeRendering",
+      component(resolve) {
+        require(["../doc/guide/introduction/DeclarativeRendering"], resolve);
+      }
     }
   ]
 });
