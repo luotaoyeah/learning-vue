@@ -18,6 +18,20 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/introduction/DeclarativeRendering"], resolve);
       }
+    },
+    {
+      path: "/guide/conditional-and-loop",
+      name: "ConditionalAndLoop",
+      component(resolve) {
+        require(["../doc/guide/introduction/ConditionalAndLoop"], resolve);
+      }
+    },
+    {
+      path: "/guide/handing-user-input",
+      name: "HandingUserInput",
+      component(resolve) {
+        require(["../doc/guide/introduction/HandingUserInput"], resolve);
+      }
     }
   ]
 });

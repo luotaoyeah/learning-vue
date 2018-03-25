@@ -7,6 +7,12 @@
           <li>
             <router-link :to="{name: 'DeclarativeRendering'}">Declarative Rendering</router-link>
           </li>
+          <li>
+            <router-link :to="{name: 'ConditionalAndLoop'}">Conditionals And Loops</router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'HandingUserInput'}">Handing User Input</router-link>
+          </li>
         </ul>
       </li>
     </ul>
