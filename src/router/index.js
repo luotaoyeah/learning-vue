@@ -32,6 +32,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/introduction/HandingUserInput"], resolve);
       }
+    },
+    {
+      path: "/guide/composing-with-components",
+      name: "ComposingWithComponents",
+      component(resolve) {
+        require(["../doc/guide/introduction/ComposingWithComponents"], resolve);
+      }
     }
   ]
 });

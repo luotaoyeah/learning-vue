@@ -13,6 +13,9 @@
           <li>
             <router-link :to="{name: 'HandingUserInput'}">Handing User Input</router-link>
           </li>
+          <li>
+            <router-link :to="{name: 'ComposingWithComponents'}">Composing With Components</router-link>
+          </li>
         </ul>
       </li>
     </ul>
