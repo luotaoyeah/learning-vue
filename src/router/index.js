@@ -39,6 +39,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/introduction/ComposingWithComponents"], resolve);
       }
+    },
+    {
+      path: "/guide/data-and-methods",
+      name: "DataAndMethods",
+      component(resolve) {
+        require(["../doc/guide/the-vue-instance/DataAndMethods"], resolve);
+      }
     }
   ]
 });

@@ -4,17 +4,27 @@
       <li>
         Guide
         <ul>
-          <li>
-            <router-link :to="{name: 'DeclarativeRendering'}">Declarative Rendering</router-link>
+          <li>Introduction
+            <ul>
+              <li>
+                <router-link :to="{name: 'DeclarativeRendering'}">Declarative Rendering</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'ConditionalAndLoop'}">Conditionals And Loops</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'HandingUserInput'}">Handing User Input</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'ComposingWithComponents'}">Composing With Components</router-link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <router-link :to="{name: 'ConditionalAndLoop'}">Conditionals And Loops</router-link>
-          </li>
-          <li>
-            <router-link :to="{name: 'HandingUserInput'}">Handing User Input</router-link>
-          </li>
-          <li>
-            <router-link :to="{name: 'ComposingWithComponents'}">Composing With Components</router-link>
+          <li>The Vue Instance
+            <ul>
+              <li><router-link :to="{name: 'DataAndMethods'}">Data And Methods</router-link></li>
+
+            </ul>
           </li>
         </ul>
       </li>
