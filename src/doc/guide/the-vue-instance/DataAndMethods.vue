@@ -4,6 +4,12 @@
     <p>name: {{name}}</p>
     <p>foo: {{foo}}</p>
     <p>bar: {{bar}}</p>
+    <!--
+      Property or method "cat" is not defined on the instance but referenced during render.
+      Make sure that this property is reactive,
+      either in the data option,
+      or for class-based components, by initializing the property.
+    -->
     <p>cat: {{cat}}</p>
   </div>
 </template>
@@ -18,15 +24,21 @@ export default {
     return dataObj;
   },
   beforeCreate() {
-    /* OK */
+    /*
+     * 在生命周期 beforeCreate 里面添加的属性是 reactive 的；
+     */
     this.foo = "foo";
   },
   created() {
-    /* OK */
+    /*
+     * 在生命周期 created 里面添加的属性是 reactive 的；
+     */
     this.bar = "bar";
   },
   mounted() {
-    /* NOT OK */
+    /*
+     * 在生命周期 mounted 里面添加的属性不是 reactive 的；
+     */
     this.cat = "cat";
     /* true */
     console.log("data === this.data", dataObj === this.$data);
