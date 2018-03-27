@@ -1,5 +1,8 @@
 <template>
-  <div style="padding: 10px;">
+  <div
+    style="padding: 10px;"
+    id="guide-the-vue-instance-data-and-methods"
+  >
     <h1>data</h1>
     <p>name: {{name}}</p>
     <p>foo: {{foo}}</p>
@@ -20,6 +23,7 @@
       type="text"
       v-model="person.name"
     />
+    <h1>built-in instance properties and methods</h1>
   </div>
 </template>
 <script>
@@ -50,14 +54,21 @@ export default {
     this.bar = "bar";
   },
   mounted() {
+    const vm = this;
     /*
      * 在生命周期 mounted 里面添加的属性不是 reactive 的；
      */
-    this.cat = "cat";
+    vm.cat = "cat";
     /* true */
-    console.log("data === this.data", dataObj === this.$data);
+    console.log("data === this.data:", dataObj === this.$data);
     /* true */
-    console.log("data.name === this.data.name", dataObj.name === this.name);
+    console.log("data.name === this.data.name:", dataObj.name === this.name);
+    console.log("vm.$data === dataObj:", vm.$data === dataObj);
+    console.log(
+      'vm.$el === document.getElementById("guide-the-vue-instance-data-and-methods"):',
+      vm.$el ===
+        document.getElementById("guide-the-vue-instance-data-and-methods")
+    );
   },
   methods: {
     toggle() {
