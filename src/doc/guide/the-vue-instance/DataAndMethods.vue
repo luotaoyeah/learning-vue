@@ -14,7 +14,7 @@
       or for class-based components, by initializing the property.
     -->
     <p>cat: {{cat}}</p>
-    <h1>Frozen object is not reactive</h1>
+    <h1>frozen object is not reactive</h1>
     <p>{{person.name}}</p>
     <!--
         Uncaught TypeError: Cannot assign to read only property 'name' of object '#<Object>'
@@ -24,6 +24,7 @@
       v-model="person.name"
     />
     <h1>built-in instance properties and methods</h1>
+    <h1>instance lifecycle hooks</h1>
   </div>
 </template>
 <script>
@@ -53,6 +54,10 @@ export default {
      */
     this.bar = "bar";
   },
+  destroyed() {
+    /* 生命周期函数里面的 this 都指向当前 vue 实例 */
+    console.log("destroyed:", this);
+  },
   mounted() {
     const vm = this;
     /*
@@ -63,16 +68,31 @@ export default {
     console.log("data === this.data:", dataObj === this.$data);
     /* true */
     console.log("data.name === this.data.name:", dataObj.name === this.name);
+    /* true */
     console.log("vm.$data === dataObj:", vm.$data === dataObj);
+    /* true */
     console.log(
       'vm.$el === document.getElementById("guide-the-vue-instance-data-and-methods"):',
       vm.$el ===
         document.getElementById("guide-the-vue-instance-data-and-methods")
     );
+
+    setTimeout(() => {
+      this.name = "cat";
+    }, 1000);
+  },
+  watch: {
+    name: () => {
+      /*
+       * 配置属性（options property）不要使用箭头函数，否则 this 将不再指向 vue 实例；
+       */
+      /* TypeError: _this2.alert is not a function */
+      this.alert();
+    }
   },
   methods: {
-    toggle() {
-      this.show = !this.show;
+    alert() {
+      alert(`name is ${this.name}`);
     }
   }
 };
