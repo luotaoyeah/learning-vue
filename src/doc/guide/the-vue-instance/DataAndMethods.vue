@@ -11,11 +11,25 @@
       or for class-based components, by initializing the property.
     -->
     <p>cat: {{cat}}</p>
+    <h1>Frozen object is not reactive</h1>
+    <p>{{person.name}}</p>
+    <!--
+        Uncaught TypeError: Cannot assign to read only property 'name' of object '#<Object>'
+    -->
+    <input
+      type="text"
+      v-model="person.name"
+    />
   </div>
 </template>
 <script>
 const dataObj = {
-  name: "tom"
+  name: "tom",
+  /* 冻结的对象不再是 reactive 的 */
+  person: Object.freeze({
+    name: "tom",
+    age: 18
+  })
 };
 
 export default {
