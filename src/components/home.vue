@@ -22,8 +22,16 @@
           </li>
           <li>The Vue Instance
             <ul>
-              <li><router-link :to="{name: 'DataAndMethods'}">Data And Methods</router-link></li>
-
+              <li>
+                <router-link :to="{name: 'DataAndMethods'}">Data And Methods</router-link>
+              </li>
+            </ul>
+          </li>
+          <li>Template Syntax
+            <ul>
+              <li>
+                <router-link :to="{name: 'template-syntax-interpolation'}">Interpolation</router-link>
+              </li>
             </ul>
           </li>
         </ul>
