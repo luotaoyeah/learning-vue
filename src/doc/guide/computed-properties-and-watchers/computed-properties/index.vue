@@ -11,14 +11,17 @@
       </small>
     </p>
     <ComputedPropertiesBasic></ComputedPropertiesBasic>
+    <ComputedPropertiesVsMethod></ComputedPropertiesVsMethod>
   </div>
 </template>
 <script>
 import ComputedPropertiesBasic from "./computed-properties-basic";
+import ComputedPropertiesVsMethod from "./computed-properties-vs-method";
 
 export default {
   components: {
-    ComputedPropertiesBasic
+    ComputedPropertiesBasic,
+    ComputedPropertiesVsMethod
   }
 };
 </script>
