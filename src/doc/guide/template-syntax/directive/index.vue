@@ -11,16 +11,19 @@
     </p>
     <DirectiveArgument></DirectiveArgument>
     <DirectiveModifier></DirectiveModifier>
+    <DirectiveShorthands></DirectiveShorthands>
   </div>
 </template>
 <script>
 import DirectiveArgument from "./directive-argument";
 import DirectiveModifier from "./directive-modifier";
+import DirectiveShorthands from "./directive-shorthands";
 
 export default {
   components: {
     DirectiveArgument,
-    DirectiveModifier
+    DirectiveModifier,
+    DirectiveShorthands
   }
 };
 </script>
