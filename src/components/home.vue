@@ -32,6 +32,9 @@
               <li>
                 <router-link :to="{name: 'template-syntax-interpolation'}">Interpolation</router-link>
               </li>
+              <li>
+                <router-link :to="{name: 'template-syntax-directive'}">Directive</router-link>
+              </li>
             </ul>
           </li>
         </ul>

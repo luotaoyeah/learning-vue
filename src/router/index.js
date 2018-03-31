@@ -55,6 +55,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/template-syntax/interpolation/index"], resolve);
       }
+    },
+    {
+      path: "/guide/template-syntax/directive",
+      name: "template-syntax-directive",
+      component(resolve) {
+        require(["../doc/guide/template-syntax/directive/index"], resolve);
+      }
     }
   ]
 });
