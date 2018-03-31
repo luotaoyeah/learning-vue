@@ -3,7 +3,7 @@
     style="padding: 10px;"
     id="guide-the-vue-instance-data-and-methods"
   >
-    <h1>data</h1>
+    <h1>1. data</h1>
     <p>name: {{name}}</p>
     <p>foo: {{foo}}</p>
     <p>bar: {{bar}}</p>
@@ -14,7 +14,7 @@
       or for class-based components, by initializing the property.
     -->
     <p>cat: {{cat}}</p>
-    <h1>frozen object is not reactive</h1>
+    <h1>2. frozen object is not reactive</h1>
     <p>{{person.name}}</p>
     <!--
         Uncaught TypeError: Cannot assign to read only property 'name' of object '#<Object>'
@@ -23,8 +23,8 @@
       type="text"
       v-model="person.name"
     />
-    <h1>built-in instance properties and methods</h1>
-    <h1>instance lifecycle hooks</h1>
+    <h1>3. built-in instance properties and methods</h1>
+    <h1>4. instance lifecycle hooks</h1>
   </div>
 </template>
 <script>

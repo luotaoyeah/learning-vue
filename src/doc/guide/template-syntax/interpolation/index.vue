@@ -5,19 +5,21 @@
     <InteroplationText></InteroplationText>
     <InteroplationHtml></InteroplationHtml>
     <InteroplationAttribute></InteroplationAttribute>
-    <h1>Using Javascript Expressions</h1>
+    <InteroplationExpression></InteroplationExpression>
   </div>
 </template>
 <script>
 import InteroplationText from "./interpolation-text";
 import InteroplationHtml from "./interpolation-html";
 import InteroplationAttribute from "./interpolation-attribute";
+import InteroplationExpression from "./interpolation-expression";
 
 export default {
   components: {
     InteroplationText,
     InteroplationHtml,
-    InteroplationAttribute
+    InteroplationAttribute,
+    InteroplationExpression
   }
 };
 </script>
