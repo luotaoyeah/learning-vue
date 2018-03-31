@@ -12,16 +12,19 @@
     </p>
     <ComputedPropertiesBasic></ComputedPropertiesBasic>
     <ComputedPropertiesVsMethod></ComputedPropertiesVsMethod>
+    <ComputedPropertiesVsWatchedProperty></ComputedPropertiesVsWatchedProperty>
   </div>
 </template>
 <script>
 import ComputedPropertiesBasic from "./computed-properties-basic";
 import ComputedPropertiesVsMethod from "./computed-properties-vs-method";
+import ComputedPropertiesVsWatchedProperty from "./computed-properties-vs-watched-property";
 
 export default {
   components: {
     ComputedPropertiesBasic,
-    ComputedPropertiesVsMethod
+    ComputedPropertiesVsMethod,
+    ComputedPropertiesVsWatchedProperty
   }
 };
 </script>
