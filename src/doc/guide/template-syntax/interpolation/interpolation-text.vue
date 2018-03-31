@@ -10,13 +10,16 @@
     -->
     <h2>1.1. v-once</h2>
     <p v-once>Messasge: {{msg}}</p>
+    <h2>1.2. interpret the data as plain text</h2>
+    <p>Message：{{htmlStr}}</p>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      msg: "hello world"
+      msg: "hello world",
+      htmlStr: "<b>html string</b>"
     };
   }
 };
