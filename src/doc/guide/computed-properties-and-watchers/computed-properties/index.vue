@@ -13,18 +13,21 @@
     <ComputedPropertiesBasic></ComputedPropertiesBasic>
     <ComputedPropertiesVsMethod></ComputedPropertiesVsMethod>
     <ComputedPropertiesVsWatchedProperty></ComputedPropertiesVsWatchedProperty>
+    <ComputedPropertiesSetter></ComputedPropertiesSetter>
   </div>
 </template>
 <script>
 import ComputedPropertiesBasic from "./computed-properties-basic";
 import ComputedPropertiesVsMethod from "./computed-properties-vs-method";
 import ComputedPropertiesVsWatchedProperty from "./computed-properties-vs-watched-property";
+import ComputedPropertiesSetter from "./computed-properties-setter";
 
 export default {
   components: {
     ComputedPropertiesBasic,
     ComputedPropertiesVsMethod,
-    ComputedPropertiesVsWatchedProperty
+    ComputedPropertiesVsWatchedProperty,
+    ComputedPropertiesSetter
   }
 };
 </script>

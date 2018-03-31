@@ -27,18 +27,18 @@ export default {
   },
   computed: {
     fullName02() {
-      return this.firstName02 + " " + this.lastName02;
+      return `${this.firstName02} ${this.lastName02}`;
     }
   },
   watch: {
     firstName01: {
       handler(value) {
-        this.fullName01 = value + " " + this.lastName01;
+        this.fullName01 = `${value} ${this.lastName01}`;
       }
     },
     lastName01: {
       hanlder(value) {
-        this.fullName01 = this.firstName01 + " " + value;
+        this.fullName01 = `${this.firstName01} ${value}`;
       }
     }
   },
