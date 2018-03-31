@@ -62,6 +62,24 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/template-syntax/directive/index"], resolve);
       }
+    },
+    {
+      path: "/guide/computed-properties",
+      name: "guide-computed-properties",
+      component(resolve) {
+        require([
+          "../doc/guide/computed-properties-and-watchers/computed-properties/index"
+        ], resolve);
+      }
+    },
+    {
+      path: "/guide/watchers",
+      name: "guide-watchers",
+      component(resolve) {
+        require([
+          "../doc/guide/computed-properties-and-watchers/watchers/index"
+        ], resolve);
+      }
     }
   ]
 });

@@ -37,6 +37,16 @@
               </li>
             </ul>
           </li>
+          <li>Computed Properties and Watchers
+            <ul>
+              <li>
+                <router-link :to="{name: 'guide-computed-properties'}">Computed Properties</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'guide-watchers'}">Watchers</router-link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
