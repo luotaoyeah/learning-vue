@@ -80,6 +80,20 @@ export default new Router({
           "../doc/guide/computed-properties-and-watchers/watchers/index"
         ], resolve);
       }
+    },
+    {
+      path: "/guide/class",
+      name: "guide-class",
+      component(resolve) {
+        require(["../doc/guide/class-and-style/class/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/style",
+      name: "guide-style",
+      component(resolve) {
+        require(["../doc/guide/class-and-style/style/index"], resolve);
+      }
     }
   ]
 });

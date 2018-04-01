@@ -47,6 +47,16 @@
               </li>
             </ul>
           </li>
+          <li>Classes and Styles
+            <ul>
+              <li>
+                <router-link :to="{name: 'guide-class'}">Classes</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'guide-style'}">Styles</router-link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
