@@ -7,6 +7,7 @@
     <VForWithKey></VForWithKey>
     <VForArrayChangeDetection></VForArrayChangeDetection>
     <VForCaveats></VForCaveats>
+    <VForObjectChangeDetectionCaveats></VForObjectChangeDetectionCaveats>
   </div>
 </template>
 <script>
@@ -15,6 +16,7 @@ import VForWithObject from "./v-for-with-object";
 import VForWithKey from "./v-for-key";
 import VForArrayChangeDetection from "./v-for-array-change-detection";
 import VForCaveats from "./v-for-caveat";
+import VForObjectChangeDetectionCaveats from "./v-for-object-change-detection-caveat";
 
 export default {
   data() {
@@ -25,7 +27,8 @@ export default {
     VForWithObject,
     VForWithKey,
     VForArrayChangeDetection,
-    VForCaveats
+    VForCaveats,
+    VForObjectChangeDetectionCaveats
   }
 };
 </script>
