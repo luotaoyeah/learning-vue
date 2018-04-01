@@ -19,11 +19,13 @@
     <p :class="class00">:class="class00"</p>
     <ClassObject></ClassObject>
     <ClassArray></ClassArray>
+    <ClassWithComponent></ClassWithComponent>
   </div>
 </template>
 <script>
 import ClassObject from "./class-object";
 import ClassArray from "./class-array";
+import ClassWithComponent from "./class-with-component";
 
 export default {
   data() {
@@ -33,7 +35,8 @@ export default {
   },
   components: {
     ClassObject,
-    ClassArray
+    ClassArray,
+    ClassWithComponent
   }
 };
 </script>
