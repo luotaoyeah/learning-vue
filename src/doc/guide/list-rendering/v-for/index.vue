@@ -5,12 +5,14 @@
     <VFor></VFor>
     <VForWithObject></VForWithObject>
     <VForWithKey></VForWithKey>
+    <VForArrayChangeDetection></VForArrayChangeDetection>
   </div>
 </template>
 <script>
 import VFor from "./v-for";
 import VForWithObject from "./v-for-with-object";
 import VForWithKey from "./v-for-key";
+import VForArrayChangeDetection from "./v-for-array-change-detection";
 
 export default {
   data() {
@@ -19,7 +21,8 @@ export default {
   components: {
     VFor,
     VForWithObject,
-    VForWithKey
+    VForWithKey,
+    VForArrayChangeDetection
   }
 };
 </script>
