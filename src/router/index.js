@@ -108,6 +108,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/conditional-rendering/v-show/index"], resolve);
       }
+    },
+    {
+      path: "/guide/list-rendering",
+      name: "guide-list-rendering",
+      component(resolve) {
+        require(["../doc/guide/list-rendering/v-for/index"], resolve);
+      }
     }
   ]
 });
