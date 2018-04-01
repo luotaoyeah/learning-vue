@@ -94,6 +94,20 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/class-and-style/style/index"], resolve);
       }
+    },
+    {
+      path: "/guide/conditional-rendering-v-if",
+      name: "guide-conditional-rendering-v-if",
+      component(resolve) {
+        require(["../doc/guide/conditional-rendering/v-if/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/conditional-rendering-v-show",
+      name: "guide-conditional-rendering-v-show",
+      component(resolve) {
+        require(["../doc/guide/conditional-rendering/v-show/index"], resolve);
+      }
     }
   ]
 });

@@ -57,6 +57,16 @@
               </li>
             </ul>
           </li>
+          <li>Conditional Rendering
+            <ul>
+              <li>
+                <router-link :to="{name: 'guide-conditional-rendering-v-if'}">v-if</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'guide-conditional-rendering-v-show'}">v-show</router-link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
