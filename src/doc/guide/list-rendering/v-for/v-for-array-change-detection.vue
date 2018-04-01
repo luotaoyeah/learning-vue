@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>4. Array Change Detection</h1>
-    <h2>4.1.</h2>
+    <h2>4.1. Mutation Methods</h2>
     <p>
       <small>
         <i>
@@ -33,6 +33,24 @@
     <button @click="handleSplice">splice</button>
     <button @click="handleSort">sort</button>
     <button @click="handleReverse">reverse</button>
+    <h2>4.2. Replacing an Array</h2>
+    <p>
+      <small>
+        <i>
+          有些操作数组的方法不会改变原来的数组，而是会返回一个新的数组，例如: filter，concat，slice；
+          使用这些方法的时候，可以通过'将返回的新数组重新赋值给变量'的方式，来触发视图更新；
+          使用重新赋值的方式，不会重新渲染所有列表元素，而是会尽可能的重用列表元素；
+        </i>
+      </small>
+    </p>
+    <ul>
+      <li
+        v-for="item in items"
+        :key="item"
+      >{{item}}
+      </li>
+    </ul>
+    <button @click="handleFilter">filter</button>
   </div>
 </template>
 <script>
@@ -63,6 +81,9 @@ export default {
     },
     handleReverse() {
       this.items.reverse();
+    },
+    handleFilter() {
+      this.items = this.items.filter(item => item > 2);
     }
   }
 };
