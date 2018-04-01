@@ -4,11 +4,13 @@
   >
     <VFor></VFor>
     <VForWithObject></VForWithObject>
+    <VForWithKey></VForWithKey>
   </div>
 </template>
 <script>
 import VFor from "./v-for";
 import VForWithObject from "./v-for-with-object";
+import VForWithKey from "./v-for-key";
 
 export default {
   data() {
@@ -16,7 +18,8 @@ export default {
   },
   components: {
     VFor,
-    VForWithObject
+    VForWithObject,
+    VForWithKey
   }
 };
 </script>
