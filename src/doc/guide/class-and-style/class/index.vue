@@ -9,15 +9,31 @@
         </i>
       </small>
     </p>
+    <p>
+      <small>
+        <i>
+          :class 可以绑定一个 data 属性，属性值就是类名；
+        </i>
+      </small>
+    </p>
+    <p :class="class00">:class="class00"</p>
     <ClassObject></ClassObject>
+    <ClassArray></ClassArray>
   </div>
 </template>
 <script>
 import ClassObject from "./class-object";
+import ClassArray from "./class-array";
 
 export default {
+  data() {
+    return {
+      class00: "class00"
+    };
+  },
   components: {
-    ClassObject
+    ClassObject,
+    ClassArray
   }
 };
 </script>
