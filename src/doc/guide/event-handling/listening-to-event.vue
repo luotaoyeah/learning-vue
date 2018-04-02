@@ -4,7 +4,7 @@
       <small>
         <i>
           我们可以使用 v-on 指令来监听 DOM 事件，
-          并在事件触发时，执行 JavaScript 代码；
+          指令绑定的值就是在事件触发时，想要执行的 JavaScript 代码；
         </i>
       </small>
     </p>
