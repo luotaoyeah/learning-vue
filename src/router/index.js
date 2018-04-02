@@ -115,6 +115,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/list-rendering/v-for/index"], resolve);
       }
+    },
+    {
+      path: "/guide/event-handling",
+      name: "guide-event-handling",
+      component(resolve) {
+        require(["../doc/guide/event-handling/index"], resolve);
+      }
     }
   ]
 });

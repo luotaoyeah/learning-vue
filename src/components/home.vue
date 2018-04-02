@@ -67,12 +67,11 @@
               </li>
             </ul>
           </li>
-          <li>List Rendering
-            <ul>
-              <li>
-                <router-link :to="{name: 'guide-list-rendering'}">v-for</router-link>
-              </li>
-            </ul>
+          <li>
+            <router-link :to="{name: 'guide-list-rendering'}">List Rendering</router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'guide-event-handling'}">Event Handling</router-link>
           </li>
         </ul>
       </li>
