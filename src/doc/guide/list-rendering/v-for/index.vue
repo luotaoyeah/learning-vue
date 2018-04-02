@@ -12,6 +12,7 @@
     <VForWithARange></VForWithARange>
     <VForOnATemplate></VForOnATemplate>
     <VForWithVIf></VForWithVIf>
+    <VForWithAComponent></VForWithAComponent>
   </div>
 </template>
 <script>
@@ -25,6 +26,7 @@ import VForDisplayFilteredOrSortedResults from "./v-for-display-filtered-or-sort
 import VForWithARange from "./v-for-with-a-range";
 import VForOnATemplate from "./v-for-on-a-template";
 import VForWithVIf from "./v-for-with-v-if";
+import VForWithAComponent from "./v-for-with-a-component";
 
 export default {
   data() {
@@ -40,7 +42,8 @@ export default {
     VForDisplayFilteredOrSortedResults,
     VForWithARange,
     VForOnATemplate,
-    VForWithVIf
+    VForWithVIf,
+    VForWithAComponent
   }
 };
 </script>
