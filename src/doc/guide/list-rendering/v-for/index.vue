@@ -11,6 +11,7 @@
     <VForDisplayFilteredOrSortedResults></VForDisplayFilteredOrSortedResults>
     <VForWithARange></VForWithARange>
     <VForOnATemplate></VForOnATemplate>
+    <VForWithVIf></VForWithVIf>
   </div>
 </template>
 <script>
@@ -23,6 +24,7 @@ import VForObjectChangeDetectionCaveats from "./v-for-object-change-detection-ca
 import VForDisplayFilteredOrSortedResults from "./v-for-display-filtered-or-sorted-results";
 import VForWithARange from "./v-for-with-a-range";
 import VForOnATemplate from "./v-for-on-a-template";
+import VForWithVIf from "./v-for-with-v-if";
 
 export default {
   data() {
@@ -37,7 +39,8 @@ export default {
     VForObjectChangeDetectionCaveats,
     VForDisplayFilteredOrSortedResults,
     VForWithARange,
-    VForOnATemplate
+    VForOnATemplate,
+    VForWithVIf
   }
 };
 </script>
