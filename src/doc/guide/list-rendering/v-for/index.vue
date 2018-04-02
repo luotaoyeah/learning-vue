@@ -9,6 +9,7 @@
     <VForCaveats></VForCaveats>
     <VForObjectChangeDetectionCaveats></VForObjectChangeDetectionCaveats>
     <VForDisplayFilteredOrSortedResults></VForDisplayFilteredOrSortedResults>
+    <VForWithARange></VForWithARange>
   </div>
 </template>
 <script>
@@ -19,6 +20,7 @@ import VForArrayChangeDetection from "./v-for-array-change-detection";
 import VForCaveats from "./v-for-caveat";
 import VForObjectChangeDetectionCaveats from "./v-for-object-change-detection-caveat";
 import VForDisplayFilteredOrSortedResults from "./v-for-display-filtered-or-sorted-results";
+import VForWithARange from "./v-for-with-a-range";
 
 export default {
   data() {
@@ -31,7 +33,8 @@ export default {
     VForArrayChangeDetection,
     VForCaveats,
     VForObjectChangeDetectionCaveats,
-    VForDisplayFilteredOrSortedResults
+    VForDisplayFilteredOrSortedResults,
+    VForWithARange
   }
 };
 </script>
