@@ -14,8 +14,8 @@
       id="checkbox01"
       type="checkbox"
       v-model="selected"
-      true-value="yes"
-      false-value="no"
+      :true-value="y"
+      :false-value="n"
     >
     <label for="checkbox01">yes or no</label>
     <p>Selected: {{selected}}</p>
@@ -25,7 +25,9 @@
 export default {
   data() {
     return {
-      selected: "yes"
+      selected: "yes",
+      y: "yes",
+      n: "no"
     };
   }
 };
