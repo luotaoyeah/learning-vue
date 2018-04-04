@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>1. Base Example</h1>
+    <h1>6. Sending Messages to Parents with Events</h1>
   </div>
 </template>
 <script>

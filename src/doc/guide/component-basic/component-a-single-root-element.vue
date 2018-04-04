@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>1. Base Example</h1>
+    <h1>5. A Single Root Element</h1>
   </div>
 </template>
 <script>

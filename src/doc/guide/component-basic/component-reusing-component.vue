@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>1. Base Example</h1>
+    <h1>2. Reusing Components</h1>
   </div>
 </template>
 <script>

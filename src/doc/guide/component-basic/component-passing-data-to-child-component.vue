@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>1. Base Example</h1>
+    <h1>4. Passinig Data to Child Components with Props</h1>
   </div>
 </template>
 <script>
