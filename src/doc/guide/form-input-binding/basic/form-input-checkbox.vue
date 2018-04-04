@@ -19,7 +19,7 @@
     <p>
       <small>
         <i>
-          多个勾选框，每个勾选框都需要设置 value 属性，
+          多个勾选框（勾选框组），每个勾选框都需要设置 value 属性，
           并绑定到同一个数组；
           数组的元素为当前勾选的勾选框的 value 值；
         </i>
@@ -60,7 +60,7 @@ export default {
   data() {
     return {
       checked: true,
-      checkedNames: ["foo"]
+      checkedNames: ["bar"]
     };
   }
 };
