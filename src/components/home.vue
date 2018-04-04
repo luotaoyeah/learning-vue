@@ -87,6 +87,11 @@
             </ul>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-component-basic'}">Component Basic</router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>

@@ -145,6 +145,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/form-input-binding/modifier/index"], resolve);
       }
+    },
+    {
+      path: "/guide/component-basic",
+      name: "guide-component-basic",
+      component(resolve) {
+        require(["../doc/guide/component-basic/index"], resolve);
+      }
     }
   ]
 });
