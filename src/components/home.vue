@@ -73,6 +73,19 @@
           <li>
             <router-link :to="{name: 'guide-event-handling'}">Event Handling</router-link>
           </li>
+          <li>Form Input Binding
+            <ul>
+              <li>
+                <router-link :to="{name: 'guide-form-input-basic'}">Basic</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'guide-form-input-value-binding'}">Value Binding</router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'guide-form-input-modifier'}">Modifiers</router-link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>

@@ -122,6 +122,29 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/event-handling/index"], resolve);
       }
+    },
+    {
+      path: "/guide/form-input/basic",
+      name: "guide-form-input-basic",
+      component(resolve) {
+        require(["../doc/guide/form-input-binding/basic/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/form-input/value-binding",
+      name: "guide-form-input-value-binding",
+      component(resolve) {
+        require([
+          "../doc/guide/form-input-binding/value-binding/index"
+        ], resolve);
+      }
+    },
+    {
+      path: "/guide/form-input/modifier",
+      name: "guide-form-input-modifier",
+      component(resolve) {
+        require(["../doc/guide/form-input-binding/modifier/index"], resolve);
+      }
     }
   ]
 });
