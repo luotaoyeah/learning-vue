@@ -11,6 +11,7 @@
     <EventSystemModifierKeys></EventSystemModifierKeys>
     <EventExactModifier></EventExactModifier>
     <EventMouseButtonModifier></EventMouseButtonModifier>
+    <WhyListenerInHtml></WhyListenerInHtml>
   </div>
 </template>
 <script>
@@ -23,6 +24,7 @@ import EventAutomaticKeyModifier from "./event-automatic-key-modifier";
 import EventSystemModifierKeys from "./event-system-modifier-key";
 import EventExactModifier from "./event-exact-modifier";
 import EventMouseButtonModifier from "./event-mouse-button-modifier";
+import WhyListenerInHtml from "./why-listener-in-html";
 
 export default {
   data() {
@@ -37,7 +39,8 @@ export default {
     EventAutomaticKeyModifier,
     EventSystemModifierKeys,
     EventExactModifier,
-    EventMouseButtonModifier
+    EventMouseButtonModifier,
+    WhyListenerInHtml
   }
 };
 </script>
