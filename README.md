@@ -1,6 +1,6 @@
 # learning-vue
 
-> Vue.js 学习笔记。
+Vue.js 学习笔记；
 
 ## Build Setup
 

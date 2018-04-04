@@ -192,6 +192,16 @@
       </small>
     </p>
     <my-component v-on:my-click.once="handleMyClick"></my-component>
+    <h2>4.6. .passive</h2>
+    <p>
+      <small>
+        <i>
+          .passive 表明在事件回调里面不会调用 event.preventDefault()，
+          如果调用了，浏览器会忽略，并在控制台打印一条警告；
+          所以 .passive 和 .prevent 不要一起使用；
+        </i>
+      </small>
+    </p>
   </div>
 </template>
 <script>
