@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>1. ComponentNames</h1>
+    <h1>1. Component Names</h1>
   </div>
 </template>
 <script>
