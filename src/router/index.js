@@ -152,6 +152,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/component-basic/index"], resolve);
       }
+    },
+    {
+      path: "/guide/component-registration",
+      name: "guide-component-registration",
+      component(resolve) {
+        require(["../doc/guide/component-registration/index"], resolve);
+      }
     }
   ]
 });
