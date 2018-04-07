@@ -20,7 +20,6 @@ Vue.component("MyComponent", {
   <div>
   <p>component content</p>
   <p><slot></slot></p>
-  <p><slot></slot></p>
 </div>
 `
 });
