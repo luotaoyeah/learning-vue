@@ -9,7 +9,6 @@
       </ul>
     </small>
     <ButtonCounter></ButtonCounter>
-    <button-counter></button-counter>
   </div>
 </template>
 <script>
