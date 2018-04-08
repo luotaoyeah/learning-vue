@@ -97,6 +97,11 @@
             <router-link :to="{name: 'guide-component-registration'}">Component Registration</router-link>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-props'}">Props</router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
