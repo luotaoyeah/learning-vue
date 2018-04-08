@@ -4,8 +4,8 @@
     <small>
       <ul>
         <li>
-          默认情况下，v-model 使用的 props 是 value，
-          使用的事件名称是 input；
+          默认情况下，v-model 使用的 props 属性是 value，
+          使用的事件是 input；
         </li>
         <li>可以使用组件配置项 model 来自定义这两个配置；</li>
       </ul>
