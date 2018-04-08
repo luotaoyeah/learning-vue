@@ -2,27 +2,27 @@
   <div
     style="padding: 10px;"
   >
-    <PropsCasing></PropsCasing>
-    <PropsStaticAndDynamicProps></PropsStaticAndDynamicProps>
-    <PropsOneWayDataFlow></PropsOneWayDataFlow>
-    <PropsPropValidation></PropsPropValidation>
+    <CustomEventEventNames></CustomEventEventNames>
+    <CustomEventComponentVModel></CustomEventComponentVModel>
+    <CustomEventBindingNativeEvent></CustomEventBindingNativeEvent>
+    <CustomEventSyncModifier></CustomEventSyncModifier>
   </div>
 </template>
 <script>
-import PropsCasing from "./custom-events-event-names";
-import PropsStaticAndDynamicProps from "./custom-event-customizing-component-v-model";
-import PropsOneWayDataFlow from "./custom-event-binding-native-event-to-component";
-import PropsPropValidation from "./custom-event-sync-modifier";
+import CustomEventEventNames from "./custom-events-event-names";
+import CustomEventComponentVModel from "./custom-event-customizing-component-v-model";
+import CustomEventBindingNativeEvent from "./custom-event-binding-native-event-to-component";
+import CustomEventSyncModifier from "./custom-event-sync-modifier";
 
 export default {
   data() {
     return {};
   },
   components: {
-    PropsCasing,
-    PropsStaticAndDynamicProps,
-    PropsOneWayDataFlow,
-    PropsPropValidation
+    CustomEventEventNames,
+    CustomEventComponentVModel,
+    CustomEventBindingNativeEvent,
+    CustomEventSyncModifier
   }
 };
 </script>
