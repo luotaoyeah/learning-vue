@@ -166,6 +166,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/props/index"], resolve);
       }
+    },
+    {
+      path: "/guide/custom-events",
+      name: "guide-custom-events",
+      component(resolve) {
+        require(["../doc/guide/custom-events/index"], resolve);
+      }
     }
   ]
 });

@@ -50,6 +50,7 @@
     <MyComponent02
       id="my-component-02"
       class="bar"
+      style="color: red;"
     ></MyComponent02>
   </div>
 </template>
