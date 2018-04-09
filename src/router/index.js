@@ -173,6 +173,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/custom-events/index"], resolve);
       }
+    },
+    {
+      path: "/guide/slots",
+      name: "guide-slots",
+      component(resolve) {
+        require(["../doc/guide/slots/index"], resolve);
+      }
     }
   ]
 });
