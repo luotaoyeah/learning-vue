@@ -180,6 +180,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/slots/index"], resolve);
       }
+    },
+    {
+      path: "/guide/dynamic-async-component",
+      name: "guide-dynamic-async-component",
+      component(resolve) {
+        require(["../doc/guide/dynamic-async-component/index"], resolve);
+      }
     }
   ]
 });

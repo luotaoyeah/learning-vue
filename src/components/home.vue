@@ -112,6 +112,11 @@
             <router-link :to="{name: 'guide-slots'}">Slots</router-link>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-dynamic-async-component'}">Dynamic & Async Components</router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
