@@ -21,7 +21,7 @@
       <ul>
         <li>
           工厂方法可以不使用 vue 提供的 resolve 回调，
-          直接返回一个 Promise；
+          而是直接返回一个 Promise；
         </li>
       </ul>
     </small>

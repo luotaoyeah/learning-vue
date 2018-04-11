@@ -187,6 +187,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/dynamic-async-component/index"], resolve);
       }
+    },
+    {
+      path: "/guide/handling-edge-cases",
+      name: "guide-handling-edge-cases",
+      component(resolve) {
+        require(["../doc/guide/handling-edge-cases/index"], resolve);
+      }
     }
   ]
 });
