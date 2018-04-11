@@ -30,12 +30,18 @@ import Vue from "vue";
 
 Vue.component("tab-a", {
   template: "<p>component name: {{name}}</p>",
-  props: ["name"]
+  props: ["name"],
+  created() {
+    console.log("tab-a created");
+  }
 });
 
 Vue.component("tab-b", {
   template: "<p>component name: {{name}}</p>",
-  props: ["name"]
+  props: ["name"],
+  created() {
+    console.log("tab-b created");
+  }
 });
 
 export default {
