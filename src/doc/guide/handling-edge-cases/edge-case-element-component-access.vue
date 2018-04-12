@@ -62,7 +62,24 @@
       </ul>
     </small>
     <h2>1.4. Dependency Injection</h2>
-
+    <small>
+      <ul>
+        <li>
+          vue 提供了两个实例选项用来实现'依赖注入'：
+          <ul>
+            <li>provide（父组件）</li>
+            <li>inject（子组件）</li>
+          </ul>
+        </li>
+        <li>
+          在父组件上通过 provide 声明要提供给子组件的数据或者方法；
+        </li>
+        <li>
+          在子组件上通过 inject 声明要从父组件注入的数据或者方法；
+        </li>
+      </ul>
+    </small>
+    <MyComponent></MyComponent>
   </div>
 </template>
 <script>
@@ -74,6 +91,14 @@ export default {
     getRefs() {
       console.log("$refs.myInputRef02", this.$refs.myInputRef02);
     }
+  },
+  provide() {
+    return {
+      message: "hello world",
+      alert() {
+        alert("hello vue");
+      }
+    };
   },
   components: {
     MyInput: {
@@ -88,6 +113,13 @@ export default {
           this.$refs.inputRef.focus();
         }
       }
+    },
+    MyComponent: {
+      template: `
+        <div>
+          <button @click="alert">injected message: {{message}}</button>
+        </div>`,
+      inject: ["message", "alert"]
     }
   }
 };
