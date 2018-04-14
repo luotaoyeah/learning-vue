@@ -13,14 +13,14 @@
   </div>
 </template>
 <script>
-import Transition01 from "./transition-01-overview";
-import Transition02 from "./transition-02-single-component";
-import Transition03 from "./transition-03-on-initial-render";
-import Transition04 from "./transition-04-between-elements";
-import Transition05 from "./transition-05-between-components";
-import Transition06 from "./transition-06-list-transition";
-import Transition07 from "./transition-07-reusable-transition";
-import Transition08 from "./transition-08-dynamic-transition";
+import Transition01 from "./01-overview";
+import Transition02 from "./02-single-component";
+import Transition03 from "./03-on-initial-render";
+import Transition04 from "./04-between-elements";
+import Transition05 from "./05-between-components";
+import Transition06 from "./06-list-transition";
+import Transition07 from "./07-reusable-transition";
+import Transition08 from "./08-dynamic-transition";
 
 export default {
   data() {

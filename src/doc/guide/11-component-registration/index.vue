@@ -9,10 +9,10 @@
   </div>
 </template>
 <script>
-import ComponentBaseExample from "./component-registration-component-name";
-import ComponentReusingComponent from "./component-registration-global-registration";
-import ComponentOrganizingComponent from "./component-registration-local-registration";
-import ComponentPassingDataToChildComponent from "./component-registration-module-system";
+import ComponentBaseExample from "./01-component-name";
+import ComponentReusingComponent from "./02-global-registration";
+import ComponentOrganizingComponent from "./03-local-registration";
+import ComponentPassingDataToChildComponent from "./04-module-system";
 
 export default {
   data() {

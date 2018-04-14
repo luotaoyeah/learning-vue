@@ -205,14 +205,16 @@ export default new Router({
       path: "/guide/transition-and-animation",
       name: "guide-transition-and-animation",
       component(resolve) {
-        require(["../doc/guide/17-transition-and-animation/index"], resolve);
+        require([
+          "../doc/guide/17-enter-leave-list-transitions/index"
+        ], resolve);
       }
     },
     {
       path: "/guide/state-transition",
       name: "guide-state-transition",
       component(resolve) {
-        require(["../doc/guide/18-state-transition/index"], resolve);
+        require(["../doc/guide/18-state-transitions/index"], resolve);
       }
     },
     {
@@ -233,7 +235,7 @@ export default new Router({
       path: "/guide/render-function-and-jsx",
       name: "guide-render-function-and-jsx",
       component(resolve) {
-        require(["../doc/guide/21-render-function-and-jsx/index"], resolve);
+        require(["../doc/guide/21-render-functions-and-jsx/index"], resolve);
       }
     },
     {
