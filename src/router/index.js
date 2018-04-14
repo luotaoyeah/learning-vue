@@ -16,21 +16,23 @@ export default new Router({
       path: "/guide/declarative-rendering",
       name: "DeclarativeRendering",
       component(resolve) {
-        require(["../doc/guide/introduction/declarative-rendering"], resolve);
+        require([
+          "../doc/guide/01-introduction/declarative-rendering"
+        ], resolve);
       }
     },
     {
       path: "/guide/conditional-and-loop",
       name: "ConditionalAndLoop",
       component(resolve) {
-        require(["../doc/guide/introduction/conditional-and-loop"], resolve);
+        require(["../doc/guide/01-introduction/conditional-and-loop"], resolve);
       }
     },
     {
       path: "/guide/handing-user-input",
       name: "HandingUserInput",
       component(resolve) {
-        require(["../doc/guide/introduction/handing-user-input"], resolve);
+        require(["../doc/guide/01-introduction/handing-user-input"], resolve);
       }
     },
     {
@@ -38,7 +40,7 @@ export default new Router({
       name: "ComposingWithComponents",
       component(resolve) {
         require([
-          "../doc/guide/introduction/composing-with-components"
+          "../doc/guide/01-introduction/composing-with-components"
         ], resolve);
       }
     },
@@ -46,21 +48,23 @@ export default new Router({
       path: "/guide/data-and-methods",
       name: "DataAndMethods",
       component(resolve) {
-        require(["../doc/guide/the-vue-instance/data-and-methods"], resolve);
+        require(["../doc/guide/02-the-vue-instance/data-and-methods"], resolve);
       }
     },
     {
       path: "/guide/template-syntax/interpolation",
       name: "template-syntax-interpolation",
       component(resolve) {
-        require(["../doc/guide/template-syntax/interpolation/index"], resolve);
+        require([
+          "../doc/guide/03-template-syntax/interpolation/index"
+        ], resolve);
       }
     },
     {
       path: "/guide/template-syntax/directive",
       name: "template-syntax-directive",
       component(resolve) {
-        require(["../doc/guide/template-syntax/directive/index"], resolve);
+        require(["../doc/guide/03-template-syntax/directive/index"], resolve);
       }
     },
     {
@@ -68,7 +72,7 @@ export default new Router({
       name: "guide-computed-properties",
       component(resolve) {
         require([
-          "../doc/guide/computed-properties-and-watchers/computed-properties/index"
+          "../doc/guide/04-computed-properties-and-watchers/computed-properties/index"
         ], resolve);
       }
     },
@@ -77,7 +81,7 @@ export default new Router({
       name: "guide-watchers",
       component(resolve) {
         require([
-          "../doc/guide/computed-properties-and-watchers/watchers/index"
+          "../doc/guide/04-computed-properties-and-watchers/watchers/index"
         ], resolve);
       }
     },
@@ -85,49 +89,51 @@ export default new Router({
       path: "/guide/class",
       name: "guide-class",
       component(resolve) {
-        require(["../doc/guide/class-and-style/class/index"], resolve);
+        require(["../doc/guide/05-class-and-style/class/index"], resolve);
       }
     },
     {
       path: "/guide/style",
       name: "guide-style",
       component(resolve) {
-        require(["../doc/guide/class-and-style/style/index"], resolve);
+        require(["../doc/guide/05-class-and-style/style/index"], resolve);
       }
     },
     {
       path: "/guide/conditional-rendering-v-if",
       name: "guide-conditional-rendering-v-if",
       component(resolve) {
-        require(["../doc/guide/conditional-rendering/v-if/index"], resolve);
+        require(["../doc/guide/06-conditional-rendering/v-if/index"], resolve);
       }
     },
     {
       path: "/guide/conditional-rendering-v-show",
       name: "guide-conditional-rendering-v-show",
       component(resolve) {
-        require(["../doc/guide/conditional-rendering/v-show/index"], resolve);
+        require([
+          "../doc/guide/06-conditional-rendering/v-show/index"
+        ], resolve);
       }
     },
     {
       path: "/guide/list-rendering",
       name: "guide-list-rendering",
       component(resolve) {
-        require(["../doc/guide/list-rendering/v-for/index"], resolve);
+        require(["../doc/guide/07-list-rendering/v-for/index"], resolve);
       }
     },
     {
       path: "/guide/event-handling",
       name: "guide-event-handling",
       component(resolve) {
-        require(["../doc/guide/event-handling/index"], resolve);
+        require(["../doc/guide/08-event-handling/index"], resolve);
       }
     },
     {
       path: "/guide/form-input/basic",
       name: "guide-form-input-basic",
       component(resolve) {
-        require(["../doc/guide/form-input-binding/basic/index"], resolve);
+        require(["../doc/guide/09-form-input-binding/basic/index"], resolve);
       }
     },
     {
@@ -135,7 +141,7 @@ export default new Router({
       name: "guide-form-input-value-binding",
       component(resolve) {
         require([
-          "../doc/guide/form-input-binding/value-binding/index"
+          "../doc/guide/09-form-input-binding/value-binding/index"
         ], resolve);
       }
     },
@@ -143,63 +149,70 @@ export default new Router({
       path: "/guide/form-input/modifier",
       name: "guide-form-input-modifier",
       component(resolve) {
-        require(["../doc/guide/form-input-binding/modifier/index"], resolve);
+        require(["../doc/guide/09-form-input-binding/modifier/index"], resolve);
       }
     },
     {
       path: "/guide/component-basic",
       name: "guide-component-basic",
       component(resolve) {
-        require(["../doc/guide/component-basic/index"], resolve);
+        require(["../doc/guide/10-component-basic/index"], resolve);
       }
     },
     {
       path: "/guide/component-registration",
       name: "guide-component-registration",
       component(resolve) {
-        require(["../doc/guide/component-registration/index"], resolve);
+        require(["../doc/guide/11-component-registration/index"], resolve);
       }
     },
     {
       path: "/guide/props",
       name: "guide-props",
       component(resolve) {
-        require(["../doc/guide/props/index"], resolve);
+        require(["../doc/guide/12-props/index"], resolve);
       }
     },
     {
       path: "/guide/custom-events",
       name: "guide-custom-events",
       component(resolve) {
-        require(["../doc/guide/custom-events/index"], resolve);
+        require(["../doc/guide/13-custom-events/index"], resolve);
       }
     },
     {
       path: "/guide/slots",
       name: "guide-slots",
       component(resolve) {
-        require(["../doc/guide/slots/index"], resolve);
+        require(["../doc/guide/14-slots/index"], resolve);
       }
     },
     {
       path: "/guide/dynamic-async-component",
       name: "guide-dynamic-async-component",
       component(resolve) {
-        require(["../doc/guide/dynamic-async-component/index"], resolve);
+        require(["../doc/guide/15-dynamic-async-component/index"], resolve);
       }
     },
     {
       path: "/guide/handling-edge-cases",
       name: "guide-handling-edge-cases",
       component(resolve) {
-        require(["../doc/guide/handling-edge-cases/index"], resolve);
+        require(["../doc/guide/16-handling-edge-cases/index"], resolve);
       }
     },
     {
       path: "/guide/transition-and-animation",
       name: "guide-transition-and-animation",
       component(resolve) {
-        require(["../doc/guide/transition-and-animation/index"], resolve);
+        require(["../doc/guide/17-transition-and-animation/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/state-transition",
+      name: "guide-state-transition",
+      component(resolve) {
+        require(["../doc/guide/18-state-transition/index"], resolve);
       }
     }
   ]
