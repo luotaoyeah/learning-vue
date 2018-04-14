@@ -23,4 +23,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+img {
+  width: 70%;
+  border-radius: 3px;
+  display: block;
+  margin: 5px 0;
+}
 </style>
