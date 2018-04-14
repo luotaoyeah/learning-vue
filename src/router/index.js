@@ -214,6 +214,41 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/18-state-transition/index"], resolve);
       }
+    },
+    {
+      path: "/guide/mixins",
+      name: "guide-mixins",
+      component(resolve) {
+        require(["../doc/guide/19-mixins/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/custom-directives",
+      name: "guide-custom-directives",
+      component(resolve) {
+        require(["../doc/guide/20-custom-directives/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/render-function-and-jsx",
+      name: "guide-render-function-and-jsx",
+      component(resolve) {
+        require(["../doc/guide/21-render-function-and-jsx/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/plugins",
+      name: "guide-plugins",
+      component(resolve) {
+        require(["../doc/guide/22-plugins/index"], resolve);
+      }
+    },
+    {
+      path: "/guide/filters",
+      name: "guide-filters",
+      component(resolve) {
+        require(["../doc/guide/23-filters/index"], resolve);
+      }
     }
   ]
 });

@@ -132,6 +132,31 @@
             <router-link :to="{name: 'guide-state-transition'}">State Transitions</router-link>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-mixins'}">State Transitions</router-link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-custom-directives'}">Custom Directives</router-link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-render-function-and-jsx'}">Render Functions & JSX</router-link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-plugins'}">Plugins</router-link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-filters'}">Filters</router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
