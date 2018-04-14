@@ -122,6 +122,11 @@
             <router-link :to="{name: 'guide-handling-edge-cases'}">Handling Edge Cases</router-link>
           </li>
         </ul>
+        <ul>
+          <li>
+            <router-link :to="{name: 'guide-transition-and-animation'}">Transitions and Animations</router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>

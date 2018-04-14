@@ -194,6 +194,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/handling-edge-cases/index"], resolve);
       }
+    },
+    {
+      path: "/guide/transition-and-animation",
+      name: "guide-transition-and-animation",
+      component(resolve) {
+        require(["../doc/guide/transition-and-animation/index"], resolve);
+      }
     }
   ]
 });
