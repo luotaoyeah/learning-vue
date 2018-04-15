@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <VFor></VFor>
     <VForWithObject></VForWithObject>
     <VForWithKey></VForWithKey>

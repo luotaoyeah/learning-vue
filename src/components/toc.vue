@@ -2,12 +2,11 @@
 <template>
   <ul
     style="
-      height: 100%;
-      padding-left: 5px;
-      padding-top: 5px;
+      height: calc(100% - 10px);
+      padding: 5px;
       margin: 0;
       overflow: auto;
-      background: #eeeeee;
+      background: #f9f9f9;
     "
   >
     <li>

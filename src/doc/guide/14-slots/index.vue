@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <SlotsSlotContent></SlotsSlotContent>
     <SlotsNamedSlots></SlotsNamedSlots>
     <SlotsDefaultSlotContent></SlotsDefaultSlotContent>

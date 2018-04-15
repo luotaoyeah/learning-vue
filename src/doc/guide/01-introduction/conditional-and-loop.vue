@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 10px;">
+  <div>
     <h1>v-if</h1>
     <span
       v-if="show"

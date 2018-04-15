@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <CustomEventEventNames></CustomEventEventNames>
     <CustomEventComponentVModel></CustomEventComponentVModel>
     <CustomEventBindingNativeEvent></CustomEventBindingNativeEvent>

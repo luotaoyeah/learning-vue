@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <EdgeCaseElementComponentAccess></EdgeCaseElementComponentAccess>
     <EdgeCaseProgrammaticEventListener></EdgeCaseProgrammaticEventListener>
     <EdgeCaseCircularReference></EdgeCaseCircularReference>

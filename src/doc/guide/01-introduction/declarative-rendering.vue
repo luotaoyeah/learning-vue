@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 10px;">
+  <div>
     <span
       v-bind:title="title"
       style="border: 1px solid #DDDDDD;border-radius: 3px;padding: 10px;"

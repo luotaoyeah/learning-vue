@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <Transition01></Transition01>
     <transition02></transition02>
     <Transition03></Transition03>

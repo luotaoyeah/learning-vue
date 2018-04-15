@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <PropsCasing></PropsCasing>
     <PropsStaticAndDynamicProps></PropsStaticAndDynamicProps>
     <PropsOneWayDataFlow></PropsOneWayDataFlow>

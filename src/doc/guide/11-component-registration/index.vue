@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <ComponentBaseExample></ComponentBaseExample>
     <ComponentReusingComponent></ComponentReusingComponent>
     <ComponentOrganizingComponent></ComponentOrganizingComponent>

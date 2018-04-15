@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <DynamicAsyncComponentDynamic></DynamicAsyncComponentDynamic>
     <DynamicAsyncComponentAsync></DynamicAsyncComponentAsync>
   </div>

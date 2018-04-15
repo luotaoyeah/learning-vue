@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <InteroplationText></InteroplationText>
     <InteroplationHtml></InteroplationHtml>
     <InteroplationAttribute></InteroplationAttribute>

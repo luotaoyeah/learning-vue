@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <h1>0. Basic Usage</h1>
     <p>
       <small>

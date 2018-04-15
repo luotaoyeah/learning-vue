@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <FormInputLazy></FormInputLazy>
     <FormInputNumber></FormInputNumber>
     <FormInputTrim></FormInputTrim>

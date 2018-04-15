@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 10px;">
+  <div>
     <h1>v-on</h1>
     <button v-on:click="toggle">show: {{show}}</button>
     <h1>v-model</h1>

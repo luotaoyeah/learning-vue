@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <VIfOnTemplate></VIfOnTemplate>
     <VElse></VElse>
     <ControlReusableElementsWithKey></ControlReusableElementsWithKey>

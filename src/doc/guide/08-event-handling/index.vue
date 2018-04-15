@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <ListeningToEvent></ListeningToEvent>
     <EventHandler></EventHandler>
     <EventInlineHandler></EventInlineHandler>

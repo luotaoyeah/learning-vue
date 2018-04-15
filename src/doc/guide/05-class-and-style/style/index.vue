@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <StyleString></StyleString>
     <StyleObject></StyleObject>
     <StyleArray></StyleArray>

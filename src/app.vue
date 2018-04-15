@@ -29,7 +29,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 img {
@@ -56,7 +55,7 @@ img {
 .content {
   display: inline-block;
   margin-left: 30%;
-  width: 70%;
-  top: 0;
+  padding: 15px;
+  width: calc(70% - 30px);
 }
 </style>

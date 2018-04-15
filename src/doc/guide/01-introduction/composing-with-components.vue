@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 10px;">
+  <div>
     <ol>
       <todo-item
         v-for="item in groceries"

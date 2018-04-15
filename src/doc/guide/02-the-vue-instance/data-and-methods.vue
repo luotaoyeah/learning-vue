@@ -38,7 +38,6 @@ const dataObj = {
 };
 
 export default {
-  name: "DataAndMethods",
   data() {
     return dataObj;
   },

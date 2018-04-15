@@ -1,7 +1,5 @@
 <template>
-  <div
-    style="padding: 10px;"
-  >
+  <div>
     <h1>1. Computed Properties</h1>
     <p>
       <small>
