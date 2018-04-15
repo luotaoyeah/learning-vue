@@ -137,7 +137,9 @@
 
       <el-container>
         <el-main>
-          <router-view/>
+          <small>
+            <router-view/>
+          </small>
         </el-main>
       </el-container>
     </el-container>
@@ -202,5 +204,11 @@ img {
 
 .el-main {
   padding: 15px;
+}
+
+.el-tabs__item {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
 }
 </style>
