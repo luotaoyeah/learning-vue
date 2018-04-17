@@ -8,7 +8,7 @@
         当组件使用 mixin 时，
         mixin 的选项会被混入组件自己的选项；
         <p>
-          <MyComponent></MyComponent>
+          <MyComponent190101></MyComponent190101>
         </p>
       </li>
     </ul>
@@ -23,13 +23,13 @@ const MyMixin = {
   },
   methods: {
     hello() {
-      alert("MyMixin.hello()");
+      console.log("MyMixin.hello()");
     }
   }
 };
 
-Vue.component("MyComponent", {
-  template: "<el-alert :closable='false'>my component</el-alert>",
+Vue.component("MyComponent190101", {
+  template: "<el-alert :closable='false' title='my component'></el-alert>",
   mixins: [MyMixin]
 });
 
