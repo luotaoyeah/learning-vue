@@ -4,7 +4,7 @@
       <li>
         如果期望在 bind 和 update 两个钩子函数中执行同样的逻辑，
         并且不关心其他的钩子函数，
-        就可以使用函数简写的形式；
+        那么可以使用函数简写形式；
         <p>
           <el-input v-model="message"></el-input>
         </p>
