@@ -131,6 +131,9 @@
             <el-menu-item index="1-23">
               <router-link :to="{name: 'guide-filters'}">Filters</router-link>
             </el-menu-item>
+            <el-menu-item index="1-23">
+              <router-link :to="{name: 'guide-reactivity-in-depth'}">Reactivity in Depth</router-link>
+            </el-menu-item>
           </el-submenu>
         </el-menu>
       </el-aside>
@@ -147,12 +150,8 @@
 </template>
 
 <script>
-import TOC from "./toc";
-
 export default {
-  components: {
-    TOC
-  }
+  components: {}
 };
 </script>
 

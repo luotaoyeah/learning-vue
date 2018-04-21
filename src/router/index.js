@@ -244,6 +244,13 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/23-filters/index"], resolve);
       }
+    },
+    {
+      path: "/guide/reactivity-in-depth",
+      name: "guide-reactivity-in-depth",
+      component(resolve) {
+        require(["../doc/guide/24-reactivity-in-depth/index"], resolve);
+      }
     }
   ]
 });

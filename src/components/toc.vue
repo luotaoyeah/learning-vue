@@ -165,6 +165,11 @@
           <router-link :to="{name: 'guide-filters'}">Filters</router-link>
         </li>
       </ul>
+      <ul>
+        <li>
+          <router-link :to="{name: 'guide-reactivity-in-depth'}">Reactivity in Depth</router-link>
+        </li>
+      </ul>
     </li>
   </ul>
 </template>
