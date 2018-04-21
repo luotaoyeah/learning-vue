@@ -211,4 +211,9 @@ img {
   line-height: 30px;
   padding: 0 10px;
 }
+
+.el-tabs--left,
+.el-tabs--right {
+  overflow: auto;
+}
 </style>
