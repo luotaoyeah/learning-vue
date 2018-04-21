@@ -251,6 +251,34 @@ export default new Router({
       component(resolve) {
         require(["../doc/guide/24-reactivity-in-depth/index"], resolve);
       }
+    },
+    {
+      path: "/style-guide/essential",
+      name: "style-guide-essential",
+      component(resolve) {
+        require(["../doc/style-guide/01-essential/index"], resolve);
+      }
+    },
+    {
+      path: "/style-guide/strongly-recommend",
+      name: "style-guide-strongly-recommend",
+      component(resolve) {
+        require(["../doc/style-guide/02-strongly-recommend/index"], resolve);
+      }
+    },
+    {
+      path: "/style-guide/recommend",
+      name: "style-guide-recommend",
+      component(resolve) {
+        require(["../doc/style-guide/03-recommend/index"], resolve);
+      }
+    },
+    {
+      path: "/style-guide/use-with-caution",
+      name: "style-guide-use-with-caution",
+      component(resolve) {
+        require(["../doc/style-guide/04-use-with-caution/index"], resolve);
+      }
     }
   ]
 });

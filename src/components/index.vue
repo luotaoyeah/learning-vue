@@ -135,9 +135,25 @@
               <router-link :to="{name: 'guide-reactivity-in-depth'}">Reactivity in Depth</router-link>
             </el-menu-item>
           </el-submenu>
+          <el-submenu index="2">
+            <template slot="title">
+              Style Guide
+            </template>
+            <el-menu-item index="2-1">
+              <router-link :to="{name: 'style-guide-essential'}">Essential</router-link>
+            </el-menu-item>
+            <el-menu-item index="2-2">
+              <router-link :to="{name: 'style-guide-strongly-recommend'}">Strongly Recommended</router-link>
+            </el-menu-item>
+            <el-menu-item index="2-3">
+              <router-link :to="{name: 'style-guide-recommend'}">Recommended</router-link>
+            </el-menu-item>
+            <el-menu-item index="2-4">
+              <router-link :to="{name: 'style-guide-use-with-caution'}">Use with Caution</router-link>
+            </el-menu-item>
+          </el-submenu>
         </el-menu>
       </el-aside>
-
       <el-container>
         <el-main>
           <small>
