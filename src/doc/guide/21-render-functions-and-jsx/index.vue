@@ -32,7 +32,7 @@ import NodesTreesAndVirtualDOM from "./02-nodes-trees-and-virtual-dom";
 import CteateElementArguments from "./03-createelement-arguments";
 import ReplacingTemplateWithJs from "./04-00-replacing-template-features-with-plain-js";
 import JSX from "./05-jsx";
-import FunctionalComponents from "./06-functional-components";
+import FunctionalComponents from "./06-00-functional-components";
 import TemplateCompilation from "./07-template-compilation";
 
 export default {
