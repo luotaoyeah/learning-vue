@@ -6,17 +6,22 @@
     <el-tab-pane label="Muli-word component names">
       <C01></C01>
     </el-tab-pane>
+    <el-tab-pane label="Component data">
+      <C02></C02>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
 import C01 from "./01-multiword-component-names";
+import C02 from "./02-component-data";
 
 export default {
   data() {
     return {};
   },
   components: {
-    C01
+    C01,
+    C02
   }
 };
 </script>
