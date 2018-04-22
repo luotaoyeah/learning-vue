@@ -24,6 +24,9 @@
     <el-tab-pane label="Self-closing components">
       <C07></C07>
     </el-tab-pane>
+    <el-tab-pane label="Component name casing in templates">
+      <C08></C08>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -34,6 +37,7 @@ import C04 from "./04-single-instance-component-names";
 import C05 from "./05-tightly-coupled-component-names";
 import C06 from "./06-order-of-words-in-component-names";
 import C07 from "./07-self-closing-component";
+import C08 from "./08-component-name-casing-in-template";
 
 export default {
   data() {
@@ -46,7 +50,8 @@ export default {
     C04,
     C05,
     C06,
-    C07
+    C07,
+    C08
   }
 };
 </script>
