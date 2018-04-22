@@ -21,6 +21,9 @@
     <el-tab-pane label="Component style scoping">
       <C06></C06>
     </el-tab-pane>
+    <el-tab-pane label="Private property names">
+      <C07></C07>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -30,6 +33,7 @@ import C03 from "./03-props-definitions";
 import C04 from "./04-keyed-vfor";
 import C05 from "./05-avoid-vif-with-vfor";
 import C06 from "./06-component-style-scope";
+import C07 from "./07-private-property-names";
 
 export default {
   data() {
@@ -41,7 +45,8 @@ export default {
     C03,
     C04,
     C05,
-    C06
+    C06,
+    C07
   }
 };
 </script>
