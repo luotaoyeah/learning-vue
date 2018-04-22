@@ -30,6 +30,9 @@
     <el-tab-pane label="Component name casing in JS/JSX">
       <C09></C09>
     </el-tab-pane>
+    <el-tab-pane label="Full-word component names">
+      <C10></C10>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -42,6 +45,7 @@ import C06 from "./06-order-of-words-in-component-names";
 import C07 from "./07-self-closing-component";
 import C08 from "./08-component-name-casing-in-template";
 import C09 from "./09-component-name-casing-in-jsx";
+import C10 from "./10-full-word-component-names";
 
 export default {
   data() {
@@ -56,7 +60,8 @@ export default {
     C06,
     C07,
     C08,
-    C09
+    C09,
+    C10
   }
 };
 </script>
