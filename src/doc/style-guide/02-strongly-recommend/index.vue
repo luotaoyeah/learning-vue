@@ -15,6 +15,9 @@
     <el-tab-pane label="Single instance component names">
       <C04></C04>
     </el-tab-pane>
+    <el-tab-pane label="Tightly coupled component names">
+      <C05></C05>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -22,6 +25,7 @@ import C01 from "./01-component-files";
 import C02 from "./02-sfc-filename-casing";
 import C03 from "./03-base-component-names";
 import C04 from "./04-single-instance-component-names";
+import C05 from "./05-tightly-coupled-component-names";
 
 export default {
   data() {
@@ -31,7 +35,8 @@ export default {
     C01,
     C02,
     C03,
-    C04
+    C04,
+    C05
   }
 };
 </script>
