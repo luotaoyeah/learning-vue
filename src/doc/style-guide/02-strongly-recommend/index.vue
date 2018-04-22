@@ -36,6 +36,9 @@
     <el-tab-pane label="Prop name casing">
       <C11></C11>
     </el-tab-pane>
+    <el-tab-pane label="Multi-attribute elements">
+      <C12></C12>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -50,6 +53,7 @@ import C08 from "./08-component-name-casing-in-template";
 import C09 from "./09-component-name-casing-in-jsx";
 import C10 from "./10-full-word-component-names";
 import C11 from "./11-prop-name-casing";
+import C12 from "./12-multi-attribute-elements";
 
 export default {
   data() {
@@ -66,7 +70,8 @@ export default {
     C08,
     C09,
     C10,
-    C11
+    C11,
+    C12
   }
 };
 </script>
