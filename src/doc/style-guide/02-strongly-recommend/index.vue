@@ -18,6 +18,9 @@
     <el-tab-pane label="Tightly coupled component names">
       <C05></C05>
     </el-tab-pane>
+    <el-tab-pane label="Order of words in component names">
+      <C06></C06>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -26,6 +29,7 @@ import C02 from "./02-sfc-filename-casing";
 import C03 from "./03-base-component-names";
 import C04 from "./04-single-instance-component-names";
 import C05 from "./05-tightly-coupled-component-names";
+import C06 from "./06-order-of-words-in-component-names";
 
 export default {
   data() {
@@ -36,7 +40,8 @@ export default {
     C02,
     C03,
     C04,
-    C05
+    C05,
+    C06
   }
 };
 </script>
