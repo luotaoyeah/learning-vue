@@ -21,6 +21,9 @@
     <el-tab-pane label="Order of words in component names">
       <C06></C06>
     </el-tab-pane>
+    <el-tab-pane label="Self-closing components">
+      <C07></C07>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -30,6 +33,7 @@ import C03 from "./03-base-component-names";
 import C04 from "./04-single-instance-component-names";
 import C05 from "./05-tightly-coupled-component-names";
 import C06 from "./06-order-of-words-in-component-names";
+import C07 from "./07-self-closing-component";
 
 export default {
   data() {
@@ -41,7 +45,8 @@ export default {
     C03,
     C04,
     C05,
-    C06
+    C06,
+    C07
   }
 };
 </script>
