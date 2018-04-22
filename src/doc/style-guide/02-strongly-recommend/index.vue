@@ -39,6 +39,9 @@
     <el-tab-pane label="Multi-attribute elements">
       <C12></C12>
     </el-tab-pane>
+    <el-tab-pane label="Simple expression in template">
+      <C13></C13>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -54,6 +57,7 @@ import C09 from "./09-component-name-casing-in-jsx";
 import C10 from "./10-full-word-component-names";
 import C11 from "./11-prop-name-casing";
 import C12 from "./12-multi-attribute-elements";
+import C13 from "./13-simple-expression-in-template";
 
 export default {
   data() {
@@ -71,7 +75,8 @@ export default {
     C09,
     C10,
     C11,
-    C12
+    C12,
+    C13
   }
 };
 </script>
