@@ -35,7 +35,7 @@
           使用 PascalCase 定义的组件，
           在使用时，可以使用 kebab-case，也可以使用 PascalCase；
         </li>
-        <li>如果在 DOM 里面直接使用组件，只能使用 kebab-case；</li>
+        <li>在 DOM 模板里面，只能使用 kebab-case；</li>
       </ul>
     </small>
     <!--
