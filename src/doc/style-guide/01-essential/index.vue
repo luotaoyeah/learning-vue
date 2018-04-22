@@ -18,6 +18,9 @@
     <el-tab-pane label="Avoid v-if with v-for">
       <C05></C05>
     </el-tab-pane>
+    <el-tab-pane label="Component style scoping">
+      <C06></C06>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -26,6 +29,7 @@ import C02 from "./02-component-data";
 import C03 from "./03-props-definitions";
 import C04 from "./04-keyed-vfor";
 import C05 from "./05-avoid-vif-with-vfor";
+import C06 from "./06-component-style-scope";
 
 export default {
   data() {
@@ -36,7 +40,8 @@ export default {
     C02,
     C03,
     C04,
-    C05
+    C05,
+    C06
   }
 };
 </script>
