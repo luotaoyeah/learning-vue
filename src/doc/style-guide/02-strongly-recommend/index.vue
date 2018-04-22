@@ -33,6 +33,9 @@
     <el-tab-pane label="Full-word component names">
       <C10></C10>
     </el-tab-pane>
+    <el-tab-pane label="Prop name casing">
+      <C11></C11>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -46,6 +49,7 @@ import C07 from "./07-self-closing-component";
 import C08 from "./08-component-name-casing-in-template";
 import C09 from "./09-component-name-casing-in-jsx";
 import C10 from "./10-full-word-component-names";
+import C11 from "./11-prop-name-casing";
 
 export default {
   data() {
@@ -61,7 +65,8 @@ export default {
     C07,
     C08,
     C09,
-    C10
+    C10,
+    C11
   }
 };
 </script>
