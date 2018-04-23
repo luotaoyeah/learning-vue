@@ -42,6 +42,9 @@
     <el-tab-pane label="Simple expression in template">
       <C13></C13>
     </el-tab-pane>
+    <el-tab-pane label="Simple computed properties">
+      <C14></C14>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -58,6 +61,7 @@ import C10 from "./10-full-word-component-names";
 import C11 from "./11-prop-name-casing";
 import C12 from "./12-multi-attribute-elements";
 import C13 from "./13-simple-expression-in-template";
+import C14 from "./14-simple-computed-properties";
 
 export default {
   data() {
@@ -76,7 +80,8 @@ export default {
     C10,
     C11,
     C12,
-    C13
+    C13,
+    C14
   }
 };
 </script>
