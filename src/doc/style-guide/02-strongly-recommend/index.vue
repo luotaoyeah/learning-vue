@@ -45,6 +45,9 @@
     <el-tab-pane label="Simple computed properties">
       <C14></C14>
     </el-tab-pane>
+    <el-tab-pane label="Quoted attribute values">
+      <C15></C15>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -62,6 +65,7 @@ import C11 from "./11-prop-name-casing";
 import C12 from "./12-multi-attribute-elements";
 import C13 from "./13-simple-expression-in-template";
 import C14 from "./14-simple-computed-properties";
+import C15 from "./15-quoted-attribute-values";
 
 export default {
   data() {
@@ -81,7 +85,8 @@ export default {
     C11,
     C12,
     C13,
-    C14
+    C14,
+    C15
   }
 };
 </script>
