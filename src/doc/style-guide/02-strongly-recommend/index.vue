@@ -48,6 +48,9 @@
     <el-tab-pane label="Quoted attribute values">
       <C15></C15>
     </el-tab-pane>
+    <el-tab-pane label="Directive shorthands">
+      <C16></C16>
+    </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -66,6 +69,7 @@ import C12 from "./12-multi-attribute-elements";
 import C13 from "./13-simple-expression-in-template";
 import C14 from "./14-simple-computed-properties";
 import C15 from "./15-quoted-attribute-values";
+import C16 from "./16-directive-shorthands";
 
 export default {
   data() {
@@ -86,7 +90,8 @@ export default {
     C12,
     C13,
     C14,
-    C15
+    C15,
+    C16
   }
 };
 </script>
