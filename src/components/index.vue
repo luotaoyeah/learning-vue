@@ -152,6 +152,62 @@
               <router-link :to="{name: 'style-guide-use-with-caution'}">Use with Caution</router-link>
             </el-menu-item>
           </el-submenu>
+          <el-submenu index="3">
+            <template slot="title">
+              API
+            </template>
+            <el-menu-item index="3-1">
+              <router-link :to="{name: 'api-global-config'}">Global Config</router-link>
+            </el-menu-item>
+            <el-menu-item index="3-2">
+              <router-link :to="{name: 'api-global-api'}">Global API</router-link>
+            </el-menu-item>
+            <el-submenu index="3-3">
+              <template slot="title">Options</template>
+              <el-menu-item index="3-3-1">
+                <router-link :to="{name: 'api-options-data'}">Data</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-3-2">
+                <router-link :to="{name: 'api-options-dom'}">DOM</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-3-3">
+                <router-link :to="{name: 'api-options-lifecycle-hooks'}">Lifecycle Hooks</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-3-4">
+                <router-link :to="{name: 'api-options-assets'}">Assets</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-3-5">
+                <router-link :to="{name: 'api-options-compisition'}">Composition</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-3-6">
+                <router-link :to="{name: 'api-options-misc'}">Misc</router-link>
+              </el-menu-item>
+            </el-submenu>
+            <el-menu-item index="3-4">
+              <router-link :to="{name: 'api-instance-properties'}">Instance Properties</router-link>
+            </el-menu-item>
+            <el-submenu index="3-5">
+              <template slot="title">Instance Methods</template>
+              <el-menu-item index="3-5-1">
+                <router-link :to="{name: 'api-instance-methods-data'}">Data</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-5-2">
+                <router-link :to="{name: 'api-instance-methods-events'}">Events</router-link>
+              </el-menu-item>
+              <el-menu-item index="3-5-3">
+                <router-link :to="{name: 'api-instance-methods-lifecycle'}">Lifecycle</router-link>
+              </el-menu-item>
+            </el-submenu>
+            <el-menu-item index="3-6">
+              <router-link :to="{name: 'api-directives'}">Directives</router-link>
+            </el-menu-item>
+            <el-menu-item index="3-7">
+              <router-link :to="{name: 'api-special-attributes'}">Special Attributes</router-link>
+            </el-menu-item>
+            <el-menu-item index="3-8">
+              <router-link :to="{name: 'api-builtin-components'}">Built-in Components</router-link>
+            </el-menu-item>
+          </el-submenu>
         </el-menu>
       </el-aside>
       <el-container>

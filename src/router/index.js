@@ -245,6 +245,7 @@ export default new Router({
         require(["../doc/guide/23-filters/index"], resolve);
       }
     },
+    /* style guide ---------------------------------------------------------------------------------------------------- */
     {
       path: "/guide/reactivity-in-depth",
       name: "guide-reactivity-in-depth",
@@ -278,6 +279,112 @@ export default new Router({
       name: "style-guide-use-with-caution",
       component(resolve) {
         require(["../doc/style-guide/04-use-with-caution/index"], resolve);
+      }
+    },
+    /* api ---------------------------------------------------------------------------------------------------- */
+    {
+      path: "/api/global-config",
+      name: "api-global-config",
+      component(resolve) {
+        require(["../doc/api/01-global-config/index"], resolve);
+      }
+    },
+    {
+      path: "/api/global-api",
+      name: "api-global-api",
+      component(resolve) {
+        require(["../doc/api/02-global-api/index"], resolve);
+      }
+    },
+    {
+      path: "/api/options-data",
+      name: "api-options-data",
+      component(resolve) {
+        require(["../doc/api/03-options-data/index"], resolve);
+      }
+    },
+    {
+      path: "/api/options-dom",
+      name: "api-options-dom",
+      component(resolve) {
+        require(["../doc/api/04-options-dom/index"], resolve);
+      }
+    },
+    {
+      path: "/api/options-lifecycle-hooks",
+      name: "api-options-lifecycle-hooks",
+      component(resolve) {
+        require(["../doc/api/05-options-lifecycle-hooks/index"], resolve);
+      }
+    },
+    {
+      path: "/api/options-assets",
+      name: "api-options-assets",
+      component(resolve) {
+        require(["../doc/api/06-options-assets/index"], resolve);
+      }
+    },
+    {
+      path: "/api/options-compisition",
+      name: "api-options-compisition",
+      component(resolve) {
+        require(["../doc/api/07-options-compisition/index"], resolve);
+      }
+    },
+    {
+      path: "/api/options-misc",
+      name: "api-options-misc",
+      component(resolve) {
+        require(["../doc/api/08-options-misc/index"], resolve);
+      }
+    },
+    {
+      path: "/api/instance-properties",
+      name: "api-instance-properties",
+      component(resolve) {
+        require(["../doc/api/09-instance-properties/index"], resolve);
+      }
+    },
+    {
+      path: "/api/instance-methods-data",
+      name: "api-instance-methods-data",
+      component(resolve) {
+        require(["../doc/api/10-instance-methods-data/index"], resolve);
+      }
+    },
+    {
+      path: "/api/instance-methods-events",
+      name: "api-instance-methods-events",
+      component(resolve) {
+        require(["../doc/api/11-instance-methods-events/index"], resolve);
+      }
+    },
+    {
+      path: "/api/instance-methods-lifecycle",
+      name: "api-instance-methods-lifecycle",
+      component(resolve) {
+        require(["../doc/api/12-instance-methods-lifecycle/index"], resolve);
+      }
+    },
+    {
+      path: "/api/directives",
+      name: "api-directives",
+      component(resolve) {
+        require(["../doc/api/13-directives/index"], resolve);
+      }
+    },
+    {
+      path: "/api/special-attributes",
+      name: "api-special-attributes",
+      component(resolve) {
+        require(["../doc/api/14-special-attributes/index"], resolve);
+      }
+    },
+    {
+      path: "/api/builtin-components",
+      name: "api-builtin-components",
+      component(resolve) {
+        require(["../doc/api/15-builtin-components/index"], resolve);
       }
     }
   ]
