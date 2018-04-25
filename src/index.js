@@ -6,6 +6,7 @@ import "element-ui/lib/theme-chalk/index.css";
 import App from "./components/index";
 import router from "./router";
 
+Vue.config.silent = false;
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: "small" });

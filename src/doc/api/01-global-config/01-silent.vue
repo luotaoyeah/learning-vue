@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{message}}
     <ul>
       <li>类型：boolean</li>
       <li>默认：false</li>
@@ -10,17 +11,9 @@
   </div>
 </template>
 <script>
-import Vue from "vue";
-
 export default {
   data() {
     return {};
-  },
-  created() {
-    Vue.config.silent = true;
-  },
-  beforeDestroy() {
-    Vue.config.silent = false;
   },
   components: {}
 };
