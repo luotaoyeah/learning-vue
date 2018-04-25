@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      使用 v-for 的时候始终也声明 key；
+      使用 v-for 的时候应该始终声明 key 属性；
     </p>
     <ul>
       <li>
