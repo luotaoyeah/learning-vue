@@ -8,6 +8,14 @@ import router from "./router";
 
 Vue.config.silent = false;
 Vue.config.devtools = true;
+Vue.config.optionMergeStrategies["my-option-01"] = (
+  parentVal,
+  childVal,
+  vm,
+  key
+) => {
+  return `${parentVal}-${childVal}`;
+};
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: "small" });
