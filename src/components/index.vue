@@ -250,6 +250,7 @@ img {
   border-radius: 3px;
   display: block;
   margin: 5px 0;
+  border: 1px solid #f0f0f0;
 }
 
 .el-icon-arrow-down:before {
