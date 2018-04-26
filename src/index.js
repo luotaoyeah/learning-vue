@@ -31,6 +31,8 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
   };
 */
 
+Vue.config.ignoredElements = ["my-ignored-element"];
+
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: "small" });
