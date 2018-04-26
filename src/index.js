@@ -7,6 +7,7 @@ import App from "./components/index";
 import router from "./router";
 
 Vue.config.silent = false;
+Vue.config.devtools = true;
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: "small" });
