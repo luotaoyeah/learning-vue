@@ -19,9 +19,17 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
   return `${parentVal}-${childVal}`;
 };
 
-Vue.config.errorHandler = (err, vm, info) => {
-  console.error(err);
-};
+/*
+  Vue.config.errorHandler = (err, vm, info) => {
+    console.error(err);
+  };
+*/
+
+/*
+  Vue.config.warnHandler = (msg, vm, trace) => {
+    console.error(msg, trace);
+  };
+*/
 
 Vue.config.productionTip = false;
 

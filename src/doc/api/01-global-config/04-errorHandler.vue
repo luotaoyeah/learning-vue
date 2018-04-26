@@ -4,7 +4,7 @@
       <li>类型：Function</li>
       <li>默认：undefined</li>
       <li>
-        描述：错误处理器；
+        描述：错误处理函数；
         <ul>
           <li>
             如果未定义错误处理器，
