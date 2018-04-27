@@ -18,11 +18,11 @@
       </li>
     </ul>
     <p>
-      <ElButton @click="handleClick01">删除 name 属性</ElButton>
+      <ElButton @click="handleClick01">删除 name 属性（delete）</ElButton>
       <ElInput v-model="person.name"/>
     </p>
     <p>
-      <ElButton @click="handleClick02">删除 age 属性</ElButton>
+      <ElButton @click="handleClick02">删除 age 属性（Vue.delete）</ElButton>
       <ElInput v-model="person.age"/>
     </p>
   </div>
