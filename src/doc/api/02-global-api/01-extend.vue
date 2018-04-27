@@ -33,7 +33,7 @@ const MyButton01 = Vue.extend({
 
 const MyButton02 = MyButton01.extend({
   mounted() {
-    alert("MyButton02.mounted()");
+    console.log("MyButton02.mounted()");
   }
 });
 
