@@ -37,6 +37,8 @@ Vue.config.keyCodes = {
   "lucky-eight": 56
 };
 
+Vue.config.performance = false;
+
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: "small" });
