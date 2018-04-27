@@ -7,6 +7,7 @@ import "element-ui/lib/theme-chalk/index.css";
 import App from "./components/index";
 import router from "./router";
 
+Vue._ = _;
 Object.defineProperties(Vue.prototype, {
   _: {
     get() {
