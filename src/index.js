@@ -33,6 +33,10 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
 
 Vue.config.ignoredElements = ["my-ignored-element"];
 
+Vue.config.keyCodes = {
+  "lucky-eight": 56
+};
+
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { size: "small" });
