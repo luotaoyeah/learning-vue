@@ -39,7 +39,7 @@ Vue.config.keyCodes = {
 
 Vue.config.performance = false;
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 Vue.use(ElementUI, { size: "small" });
 

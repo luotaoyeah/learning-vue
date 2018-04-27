@@ -10,6 +10,10 @@
             如果启用，
             在支持 performance.mark 的浏览器的开发工具的性能面板，
             可以查看组件相关的性能追踪；
+            <img
+              :src="Picture01"
+              alt=""
+            >
           </li>
         </ul>
       </li>
@@ -17,9 +21,11 @@
   </div>
 </template>
 <script>
+import Picture01 from "./08-performance.png";
+
 export default {
   data() {
-    return {};
+    return { Picture01 };
   },
   components: {}
 };
