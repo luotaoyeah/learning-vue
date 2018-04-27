@@ -7,7 +7,7 @@
       <MyComponent20180427144310/>
     </p>
     <p>
-      <span id="span_02"></span>
+      <span :id="id01"></span>
     </p>
   </div>
 </template>
@@ -28,9 +28,13 @@ Vue.component("MyComponent20180427144310", {
 
 export default {
   data() {
-    return {};
+    return {
+      id01: this._.uniqueId("span_")
+    };
   },
   mounted() {
+    const vm = this;
+
     /*
      * 获取全局组件，
      * 返回的是该组件的构造函数；
@@ -38,7 +42,7 @@ export default {
     const MyComponent20180427144309 = Vue.component(
       "MyComponent20180427144309"
     );
-    console.log(new MyComponent20180427144309().$mount("#span_02"));
+    new MyComponent20180427144309().$mount(`#${vm.id01}`);
   },
   components: {}
 };
