@@ -28,14 +28,24 @@
         key="input_1"
         v-model="x.y"
       />
-      {{x.y}}
+    </p>
+    <p>
+      <ElAlert
+        :title="x.y"
+        :closable="false"
+      ></ElAlert>
     </p>
     <p>
       <ElInput
         key="input_2"
         v-model="x.z"
       />
-      {{x.z}}
+    </p>
+    <p>
+      <ElAlert
+        :title="x.z"
+        :closable="false"
+      ></ElAlert>
     </p>
   </div>
 </template>
