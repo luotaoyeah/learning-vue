@@ -27,7 +27,11 @@ const id01 = Vue._.uniqueId("span");
 
 const C01 = Vue.extend({
   render(h) {
-    throw new Error("error within render()");
+    if (Vue._.random() > 0.5) {
+      throw new Error("error within render()");
+    }
+
+    return h();
   },
   renderError(h, error) {
     return h(

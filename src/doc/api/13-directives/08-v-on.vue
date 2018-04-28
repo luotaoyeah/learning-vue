@@ -68,7 +68,7 @@
             属性名表示事件名称，
             属性值表示对应的回调函数；
             <p>
-              <!--eslint-disable vue/valid-v-on-->
+              <!--eslint-disable vue/valid-v-on vue/no-parsing-error-->
               <C02 v-on="{click03: handleClick03, click04: handleClick04}"/>
             </p>
           </li>
