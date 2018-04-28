@@ -3,7 +3,7 @@
     <ul>
       <li>类型：{ [key: string]: any }</li>
       <li>
-        描述：设置 props 属性值；
+        描述：创建组件实例时，设置 props 属性值；
         只有在使用 new 创建组件实例的时候有效；
         <p>
           <small>
