@@ -32,6 +32,13 @@
             如果属性值以 # 开头，
             表示元素选择器；
           </li>
+          <li>
+            如果声明了 render 选项，
+            则 template 会被忽略；
+            <p>
+              <span :id="id03"></span>
+            </p>
+          </li>
         </ul>
       </li>
     </ul>
@@ -42,6 +49,7 @@ import Vue from "vue";
 
 const id01 = Vue._.uniqueId("span");
 const id02 = Vue._.uniqueId("span");
+const id03 = Vue._.uniqueId("span");
 
 const C01 = Vue.extend({
   template: "<ElButton>C01</ElButton>"
@@ -51,11 +59,19 @@ const C02 = Vue.extend({
   template: "<ElButton>C02<br/><slot></slot></ElButton>"
 });
 
+const C03 = Vue.extend({
+  template: "<ElButton>C03 from template</ElButton>",
+  render(h) {
+    return h("ElButton", ["C03 from render()"]);
+  }
+});
+
 export default {
   data() {
     return {
       id01,
-      id02
+      id02,
+      id03
     };
   },
   mounted() {
@@ -67,6 +83,10 @@ export default {
 
     const c02 = new C02();
     c02.$mount(`#${id02}`);
+
+    new C03({
+      el: `#${id03}`
+    });
   },
   components: {}
 };

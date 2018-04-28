@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li>
-        如果一个组件不维护状态，
+        如果一个组件无须维护状态，
         没有生命周期函数，
         只是声明了 props，
         我们可以把这个组件声明为 functional 组件；
@@ -15,7 +15,7 @@
         通过设置组件选项 functional: true 来将一个组件标识为函数组件；
       </li>
       <li>
-        函数组件的 render 方法接收第二个参数：context，
+        函数组件的 render 方法接收第 2 个参数：context，
         作为没有组件实例的补充；
         <p>
           <MyComponent210601 :level="2">h2</MyComponent210601>
