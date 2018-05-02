@@ -1,14 +1,10 @@
 <template>
   <div>
-    <h1>1. .lazy</h1>
     <p>
-      <small>
-        <i>
-          默认情况下，v-model 绑定会在每次 input 事件触发数据更新，
-          我们可以通过 .lazy 修饰符，指定它在 change 事件触发数据更新，
-          而不再是 input 事件；
-        </i>
-      </small>
+      <i>
+        默认情况下，v-model 会监听 input 事件触发数据更新，
+        可以通过 .lazy 修饰符，指定它在 change 事件触发数据更新；
+      </i>
     </p>
     <p>
       <small>输入时实时更新：</small>

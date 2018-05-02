@@ -126,7 +126,7 @@ export default new Router({
       path: "/guide/form-input/basic",
       name: "guide-form-input-basic",
       component(resolve) {
-        require(["../doc/guide/09-form-input-binding/basic/index"], resolve);
+        require(["../doc/guide/09-form-input-binding/01-basic/index"], resolve);
       }
     },
     {
@@ -134,7 +134,7 @@ export default new Router({
       name: "guide-form-input-value-binding",
       component(resolve) {
         require([
-          "../doc/guide/09-form-input-binding/value-binding/index"
+          "../doc/guide/09-form-input-binding/02-value-binding/index"
         ], resolve);
       }
     },
@@ -142,7 +142,9 @@ export default new Router({
       path: "/guide/form-input/modifier",
       name: "guide-form-input-modifier",
       component(resolve) {
-        require(["../doc/guide/09-form-input-binding/modifier/index"], resolve);
+        require([
+          "../doc/guide/09-form-input-binding/03-modifiers/index"
+        ], resolve);
       }
     },
     {
