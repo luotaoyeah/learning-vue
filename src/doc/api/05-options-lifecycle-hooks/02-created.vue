@@ -21,10 +21,10 @@ export default {
     };
   },
   created() {
-    /* {"name":"tom"} */
-    console.log(JSON.stringify(this.$data));
-    /* undefined */
-    console.log(this.$el);
+    /* this.$data: {"name":"tom"} */
+    console.log("this.$data:", JSON.stringify(this.$data));
+    /* this.$el:undefined */
+    console.log("this.$el:", this.$el);
   },
   components: {}
 };

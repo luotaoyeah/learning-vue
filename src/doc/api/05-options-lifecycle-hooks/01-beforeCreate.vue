@@ -19,8 +19,8 @@ export default {
     };
   },
   beforeCreate() {
-    /* undefined */
-    console.log(this.$data);
+    /* this.$data: undefined */
+    console.log("this.$data:", this.$data);
   },
   components: {}
 };
