@@ -14,22 +14,28 @@
             v-model="name"
             style="width: 200px;"
           />
-          <ElButton>{{name}}</ElButton>
+          <span :id="id01">{{name}}</span>
         </p>
       </li>
     </ul>
   </div>
 </template>
 <script>
+import Vue from "vue";
+
+const id01 = Vue._.uniqueId("span_");
+
 export default {
   data() {
     return {
+      id01,
       name: "tom"
     };
   },
   beforeUpdate() {
     const vm = this;
-    alert(`name: ${vm.name}`);
+    const innerHTML = document.querySelector(`#${id01}`).innerHTML;
+    console.log(`name: ${vm.name}, innerHTML: ${innerHTML}`);
   },
   components: {}
 };
