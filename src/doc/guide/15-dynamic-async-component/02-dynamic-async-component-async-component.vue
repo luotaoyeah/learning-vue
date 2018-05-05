@@ -1,30 +1,25 @@
 <template>
   <div>
-    <h1>2. Async Components</h1>
-    <small>
-      <ul>
-        <li>
-          vue 支持将组件定义为工厂方法，
-          在真正需要渲染组件的时候，才通过工厂方法获取组件，
-        </li>
-        <li>
-          并且会缓存起来，避免重复加载；
-        </li>
-      </ul>
-    </small>
+    <ul>
+      <li>
+        vue 支持将组件定义为工厂方法，
+        在真正需要渲染组件的时候，才通过工厂方法获取组件，
+      </li>
+      <li>
+        并且会缓存起来，避免重复加载；
+      </li>
+    </ul>
     <div>
       <button @click="currentComponent01 = 'SyncComponent'">sync</button>
       <button @click="currentComponent01 = 'AsyncComponent01'">async</button>
       <component :is="currentComponent01"></component>
     </div>
-    <small>
-      <ul>
-        <li>
-          工厂方法可以不使用 vue 提供的 resolve 回调，
-          而是直接返回一个 Promise；
-        </li>
-      </ul>
-    </small>
+    <ul>
+      <li>
+        工厂方法可以不使用 vue 提供的 resolve 回调，
+        而是直接返回一个 Promise；
+      </li>
+    </ul>
     <div>
       <button @click="currentComponent02 = 'SyncComponent'">sync</button>
       <button @click="currentComponent02 = 'AsyncComponent02'">async</button>
