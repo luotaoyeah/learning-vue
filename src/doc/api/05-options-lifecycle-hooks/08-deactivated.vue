@@ -27,13 +27,17 @@ export default {
     C01: {
       template: "<ElTag>C01</ElTag>",
       deactivated() {
-        this.$alert("C01.deactivated()", "deactivated");
+        this.$alert("C01.deactivated()", "deactivated", {
+          showClose: false
+        });
       }
     },
     C02: {
       template: "<ElTag>C02</ElTag>",
       deactivated() {
-        this.$alert("C02.deactivated()", "deactivated");
+        this.$alert("C02.deactivated()", "deactivated", {
+          showClose: false
+        });
       }
     }
   }
