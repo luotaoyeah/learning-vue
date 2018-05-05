@@ -9,7 +9,7 @@
         <ul>
           <li>
             如果定义了 Vue.config.errorHandler() 函数，
-            错误传递到该函数；
+            错误会传递到该函数；
           </li>
           <li>
             如果组件继承链上有多个 errorCaptured() 函数，
