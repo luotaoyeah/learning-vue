@@ -30,9 +30,9 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
 };
 
 /*
-  Vue.config.errorHandler = (err, vm, info) => {
-    console.error(err);
-  };
+Vue.config.errorHandler = (e, vm, info) => {
+  console.log("Vue.config.errorHandler():", e.message);
+};
 */
 
 /*
