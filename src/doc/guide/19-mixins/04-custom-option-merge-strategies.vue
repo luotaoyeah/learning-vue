@@ -6,7 +6,7 @@
         会使用默认的合并策略，
         也就是组件的选项会覆盖 mixin 的选项；
         <p>
-          <MyComponent190401></MyComponent190401>
+          <C01></C01>
         </p>
       </li>
       <li>
@@ -14,7 +14,7 @@
         需要在 Vue.config.optionMergeStrategies 对象上添加一个方法，
         方法名就是自定义选项的名称；
         <p>
-          <MyComponent190402></MyComponent190402>
+          <C02></C02>
         </p>
       </li>
     </ul>
@@ -23,23 +23,7 @@
 <script>
 import Vue from "vue";
 
-const MyMixin01 = {
-  myOption01() {
-    console.log("MyMixin01.myOption01()");
-  }
-};
-
-Vue.component("MyComponent190401", {
-  template:
-    "<el-button @click='$options.myOption01'>MyComponent190401</el-button>",
-  myOption01() {
-    console.log("MyComponent190401.myOption01()");
-  },
-  mixins: [MyMixin01]
-});
-
 Vue.config.optionMergeStrategies.myOption02 = (toVal, fromValue) => {
-  console.log("optionMergeStrategies.myOption02:", toVal, fromValue);
   if (!toVal) {
     return fromValue;
   }
@@ -50,26 +34,38 @@ Vue.config.optionMergeStrategies.myOption02 = (toVal, fromValue) => {
   };
 };
 
-const MyMixin02 = {
-  myOption02() {
-    console.log("MyMixin02.myOption02()");
-  }
-};
-
-Vue.component("MyComponent190402", {
-  template:
-    "<el-button @click='$options.myOption02'>MyComponent190402</el-button>",
-  myOption02() {
-    console.log("MyComponent190402.myOption02()");
-  },
-  mixins: [MyMixin02]
-});
-
 export default {
   data() {
     return {};
   },
-  components: {}
+  components: {
+    C01: {
+      template: "<ElButton @click='$options.myOption01'>C01</ElButton>",
+      myOption01() {
+        console.log("C01.myOption01()");
+      },
+      mixins: [
+        {
+          myOption01() {
+            console.log("MyMixin01.myOption01()");
+          }
+        }
+      ]
+    },
+    C02: {
+      template: "<ElButton @click='$options.myOption02'>C02</ElButton>",
+      myOption02() {
+        console.log("C02.myOption02()");
+      },
+      mixins: [
+        {
+          myOption02() {
+            console.log("MyMixin02.myOption02()");
+          }
+        }
+      ]
+    }
+  }
 };
 </script>
 <style scoped>
