@@ -21,11 +21,11 @@
             update ：
             当绑定的元素组件的 VNode 更新时调用，
             此时，
-            不能保证子组件的 VNode 已经被更新了；
+            不能保证子孙组件的 VNode 已经被更新了；
           </li>
           <li>
             componentUpdated :
-            当绑定的元素组件已经其子组件的 VNode 都被更新时调用；
+            当绑定的元素组件以及其子孙组件的 VNode 都被更新时调用；
           </li>
           <li>
             unbind ：
