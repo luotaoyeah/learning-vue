@@ -1,13 +1,14 @@
 import Vue from "vue";
 import Router from "vue-router";
+import { ROUTES } from "./RouterConst";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: "/guide/declarative-rendering",
-      name: "DeclarativeRendering",
+      path: ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.PATH,
+      name: ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME,
       component(resolve) {
         require([
           "../doc/guide/01-introduction/declarative-rendering"
@@ -15,8 +16,8 @@ export default new Router({
       }
     },
     {
-      path: "/guide/conditional-and-loop",
-      name: "ConditionalAndLoop",
+      path: ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.PATH,
+      name: ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.NAME,
       component(resolve) {
         require(["../doc/guide/01-introduction/conditional-and-loop"], resolve);
       }
@@ -327,10 +328,10 @@ export default new Router({
       }
     },
     {
-      path: "/api/options-compisition",
-      name: "api-options-compisition",
+      path: ROUTES.API_OPTIONS_COMPOSITION.PATH,
+      name: ROUTES.API_OPTIONS_COMPOSITION.NAME,
       component(resolve) {
-        require(["../doc/api/07-options-compisition/index"], resolve);
+        require(["../doc/api/07-options-composition/index"], resolve);
       }
     },
     {

@@ -8,6 +8,7 @@
         <el-menu
           :collapse-transition="false"
           unique-opened
+          :default-active="defaultActive"
           style="border:none;"
         >
           <el-submenu index="1">
@@ -16,11 +17,11 @@
             </template>
             <el-submenu index="1-1">
               <template slot="title">Introduction</template>
-              <el-menu-item index="1-1-1">
-                <router-link :to="{name: 'DeclarativeRendering'}">Declarative Rendering</router-link>
+              <el-menu-item :index="ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME">
+                <router-link :to="{name: ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME}">Declarative Rendering</router-link>
               </el-menu-item>
-              <el-menu-item index="1-1-2">
-                <router-link :to="{name: 'ConditionalAndLoop'}">Conditionals And Loops</router-link>
+              <el-menu-item :index="ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.NAME">
+                <router-link :to="{name: ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.NAME}">Conditionals And Loops</router-link>
               </el-menu-item>
               <el-menu-item index="1-1-3">
                 <router-link :to="{name: 'HandingUserInput'}">Handing User Input</router-link>
@@ -176,8 +177,8 @@
               <el-menu-item index="3-3-4">
                 <router-link :to="{name: 'api-options-assets'}">Assets</router-link>
               </el-menu-item>
-              <el-menu-item index="3-3-5">
-                <router-link :to="{name: 'api-options-compisition'}">Composition</router-link>
+              <el-menu-item :index="ROUTES.API_OPTIONS_COMPOSITION.NAME">
+                <router-link :to="{name: ROUTES.API_OPTIONS_COMPOSITION.NAME}">Composition</router-link>
               </el-menu-item>
               <el-menu-item index="3-3-6">
                 <router-link :to="{name: 'api-options-misc'}">Misc</router-link>
@@ -222,7 +223,22 @@
 </template>
 
 <script>
+import { ROUTES } from "../router/RouterConst";
+
 export default {
+  data() {
+    return { ROUTES };
+  },
+  computed: {
+    defaultActive() {
+      const vm = this;
+      return (
+        vm._.find(ROUTES, item => item.NAME === vm.$route.name) || {
+          NAME: ""
+        }
+      ).NAME;
+    }
+  },
   components: {}
 };
 </script>
@@ -268,10 +284,15 @@ img {
   padding-right: 5px;
 }
 
+.el-menu-item.is-active {
+  background-color: #ecf5ff;
+}
+
 .el-menu-item a {
   text-decoration: none;
   display: block;
   width: 100%;
+  color: #303133;
 }
 
 .el-main {
