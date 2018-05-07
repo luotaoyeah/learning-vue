@@ -13,6 +13,9 @@
         依然可以通过 vm.$attrs 访问这些属性，
         并且可以通过 v-bind 将这些属性绑定到任意其他元素上；
       </li>
+      <li>
+        class 和 style 不会受 inheritAttrs 的影响；
+      </li>
     </ul>
     <p>
       <C01
