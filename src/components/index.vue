@@ -180,8 +180,8 @@
               <el-menu-item :index="ROUTES.API_OPTIONS_COMPOSITION.NAME">
                 <router-link :to="{name: ROUTES.API_OPTIONS_COMPOSITION.NAME}">Composition</router-link>
               </el-menu-item>
-              <el-menu-item index="3-3-6">
-                <router-link :to="{name: 'api-options-misc'}">Misc</router-link>
+              <el-menu-item :index="ROUTES.API_OPTIONS_MISC.NAME">
+                <router-link :to="{name: ROUTES.API_OPTIONS_MISC.NAME}">Misc</router-link>
               </el-menu-item>
             </el-submenu>
             <el-menu-item index="3-4">

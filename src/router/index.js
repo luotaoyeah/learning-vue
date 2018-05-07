@@ -335,8 +335,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/options-misc",
-      name: "api-options-misc",
+      path: ROUTES.API_OPTIONS_MISC.PATH,
+      name: ROUTES.API_OPTIONS_MISC.NAME,
       component(resolve) {
         require(["../doc/api/08-options-misc/index"], resolve);
       }

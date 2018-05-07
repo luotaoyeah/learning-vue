@@ -11,6 +11,10 @@ const ROUTES = {
   API_OPTIONS_COMPOSITION: {
     NAME: "API_OPTIONS_COMPOSITION",
     PATH: "/api/options-composition"
+  },
+  API_OPTIONS_MISC: {
+    NAME: "API_OPTIONS_MISC",
+    PATH: "/api/options-misc"
   }
 };
 export { ROUTES };

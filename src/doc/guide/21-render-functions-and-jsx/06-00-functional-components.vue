@@ -27,7 +27,9 @@
       <li>
         context 包含以下属性：
         <ul>
-          <li>props</li>
+          <li>
+            props
+          </li>
           <li>
             chlidren ：
             子节点数组；
