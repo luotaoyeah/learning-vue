@@ -19,11 +19,11 @@
       <li>
         可以通过 model 定义其他的 props 和 event；
         <p>
-          <C02 v-model="checked"></C02>
+          <C02 v-model="checked"/>
           <C02
             :my-value="checked"
             @my-input="checked = $event"
-          ></C02>
+          />
         </p>
       </li>
     </ul>
@@ -53,7 +53,7 @@ export default {
               }
             }
           },
-          [vm.value === "checked" ? "CHECKED" : "UNCHECKED"]
+          [vm.value === "checked" ? "YES" : "NO"]
         );
       },
       props: {
@@ -72,14 +72,14 @@ export default {
             on: {
               click() {
                 if (vm.myValue === "checked") {
-                  vm.$emit("myInput", "unchecked");
+                  vm.$emit("my-input", "unchecked");
                 } else {
-                  vm.$emit("myInput", "checked");
+                  vm.$emit("my-input", "checked");
                 }
               }
             }
           },
-          [vm.myValue === "checked" ? "CHECKED" : "UNCHECKED"]
+          [vm.myValue === "checked" ? "YES" : "NO"]
         );
       },
       props: {
@@ -90,7 +90,7 @@ export default {
       },
       model: {
         prop: "myValue",
-        event: "myInput"
+        event: "my-input"
       }
     }
   }
