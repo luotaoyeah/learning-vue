@@ -184,8 +184,8 @@
                 <router-link :to="{name: ROUTES.API_OPTIONS_MISC.NAME}">Misc</router-link>
               </el-menu-item>
             </el-submenu>
-            <el-menu-item index="3-4">
-              <router-link :to="{name: 'api-instance-properties'}">Instance Properties</router-link>
+            <el-menu-item :index="ROUTES.API_INSTANCE_PROPERTIES.NAME">
+              <router-link :to="{name: ROUTES.API_INSTANCE_PROPERTIES.NAME}">Instance Properties</router-link>
             </el-menu-item>
             <el-submenu index="3-5">
               <template slot="title">Instance Methods</template>

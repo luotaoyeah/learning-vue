@@ -342,8 +342,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/instance-properties",
-      name: "api-instance-properties",
+      path: ROUTES.API_INSTANCE_PROPERTIES.PATH,
+      name: ROUTES.API_INSTANCE_PROPERTIES.NAME,
       component(resolve) {
         require(["../doc/api/09-instance-properties/index"], resolve);
       }

@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li>
-        当前组件树的根组件；
+        根组件实例；
         <p>
           <ElButton @click="handleClick">vm.$root.$el</ElButton>
         </p>

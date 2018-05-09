@@ -15,6 +15,10 @@ const ROUTES = {
   API_OPTIONS_MISC: {
     NAME: "API_OPTIONS_MISC",
     PATH: "/api/options-misc"
+  },
+  API_INSTANCE_PROPERTIES: {
+    NAME: "API_INSTANCE_PROPERTIES",
+    PATH: "/api/instance-properties"
   }
 };
 export { ROUTES };
