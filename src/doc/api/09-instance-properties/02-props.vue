@@ -6,7 +6,7 @@
       </li>
       <li>
         vm.$props 的属性会被映射到组件实例上，
-        即如果 vm.$props 存在属性 x，
+        即如果 vm.$props.x 存在，
         则 vm.x === vm.$props.x；
         <p>
           <C01 x="tom"/>
