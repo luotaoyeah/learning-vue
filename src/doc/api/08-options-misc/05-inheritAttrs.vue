@@ -4,7 +4,7 @@
       <li>
         默认情况下，
         组件元素上的 attributes 如果没有被识别为 props，
-        则会被当做普通的 HTML attributes，
+        则会被当做普通的 HTML 属性，
         设置到组件根元素上，
         通过 inheritAttrs 属性可以禁用这一行为；
       </li>
