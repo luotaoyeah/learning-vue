@@ -2,11 +2,10 @@
   <div>
     <ul>
       <li>
-        描述：从数据对象删除属性；
+        描述：从数据对象删除动态属性；
         <small>
           因为 vue 无法检测到对象属性的添加和删除，
-          所以直接通过 delete 删除对象属性，
-          是无法删除双向绑定的；
+          所以无法直接通过 delete 删除数据对象的动态属性；
         </small>
       </li>
       <li>
@@ -18,11 +17,11 @@
       </li>
     </ul>
     <p>
-      <ElButton @click="handleClick01">删除 name 属性（delete）</ElButton>
+      <ElButton @click="handleClick01">delete this.person.name</ElButton>
       <ElInput v-model="person.name"/>
     </p>
     <p>
-      <ElButton @click="handleClick02">删除 age 属性（Vue.delete）</ElButton>
+      <ElButton @click="handleClick02">Vue.delete(this.person, 'age')</ElButton>
       <ElInput v-model="person.age"/>
     </p>
   </div>
