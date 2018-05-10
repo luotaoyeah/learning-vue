@@ -19,6 +19,10 @@ const ROUTES = {
   API_INSTANCE_PROPERTIES: {
     NAME: "API_INSTANCE_PROPERTIES",
     PATH: "/api/instance-properties"
+  },
+  API_INSTANCE_METHODS_DATA: {
+    NAME: "API_INSTANCE_METHODS_DATA",
+    PATH: "/api/instance-methods/data"
   }
 };
 export { ROUTES };

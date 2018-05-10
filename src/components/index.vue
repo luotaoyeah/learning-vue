@@ -189,8 +189,8 @@
             </el-menu-item>
             <el-submenu index="3-5">
               <template slot="title">Instance Methods</template>
-              <el-menu-item index="3-5-1">
-                <router-link :to="{name: 'api-instance-methods-data'}">Data</router-link>
+              <el-menu-item :index="ROUTES.API_INSTANCE_METHODS_DATA.NAME">
+                <router-link :to="{name: ROUTES.API_INSTANCE_METHODS_DATA.NAME}">Data</router-link>
               </el-menu-item>
               <el-menu-item index="3-5-2">
                 <router-link :to="{name: 'api-instance-methods-events'}">Events</router-link>

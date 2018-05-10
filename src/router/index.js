@@ -349,8 +349,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/instance-methods-data",
-      name: "api-instance-methods-data",
+      path: ROUTES.API_INSTANCE_METHODS_DATA.PATH,
+      name: ROUTES.API_INSTANCE_METHODS_DATA.NAME,
       component(resolve) {
         require(["../doc/api/10-instance-methods-data/index"], resolve);
       }
