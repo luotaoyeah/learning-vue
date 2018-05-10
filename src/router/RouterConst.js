@@ -8,6 +8,11 @@ const ROUTES = {
     NAME: "GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP",
     PATH: "/guide/conditional-and-loop"
   },
+  /* api/options */
+  API_OPTIONS_DATA: {
+    NAME: "API_OPTIONS_DATA",
+    PATH: "/api/options-data"
+  },
   API_OPTIONS_COMPOSITION: {
     NAME: "API_OPTIONS_COMPOSITION",
     PATH: "/api/options-composition"

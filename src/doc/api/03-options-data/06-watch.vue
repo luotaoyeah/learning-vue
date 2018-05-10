@@ -5,17 +5,17 @@
         类型：{ [ key: string ]: string | Function | Object | Array }
       </li>
       <li>
-        描述：监视数据变更；
+        描述：监听数据变更；
         <p>
           <small>
             在组件实例化的时候，
             vue 会使用 vm.$watch() 方法，
-            对 watch 中的所有属性进行监视；
+            对 watch 选项的所有属性进行监听；
           </small>
         </p>
         <ul>
           <li>
-            函数第一个参数为新值，
+            监听函数第一个参数为新值，
             第二个参数为旧值；
             <p>
               <ElInputNumber v-model="a"></ElInputNumber>
@@ -23,30 +23,29 @@
           </li>
           <li>
             如果属性值为字符串，
-            表示方法名；
+            表示监听函数的名称；
             <p>
               <ElInputNumber v-model="b"></ElInputNumber>
             </p>
           </li>
           <li>
             如果属性值为对象，
-            则该对象的 handler 方法表示监视回调函数，
+            则该对象的 handler 方法表示监听函数，
             其他属性为配置属性；
             <p>
               <ElInputNumber v-model="e"></ElInputNumber>
             </p>
           </li>
           <li>
-            属性值可以是数组，
-            数据元素可以是字符串或者函数，
-            表示多个回调函数；
+            如果属性值数组，
+            每个元素代表一个监听函数；
             <p>
               <ElInputNumber v-model="c"></ElInputNumber>
             </p>
           </li>
           <li>
             属性名可以是一个属性路径字符串，
-            表示监视某个属性的子属性；
+            表示监听某个属性的子属性；
             <p>
               <ElInputNumber v-model="f.g"></ElInputNumber>
             </p>

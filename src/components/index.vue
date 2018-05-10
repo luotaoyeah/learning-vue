@@ -165,8 +165,8 @@
             </el-menu-item>
             <el-submenu index="3-3">
               <template slot="title">Options</template>
-              <el-menu-item index="3-3-1">
-                <router-link :to="{name: 'api-options-data'}">Data</router-link>
+              <el-menu-item :index="ROUTES.API_OPTIONS_DATA.NAME">
+                <router-link :to="{name: ROUTES.API_OPTIONS_DATA.NAME}">Data</router-link>
               </el-menu-item>
               <el-menu-item index="3-3-2">
                 <router-link :to="{name: 'api-options-dom'}">DOM</router-link>

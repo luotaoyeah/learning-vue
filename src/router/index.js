@@ -300,8 +300,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/options-data",
-      name: "api-options-data",
+      path: ROUTES.API_OPTIONS_DATA.PATH,
+      name: ROUTES.API_OPTIONS_DATA.NAME,
       component(resolve) {
         require(["../doc/api/03-options-data/index"], resolve);
       }
