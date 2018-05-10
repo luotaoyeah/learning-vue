@@ -14,6 +14,9 @@
           />
         </p>
       </li>
+      <li>
+        只读；
+      </li>
     </ul>
   </div>
 </template>
