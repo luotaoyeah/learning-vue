@@ -195,8 +195,8 @@
               <el-menu-item :index="ROUTES.API_INSTANCE_METHODS_EVENTS.NAME">
                 <router-link :to="{name: ROUTES.API_INSTANCE_METHODS_EVENTS.NAME}">Events</router-link>
               </el-menu-item>
-              <el-menu-item index="3-5-3">
-                <router-link :to="{name: 'api-instance-methods-lifecycle'}">Lifecycle</router-link>
+              <el-menu-item :index="ROUTES.API_INSTANCE_METHODS_LIFECYCLE.NAME">
+                <router-link :to="{name: ROUTES.API_INSTANCE_METHODS_LIFECYCLE.NAME}">Lifecycle</router-link>
               </el-menu-item>
             </el-submenu>
             <el-menu-item index="3-6">

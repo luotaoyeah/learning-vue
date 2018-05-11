@@ -82,12 +82,12 @@ export default {
       el: `#${id01}`
     });
 
-    /* 指定了 el 选项，自动进行编译 */
+    /* 指定了 el 选项，自动进行挂载 */
     const c02 = new C01({
       el: document.querySelector(`#${id02}`)
     });
 
-    /* 未指定 el 选项，手动调用 $mount()  方法进行编译 */
+    /* 未指定 el 选项，手动调用 $mount()  方法进行挂载 */
     const c03 = new C01();
     c03.$mount(`#${id03}`);
 

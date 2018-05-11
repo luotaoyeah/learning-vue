@@ -32,6 +32,10 @@ const ROUTES = {
   API_INSTANCE_METHODS_EVENTS: {
     NAME: "API_INSTANCE_METHODS_EVENTS",
     PATH: "/api/instance-methods-events"
+  },
+  API_INSTANCE_METHODS_LIFECYCLE: {
+    NAME: "API_INSTANCE_METHODS_LIFECYCLE",
+    PATH: "/api/instance-methods-lifecycle"
   }
 };
 export { ROUTES };

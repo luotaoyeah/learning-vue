@@ -363,8 +363,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/instance-methods-lifecycle",
-      name: "api-instance-methods-lifecycle",
+      path: ROUTES.API_INSTANCE_METHODS_LIFECYCLE.PATH,
+      name: ROUTES.API_INSTANCE_METHODS_LIFECYCLE.NAME,
       component(resolve) {
         require(["../doc/api/12-instance-methods-lifecycle/index"], resolve);
       }
