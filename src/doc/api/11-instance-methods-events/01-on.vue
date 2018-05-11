@@ -4,6 +4,9 @@
       <li>
         监听组件触发的事件；
         <p>
+          <small>谁调用 $on，就监听谁的事件；</small>
+        </p>
+        <p>
           <C01
             @foo-click="handleFooClick"
             ref="refC01"
@@ -61,6 +64,7 @@ export default {
     C02: {
       template: "<ElButton @click='handleClick'>C02</ElButton>",
       created() {
+        /* 同时监听多个事件 */
         this.$on(["foo-click", "bar-click"], (name, age) => {
           console.log(name, age);
         });

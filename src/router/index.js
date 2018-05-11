@@ -356,8 +356,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/instance-methods-events",
-      name: "api-instance-methods-events",
+      path: ROUTES.API_INSTANCE_METHODS_EVENTS.PATH,
+      name: ROUTES.API_INSTANCE_METHODS_EVENTS.NAME,
       component(resolve) {
         require(["../doc/api/11-instance-methods-events/index"], resolve);
       }
