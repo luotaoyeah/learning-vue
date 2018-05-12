@@ -6,13 +6,15 @@
       </li>
       <li>
         用法跟 slot-scope 一样，但是只能用在 template 元素上面；
-        <C01 :items="items">
-          <template scope="{ item }">
-            <p>
-              <ElButton>{{item.id}}. {{item.text}}</ElButton>
-            </p>
-          </template>
-        </C01>
+        <!--
+                <C01 :items="items">
+                  <template scope="{ item }">
+                    <p>
+                      <ElButton>{{item.id}}. {{item.text}}</ElButton>
+                    </p>
+                  </template>
+                </C01>
+        -->
       </li>
     </ul>
   </div>
