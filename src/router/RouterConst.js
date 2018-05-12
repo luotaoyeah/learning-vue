@@ -36,6 +36,10 @@ const ROUTES = {
   API_INSTANCE_METHODS_LIFECYCLE: {
     NAME: "API_INSTANCE_METHODS_LIFECYCLE",
     PATH: "/api/instance-methods-lifecycle"
+  },
+  API_SPECIAL_ATTRIBUTES: {
+    NAME: "API_SPECIAL_ATTRIBUTES",
+    PATH: "/api/special-attributes"
   }
 };
 export { ROUTES };

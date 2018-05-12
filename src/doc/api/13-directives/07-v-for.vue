@@ -3,8 +3,7 @@
     <ul>
       <li>表达式类型：Array | Object | number | string</li>
       <li>
-        描述：
-        循环渲染元素；
+        描述：循环渲染元素；
         <ul>
           <li>
             循环数据支持四种类型；
@@ -44,9 +43,8 @@
             </ul>
           </li>
           <li>
-            可以获取循环索引（Array，number，string）和属性名称（Object）；
-            如果是 Object，
-            可以同时获取 key 和 index；
+            可以获取循环索引（Array，number，string）和属性名称（Object）；如果是 Object，可以同时获取 key 和
+            index；
             <ul>
               <li>
                 <ElTag

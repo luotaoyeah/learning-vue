@@ -377,8 +377,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/special-attributes",
-      name: "api-special-attributes",
+      path: ROUTES.API_SPECIAL_ATTRIBUTES.PATH,
+      name: ROUTES.API_SPECIAL_ATTRIBUTES.NAME,
       component(resolve) {
         require(["../doc/api/14-special-attributes/index"], resolve);
       }
