@@ -2,9 +2,7 @@
   <div>
     <ul>
       <li>
-        使用声明式的方式，
-        扩展组件；
-        类似 mixins；
+        使用声明式的方式扩展组件；类似 mixins；
       </li>
       <li>
         对应命令式的方式为 Vue.extend()；
