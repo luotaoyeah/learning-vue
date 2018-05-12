@@ -319,8 +319,8 @@
                 Special Attributes
               </router-link>
             </el-menu-item>
-            <el-menu-item index="3-8">
-              <router-link :to="{name: 'api-builtin-components'}">
+            <el-menu-item :index="ROUTES.API_BUILTIN_COMPONENTS.NAME">
+              <router-link :to="{name: ROUTES.API_BUILTIN_COMPONENTS.NAME}">
                 Built-in Components
               </router-link>
             </el-menu-item>

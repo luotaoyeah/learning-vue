@@ -1,4 +1,3 @@
-/* TODO */
 const ROUTES = {
   GUIDE_INTRODUCTION_DECLARATIVE_RENDERING: {
     NAME: "GUIDE_INTRODUCTION_DECLARATIVE_RENDERING",
@@ -40,6 +39,10 @@ const ROUTES = {
   API_SPECIAL_ATTRIBUTES: {
     NAME: "API_SPECIAL_ATTRIBUTES",
     PATH: "/api/special-attributes"
+  },
+  API_BUILTIN_COMPONENTS: {
+    NAME: "API_BUILTIN_COMPONENTS",
+    PATH: "/api/builtin-components"
   }
 };
 export { ROUTES };

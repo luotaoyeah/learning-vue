@@ -384,8 +384,8 @@ export default new Router({
       }
     },
     {
-      path: "/api/builtin-components",
-      name: "api-builtin-components",
+      path: ROUTES.API_BUILTIN_COMPONENTS.PATH,
+      name: ROUTES.API_BUILTIN_COMPONENTS.NAME,
       component(resolve) {
         require(["../doc/api/15-builtin-components/index"], resolve);
       }
