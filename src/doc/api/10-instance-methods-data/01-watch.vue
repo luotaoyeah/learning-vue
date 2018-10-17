@@ -48,6 +48,8 @@
   </div>
 </template>
 <script>
+import _ from "lodash";
+
 export default {
   data() {
     return {
@@ -104,7 +106,7 @@ export default {
       if (!vm.unwatch) {
         return;
       }
-      if (vm._.isFunction(vm.unwatch)) {
+      if (_.isFunction(vm.unwatch)) {
         vm.unwatch();
       }
     }

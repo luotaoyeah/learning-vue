@@ -26,6 +26,8 @@
   </div>
 </template>
 <script>
+import _ from "lodash";
+
 export default {
   data() {
     return {
@@ -59,7 +61,7 @@ export default {
             [vm.$slots.button || "C01"]
           ),
           h("ul", [
-            vm._.map(vm.items, item =>
+            _.map(vm.items, item =>
               h("li", [
                 vm.$scopedSlots.li ? vm.$scopedSlots.li({ item }) : item.text
               ])

@@ -1,11 +1,15 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import _ from "lodash";
-import Vue from "vue";
+import Vue, { CreateElement } from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-import App from "./components/index";
+import App from "./components/index.vue";
 import router from "./router";
+import _, { LoDashStatic } from "lodash";
+
+declare module "vue/types/vue" {
+  interface VueConstructor {
+    _: LoDashStatic;
+  }
+}
 
 Vue._ = _;
 Object.defineProperties(Vue.prototype, {
@@ -55,13 +59,15 @@ Vue.use(ElementUI, { size: "small" });
 
 /* eslint-disable no-new */
 new Vue({
-  el: "#app",
+  // @ts-ignore:
   router,
   components: { App },
-  template: "<App/>",
+  render(h: CreateElement) {
+    return h(App);
+  },
   data() {
     return {
       message: "hello world"
     };
   }
-});
+}).$mount("#app");

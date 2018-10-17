@@ -2,6 +2,11 @@
   <div>
     <ul>
       <li>
+        从 vue@2.x 开始，代码重用和抽象的主要方式是组件（component），
+        但是在一些特殊的场合，比如：需要直接访问较底层的 DOM 元素时，
+        就可以使用指令（directive）；
+      </li>
+      <li>
         vue 自带一些指令：
         <ul>
           <li>v-model</li>
@@ -28,7 +33,7 @@
             </p>
           </li>
           <li>
-            使用 directives 注册本地指令；
+            使用组件选项 directives 注册本地指令；
             <p>
               <input
                 type="text"

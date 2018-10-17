@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{message}}
+    Vue.config.silent
     <ul>
       <li>类型：boolean</li>
       <li>默认：false</li>

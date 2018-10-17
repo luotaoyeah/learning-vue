@@ -339,6 +339,7 @@
 </template>
 
 <script>
+import _ from "lodash";
 import { ROUTES } from "../router/RouterConst";
 
 export default {
@@ -349,7 +350,7 @@ export default {
     defaultActive() {
       const vm = this;
       return (
-        vm._.find(ROUTES, item => item.NAME === vm.$route.name) || {
+        _.find(ROUTES, item => item.NAME === vm.$route.name) || {
           NAME: ""
         }
       ).NAME;

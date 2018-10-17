@@ -24,6 +24,7 @@
   </div>
 </template>
 <script>
+import _ from "lodash";
 import Vue from "vue";
 
 const id02 = Vue._.uniqueId("C");
@@ -45,7 +46,7 @@ export default {
   data() {
     const vm = this;
     return {
-      id01: vm._.uniqueId("span_"),
+      id01: _.uniqueId("span_"),
       id02,
       id03
     };
