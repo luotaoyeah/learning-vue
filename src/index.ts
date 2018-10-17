@@ -4,7 +4,11 @@ import "element-ui/lib/theme-chalk/index.css";
 import App from "./components/index.vue";
 import router from "./router";
 import _, { LoDashStatic } from "lodash";
+import "vue-router/types/vue";
 
+/*
+ * 将 lodash 添加为 vue 的全局属性；
+ */
 declare module "vue/types/vue" {
   interface VueConstructor {
     _: LoDashStatic;
@@ -21,9 +25,7 @@ Object.defineProperties(Vue.prototype, {
 });
 
 Vue.config.silent = false;
-
 Vue.config.devtools = true;
-
 Vue.config.optionMergeStrategies["my-option-01"] = (
   parentVal,
   childVal,
@@ -32,34 +34,24 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
 ) => {
   return `${parentVal}-${childVal}`;
 };
-
 /*
 Vue.config.errorHandler = (e, vm, info) => {
   console.log("Vue.config.errorHandler():", e.message);
 };
 */
-
 /*
   Vue.config.warnHandler = (msg, vm, trace) => {
     console.error(msg, trace);
   };
 */
-
 Vue.config.ignoredElements = ["my-ignored-element"];
-
-Vue.config.keyCodes = {
-  "lucky-eight": 56
-};
-
+Vue.config.keyCodes = { "lucky-eight": 56 };
 Vue.config.performance = false;
-
 Vue.config.productionTip = true;
 
 Vue.use(ElementUI, { size: "small" });
 
-/* eslint-disable no-new */
 new Vue({
-  // @ts-ignore:
   router,
   components: { App },
   render(h: CreateElement) {
