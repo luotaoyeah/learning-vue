@@ -4,7 +4,7 @@ import "element-ui/lib/theme-chalk/index.css";
 import App from "./components/index.vue";
 import router from "./router";
 import _, { LoDashStatic } from "lodash";
-import "vue-router/types/vue";
+import "vue-router";
 
 /*
  * 将 lodash 添加为 vue 的全局属性；
@@ -35,9 +35,9 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
   return `${parentVal}-${childVal}`;
 };
 /*
-Vue.config.errorHandler = (e, vm, info) => {
-  console.log("Vue.config.errorHandler():", e.message);
-};
+  Vue.config.errorHandler = (e, vm, info) => {
+    console.log("Vue.config.errorHandler():", e.message);
+  };
 */
 /*
   Vue.config.warnHandler = (msg, vm, trace) => {

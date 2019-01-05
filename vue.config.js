@@ -11,6 +11,6 @@ module.exports = {
       .add("./src/index.ts");
   },
   devServer: {
-    port: 4000
+    port: 3000
   }
 };
