@@ -1,11 +1,6 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="Basics">
-      <Basics></Basics>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="Basics"> <Basics></Basics> </el-tab-pane>
     <el-tab-pane label="Nodes，Trees，and the Virtual DOM">
       <NodesTreesAndVirtualDOM></NodesTreesAndVirtualDOM>
     </el-tab-pane>
@@ -15,9 +10,7 @@
     <el-tab-pane label="Replacing Template Features with Plain JavaScript">
       <ReplacingTemplateWithJs></ReplacingTemplateWithJs>
     </el-tab-pane>
-    <el-tab-pane label="JSX">
-      <JSX></JSX>
-    </el-tab-pane>
+    <el-tab-pane label="JSX"> <JSX></JSX> </el-tab-pane>
     <el-tab-pane label="Functional Components">
       <FunctionalComponents></FunctionalComponents>
     </el-tab-pane>
@@ -50,5 +43,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

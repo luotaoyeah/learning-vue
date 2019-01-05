@@ -1,29 +1,19 @@
 <template>
   <div>
     <ul>
+      <li>定义 v-model 语法糖所使用的 props 和 event；</li>
       <li>
-        定义 v-model 语法糖所使用的 props 和 event；
-      </li>
-      <li>
-        默认情况下，
-        v-model 使用的 props 是 value，
-        使用的 event 是 input；
+        默认情况下， v-model 使用的 props 是 value， 使用的 event 是 input；
         <p>
-          <C01 v-model="checked"/>
-          <C01
-            :value="checked"
-            @input="checked = $event"
-          />
+          <C01 v-model="checked" />
+          <C01 :value="checked" @input="checked = $event" />
         </p>
       </li>
       <li>
         可以通过 model 定义其他的 props 和 event；
         <p>
-          <C02 v-model="checked"/>
-          <C02
-            :my-value="checked"
-            @my-input="checked = $event"
-          />
+          <C02 v-model="checked" />
+          <C02 :my-value="checked" @my-input="checked = $event" />
         </p>
       </li>
     </ul>
@@ -96,5 +86,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

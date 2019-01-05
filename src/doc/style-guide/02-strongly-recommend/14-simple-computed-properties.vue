@@ -1,8 +1,7 @@
 <template>
   <div>
     <p>
-      计算属性不能过于复杂，
-      应该尽可能拆分成小的简单的属性；
+      计算属性不能过于复杂， 应该尽可能拆分成小的简单的属性；
       这样有以下几个好处：
     </p>
     <ul>
@@ -19,5 +18,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

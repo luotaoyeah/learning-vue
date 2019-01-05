@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        描述：获取或者注册全局组件；
-      </li>
+      <li>描述：获取或者注册全局组件；</li>
       <li>
         参数：
         <ul>
@@ -12,15 +10,9 @@
         </ul>
       </li>
     </ul>
-    <p>
-      <component :is="id02"></component>
-    </p>
-    <p>
-      <component :is="id03"></component>
-    </p>
-    <p>
-      <span :id="id01"></span>
-    </p>
+    <p><component :is="id02"></component></p>
+    <p><component :is="id03"></component></p>
+    <p><span :id="id01"></span></p>
   </div>
 </template>
 <script>
@@ -64,5 +56,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

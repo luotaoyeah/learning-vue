@@ -4,12 +4,14 @@
       <li>
         等价于 Vue.delete()；
         <p>
-          <ElTag>{{person.name}}</ElTag>
+          <ElTag>{{ person.name }}</ElTag>
           <ElButton @click="handleClick01">delete this.person.name</ElButton>
         </p>
         <p>
-          <ElTag>{{person.age}}</ElTag>
-          <ElButton @click="handleCLick02">this.$delete(this.person, 'age')</ElButton>
+          <ElTag>{{ person.age }}</ElTag>
+          <ElButton @click="handleCLick02"
+            >this.$delete(this.person, 'age')</ElButton
+          >
         </p>
       </li>
     </ul>
@@ -36,5 +38,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

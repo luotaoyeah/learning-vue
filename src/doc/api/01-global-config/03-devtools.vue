@@ -2,7 +2,8 @@
   <div>
     <ul>
       <li>类型：boolean</li>
-      <li>默认：
+      <li>
+        默认：
         <ul>
           <li>开发环境：true</li>
           <li>生产环境：false</li>
@@ -13,10 +14,7 @@
         <span>
           <a href="https://github.com/vuejs/vue-devtools">vue-devtools</a>
         </span>
-        ）支持；
-        <img
-          :src="Picture01"
-        >
+        ）支持； <img :src="Picture01" />
       </li>
     </ul>
   </div>
@@ -31,5 +29,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

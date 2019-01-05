@@ -6,10 +6,10 @@
       <ul>
         <li>注册组件时，必须给组件一个名字；</li>
         <li>
-          使用 Vue.component() 注册全局组件时，
-          第一个参数就是组件的名字；
+          使用 Vue.component() 注册全局组件时， 第一个参数就是组件的名字；
         </li>
-        <li>如果组件直接在 DOM 里面使用，组件名称应该符合 W3C 的规范：
+        <li>
+          如果组件直接在 DOM 里面使用，组件名称应该符合 W3C 的规范：
           <ul>
             <li>全部是小写字母；</li>
             <li>必须包含短横线（连字符）；</li>
@@ -27,13 +27,10 @@
             <li>PascalCase</li>
           </ul>
         </li>
+        <li>使用 kebab-case 定义的组件， 在使用时也必须使用 kebab-case；</li>
         <li>
-          使用 kebab-case 定义的组件，
-          在使用时也必须使用 kebab-case；
-        </li>
-        <li>
-          使用 PascalCase 定义的组件，
-          在使用时，可以使用 kebab-case，也可以使用 PascalCase；
+          使用 PascalCase 定义的组件， 在使用时，可以使用 kebab-case，也可以使用
+          PascalCase；
         </li>
         <li>在 DOM 模板里面，只能使用 kebab-case；</li>
       </ul>
@@ -64,5 +61,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -3,7 +3,8 @@
     <p>
       <small>
         <i>
-          指令是以 v- 开头的特殊属性；指令的属性值只能是一个表达式（除了 v-for）；指令的作用是根据其表达式的值，动态的修改 DOM 的属性和行为；
+          指令是以 v- 开头的特殊属性；指令的属性值只能是一个表达式（除了
+          v-for）；指令的作用是根据其表达式的值，动态的修改 DOM 的属性和行为；
         </i>
       </small>
     </p>
@@ -25,5 +26,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

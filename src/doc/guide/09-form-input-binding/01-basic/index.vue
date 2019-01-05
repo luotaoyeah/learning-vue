@@ -4,9 +4,9 @@
     <p>
       <small>
         <i>
-          vue 提供了 v-model 指令用于表单元素的双向数据绑定；
-          v-model 会根据表单元素的类型选择正确的方式更新数据，
-          实际上 v-model 是'响应表单事件，并更新表单数据'这一操作的语法糖；
+          vue 提供了 v-model 指令用于表单元素的双向数据绑定； v-model
+          会根据表单元素的类型选择正确的方式更新数据， 实际上 v-model
+          是'响应表单事件，并更新表单数据'这一操作的语法糖；
         </i>
       </small>
     </p>
@@ -44,5 +44,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

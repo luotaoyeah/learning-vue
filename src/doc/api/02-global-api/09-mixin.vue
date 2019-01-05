@@ -4,15 +4,11 @@
       <li>
         描述：全局应用一个 mixin；
         <ul>
-          <li>
-            在这之后创建的组件都会受影响；
-          </li>
+          <li>在这之后创建的组件都会受影响；</li>
         </ul>
         <p>
           <small>
-            一般不直接使用，
-            而是在插件中使用，
-            用来往组件注入一些自定义行为；
+            一般不直接使用， 而是在插件中使用， 用来往组件注入一些自定义行为；
           </small>
         </p>
       </li>
@@ -23,9 +19,7 @@
         </ul>
       </li>
     </ul>
-    <p>
-      <C20180427153537/>
-    </p>
+    <p><C20180427153537 /></p>
   </div>
 </template>
 <script>
@@ -54,5 +48,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

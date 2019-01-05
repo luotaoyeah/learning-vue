@@ -13,11 +13,7 @@
       </small>
     </p>
     <ul>
-      <li
-        v-for="item in items"
-        :key="item"
-      >{{item}}
-      </li>
+      <li v-for="item in items" :key="item">{{ item }}</li>
     </ul>
     <button @click="handle01">set with index</button>
     <button @click="handle02">modify the length</button>
@@ -73,5 +69,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

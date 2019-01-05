@@ -4,7 +4,7 @@
       <li>
         标识当前 vue 实例是否是服务端渲染的；
         <p>
-          <ElTag>$isServer: {{$isServer}}</ElTag>
+          <ElTag>$isServer: {{ $isServer }}</ElTag>
         </p>
       </li>
     </ul>
@@ -18,5 +18,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

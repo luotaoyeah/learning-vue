@@ -2,11 +2,8 @@
   <div>
     <ul>
       <li>
-        监听组件触发的事件一次，
-        监听函数触发一次之后会被移除；
-        <p>
-          <C01/>
-        </p>
+        监听组件触发的事件一次， 监听函数触发一次之后会被移除；
+        <p><C01 /></p>
       </li>
     </ul>
   </div>
@@ -37,5 +34,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

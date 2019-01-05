@@ -2,16 +2,15 @@
   <div>
     <ul>
       <li>
-        将一个元素声明为 scoped slot，表达式的格式类似函数参数的格式，可以使用函数参数解构；
+        将一个元素声明为 scoped
+        slot，表达式的格式类似函数参数的格式，可以使用函数参数解构；
         <C01 :items="items">
           <p slot-scope="{ item }">
-            <ElTag>{{item.id}}. {{item.text}}</ElTag>
+            <ElTag>{{ item.id }}. {{ item.text }}</ElTag>
           </p>
         </C01>
       </li>
-      <li>
-        不支持动态绑定；
-      </li>
+      <li>不支持动态绑定；</li>
     </ul>
   </div>
 </template>
@@ -48,5 +47,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

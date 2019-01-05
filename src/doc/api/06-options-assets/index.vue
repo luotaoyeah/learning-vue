@@ -1,17 +1,8 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="directives">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="filters">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="components">
-      <C03></C03>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="directives"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="filters"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="components"> <C03></C03> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -30,5 +21,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

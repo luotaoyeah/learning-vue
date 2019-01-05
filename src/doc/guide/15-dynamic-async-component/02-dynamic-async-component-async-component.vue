@@ -5,9 +5,7 @@
         vue 支持将组件定义为工厂方法，
         在真正需要渲染组件的时候，才通过工厂方法获取组件，
       </li>
-      <li>
-        并且会缓存起来，避免重复加载；
-      </li>
+      <li>并且会缓存起来，避免重复加载；</li>
     </ul>
     <div>
       <button @click="currentComponent01 = 'SyncComponent'">sync</button>
@@ -16,8 +14,7 @@
     </div>
     <ul>
       <li>
-        工厂方法可以不使用 vue 提供的 resolve 回调，
-        而是直接返回一个 Promise；
+        工厂方法可以不使用 vue 提供的 resolve 回调， 而是直接返回一个 Promise；
       </li>
     </ul>
     <div>
@@ -90,5 +87,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

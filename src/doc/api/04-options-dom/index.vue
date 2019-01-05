@@ -1,20 +1,9 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="el">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="template">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="render">
-      <C03></C03>
-    </el-tab-pane>
-    <el-tab-pane label="renderError">
-      <C04></C04>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="el"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="template"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="render"> <C03></C03> </el-tab-pane>
+    <el-tab-pane label="renderError"> <C04></C04> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -35,5 +24,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

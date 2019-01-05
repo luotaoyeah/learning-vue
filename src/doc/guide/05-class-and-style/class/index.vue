@@ -3,16 +3,13 @@
     <p>
       <small>
         <i>
-          class 和 style 都是普通的 HTML 属性，可以使用 v-bind 来绑定；vue 对它们提供了增强，可以绑定对象和数组；
+          class 和 style 都是普通的 HTML 属性，可以使用 v-bind 来绑定；vue
+          对它们提供了增强，可以绑定对象和数组；
         </i>
       </small>
     </p>
     <p>
-      <small>
-        <i>
-          :class 可以绑定一个 data 属性，属性值就是类名；
-        </i>
-      </small>
+      <small> <i> :class 可以绑定一个 data 属性，属性值就是类名； </i> </small>
     </p>
     <p :class="class00">:class="class00"</p>
     <ClassObject></ClassObject>
@@ -38,5 +35,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

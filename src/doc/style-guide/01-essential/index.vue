@@ -1,29 +1,12 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="Muli-word component names">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="Component data">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="Prop Definitions">
-      <C03></C03>
-    </el-tab-pane>
-    <el-tab-pane label="Keyed v-for">
-      <C04></C04>
-    </el-tab-pane>
-    <el-tab-pane label="Avoid v-if with v-for">
-      <C05></C05>
-    </el-tab-pane>
-    <el-tab-pane label="Component style scoping">
-      <C06></C06>
-    </el-tab-pane>
-    <el-tab-pane label="Private property names">
-      <C07></C07>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="Muli-word component names"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="Component data"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="Prop Definitions"> <C03></C03> </el-tab-pane>
+    <el-tab-pane label="Keyed v-for"> <C04></C04> </el-tab-pane>
+    <el-tab-pane label="Avoid v-if with v-for"> <C05></C05> </el-tab-pane>
+    <el-tab-pane label="Component style scoping"> <C06></C06> </el-tab-pane>
+    <el-tab-pane label="Private property names"> <C07></C07> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -50,5 +33,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

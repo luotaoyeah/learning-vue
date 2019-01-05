@@ -8,17 +8,10 @@
         描述：定义需要被 vue 忽略的自定义元素；
         <ul>
           <li>
-            默认情况下，
-            如果一个自定义元素未在 vue 中定义，
-            vue 会报错；
-            <img
-              :src="Picture01"
-            >
+            默认情况下， 如果一个自定义元素未在 vue 中定义， vue 会报错；
+            <img :src="Picture01" />
           </li>
-          <li>
-            通过该配置声明后，
-            vue 会忽略该自定义元素；
-          </li>
+          <li>通过该配置声明后， vue 会忽略该自定义元素；</li>
         </ul>
       </li>
     </ul>
@@ -34,5 +27,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

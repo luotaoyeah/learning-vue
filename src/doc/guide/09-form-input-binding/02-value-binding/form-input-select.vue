@@ -2,24 +2,14 @@
   <div>
     <h1>3. Select Options</h1>
     <p>
-      <small>
-        <i>
-          下拉列表绑定到对象；
-        </i>
-      </small>
+      <small> <i> 下拉列表绑定到对象； </i> </small>
     </p>
-    <select
-      v-model="selected"
-    >
-      <option
-        value=""
-        disabled
-      >请选择：
-      </option>
+    <select v-model="selected">
+      <option value="" disabled>请选择： </option>
       <option :value="tom">tom</option>
       <option :value="cat">cat</option>
     </select>
-    <p>Selected: {{selected}}</p>
+    <p>Selected: {{ selected }}</p>
   </div>
 </template>
 <script>
@@ -39,5 +29,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -16,10 +16,8 @@
           <MyComponent ref="myComponentRef01"></MyComponent>
         </li>
         <li>
-          使用 $on 监听子组件的事件，需要用子组件的实例对象来调用 $on 方法；
-          即
-          <i>'监听谁的事件，就由谁来调用 $on 方法'</i>
-          ；
+          使用 $on 监听子组件的事件，需要用子组件的实例对象来调用 $on 方法； 即
+          <i>'监听谁的事件，就由谁来调用 $on 方法'</i> ；
         </li>
       </ul>
     </small>
@@ -82,5 +80,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

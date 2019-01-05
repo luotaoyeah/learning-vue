@@ -1,14 +1,9 @@
 <template>
   <div>
     <ul>
+      <li>组件实例创建完成；</li>
       <li>
-        组件实例创建完成；
-      </li>
-      <li>
-        此时，
-        所有的组件选项全部处理完成，
-        但是尚未挂载，
-        且 vm.$el 尚未处理；
+        此时， 所有的组件选项全部处理完成， 但是尚未挂载， 且 vm.$el 尚未处理；
       </li>
     </ul>
   </div>
@@ -29,5 +24,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

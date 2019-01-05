@@ -5,48 +5,28 @@
       <li>
         可以通过 this.$slots 来访问和定义 slots；
         <MyComponent210405>
-          <span slot="header">head</span>
-          content
+          <span slot="header">head</span> content
           <span slot="footer">foot</span>
         </MyComponent210405>
       </li>
       <li>
         可以通过 this.$scopedSlots 来访问和定义 scoped slots；
-        <MyComponent210406
-          :title="'i am title.'"
-          :message="'hello.'"
-        >
-          <span
-            slot="header"
-            slot-scope="{title}"
-          >{{title}}
-          </span>
-          <span
-            slot="content"
-            slot-scope="{message}"
-          >{{message}}
-          </span>
+        <MyComponent210406 :title="'i am title.'" :message="'hello.'">
+          <span slot="header" slot-scope="{ title }">{{ title }} </span>
+          <span slot="content" slot-scope="{ message }">{{ message }} </span>
           <span>foot.</span>
         </MyComponent210406>
       </li>
       <li>
-        可以通过属性对象的 scopedSlots 属性，
-        将 scoped slots 的 scope 对象，
+        可以通过属性对象的 scopedSlots 属性， 将 scoped slots 的 scope 对象，
         传递到子组件的 slots 中去；
-        <MyComponent210408>
-        </MyComponent210408>
+        <MyComponent210408> </MyComponent210408>
       </li>
       <li>
         this.$scopedSlots 和属性对象的 scopedSlots 的区别：
         <ul>
-          <li>
-            this.$scopedSlots ：
-            用来定义 scoped slots；
-          </li>
-          <li>
-            scopedSlots ：
-            用来使用 scoped slots；
-          </li>
+          <li>this.$scopedSlots ： 用来定义 scoped slots；</li>
+          <li>scopedSlots ： 用来使用 scoped slots；</li>
         </ul>
       </li>
     </ul>
@@ -115,5 +95,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

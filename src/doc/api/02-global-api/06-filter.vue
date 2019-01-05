@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        描述：获取或者注册全局过滤器；
-      </li>
+      <li>描述：获取或者注册全局过滤器；</li>
       <li>
         参数：
         <ul>
@@ -13,7 +11,7 @@
       </li>
     </ul>
     <p>
-      <ElButton>{{message | filter-upper | filter-join }}</ElButton>
+      <ElButton>{{ message | (filter - upper) | (filter - join) }}</ElButton>
     </p>
   </div>
 </template>
@@ -46,5 +44,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

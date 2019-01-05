@@ -12,7 +12,8 @@
     <p>
       <small>
         <i>
-          如指令 v-on 的修饰符 prevent 表示在事件回调函数里面调用 e.preventDefault() 方法；
+          如指令 v-on 的修饰符 prevent 表示在事件回调函数里面调用
+          e.preventDefault() 方法；
         </i>
       </small>
     </p>
@@ -25,5 +26,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

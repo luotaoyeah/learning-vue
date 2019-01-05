@@ -3,9 +3,7 @@
     <ul>
       <li>
         当前组件实例的 DOM 根元素；
-        <p>
-          <ElButton @click="handleClick">vm.$el</ElButton>
-        </p>
+        <p><ElButton @click="handleClick">vm.$el</ElButton></p>
       </li>
     </ul>
   </div>
@@ -23,5 +21,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

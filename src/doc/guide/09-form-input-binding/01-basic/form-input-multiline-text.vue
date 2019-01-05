@@ -8,7 +8,7 @@
       placeholder="edit me"
       v-model="message"
     ></textarea>
-    <p>Message: {{message}}</p>
+    <p>Message: {{ message }}</p>
   </div>
 </template>
 <script>
@@ -20,5 +20,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

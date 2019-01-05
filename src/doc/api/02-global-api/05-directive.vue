@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        描述：获取或者注册一个全局指令；
-      </li>
+      <li>描述：获取或者注册一个全局指令；</li>
       <li>
         参数：
         <ul>
@@ -17,7 +15,7 @@
         type="text"
         style="border-radius: 3px;padding: 7px;"
         v-directive-20180427="'#ff00ff'"
-      >
+      />
     </p>
   </div>
 </template>
@@ -46,5 +44,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

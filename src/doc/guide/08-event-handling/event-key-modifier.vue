@@ -5,9 +5,9 @@
     <p>
       <small>
         <i>
-          在监听键盘事件的时候，通常需要判断是哪一个按键触发的事件；
-          vue 支持使用 KeyCode 作为键盘事件修饰符，
-          当按键的 KeyCode 跟修饰符一致时，才会触发事件；
+          在监听键盘事件的时候，通常需要判断是哪一个按键触发的事件； vue
+          支持使用 KeyCode 作为键盘事件修饰符， 当按键的 KeyCode
+          跟修饰符一致时，才会触发事件；
         </i>
       </small>
     </p>
@@ -51,9 +51,7 @@
     <h2>5.3.</h2>
     <p>
       <small>
-        <i>
-          可以通过 Vue.config.keyCodes 自定义键盘事件修饰符别名；
-        </i>
+        <i> 可以通过 Vue.config.keyCodes 自定义键盘事件修饰符别名； </i>
       </small>
     </p>
     <input
@@ -82,5 +80,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

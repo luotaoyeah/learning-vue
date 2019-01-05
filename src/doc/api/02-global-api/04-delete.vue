@@ -4,8 +4,8 @@
       <li>
         描述：从数据对象删除动态属性；
         <small>
-          因为 vue 无法检测到对象属性的添加和删除，
-          所以无法直接通过 delete 删除数据对象的动态属性；
+          因为 vue 无法检测到对象属性的添加和删除， 所以无法直接通过 delete
+          删除数据对象的动态属性；
         </small>
       </li>
       <li>
@@ -18,11 +18,11 @@
     </ul>
     <p>
       <ElButton @click="handleClick01">delete this.person.name</ElButton>
-      <ElInput v-model="person.name"/>
+      <ElInput v-model="person.name" />
     </p>
     <p>
       <ElButton @click="handleClick02">Vue.delete(this.person, 'age')</ElButton>
-      <ElInput v-model="person.age"/>
+      <ElInput v-model="person.age" />
     </p>
   </div>
 </template>
@@ -49,5 +49,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -8,47 +8,32 @@
         描述：计算属性；
         <ul>
           <li>
-            在 geteter / setter 中，
-            this 指向组件实例对象；
+            在 geteter / setter 中， this 指向组件实例对象；
             <p>
-              <ElForm
-                :model="formObj"
-                label-width="80px"
-              >
-                <ElFormItem
-                  label="x："
-                >
-                  <ElInputNumber v-model="x"/>
+              <ElForm :model="formObj" label-width="80px">
+                <ElFormItem label="x：">
+                  <ElInputNumber v-model="x" />
                 </ElFormItem>
                 <ElFormItem label="x + 1：">
-                  <ElInputNumber v-model="x01"/>
+                  <ElInputNumber v-model="x01" />
                 </ElFormItem>
               </ElForm>
             </p>
           </li>
           <li>
-            如果属性声明为箭头函数，
-            在函数中 this 不再指向组件实例对象，
+            如果属性声明为箭头函数， 在函数中 this 不再指向组件实例对象，
             函数的第一个参数指向组件实例对象；
             <p>
-              <ElForm
-                :model="formObj"
-                label-width="80px"
-              >
-                <ElFormItem
-                  label="x："
-                >
-                  <ElInputNumber v-model="x"/>
+              <ElForm :model="formObj" label-width="80px">
+                <ElFormItem label="x：">
+                  <ElInputNumber v-model="x" />
                 </ElFormItem>
-                <ElFormItem label="x + 2：">
-                  {{x02}}
-                </ElFormItem>
+                <ElFormItem label="x + 2："> {{ x02 }} </ElFormItem>
               </ElForm>
             </p>
           </li>
           <li>
-            计算属性的值会被缓存，
-            只有当它依赖的其他属性的值改变时，
+            计算属性的值会被缓存， 只有当它依赖的其他属性的值改变时，
             才会重新计算它的值；
           </li>
         </ul>
@@ -80,5 +65,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

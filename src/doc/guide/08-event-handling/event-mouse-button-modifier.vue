@@ -1,16 +1,10 @@
 <template>
-  <div><h1>9. Mouse Button Modifier</h1>
+  <div>
+    <h1>9. Mouse Button Modifier</h1>
     <p>
-      <small>
-        <i>
-
-        </i>
-      </small>
+      <small> <i> </i> </small>
     </p>
-    <span
-      style="border: 2px solid red;padding: 10px;"
-      v-on:click="handleClick"
-    >
+    <span style="border: 2px solid red;padding: 10px;" v-on:click="handleClick">
       left，middle，right
     </span>
     <span
@@ -47,5 +41,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

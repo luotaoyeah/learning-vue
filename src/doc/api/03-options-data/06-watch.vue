@@ -1,58 +1,39 @@
 <template>
   <div>
     <ul>
-      <li>
-        类型：{ [ key: string ]: string | Function | Object | Array }
-      </li>
+      <li>类型：{ [ key: string ]: string | Function | Object | Array }</li>
       <li>
         描述：监听数据变更；
         <p>
           <small>
-            在组件实例化的时候，
-            vue 会使用 vm.$watch() 方法，
-            对 watch 选项的所有属性进行监听；
+            在组件实例化的时候， vue 会使用 vm.$watch() 方法， 对 watch
+            选项的所有属性进行监听；
           </small>
         </p>
         <ul>
           <li>
-            监听函数第一个参数为新值，
-            第二个参数为旧值；
-            <p>
-              <ElInputNumber v-model="a"></ElInputNumber>
-            </p>
+            监听函数第一个参数为新值， 第二个参数为旧值；
+            <p><ElInputNumber v-model="a"></ElInputNumber></p>
           </li>
           <li>
-            如果属性值为字符串，
-            表示监听函数的名称；
-            <p>
-              <ElInputNumber v-model="b"></ElInputNumber>
-            </p>
+            如果属性值为字符串， 表示监听函数的名称；
+            <p><ElInputNumber v-model="b"></ElInputNumber></p>
           </li>
           <li>
-            如果属性值为对象，
-            则该对象的 handler 方法表示监听函数，
+            如果属性值为对象， 则该对象的 handler 方法表示监听函数，
             其他属性为配置属性；
-            <p>
-              <ElInputNumber v-model="e"></ElInputNumber>
-            </p>
+            <p><ElInputNumber v-model="e"></ElInputNumber></p>
           </li>
           <li>
-            如果属性值数组，
-            每个元素代表一个监听函数；
-            <p>
-              <ElInputNumber v-model="c"></ElInputNumber>
-            </p>
+            如果属性值数组， 每个元素代表一个监听函数；
+            <p><ElInputNumber v-model="c"></ElInputNumber></p>
           </li>
           <li>
-            属性名可以是一个属性路径字符串，
-            表示监听某个属性的子属性；
-            <p>
-              <ElInputNumber v-model="f.g"></ElInputNumber>
-            </p>
+            属性名可以是一个属性路径字符串， 表示监听某个属性的子属性；
+            <p><ElInputNumber v-model="f.g"></ElInputNumber></p>
           </li>
           <li>
-            属性不要声明为箭头函数，
-            否则函数中 this 将不再指向组件实例对象；
+            属性不要声明为箭头函数， 否则函数中 this 将不再指向组件实例对象；
           </li>
         </ul>
       </li>
@@ -117,5 +98,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

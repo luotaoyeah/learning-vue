@@ -3,39 +3,30 @@
     <ul>
       <li>
         使用 keep-alive 包裹动态组件，可以保持未激活组件的实例不被销毁；
+        <p><ElButton @click="handleClick01">toggle</ElButton></p>
         <p>
-          <ElButton @click="handleClick01">toggle</ElButton>
-        </p>
-        <p>
-          <keep-alive>
-            <component :is="currentComponent"/>
-          </keep-alive>
+          <keep-alive> <component :is="currentComponent" /> </keep-alive>
         </p>
       </li>
       <li>
         切换组件时，组件的 activated 和 deactivated 函数会被触发；
+        <p><ElButton @click="handleClick01">toggle</ElButton></p>
         <p>
-          <ElButton @click="handleClick01">toggle</ElButton>
-        </p>
-        <p>
-          <keep-alive>
-            <component :is="currentComponent"/>
-          </keep-alive>
+          <keep-alive> <component :is="currentComponent" /> </keep-alive>
         </p>
       </li>
       <li>
-        默认情况，所有的组件都会被缓存，可以通过 include 属性指定需要缓存的组件，或者通过 exclude 属性排除不需要缓存的组件；
-        <p>
-          <ElButton @click="handleClick01">toggle</ElButton>
-        </p>
+        默认情况，所有的组件都会被缓存，可以通过 include
+        属性指定需要缓存的组件，或者通过 exclude 属性排除不需要缓存的组件；
+        <p><ElButton @click="handleClick01">toggle</ElButton></p>
         <p>
           <keep-alive include="C01">
-            <component :is="currentComponent"/>
+            <component :is="currentComponent" />
           </keep-alive>
         </p>
         <p>
           <keep-alive exclude="C01">
-            <component :is="currentComponent"/>
+            <component :is="currentComponent" />
           </keep-alive>
         </p>
       </li>
@@ -77,5 +68,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

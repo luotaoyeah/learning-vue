@@ -4,7 +4,8 @@
     <small>
       <ul>
         <li>通常一个应用由很多组件构成，这些组件以树的形式来组织；</li>
-        <li>组件必须先注册才能使用，注册组件有两种方式；
+        <li>
+          组件必须先注册才能使用，注册组件有两种方式；
           <ul>
             <li>global: 使用 Vue.component() 方法注册全局组件；</li>
             <li>local: 通过组件的 components 选项注册本地组件；</li>
@@ -21,5 +22,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -6,29 +6,19 @@
         这些选项会使用合适的策略进行合并；
       </li>
       <li>
-        data 选项会进行浅层合并，
-        如果有同名属性，
-        组件的属性会覆盖 mixin 的属性；
-        <p>
-          <MyComponent190201></MyComponent190201>
-        </p>
+        data 选项会进行浅层合并， 如果有同名属性， 组件的属性会覆盖 mixin
+        的属性；
+        <p><MyComponent190201></MyComponent190201></p>
       </li>
       <li>
-        同名的生命周期函数会被合并到一个数组中，
-        都会被执行，
-        mixin 的函数在组件的函数前面执行；
-        <p>
-          <MyComponent190202></MyComponent190202>
-        </p>
+        同名的生命周期函数会被合并到一个数组中， 都会被执行， mixin
+        的函数在组件的函数前面执行；
+        <p><MyComponent190202></MyComponent190202></p>
       </li>
       <li>
         类似 methods，components，directives 这些类型为对象的选项，
-        会被合并到一个对象，
-        如果有同名属性，
-        组件的属性会覆盖 mixin 的属性；
-        <p>
-          <MyComponent190203></MyComponent190203>
-        </p>
+        会被合并到一个对象， 如果有同名属性， 组件的属性会覆盖 mixin 的属性；
+        <p><MyComponent190203></MyComponent190203></p>
       </li>
     </ul>
   </div>
@@ -117,5 +107,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,11 +1,6 @@
 <template>
   <div>
-    <p>
-      应该统一指令的简写形式，
-      要么不用简写，
-      要么全部简写；
-      不要混用；
-    </p>
+    <p>应该统一指令的简写形式， 要么不用简写， 要么全部简写； 不要混用；</p>
   </div>
 </template>
 <script>
@@ -15,5 +10,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -4,9 +4,7 @@
     <ul>
       <li>类型：boolean</li>
       <li>默认：false</li>
-      <li>
-        描述：阻止 vue 在控制台打印日志和警告；
-      </li>
+      <li>描述：阻止 vue 在控制台打印日志和警告；</li>
     </ul>
   </div>
 </template>
@@ -18,5 +16,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

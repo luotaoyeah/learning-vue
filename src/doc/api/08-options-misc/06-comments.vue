@@ -4,8 +4,8 @@
       <li>
         是否保留模板中的注释，默认不保留；
         <p>
-          <C01/>
-          <C02/>
+          <C01 />
+          <C02 />
         </p>
       </li>
     </ul>
@@ -27,5 +27,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,9 +1,6 @@
 <template>
   <div>
-    <p>
-      元素属性的顺序应该保持一致，
-      一般按照下面的先后顺序排列：
-    </p>
+    <p>元素属性的顺序应该保持一致， 一般按照下面的先后顺序排列：</p>
     <ul>
       <li>is</li>
       <li>v-for</li>
@@ -33,5 +30,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

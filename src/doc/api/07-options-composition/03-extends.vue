@@ -1,16 +1,10 @@
 <template>
   <div>
     <ul>
-      <li>
-        使用声明式的方式扩展组件；类似 mixins；
-      </li>
-      <li>
-        对应命令式的方式为 Vue.extend()；
-      </li>
+      <li>使用声明式的方式扩展组件；类似 mixins；</li>
+      <li>对应命令式的方式为 Vue.extend()；</li>
     </ul>
-    <p>
-      <C02/>
-    </p>
+    <p><C02 /></p>
   </div>
 </template>
 <script>
@@ -34,5 +28,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

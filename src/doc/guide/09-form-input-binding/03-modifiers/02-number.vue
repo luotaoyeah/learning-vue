@@ -2,18 +2,12 @@
   <div>
     <ul>
       <li>
-        如果用户的输入可以转换为数字，
-        .number 会自动将绑定值转换为数字，
+        如果用户的输入可以转换为数字， .number 会自动将绑定值转换为数字，
         并且保证 typeof 运算结果为 'number'；
       </li>
+      <li>如果用户的输入不能转换为数字， 则绑定值不会被转换， 会保持不变；</li>
       <li>
-        如果用户的输入不能转换为数字，
-        则绑定值不会被转换，
-        会保持不变；
-      </li>
-      <li>
-        如果 input 的 type="text"，
-        .number 并不能阻止用户输入非数字字符；
+        如果 input 的 type="text"， .number 并不能阻止用户输入非数字字符；
       </li>
     </ul>
     <p>
@@ -22,7 +16,7 @@
         style="border-radius: 3px;padding: 7px;"
         v-model="number01"
       />
-      <ElButton>value: {{number01}}, type: {{typeof number01}}</ElButton>
+      <ElButton>value: {{ number01 }}, type: {{ typeof number01 }}</ElButton>
     </p>
     <p>
       <input
@@ -30,7 +24,7 @@
         style="border-radius: 3px;padding: 7px;"
         v-model.number="number02"
       />
-      <ElButton>value: {{number02}}, type: {{typeof number02}}</ElButton>
+      <ElButton>value: {{ number02 }}, type: {{ typeof number02 }}</ElButton>
     </p>
   </div>
 </template>
@@ -44,5 +38,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

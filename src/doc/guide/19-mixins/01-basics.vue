@@ -1,15 +1,10 @@
 <template>
   <div>
     <ul>
+      <li>mixin 对象可以包含任意的组件选项；</li>
       <li>
-        mixin 对象可以包含任意的组件选项；
-      </li>
-      <li>
-        当组件使用 mixin 时，
-        mixin 的选项会被混入组件自己的选项；
-        <p>
-          <MyComponent190101></MyComponent190101>
-        </p>
+        当组件使用 mixin 时， mixin 的选项会被混入组件自己的选项；
+        <p><MyComponent190101></MyComponent190101></p>
       </li>
     </ul>
   </div>
@@ -40,5 +35,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

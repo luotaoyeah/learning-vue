@@ -1,20 +1,12 @@
 <template>
   <div>
     <ul>
+      <li>数据更改之后， DOM 更新之前；</li>
       <li>
-        数据更改之后，
-        DOM 更新之前；
-      </li>
-      <li>
-        此时，
-        数据已经更改，
-        但尚未重新渲染 DOM；
+        此时， 数据已经更改， 但尚未重新渲染 DOM；
         <p>
-          <ElInput
-            v-model="name"
-            style="width: 200px;"
-          />
-          <span :id="id01">{{name}}</span>
+          <ElInput v-model="name" style="width: 200px;" />
+          <span :id="id01">{{ name }}</span>
         </p>
       </li>
     </ul>
@@ -40,5 +32,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,41 +1,16 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="beforeCreate">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="created">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="beforeMount">
-      <C03></C03>
-    </el-tab-pane>
-    <el-tab-pane label="mounted">
-      <C04></C04>
-    </el-tab-pane>
-    <el-tab-pane label="beforeUpdate">
-      <C05></C05>
-    </el-tab-pane>
-    <el-tab-pane label="updated">
-      <C06></C06>
-    </el-tab-pane>
-    <el-tab-pane label="activated">
-      <C07></C07>
-    </el-tab-pane>
-    <el-tab-pane label="deactivated">
-      <C08></C08>
-    </el-tab-pane>
-    <el-tab-pane label="beforeDestroy">
-      <C09></C09>
-    </el-tab-pane>
-    <el-tab-pane label="destroyed">
-      <C10></C10>
-    </el-tab-pane>
-    <el-tab-pane label="errorCaptured">
-      <C11></C11>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="beforeCreate"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="created"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="beforeMount"> <C03></C03> </el-tab-pane>
+    <el-tab-pane label="mounted"> <C04></C04> </el-tab-pane>
+    <el-tab-pane label="beforeUpdate"> <C05></C05> </el-tab-pane>
+    <el-tab-pane label="updated"> <C06></C06> </el-tab-pane>
+    <el-tab-pane label="activated"> <C07></C07> </el-tab-pane>
+    <el-tab-pane label="deactivated"> <C08></C08> </el-tab-pane>
+    <el-tab-pane label="beforeDestroy"> <C09></C09> </el-tab-pane>
+    <el-tab-pane label="destroyed"> <C10></C10> </el-tab-pane>
+    <el-tab-pane label="errorCaptured"> <C11></C11> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -70,5 +45,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

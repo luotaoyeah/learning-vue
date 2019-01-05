@@ -19,33 +19,11 @@
         </ul>
       </li>
     </ul>
-    <img
-      :src="Picture01"
-    >
-    <p>
-      <ElInput
-        key="input_1"
-        v-model="x.y"
-      />
-    </p>
-    <p>
-      <ElAlert
-        :title="x.y"
-        :closable="false"
-      ></ElAlert>
-    </p>
-    <p>
-      <ElInput
-        key="input_2"
-        v-model="x.z"
-      />
-    </p>
-    <p>
-      <ElAlert
-        :title="x.z"
-        :closable="false"
-      ></ElAlert>
-    </p>
+    <img :src="Picture01" />
+    <p><ElInput key="input_1" v-model="x.y" /></p>
+    <p><ElAlert :title="x.y" :closable="false"></ElAlert></p>
+    <p><ElInput key="input_2" v-model="x.z" /></p>
+    <p><ElAlert :title="x.z" :closable="false"></ElAlert></p>
   </div>
 </template>
 <script>
@@ -67,5 +45,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

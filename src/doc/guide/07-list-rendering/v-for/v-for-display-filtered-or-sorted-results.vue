@@ -12,35 +12,24 @@
     </p>
     <p>
       <small>原数组：</small>
-      <span
-        v-for="item in array01"
-        :key="item"
-      >{{item}}
-      </span>
+      <span v-for="item in array01" :key="item">{{ item }} </span>
     </p>
     <p>
       <small>过滤后的数组：</small>
-      <span
-        v-for="item in evenArray01"
-        :key="item"
-      >{{item}}
-      </span>
+      <span v-for="item in evenArray01" :key="item">{{ item }} </span>
     </p>
     <h2>7.2.</h2>
     <p>
       <small>
         <i>
-          如果不能使用 computed property（在嵌套的 v-for 循环里面），可以使用方法；
+          如果不能使用 computed property（在嵌套的 v-for
+          循环里面），可以使用方法；
         </i>
       </small>
     </p>
     <p>
       <small>过滤后的数组：</small>
-      <span
-        v-for="item in evenArray02()"
-        :key="item"
-      >{{item}}
-      </span>
+      <span v-for="item in evenArray02()" :key="item">{{ item }} </span>
     </p>
   </div>
 </template>
@@ -63,5 +52,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

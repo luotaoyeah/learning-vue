@@ -2,20 +2,14 @@
   <div>
     <ul>
       <li>
-        对于同名的自定义选项，
-        会使用默认的合并策略，
-        也就是组件的选项会覆盖 mixin 的选项；
-        <p>
-          <C01></C01>
-        </p>
+        对于同名的自定义选项， 会使用默认的合并策略， 也就是组件的选项会覆盖
+        mixin 的选项；
+        <p><C01></C01></p>
       </li>
       <li>
-        如果要自定义合并策略，
-        需要在 Vue.config.optionMergeStrategies 对象上添加一个方法，
-        方法名就是自定义选项的名称；
-        <p>
-          <C02></C02>
-        </p>
+        如果要自定义合并策略， 需要在 Vue.config.optionMergeStrategies
+        对象上添加一个方法， 方法名就是自定义选项的名称；
+        <p><C02></C02></p>
       </li>
     </ul>
   </div>
@@ -68,5 +62,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

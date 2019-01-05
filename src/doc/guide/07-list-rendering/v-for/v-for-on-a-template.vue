@@ -3,17 +3,13 @@
     <h1>9. v-for on a template</h1>
     <p>
       <small>
-        <i>
-          v-for 可以直接在 template 元素上使用，用来同时渲染多个元素；
-        </i>
+        <i> v-for 可以直接在 template 元素上使用，用来同时渲染多个元素； </i>
       </small>
     </p>
-    <template
-      v-for="item in 10"
-    >
-      <span :key="'span_' + item">{{item}}:</span>
+    <template v-for="item in 10">
+      <span :key="'span_' + item">{{ item }}:</span>
       <span :key="'i_' + item">
-        <i>{{item}},</i>
+        <i>{{ item }},</i>
       </span>
     </template>
   </div>
@@ -25,5 +21,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

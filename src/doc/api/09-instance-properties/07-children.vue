@@ -1,23 +1,12 @@
 <template>
   <div>
     <ul>
-      <li>
-        直接子组件实例数组；
-      </li>
-      <li>
-        不能保证子组件的顺序；
-      </li>
-      <li>
-        inreactive 的，
-        不能用于数据绑定；
-      </li>
+      <li>直接子组件实例数组；</li>
+      <li>不能保证子组件的顺序；</li>
+      <li>inreactive 的， 不能用于数据绑定；</li>
     </ul>
-    <p>
-      <C01/>
-    </p>
-    <p>
-      <ElButton @click="handleClick">vm.$children</ElButton>
-    </p>
+    <p><C01 /></p>
+    <p><ElButton @click="handleClick">vm.$children</ElButton></p>
   </div>
 </template>
 <script>
@@ -42,5 +31,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

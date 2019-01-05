@@ -3,9 +3,7 @@
     <h1>5. Controlling Updates</h1>
     <small>
       <ul>
-        <li>
-          一般情况下，vue 知道应该什么时候更新组件；
-        </li>
+        <li>一般情况下，vue 知道应该什么时候更新组件；</li>
         <li>
           同时 vue 提供了相应的机制，
           <ul>
@@ -32,10 +30,8 @@
     <small>
       <ul>
         <li>
-          如果某个组件只包含了静态内容，
-          可以在组件的根元素上添加属性 v-once，
-          表示这个组件只会被渲染一次，
-          然后被缓存起来；
+          如果某个组件只包含了静态内容， 可以在组件的根元素上添加属性 v-once，
+          表示这个组件只会被渲染一次， 然后被缓存起来；
           <MyComponent11></MyComponent11>
           <MyComponent12></MyComponent12>
         </li>
@@ -80,5 +76,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

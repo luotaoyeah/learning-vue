@@ -1,28 +1,22 @@
 <template>
-  <div
-    style="padding: 10px;"
-    id="guide-the-vue-instance-data-and-methods"
-  >
+  <div style="padding: 10px;" id="guide-the-vue-instance-data-and-methods">
     <h1>1. data</h1>
-    <p>name: {{name}}</p>
-    <p>foo: {{foo}}</p>
-    <p>bar: {{bar}}</p>
+    <p>name: {{ name }}</p>
+    <p>foo: {{ foo }}</p>
+    <p>bar: {{ bar }}</p>
     <!--
       Property or method "cat" is not defined on the instance but referenced during render.
       Make sure that this property is reactive,
       either in the data option,
       or for class-based components, by initializing the property.
     -->
-    <p>cat: {{cat}}</p>
+    <p>cat: {{ cat }}</p>
     <h1>2. frozen object is not reactive</h1>
-    <p>{{person.name}}</p>
+    <p>{{ person.name }}</p>
     <!--
         Uncaught TypeError: Cannot assign to read only property 'name' of object '#<Object>'
     -->
-    <input
-      type="text"
-      v-model="person.name"
-    />
+    <input type="text" v-model="person.name" />
     <h1>3. built-in instance properties and methods</h1>
     <h1>4. instance lifecycle hooks</h1>
   </div>
@@ -96,5 +90,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -3,17 +3,11 @@
     <ul>
       <li>类型：{ [key: string]: any }</li>
       <li>
-        描述：创建组件实例时，设置 props 属性值；
-        只有在使用 new 创建组件实例的时候有效；
-        <p>
-          <small>
-            这个属性主要是用来进行单元测试；
-          </small>
-        </p>
+        描述：创建组件实例时，设置 props 属性值； 只有在使用 new
+        创建组件实例的时候有效；
+        <p><small> 这个属性主要是用来进行单元测试； </small></p>
         <ul>
-          <li>
-            <span :id="id01"></span>
-          </li>
+          <li><span :id="id01"></span></li>
         </ul>
       </li>
     </ul>
@@ -53,5 +47,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

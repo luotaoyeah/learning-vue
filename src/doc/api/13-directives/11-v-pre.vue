@@ -3,9 +3,7 @@
     <ul>
       <li>
         跳过对该元素及其子元素的编译；
-        <p v-pre>
-          {{ name }}
-        </p>
+        <p v-pre>{{ name }}</p>
       </li>
     </ul>
   </div>
@@ -18,5 +16,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

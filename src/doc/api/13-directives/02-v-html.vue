@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        表达式类型：string
-      </li>
+      <li>表达式类型：string</li>
       <li>
         描述：绑定元素的 innerHTML 属性；
         <ul>

@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        已弃用，使用 slot-scope 代替；
-      </li>
+      <li>已弃用，使用 slot-scope 代替；</li>
       <li>
         用法跟 slot-scope 一样，但是只能用在 template 元素上面；
         <!--
@@ -52,5 +50,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -2,18 +2,12 @@
   <div>
     <ul>
       <li>
-        vue 支持动态组件，使用 component 元素以及 is 属性，
-        动态切换组件；
+        vue 支持动态组件，使用 component 元素以及 is 属性， 动态切换组件；
         <ul>
-          <li>
-            &lt;component :is="currentComponent"&gt;&lt;/component&gt;
-          </li>
+          <li>&lt;component :is="currentComponent"&gt;&lt;/component&gt;</li>
         </ul>
       </li>
-      <li>
-        默认情况下，每次切换组件时，
-        都会重新创建组件实例；
-      </li>
+      <li>默认情况下，每次切换组件时， 都会重新创建组件实例；</li>
       <li>
         如果要保留组件实例及状态，可以将动态组件放到 keep-alive 元素中间；
       </li>
@@ -64,5 +58,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

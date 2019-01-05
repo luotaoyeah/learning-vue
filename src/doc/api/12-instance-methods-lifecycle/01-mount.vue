@@ -1,24 +1,16 @@
 <template>
   <div>
     <ul>
+      <li>挂载组件；</li>
       <li>
-        挂载组件；
+        如果实例化组件的时候没有指定 el 选项， 则需要手动调用 vm.$mount()
+        方法将组件挂载到 DOM 上；
+        <p><span :id="id01" /> <span :id="id02" /></p>
       </li>
       <li>
-        如果实例化组件的时候没有指定 el 选项，
-        则需要手动调用 vm.$mount() 方法将组件挂载到 DOM 上；
-        <p>
-          <span :id="id01"/>
-          <span :id="id02"/>
-        </p>
-      </li>
-      <li>
-        如果 vm.$mount() 没有指定参数，
-        那么组件编译之后不会挂载，
+        如果 vm.$mount() 没有指定参数， 那么组件编译之后不会挂载，
         需要手动将编译好的 DOM 对象挂载到 DOM 上；
-        <p>
-          <span :id="id03"/>
-        </p>
+        <p><span :id="id03" /></p>
       </li>
     </ul>
   </div>
@@ -67,5 +59,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

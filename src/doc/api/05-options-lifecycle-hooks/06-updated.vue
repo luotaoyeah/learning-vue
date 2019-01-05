@@ -1,20 +1,13 @@
 <template>
   <div>
     <ul>
+      <li>数据更改之后， DOM 渲染完成；</li>
       <li>
-        数据更改之后，
-        DOM 渲染完成；
-      </li>
-      <li>
-        此时，
-        不能保证所有的子组件都重新渲染完成，
-        可以在 updated 中 使用 vm.$nextTick() 来保证；
+        此时， 不能保证所有的子组件都重新渲染完成， 可以在 updated 中 使用
+        vm.$nextTick() 来保证；
         <p>
-          <ElInput
-            v-model="name"
-            style="width: 200px;"
-          />
-          <span :id="id01">{{name}}</span>
+          <ElInput v-model="name" style="width: 200px;" />
+          <span :id="id01">{{ name }}</span>
         </p>
       </li>
     </ul>
@@ -45,5 +38,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

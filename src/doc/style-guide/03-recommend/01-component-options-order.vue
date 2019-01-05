@@ -1,9 +1,6 @@
 <template>
   <div>
-    <p>
-      组件选项的顺序应该保持一致，
-      一般按照下面的先后顺序排列：
-    </p>
+    <p>组件选项的顺序应该保持一致， 一般按照下面的先后顺序排列：</p>
     <ul>
       <li>el</li>
       <li>name</li>
@@ -36,5 +33,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

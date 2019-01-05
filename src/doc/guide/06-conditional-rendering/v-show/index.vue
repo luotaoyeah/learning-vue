@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <VShow></VShow>
-  </div>
+  <div><VShow></VShow></div>
 </template>
 <script>
 import VShow from "./v-show";
@@ -12,5 +10,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

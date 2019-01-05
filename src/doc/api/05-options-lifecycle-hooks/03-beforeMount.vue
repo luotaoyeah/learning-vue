@@ -1,13 +1,8 @@
 <template>
   <div>
     <ul>
-      <li>
-        组件挂载之前；
-      </li>
-      <li>
-        即将挂载，
-        即将第一次调用 render 函数；
-      </li>
+      <li>组件挂载之前；</li>
+      <li>即将挂载， 即将第一次调用 render 函数；</li>
     </ul>
   </div>
 </template>
@@ -23,5 +18,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

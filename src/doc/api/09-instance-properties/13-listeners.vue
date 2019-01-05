@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        组件元素上使用 v-on 绑定的事件监听；
-      </li>
+      <li>组件元素上使用 v-on 绑定的事件监听；</li>
       <li>
         不包括使用了 .native 修饰符的；
         <p>
@@ -14,10 +12,7 @@
           />
         </p>
       </li>
-      <li>
-        属性名为事件名，
-        属性值为事件回调函数；
-      </li>
+      <li>属性名为事件名， 属性值为事件回调函数；</li>
     </ul>
   </div>
 </template>
@@ -49,5 +44,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

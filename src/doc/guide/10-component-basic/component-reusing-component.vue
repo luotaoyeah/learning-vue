@@ -14,8 +14,8 @@
       <ul>
         <li>
           组件的 data 属性，不能直接绑定一个对象，必须通过函数返回一个对象；
-          否则所有的组件实例都会共享这一个 data 属性，
-          任何一个实例对 data 的修改都会影响所有其他的实例；
+          否则所有的组件实例都会共享这一个 data 属性， 任何一个实例对 data
+          的修改都会影响所有其他的实例；
         </li>
       </ul>
     </small>
@@ -56,5 +56,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

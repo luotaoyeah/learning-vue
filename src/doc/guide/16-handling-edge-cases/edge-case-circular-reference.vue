@@ -6,26 +6,24 @@
       <ul>
         <li>
           在组件模板中可以使用组件本身，此时组件必须声明 name 属性；
-          <img
-            :src="P01"
-          >
+          <img :src="P01" />
         </li>
-        <li>
-          循环使用组件时，应该加上条件控制，否则会造成栈溢出；
-        </li>
+        <li>循环使用组件时，应该加上条件控制，否则会造成栈溢出；</li>
       </ul>
     </small>
     <h2>3.2. Circular References between Components</h2>
     <small>
       <ul>
-        <li>假如有两个组件 A 和 B，其中 A 依赖了 B，B 又依赖了 A，就会造成循环依赖；</li>
         <li>
-          如果这两个组件是使用 Vue.component() 方法注册的，那么 vue 会自动帮我们解决这个问题；
+          假如有两个组件 A 和 B，其中 A 依赖了 B，B 又依赖了
+          A，就会造成循环依赖；
+        </li>
+        <li>
+          如果这两个组件是使用 Vue.component() 方法注册的，那么 vue
+          会自动帮我们解决这个问题；
           <A01 :folder="folder"></A01>
         </li>
-        <li>
-          如果这两个组件是通过模块引入的，那么会报错；
-        </li>
+        <li>如果这两个组件是通过模块引入的，那么会报错；</li>
         <li>
           此时可以使用 webpack 的异步 import 机制：
           <ul>
@@ -100,5 +98,4 @@ export default {
   components: { A02 }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

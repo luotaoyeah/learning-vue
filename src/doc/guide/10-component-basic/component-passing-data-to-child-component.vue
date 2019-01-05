@@ -8,8 +8,7 @@
         <li>在组件中，我们可以像访问 data 属性一样访问 props 属性；</li>
       </ul>
     </small>
-    <post :title="title01"></post>
-    <post :title="title02"></post>
+    <post :title="title01"></post> <post :title="title02"></post>
   </div>
 </template>
 <script>
@@ -29,5 +28,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

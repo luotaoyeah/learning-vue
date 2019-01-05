@@ -5,11 +5,8 @@
         vm.$refs 对象，包含当前组件中使用 ref 属性注册过的组件和 DOM 元素；
       </li>
       <li>
-        属性名为 ref 属性值，
-        属性值为对应的组件实例或者 DOM 对象；
-        <p>
-          <C01/>
-        </p>
+        属性名为 ref 属性值， 属性值为对应的组件实例或者 DOM 对象；
+        <p><C01 /></p>
       </li>
     </ul>
   </div>
@@ -35,5 +32,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

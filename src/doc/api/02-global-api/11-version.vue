@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        描述：当前 vue 的版本；
-      </li>
+      <li>描述：当前 vue 的版本；</li>
     </ul>
   </div>
 </template>
@@ -20,5 +18,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

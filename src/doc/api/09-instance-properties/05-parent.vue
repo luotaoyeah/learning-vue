@@ -3,7 +3,7 @@
     <ul>
       <li>
         父组件实例；
-        <C01/>
+        <C01 />
       </li>
     </ul>
   </div>
@@ -40,5 +40,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

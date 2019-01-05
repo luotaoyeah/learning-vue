@@ -1,7 +1,8 @@
 <template>
   <div>
     <ul>
-      <li>只能用在下面几种元素上：
+      <li>
+        只能用在下面几种元素上：
         <ul>
           <li>&lt;input&gt;</li>
           <li>&lt;select&gt;</li>
@@ -28,5 +29,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

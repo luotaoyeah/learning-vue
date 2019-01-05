@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1>v-on</h1>
-    <button v-on:click="toggle">show: {{show}}</button>
+    <button v-on:click="toggle">show: {{ show }}</button>
     <h1>v-model</h1>
-    <p>{{message}}</p>
+    <p>{{ message }}</p>
     <input type="text" v-model="message" />
   </div>
 </template>
@@ -23,5 +23,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

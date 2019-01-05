@@ -4,8 +4,7 @@
     <small>
       <ul>
         <li>
-          可以在 slot 元素之间声明默认内容，
-          当组件元素之间没有内容时，
+          可以在 slot 元素之间声明默认内容， 当组件元素之间没有内容时，
           就会显示默认内容，否则使用组件元素之间的内容；
         </li>
       </ul>
@@ -33,5 +32,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

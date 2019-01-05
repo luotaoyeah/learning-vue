@@ -4,15 +4,9 @@
     <ul>
       <li>
         v-if 和 v-for 可以使用 if 语句和 map 方法来实现；
-        <p>
-          <el-button v-on:click="toggleItems">toggle items</el-button>
-        </p>
-        <p>
-          <MyComponent210401 :items="items"></MyComponent210401>
-        </p>
-        <p>
-          <MyComponent210402 :items="items"></MyComponent210402>
-        </p>
+        <p><el-button v-on:click="toggleItems">toggle items</el-button></p>
+        <p><MyComponent210401 :items="items"></MyComponent210401></p>
+        <p><MyComponent210402 :items="items"></MyComponent210402></p>
       </li>
     </ul>
   </div>
@@ -73,5 +67,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,17 +1,11 @@
 <template>
   <div>
     <ul>
+      <li>组件挂载完成；</li>
+      <li>此时， vm.$el 初始完成；</li>
       <li>
-        组件挂载完成；
-      </li>
-      <li>
-        此时，
-        vm.$el 初始完成；
-      </li>
-      <li>
-        此时，
-        不能保证所有的子组件都挂载完成了，
-        可以在 mounted 里面使用 vm.$nextTick() 来保证；
+        此时， 不能保证所有的子组件都挂载完成了， 可以在 mounted 里面使用
+        vm.$nextTick() 来保证；
       </li>
     </ul>
   </div>
@@ -31,5 +25,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

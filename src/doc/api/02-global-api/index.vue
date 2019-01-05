@@ -1,41 +1,16 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="extend">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="nextTick">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="set">
-      <C03></C03>
-    </el-tab-pane>
-    <el-tab-pane label="delete">
-      <C04></C04>
-    </el-tab-pane>
-    <el-tab-pane label="directive">
-      <C05></C05>
-    </el-tab-pane>
-    <el-tab-pane label="filter">
-      <C06></C06>
-    </el-tab-pane>
-    <el-tab-pane label="component">
-      <C07></C07>
-    </el-tab-pane>
-    <el-tab-pane label="use">
-      <C08></C08>
-    </el-tab-pane>
-    <el-tab-pane label="mixin">
-      <C09></C09>
-    </el-tab-pane>
-    <el-tab-pane label="compile">
-      <C10></C10>
-    </el-tab-pane>
-    <el-tab-pane label="version">
-      <C11></C11>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="extend"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="nextTick"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="set"> <C03></C03> </el-tab-pane>
+    <el-tab-pane label="delete"> <C04></C04> </el-tab-pane>
+    <el-tab-pane label="directive"> <C05></C05> </el-tab-pane>
+    <el-tab-pane label="filter"> <C06></C06> </el-tab-pane>
+    <el-tab-pane label="component"> <C07></C07> </el-tab-pane>
+    <el-tab-pane label="use"> <C08></C08> </el-tab-pane>
+    <el-tab-pane label="mixin"> <C09></C09> </el-tab-pane>
+    <el-tab-pane label="compile"> <C10></C10> </el-tab-pane>
+    <el-tab-pane label="version"> <C11></C11> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -70,5 +45,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

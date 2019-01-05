@@ -3,8 +3,7 @@
     <h2>v-model</h2>
     <ul>
       <li>
-        因为 v-model 实际上是语法糖，
-        在渲染方法中，
+        因为 v-model 实际上是语法糖， 在渲染方法中，
         我们需要自己实现同样的效果；
         <p>
           <MyComponent210403
@@ -12,7 +11,7 @@
             v-on:input="message = $event"
           ></MyComponent210403>
         </p>
-        <p>{{message}}</p>
+        <p>{{ message }}</p>
       </li>
     </ul>
   </div>
@@ -47,5 +46,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,19 +1,10 @@
 <template>
   <div>
     <h1>v-if</h1>
-    <span
-      v-if="show"
-    >
-      Now you see me.
-    </span>
+    <span v-if="show"> Now you see me. </span>
     <h1>v-for</h1>
     <ol>
-      <li
-        v-for="todo in todos"
-        v-bind:key="todo.text"
-      >
-        {{todo.text}}
-      </li>
+      <li v-for="todo in todos" v-bind:key="todo.text">{{ todo.text }}</li>
     </ol>
   </div>
 </template>
@@ -32,5 +23,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

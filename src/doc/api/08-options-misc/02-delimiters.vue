@@ -1,16 +1,11 @@
 <template>
   <div>
     <ul>
+      <li>定义文本解析的分隔符；</li>
       <li>
-        定义文本解析的分隔符；
+        默认是双花括号： <span v-pre>{{ message }}</span>
       </li>
-      <li>
-        默认是双花括号：
-        <span v-pre>{{ message }}</span>
-      </li>
-      <p>
-        <C01/>
-      </p>
+      <p><C01 /></p>
     </ul>
   </div>
 </template>
@@ -30,5 +25,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

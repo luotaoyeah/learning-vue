@@ -1,3 +1,3 @@
 # learning-vue
 
-Learning Vue
+Learning Vue.js

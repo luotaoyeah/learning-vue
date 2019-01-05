@@ -7,12 +7,10 @@
         <ul>
           <li>
             可以用在 template 元素上；
-            <p>
-              <ElSwitch v-model="show01"/>
-            </p>
+            <p><ElSwitch v-model="show01" /></p>
             <p>
               <template v-if="show01">
-                <C01/>
+                <C01 />
               </template>
             </p>
           </li>
@@ -41,5 +39,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

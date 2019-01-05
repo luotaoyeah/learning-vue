@@ -2,21 +2,12 @@
   <div>
     <ul>
       <li>
-        组件元素上没有被识别为 props，
-        且不是 class 或 style 的属性；
+        组件元素上没有被识别为 props， 且不是 class 或 style 的属性；
         <p>
-          <C01
-            class="c01"
-            style="color: red;"
-            x="foo"
-            :id="id01"
-            y="bar"
-          />
+          <C01 class="c01" style="color: red;" x="foo" :id="id01" y="bar" />
         </p>
       </li>
-      <li>
-        只读；
-      </li>
+      <li>只读；</li>
     </ul>
   </div>
 </template>
@@ -47,5 +38,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

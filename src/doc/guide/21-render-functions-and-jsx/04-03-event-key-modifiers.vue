@@ -11,13 +11,9 @@
           <li>.capture.once ：~!</li>
           <li>.once.capture ：~!</li>
         </ul>
-        <p>
-          <MyComponent210404></MyComponent210404>
-        </p>
+        <p><MyComponent210404></MyComponent210404></p>
       </li>
-      <li>
-        其他的事件修饰符都可以通过 JS 代码来实现；
-      </li>
+      <li>其他的事件修饰符都可以通过 JS 代码来实现；</li>
     </ul>
   </div>
 </template>
@@ -47,5 +43,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

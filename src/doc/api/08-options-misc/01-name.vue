@@ -2,24 +2,14 @@
   <div>
     <ul>
       <li>
-        指定了 name 选项，
-        组件才可以嵌套自己；
-        <component
-          :is="id01"
-          :recursive="true"
-        />
-        <component
-          :is="id02"
-          :recursive="true"
-        />
+        指定了 name 选项， 组件才可以嵌套自己；
+        <component :is="id01" :recursive="true" />
+        <component :is="id02" :recursive="true" />
       </li>
       <li>
-        使用 Vue.component() 注册全局组件时，
-        会自动设置 name 选项为组件ID；
+        使用 Vue.component() 注册全局组件时， 会自动设置 name 选项为组件ID；
       </li>
-      <li>
-        name 选项不能通过 vm.name 来访问；
-      </li>
+      <li>name 选项不能通过 vm.name 来访问；</li>
     </ul>
   </div>
 </template>
@@ -65,5 +55,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

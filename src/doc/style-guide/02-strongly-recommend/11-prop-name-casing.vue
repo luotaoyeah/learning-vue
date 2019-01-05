@@ -1,13 +1,10 @@
 <template>
   <div>
     <p>
-      props 属性名称，
-      在定义的时候应该使用 camelCase，
-      在模板和 JSX 中使用的时候应该使用 kebab-case；
+      props 属性名称， 在定义的时候应该使用 camelCase， 在模板和 JSX
+      中使用的时候应该使用 kebab-case；
     </p>
-    <p>
-      <C01 :user-name="'tom'"></C01>
-    </p>
+    <p><C01 :user-name="'tom'"></C01></p>
   </div>
 </template>
 <script>
@@ -23,5 +20,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

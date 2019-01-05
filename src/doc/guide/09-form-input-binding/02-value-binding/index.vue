@@ -11,8 +11,8 @@
           </ul>
           举例来说，对于 checkbox 来说，如果勾选则绑定值为 true，
           如果不勾选则绑定值为 false；如何实现勾选时绑定值为 'yes'，
-          不勾选时绑定值为 'no' 这样的动态绑定?
-          很简单，使用 v-bind 对表单元素的 value 属性设置动态绑定就可以；
+          不勾选时绑定值为 'no' 这样的动态绑定? 很简单，使用 v-bind 对表单元素的
+          value 属性设置动态绑定就可以；
         </i>
       </small>
     </p>
@@ -34,5 +34,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

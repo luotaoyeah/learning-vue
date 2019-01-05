@@ -1,13 +1,8 @@
 <template>
   <div>
     <ul>
-      <li>
-        组件实例初始化完成；
-      </li>
-      <li>
-        此时，
-        数据绑定、事件、监视器尚未初始化；
-      </li>
+      <li>组件实例初始化完成；</li>
+      <li>此时， 数据绑定、事件、监视器尚未初始化；</li>
     </ul>
   </div>
 </template>
@@ -25,5 +20,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

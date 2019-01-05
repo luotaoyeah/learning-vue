@@ -7,25 +7,18 @@
         描述：错误处理函数；
         <ul>
           <li>
-            如果未定义错误处理器，
-            则组件中未被捕获的错误默认会使用 console.error 打印到控制台；
+            如果未定义错误处理器， 则组件中未被捕获的错误默认会使用
+            console.error 打印到控制台；
           </li>
           <li>
-            如果定义了错误处理器，
-            则组件中未被捕获的错误会被该处理器拦截；
+            如果定义了错误处理器， 则组件中未被捕获的错误会被该处理器拦截；
           </li>
           <li>
             处理器函数接收 3 个参数：
             <ul>
-              <li>
-                err：错误对象；
-              </li>
-              <li>
-                vm：组件实例；
-              </li>
-              <li>
-                info：环境信息；
-              </li>
+              <li>err：错误对象；</li>
+              <li>vm：组件实例；</li>
+              <li>info：环境信息；</li>
             </ul>
           </li>
         </ul>
@@ -54,5 +47,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

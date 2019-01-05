@@ -29,7 +29,7 @@
                 type="text"
                 style="padding: 7px;border-radius: 3px;"
                 v-red-border
-              >
+              />
             </p>
           </li>
           <li>
@@ -39,7 +39,7 @@
                 type="text"
                 style="padding: 7px;border-radius: 3px;"
                 v-green-border
-              >
+              />
             </p>
           </li>
         </ul>
@@ -70,5 +70,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

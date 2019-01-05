@@ -1,18 +1,15 @@
 <template>
   <div>
     <ul>
+      <li>描述：创建一个 vue 构造函数的子类；</li>
       <li>
-        描述：创建一个 vue 构造函数的子类；
-      </li>
-      <li>参数：
+        参数：
         <ul>
           <li>{ Object } options：组件选项对象；</li>
         </ul>
       </li>
     </ul>
-    <p>
-      <span id="span_01"></span>
-    </p>
+    <p><span id="span_01"></span></p>
   </div>
 </template>
 <script>
@@ -47,5 +44,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

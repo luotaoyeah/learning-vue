@@ -1,5 +1,6 @@
 <template>
-  <div><h1>8. .exact Modifier</h1>
+  <div>
+    <h1>8. .exact Modifier</h1>
     <p>
       <small>
         <i>
@@ -43,5 +44,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,35 +1,14 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="silent">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="optionMergeStrategies">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="devtools">
-      <C03></C03>
-    </el-tab-pane>
-    <el-tab-pane label="errorHandler">
-      <C04></C04>
-    </el-tab-pane>
-    <el-tab-pane label="warnHandler">
-      <C05></C05>
-    </el-tab-pane>
-    <el-tab-pane label="ignoredElements">
-      <C06></C06>
-    </el-tab-pane>
-    <el-tab-pane label="keyCodes">
-      <C07></C07>
-    </el-tab-pane>
-    <el-tab-pane label="performance">
-      <C08></C08>
-    </el-tab-pane>
-    <el-tab-pane label="productionTip">
-      <C09></C09>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="silent"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="optionMergeStrategies"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="devtools"> <C03></C03> </el-tab-pane>
+    <el-tab-pane label="errorHandler"> <C04></C04> </el-tab-pane>
+    <el-tab-pane label="warnHandler"> <C05></C05> </el-tab-pane>
+    <el-tab-pane label="ignoredElements"> <C06></C06> </el-tab-pane>
+    <el-tab-pane label="keyCodes"> <C07></C07> </el-tab-pane>
+    <el-tab-pane label="performance"> <C08></C08> </el-tab-pane>
+    <el-tab-pane label="productionTip"> <C09></C09> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -60,5 +39,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

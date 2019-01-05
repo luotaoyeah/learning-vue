@@ -1,8 +1,7 @@
 <template>
   <div>
     <p>
-      组件名称中，
-      应该把等级最高的（最通用的）单词放在前面，
+      组件名称中， 应该把等级最高的（最通用的）单词放在前面，
       描述性的单词放在后面；
     </p>
     <ul>
@@ -35,5 +34,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

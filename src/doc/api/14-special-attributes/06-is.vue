@@ -7,9 +7,7 @@
           <ElButton @click="currentComponent = 'C01'">c01</ElButton>
           <ElButton @click="currentComponent = 'C02'">c02</ElButton>
         </p>
-        <p>
-          <component :is="currentComponent"/>
-        </p>
+        <p><component :is="currentComponent" /></p>
       </li>
       <li>
         用来规避 DOM 模板的限制，单文件组件、字符串模板不受此限制；
@@ -43,5 +41,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -7,9 +7,7 @@
           <ElButton @click="currentComponent = 'C01'">C01</ElButton>
           <ElButton @click="currentComponent = 'C02'">C02</ElButton>
         </p>
-        <p>
-          <component :is="currentComponent"/>
-        </p>
+        <p><component :is="currentComponent" /></p>
       </li>
     </ul>
   </div>
@@ -39,5 +37,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

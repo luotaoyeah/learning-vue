@@ -1,26 +1,11 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="data">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="props">
-      <C02></C02>
-    </el-tab-pane>
-    <el-tab-pane label="propsData">
-      <C03></C03>
-    </el-tab-pane>
-    <el-tab-pane label="computed">
-      <C04></C04>
-    </el-tab-pane>
-    <el-tab-pane label="methods">
-      <C05></C05>
-    </el-tab-pane>
-    <el-tab-pane label="watch">
-      <C06></C06>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="data"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="props"> <C02></C02> </el-tab-pane>
+    <el-tab-pane label="propsData"> <C03></C03> </el-tab-pane>
+    <el-tab-pane label="computed"> <C04></C04> </el-tab-pane>
+    <el-tab-pane label="methods"> <C05></C05> </el-tab-pane>
+    <el-tab-pane label="watch"> <C06></C06> </el-tab-pane>
   </el-tabs>
 </template>
 <script>
@@ -45,5 +30,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

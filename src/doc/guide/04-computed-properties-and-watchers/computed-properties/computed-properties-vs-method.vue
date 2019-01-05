@@ -10,10 +10,10 @@
         </i>
       </small>
     </p>
-    <p>computed property 1：{{reversedMessage}}</p>
-    <p>computed property 2：{{reversedMessage}}</p>
-    <p>invoking method in the expression 1：{{reverseMessage()}}</p>
-    <p>invoking method in the expression 2：{{reverseMessage()}}</p>
+    <p>computed property 1：{{ reversedMessage }}</p>
+    <p>computed property 2：{{ reversedMessage }}</p>
+    <p>invoking method in the expression 1：{{ reverseMessage() }}</p>
+    <p>invoking method in the expression 2：{{ reverseMessage() }}</p>
   </div>
 </template>
 <script>
@@ -43,5 +43,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

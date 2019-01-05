@@ -3,26 +3,13 @@
     <ul>
       <li>
         监听组件触发的事件；
-        <p>
-          <small>谁调用 $on，就监听谁的事件；</small>
-        </p>
-        <p>
-          <C01
-            @foo-click="handleFooClick"
-            ref="refC01"
-          />
-        </p>
+        <p><small>谁调用 $on，就监听谁的事件；</small></p>
+        <p><C01 @foo-click="handleFooClick" ref="refC01" /></p>
       </li>
+      <li>可以用于： 在组件中监听组件自己的事件；</li>
       <li>
-        可以用于：
-        在组件中监听组件自己的事件；
-      </li>
-      <li>
-        可以同时监听多个事件，
-        并绑定到同一个回调函数；
-        <p>
-          <C02/>
-        </p>
+        可以同时监听多个事件， 并绑定到同一个回调函数；
+        <p><C02 /></p>
       </li>
     </ul>
   </div>
@@ -79,5 +66,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

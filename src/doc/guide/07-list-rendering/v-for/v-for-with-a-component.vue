@@ -10,11 +10,7 @@
         </i>
       </small>
     </p>
-    <my-component
-      v-for="item in 3"
-      :key="item"
-    >{{item}}
-    </my-component>
+    <my-component v-for="item in 3" :key="item">{{ item }} </my-component>
     <h2>11.2.</h2>
     <p>
       <small>
@@ -31,7 +27,7 @@
       v-model="newTodoTitle"
       placeholder="输入新的标题，回车添加"
       @keyup.enter="addTodo"
-    >
+    />
     <ul>
       <li
         is="todo-item"
@@ -44,12 +40,11 @@
     <p>
       <small>
         <i>
-          这儿使用了 is="todo-item" 这样的语法；
-          是因为 ul 下面只允许出现 li 元素，
-          因为如果直接在 ul 下面使用自定义组件，
-          会出现 &lt;ul&gt;&lt;todo-item&gt;&lt;/todo-item&gt;&lt;/ul&gt; 这样的模板，
-          这会导致浏览器解析报错；为了避免解析报错，使用 is="todo-item" 这样的语法，
-          达到跟直接使用组件元素一样的效果；
+          这儿使用了 is="todo-item" 这样的语法； 是因为 ul 下面只允许出现 li
+          元素， 因为如果直接在 ul 下面使用自定义组件， 会出现
+          &lt;ul&gt;&lt;todo-item&gt;&lt;/todo-item&gt;&lt;/ul&gt; 这样的模板，
+          这会导致浏览器解析报错；为了避免解析报错，使用 is="todo-item"
+          这样的语法， 达到跟直接使用组件元素一样的效果；
         </i>
       </small>
     </p>
@@ -99,5 +94,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

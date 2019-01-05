@@ -2,8 +2,8 @@
   <div>
     <p>
       <i>
-        默认情况下，v-model 会监听 input 事件触发数据更新，
-        可以通过 .lazy 修饰符，指定它在 change 事件触发数据更新；
+        默认情况下，v-model 会监听 input 事件触发数据更新， 可以通过 .lazy
+        修饰符，指定它在 change 事件触发数据更新；
       </i>
     </p>
     <p>
@@ -12,7 +12,7 @@
         type="text"
         style="border-radius: 3px;padding: 7px;"
         v-model="message"
-      >
+      />
     </p>
     <p>
       <small>失去焦点时更新：</small>
@@ -20,9 +20,9 @@
         type="text"
         style="border-radius: 3px;padding: 7px;"
         v-model.lazy="message"
-      >
+      />
     </p>
-    <p>Message: {{message}}</p>
+    <p>Message: {{ message }}</p>
   </div>
 </template>
 <script>
@@ -32,5 +32,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

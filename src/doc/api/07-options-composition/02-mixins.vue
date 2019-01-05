@@ -1,15 +1,11 @@
 <template>
   <div>
     <ul>
-      <li>
-        类型：Array&lt;Object&gt;
-      </li>
+      <li>类型：Array&lt;Object&gt;</li>
       <li>
         描述：定义组件的 mixin；
         <ul>
-          <li>
-            使用跟 Vue.extend() 一样的合并策略；
-          </li>
+          <li>使用跟 Vue.extend() 一样的合并策略；</li>
         </ul>
       </li>
     </ul>
@@ -38,5 +34,4 @@ export default {
   ]
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

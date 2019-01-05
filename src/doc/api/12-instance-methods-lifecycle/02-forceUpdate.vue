@@ -4,11 +4,8 @@
       <li>
         强制组件重新渲染；
         <p>
-          <ElInput
-            v-model="x"
-            style="width: 100px;"
-          />
-          <ElButton>{{x}}</ElButton>
+          <ElInput v-model="x" style="width: 100px;" />
+          <ElButton>{{ x }}</ElButton>
           <ElButton @click="handleClick">vm.$forceUpdate</ElButton>
         </p>
       </li>
@@ -32,5 +29,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

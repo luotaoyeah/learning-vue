@@ -10,21 +10,13 @@
     <small>
       <ul>
         <li>
-          但是这样有一个风险：
-          如果监听的原生事件是针对某个特定的元素类型，
-          比如 input，
-          当修改组件使得根元素不再是 input 时，
-          原来的事件监听将不再生效，
-          不会触发，
-          也不会报错；
+          但是这样有一个风险： 如果监听的原生事件是针对某个特定的元素类型， 比如
+          input， 当修改组件使得根元素不再是 input 时，
+          原来的事件监听将不再生效， 不会触发， 也不会报错；
         </li>
         <li>
-          为了解决这个问题，
-          vue 提供了一个实例属性 $listeners，
-          它是一个对象，
-          包含组件上所有的事件监听；
-          属性名是事件名，
-          属性值为事件回调函数；
+          为了解决这个问题， vue 提供了一个实例属性 $listeners， 它是一个对象，
+          包含组件上所有的事件监听； 属性名是事件名， 属性值为事件回调函数；
         </li>
         <li>
           可以使用类似 v-bind="$attrs" 的形式使用 v-on="$listeners"，
@@ -32,13 +24,8 @@
         </li>
       </ul>
     </small>
-    <MyInput02
-      v-model="message02"
-      v-on:focus.once="handleFocus01"
-    ></MyInput02>
-    <p>
-      <MyComponent130102 @click01="handleClick01"></MyComponent130102>
-    </p>
+    <MyInput02 v-model="message02" v-on:focus.once="handleFocus01"></MyInput02>
+    <p><MyComponent130102 @click01="handleClick01"></MyComponent130102></p>
   </div>
 </template>
 <script>
@@ -109,5 +96,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

@@ -4,9 +4,9 @@
     <p>
       <small>
         <i>
-          checkbox 很特别，因为 v-model 绑定的不是 checkbox 的 value 属性，
-          而是 selected 属性；
-          我们需要通过 true-value 和 false-value 来设置动态绑定的值；
+          checkbox 很特别，因为 v-model 绑定的不是 checkbox 的 value 属性， 而是
+          selected 属性； 我们需要通过 true-value 和 false-value
+          来设置动态绑定的值；
         </i>
       </small>
     </p>
@@ -16,9 +16,9 @@
       v-model="selected"
       :true-value="y"
       :false-value="n"
-    >
+    />
     <label for="checkbox01">yes or no</label>
-    <p>Selected: {{selected}}</p>
+    <p>Selected: {{ selected }}</p>
   </div>
 </template>
 <script>
@@ -32,5 +32,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

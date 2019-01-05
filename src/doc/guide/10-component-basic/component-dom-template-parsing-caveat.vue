@@ -9,9 +9,7 @@
           这导致在使用自定义组件作为其直接子元素时，
           会使最终的渲染结果跟预期的不一致；
         </li>
-        <li>
-          解决方法是，使用 is 属性；
-        </li>
+        <li>解决方法是，使用 is 属性；</li>
         <li>
           使用下面这三种字符串模板的方式，没有这个限制；
           <ul>
@@ -41,5 +39,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

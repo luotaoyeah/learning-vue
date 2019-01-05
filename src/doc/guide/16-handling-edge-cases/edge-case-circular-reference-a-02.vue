@@ -1,6 +1,6 @@
 <template>
   <p>
-    <span>{{folder.name}}</span>
+    <span>{{ folder.name }}</span>
     <B02 :children="folder.children"></B02>
   </p>
 </template>
@@ -16,5 +16,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

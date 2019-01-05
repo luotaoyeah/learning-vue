@@ -1,14 +1,14 @@
 <template>
   <div>
     <h1>4. Computed Property vs Watched Property</h1>
-    <p>fullName01: {{fullName01}}</p>
-    <p>fullName02: {{fullName02}}</p>
+    <p>fullName01: {{ fullName01 }}</p>
+    <p>fullName02: {{ fullName02 }}</p>
     <p>
       <small>
         <i>
-          当一个属性依赖于2个或以上其他属性，
-          如果使用 watch property 的方式，则必须同时 watch 所有的其他属性；
-          如果使用 computed property 的方式，则只需要在取值函数中依赖其他属性就可以了；
+          当一个属性依赖于2个或以上其他属性， 如果使用 watch property
+          的方式，则必须同时 watch 所有的其他属性； 如果使用 computed property
+          的方式，则只需要在取值函数中依赖其他属性就可以了；
         </i>
       </small>
     </p>
@@ -45,5 +45,4 @@ export default {
   methods: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

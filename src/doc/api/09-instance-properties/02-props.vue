@@ -1,16 +1,11 @@
 <template>
   <div>
     <ul>
+      <li>组件的 props 对象；</li>
       <li>
-        组件的 props 对象；
-      </li>
-      <li>
-        vm.$props 的属性会被映射到组件实例上，
-        即如果 vm.$props.x 存在，
-        则 vm.x === vm.$props.x；
-        <p>
-          <C01 x="tom"/>
-        </p>
+        vm.$props 的属性会被映射到组件实例上， 即如果 vm.$props.x 存在， 则 vm.x
+        === vm.$props.x；
+        <p><C01 x="tom" /></p>
       </li>
     </ul>
   </div>
@@ -38,5 +33,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

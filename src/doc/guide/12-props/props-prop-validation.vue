@@ -5,8 +5,7 @@
       <ul>
         <li>
           可以给 props 属性指定一些验证规则，
-          当使用组件时，如果未满足这些验证规则，
-          vue 会在控制台进行警告提示；
+          当使用组件时，如果未满足这些验证规则， vue 会在控制台进行警告提示；
         </li>
         <li>
           组件的 props 配置项的值，可以是：
@@ -22,21 +21,28 @@
             <li>（propA: null）：指定属性的类型可以使任意类型；</li>
             <li>（propA: Number）：指定属性的类型必须是 Number；</li>
             <li>（propA: { type: Number }）：指定属性的类型必须是 Number；</li>
-            <li>（propA: [Number, String]）：指定属性的类型可以是 Number 或者 String；</li>
-            <li>（propA: { type: [Number, String] }）：指定属性的类型可以是 Number 或者 String；</li>
+            <li>
+              （propA: [Number, String]）：指定属性的类型可以是 Number 或者
+              String；
+            </li>
+            <li>
+              （propA: { type: [Number, String] }）：指定属性的类型可以是 Number
+              或者 String；
+            </li>
             <li>（propA: { required: true }）：指定属性必须提供；</li>
             <li>（propA: { default: 18 }）：指定属性的默认值；</li>
             <li>
               （propA: { type: [ Object, Array ], default() { return 18; } }）：
-              如果属性的类型是对象或者数组，其默认值必须使用函数返回的形式来指定（类似组件的 data 配置项）；
+              如果属性的类型是对象或者数组，其默认值必须使用函数返回的形式来指定（类似组件的
+              data 配置项）；
             </li>
             <li>
               （propA: { validator(value) { return value > 18; } }）：
               使用自定义验证函数；
             </li>
             <li>
-              属性的验证是在组件的实例化之前，所以在 default 函数和 validator 函数里面，
-              data 和 computed 是不可用的；
+              属性的验证是在组件的实例化之前，所以在 default 函数和 validator
+              函数里面， data 和 computed 是不可用的；
             </li>
           </ul>
         </li>
@@ -56,10 +62,7 @@
               <li>Function</li>
             </ul>
           </li>
-          <li>
-            也可以是自定义的构造函数，
-            此时会使用 instanceof 来验证类型；
-          </li>
+          <li>也可以是自定义的构造函数， 此时会使用 instanceof 来验证类型；</li>
         </ul>
       </small>
     </small>
@@ -72,5 +75,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

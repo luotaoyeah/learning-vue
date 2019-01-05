@@ -18,11 +18,7 @@
       </small>
     </p>
     <p>
-      <small>
-        <i>
-          没有使用 .ctrl 修饰符，直接回车就会触发事件；
-        </i>
-      </small>
+      <small> <i> 没有使用 .ctrl 修饰符，直接回车就会触发事件； </i> </small>
     </p>
     <input
       style="padding: 7px;border-radius: 3px;"
@@ -31,9 +27,7 @@
     />
     <p>
       <small>
-        <i>
-          使用 .ctrl 修饰符，在回车的同时必须按住 CTRL 键才会触发事件；
-        </i>
+        <i> 使用 .ctrl 修饰符，在回车的同时必须按住 CTRL 键才会触发事件； </i>
       </small>
     </p>
     <input
@@ -45,8 +39,8 @@
     <p>
       <small>
         <i>
-          .ctrl 不是 CTRL 键的事件修饰符别名，如果是要监听 CTRL 键的 keyup 事件，
-          需要使用 CTRL 键的 KeyCode 作为修饰符，即 keyup.17；
+          .ctrl 不是 CTRL 键的事件修饰符别名，如果是要监听 CTRL 键的 keyup
+          事件， 需要使用 CTRL 键的 KeyCode 作为修饰符，即 keyup.17；
         </i>
       </small>
     </p>
@@ -71,5 +65,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

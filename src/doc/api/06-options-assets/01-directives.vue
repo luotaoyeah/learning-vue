@@ -8,7 +8,7 @@
             v-red-border02
             type="text"
             style="padding: 7px;border-radius: 3px;"
-          >
+          />
         </p>
       </li>
     </ul>
@@ -29,5 +29,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

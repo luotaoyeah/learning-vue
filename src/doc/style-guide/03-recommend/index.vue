@@ -1,14 +1,7 @@
 <template>
-  <el-tabs
-    tab-position="left"
-    style="height: 100%;"
-  >
-    <el-tab-pane label="Component options order">
-      <C01></C01>
-    </el-tab-pane>
-    <el-tab-pane label="Element attribute order">
-      <C02></C02>
-    </el-tab-pane>
+  <el-tabs tab-position="left" style="height: 100%;">
+    <el-tab-pane label="Component options order"> <C01></C01> </el-tab-pane>
+    <el-tab-pane label="Element attribute order"> <C02></C02> </el-tab-pane>
     <el-tab-pane label="Single-file component element order">
       <C03></C03>
     </el-tab-pane>
@@ -30,5 +23,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

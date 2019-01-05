@@ -1,21 +1,12 @@
 <template>
   <div>
     <ul>
-      <li>
-        可以使用 Vue.mixin() 注册全局的 mixin；
-      </li>
-      <li>
-        在这之后创建的 vue 实例都会被混入这个 mixin，
-        所以应该小心使用；
-      </li>
+      <li>可以使用 Vue.mixin() 注册全局的 mixin；</li>
+      <li>在这之后创建的 vue 实例都会被混入这个 mixin， 所以应该小心使用；</li>
       <li>
         通常使用全局的 mixin 来处理自定义的组件选项；
-        <p>
-          <MyComponent190301></MyComponent190301>
-        </p>
-        <p>
-          <MyComponent190302></MyComponent190302>
-        </p>
+        <p><MyComponent190301></MyComponent190301></p>
+        <p><MyComponent190302></MyComponent190302></p>
       </li>
     </ul>
   </div>
@@ -49,5 +40,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

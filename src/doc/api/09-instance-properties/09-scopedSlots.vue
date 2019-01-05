@@ -5,21 +5,17 @@
         组件的内容分发对象（scoped）；
         <C01 :items="items">
           <span slot="button">vm.$scopedSlots</span>
-          <template
-            slot="li"
-            slot-scope="{item}"
-          >{{item.id}}. {{item.text}}
+          <template slot="li" slot-scope="{ item }"
+            >{{ item.id }}. {{ item.text }}
           </template>
         </C01>
       </li>
       <li>
-        如果一个元素声明了 slot-scope 属性，
-        那么这个元素是一个 scopedSlot，
+        如果一个元素声明了 slot-scope 属性， 那么这个元素是一个 scopedSlot，
         包含在 vm.$scopedSlots 对象中；
       </li>
       <li>
-        如果一个元素没有声明 slot-scope 属性，
-        那么这个元素是一个普通的 slot，
+        如果一个元素没有声明 slot-scope 属性， 那么这个元素是一个普通的 slot，
         包含在 vm.$slots 对象中；
       </li>
     </ul>
@@ -78,5 +74,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

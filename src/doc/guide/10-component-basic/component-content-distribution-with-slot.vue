@@ -4,8 +4,7 @@
     <small>
       <ul>
         <li>
-          vue 提供了自定义元素 slot，用来将组件元素之间的内容，
-          传递到组件中；
+          vue 提供了自定义元素 slot，用来将组件元素之间的内容， 传递到组件中；
         </li>
       </ul>
     </small>
@@ -30,5 +29,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

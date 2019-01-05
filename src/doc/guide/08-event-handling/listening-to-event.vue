@@ -1,5 +1,6 @@
 <template>
-  <div><h1>1. Listening toEvents</h1>
+  <div>
+    <h1>1. Listening toEvents</h1>
     <p>
       <small>
         <i>
@@ -9,7 +10,7 @@
       </small>
     </p>
     <button v-on:click="counter += 1">Click Me</button>
-    <p>You clicked the button {{counter}} times.</p>
+    <p>You clicked the button {{ counter }} times.</p>
   </div>
 </template>
 <script>
@@ -21,5 +22,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

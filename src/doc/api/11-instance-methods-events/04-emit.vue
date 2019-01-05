@@ -1,14 +1,10 @@
 <template>
   <div>
     <ul>
-      <li>
-        在当前组件实例中触发一个事件；
-      </li>
+      <li>在当前组件实例中触发一个事件；</li>
       <li>
         额外的参数会传递给事件回调函数；
-        <p>
-          <C01 @foo-click="handleFooClick"/>
-        </p>
+        <p><C01 @foo-click="handleFooClick" /></p>
       </li>
     </ul>
   </div>
@@ -36,5 +32,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

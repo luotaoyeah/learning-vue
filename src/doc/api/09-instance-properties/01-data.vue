@@ -1,16 +1,11 @@
 <template>
   <div>
     <ul>
+      <li>组件的 data 对象；</li>
       <li>
-        组件的 data 对象；
-      </li>
-      <li>
-        vm.$data 的属性会被映射到组件实例上，
-        即如果 vm.$data.x 存在，
-        则 vm.x === vm.$data.x；
-        <p>
-          <C01/>
-        </p>
+        vm.$data 的属性会被映射到组件实例上， 即如果 vm.$data.x 存在， 则 vm.x
+        === vm.$data.x；
+        <p><C01 /></p>
       </li>
     </ul>
   </div>
@@ -35,5 +30,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

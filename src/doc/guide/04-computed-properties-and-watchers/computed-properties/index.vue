@@ -4,7 +4,8 @@
     <p>
       <small>
         <i>
-          模板内的表达式一般只用来进行简单的操作；当逻辑太复杂的时候就需要使用 computed properties；
+          模板内的表达式一般只用来进行简单的操作；当逻辑太复杂的时候就需要使用
+          computed properties；
         </i>
       </small>
     </p>
@@ -29,5 +30,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

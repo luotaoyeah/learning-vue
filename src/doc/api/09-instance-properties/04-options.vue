@@ -1,14 +1,10 @@
 <template>
   <div>
     <ul>
-      <li>
-        组件选项对象，只读；
-      </li>
+      <li>组件选项对象，只读；</li>
       <li>
         可以用来获取自定义的组件选项；
-        <p>
-          <C01/>
-        </p>
+        <p><C01 /></p>
       </li>
     </ul>
   </div>
@@ -31,5 +27,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

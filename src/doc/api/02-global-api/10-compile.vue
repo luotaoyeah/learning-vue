@@ -1,9 +1,7 @@
 <template>
   <div>
     <ul>
-      <li>
-        描述：将字符串模板编译为渲染函数；
-      </li>
+      <li>描述：将字符串模板编译为渲染函数；</li>
       <li>
         参数：
         <ul>
@@ -45,5 +43,4 @@ export default {
   components: {}
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>
