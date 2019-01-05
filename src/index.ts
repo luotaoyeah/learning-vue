@@ -1,13 +1,13 @@
 import Vue, { CreateElement } from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-import App from "./components/index.vue";
+import { App } from "./components/App";
 import router from "./router";
 import _, { LoDashStatic } from "lodash";
 import "vue-router";
 
 /*
- * 将 lodash 添加为 vue 的全局属性；
+ * 将 lodash 添加为 vue 的全局属性
  */
 declare module "vue/types/vue" {
   interface VueConstructor {
@@ -52,14 +52,11 @@ Vue.config.productionTip = true;
 Vue.use(ElementUI, { size: "small" });
 
 new Vue({
-  router,
-  components: { App },
-  render(h: CreateElement) {
-    return h(App);
-  },
+  render: (h: CreateElement) => h(App),
   data() {
     return {
       message: "hello world"
     };
-  }
+  },
+  router
 }).$mount("#app");

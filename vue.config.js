@@ -1,8 +1,9 @@
 const http = require("http");
 
 module.exports = {
-  runtimeCompiler: true,
   lintOnSave: false,
+  runtimeCompiler: true,
+  productionSourceMap: false,
   chainWebpack: config => {
     /* 修改入口文件 */
     config
