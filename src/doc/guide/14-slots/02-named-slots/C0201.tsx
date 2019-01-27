@@ -42,6 +42,7 @@ export default class C0201 extends Vue {
   }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 @Component({})
 class C01 extends Vue {
   public render() {

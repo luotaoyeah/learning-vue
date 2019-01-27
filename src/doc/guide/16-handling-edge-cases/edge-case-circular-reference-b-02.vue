@@ -18,4 +18,3 @@ export default {
   components: { A02 }
 };
 </script>
-<style scoped></style>

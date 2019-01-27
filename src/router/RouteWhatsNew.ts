@@ -33,5 +33,10 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
     name: ROUTES.WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE.NAME,
     component: () =>
       import("../doc/whats-new/vue@2.6/05-v-for-support-iterable/C0501.vue")
+  },
+  {
+    path: ROUTES.WHATS_NEW_2_6_V_SLOT.PATH,
+    name: ROUTES.WHATS_NEW_2_6_V_SLOT.NAME,
+    component: () => import("../doc/whats-new/vue@2.6/06-v-slot/C0601.vue")
   }
 ];

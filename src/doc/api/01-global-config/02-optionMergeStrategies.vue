@@ -19,4 +19,3 @@ export default {
   mixins: [{ "my-option-01": "b" }]
 };
 </script>
-<style scoped></style>

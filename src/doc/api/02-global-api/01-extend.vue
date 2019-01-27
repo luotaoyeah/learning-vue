@@ -44,4 +44,3 @@ export default {
   components: {}
 };
 </script>
-<style scoped></style>

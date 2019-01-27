@@ -88,6 +88,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE: {
     NAME: "WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE",
     PATH: "/whats-new/2-6-v-for-support-iterable"
+  },
+  WHATS_NEW_2_6_V_SLOT: {
+    NAME: "WHATS_NEW_2_6_V_SLOT",
+    PATH: "/whats-new/2-6-v-slot"
   }
 };
 

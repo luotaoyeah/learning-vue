@@ -452,6 +452,15 @@ export class App extends Vue {
                       v-for support iterable
                     </router-link>
                   </MenuItem>
+                  <MenuItem index={ROUTES.WHATS_NEW_2_6_V_SLOT.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_V_SLOT.NAME
+                      }}
+                    >
+                      v-slot
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>
