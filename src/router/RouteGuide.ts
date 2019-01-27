@@ -130,9 +130,34 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     component: () => import("../doc/guide/13-custom-events/index.vue")
   },
   {
-    path: "/guide/slots",
-    name: "guide-slots",
-    component: () => import("../doc/guide/14-slots/index.vue")
+    name: ROUTES.GUIDE_SLOTS_SLOT_CONTENT.NAME,
+    path: ROUTES.GUIDE_SLOTS_SLOT_CONTENT.PATH,
+    component: () =>
+      import("../doc/guide/14-slots/01-slot-content/slots-slot-content.vue")
+  },
+  {
+    name: ROUTES.GUIDE_SLOTS_NAMED_SLOT.NAME,
+    path: ROUTES.GUIDE_SLOTS_NAMED_SLOT.PATH,
+    component: () =>
+      import("../doc/guide/14-slots/02-named-slots/slots-named-slots.vue")
+  },
+  {
+    name: ROUTES.GUIDE_SLOTS_DEFAULT_SLOT_CONTENT.NAME,
+    path: ROUTES.GUIDE_SLOTS_DEFAULT_SLOT_CONTENT.PATH,
+    component: () =>
+      import("../doc/guide/14-slots/03-default-slot-content/slots-default-slot-content.vue")
+  },
+  {
+    name: ROUTES.GUIDE_SLOTS_COMPILATION_SCOPE.NAME,
+    path: ROUTES.GUIDE_SLOTS_COMPILATION_SCOPE.PATH,
+    component: () =>
+      import("../doc/guide/14-slots/04-compilation-scope/slots-compilation-scope.vue")
+  },
+  {
+    name: ROUTES.GUIDE_SLOTS_SCOPED_SLOT.NAME,
+    path: ROUTES.GUIDE_SLOTS_SCOPED_SLOT.PATH,
+    component: () =>
+      import("../doc/guide/14-slots/05-scoped-slot/slots-scoped-slots.vue")
   },
   {
     path: "/guide/dynamic-async-component",

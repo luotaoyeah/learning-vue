@@ -45,10 +45,10 @@ Vue.component("MyComponent01", {
   `
 });
 
-export default {
+export default Vue.extend({
   data() {
     return {};
   }
-};
+});
 </script>
 <style scoped></style>

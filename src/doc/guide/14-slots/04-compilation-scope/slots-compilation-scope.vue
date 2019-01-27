@@ -35,12 +35,12 @@ Vue.component("MyComponent", {
   }
 });
 
-export default {
+export default Vue.extend({
   data() {
     return {
       name: "tom"
     };
   }
-};
+});
 </script>
 <style scoped></style>

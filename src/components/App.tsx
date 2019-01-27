@@ -2,7 +2,7 @@ import Vue from "vue";
 import _ from "lodash";
 import "./App.scss";
 import { ROUTES } from "../router/RouterConst";
-import { MenuItem, Submenu, Container, Aside, Main, Menu } from "element-ui";
+import { Aside, Container, Main, Menu, MenuItem, Submenu } from "element-ui";
 import { Component } from "vue-property-decorator";
 
 /**
@@ -185,9 +185,48 @@ export class App extends Vue {
                     Custom Events
                   </router-link>
                 </MenuItem>
-                <MenuItem index="1-14">
-                  <router-link to={{ name: "guide-slots" }}>Slots</router-link>
-                </MenuItem>
+                <Submenu index="1-14">
+                  <template slot="title">Slots</template>
+                  <MenuItem index={ROUTES.GUIDE_SLOTS_SLOT_CONTENT.NAME}>
+                    <router-link
+                      to={{ name: ROUTES.GUIDE_SLOTS_SLOT_CONTENT.NAME }}
+                    >
+                      Slot Content
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem index={ROUTES.GUIDE_SLOTS_NAMED_SLOT.NAME}>
+                    <router-link
+                      to={{ name: ROUTES.GUIDE_SLOTS_NAMED_SLOT.NAME }}
+                    >
+                      Named Slot
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem
+                    index={ROUTES.GUIDE_SLOTS_DEFAULT_SLOT_CONTENT.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name: ROUTES.GUIDE_SLOTS_DEFAULT_SLOT_CONTENT.NAME
+                      }}
+                    >
+                      Default Slot Content
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem index={ROUTES.GUIDE_SLOTS_COMPILATION_SCOPE.NAME}>
+                    <router-link
+                      to={{ name: ROUTES.GUIDE_SLOTS_COMPILATION_SCOPE.NAME }}
+                    >
+                      Compilation Scope
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem index={ROUTES.GUIDE_SLOTS_SCOPED_SLOT.NAME}>
+                    <router-link
+                      to={{ name: ROUTES.GUIDE_SLOTS_SCOPED_SLOT.NAME }}
+                    >
+                      Scoped Slot
+                    </router-link>
+                  </MenuItem>
+                </Submenu>
                 <MenuItem index="1-15">
                   <router-link to={{ name: "guide-dynamic-async-component" }}>
                     Dynamic & Async Components

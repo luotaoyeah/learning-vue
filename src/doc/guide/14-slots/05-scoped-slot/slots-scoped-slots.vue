@@ -78,7 +78,7 @@ Vue.component("TodoList02", {
   props: ["todos"]
 });
 
-export default {
+export default Vue.extend({
   data() {
     return {
       todos: [
@@ -97,6 +97,6 @@ export default {
       ]
     };
   }
-};
+});
 </script>
 <style scoped></style>

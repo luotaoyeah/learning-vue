@@ -1,12 +1,35 @@
-const ROUTES_API = {
+const ROUTES_GUIDE = {
   GUIDE_INTRODUCTION_DECLARATIVE_RENDERING: {
     NAME: "GUIDE_INTRODUCTION_DECLARATIVE_RENDERING",
-    PATH: "/guide/declarative-rendering"
+    PATH: "/guide/introduction/declarative-rendering"
   },
   GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP: {
     NAME: "GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP",
-    PATH: "/guide/conditional-and-loop"
+    PATH: "/guide/introduction/conditional-and-loop"
   },
+  GUIDE_SLOTS_SLOT_CONTENT: {
+    NAME: "GUIDE_SLOTS_SLOT_CONTENT",
+    PATH: "/guide/slots/slot-content"
+  },
+  GUIDE_SLOTS_NAMED_SLOT: {
+    NAME: "GUIDE_SLOTS_NAMED_SLOT",
+    PATH: "/guide/slots/named-slot"
+  },
+  GUIDE_SLOTS_DEFAULT_SLOT_CONTENT: {
+    NAME: "GUIDE_SLOTS_DEFAULT_SLOT_CONTENT",
+    PATH: "/guide/slots/default-slot-content"
+  },
+  GUIDE_SLOTS_COMPILATION_SCOPE: {
+    NAME: "GUIDE_SLOTS_COMPILATION_SCOPE",
+    PATH: "/guide/slots/compilation-scope"
+  },
+  GUIDE_SLOTS_SCOPED_SLOT: {
+    NAME: "GUIDE_SLOTS_SCOPED_SLOT",
+    PATH: "/guide/slots/scoped-slot"
+  }
+};
+
+const ROUTES_API = {
   API_OPTIONS_DATA: {
     NAME: "API_OPTIONS_DATA",
     PATH: "/api/options-data"
@@ -69,6 +92,7 @@ const ROUTES_WHATS_NEW = {
 };
 
 const ROUTES = {
+  ...ROUTES_GUIDE,
   ...ROUTES_API,
   ...ROUTES_WHATS_NEW
 };
