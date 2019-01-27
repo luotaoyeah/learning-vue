@@ -49,6 +49,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_OBSERVABLE: {
     NAME: "WHATS_NEW_2_6_OBSERVABLE",
     PATH: "/whats-new/2-6-observable"
+  },
+  WHATS_NEW_2_6_BIND_PROP_SHORTCUT: {
+    NAME: "WHATS_NEW_2_6_BIND_PROP_SHORTCUT",
+    PATH: "/whats-new/2-6-bind-prop-shortcut"
   }
 };
 

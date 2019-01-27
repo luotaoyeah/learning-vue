@@ -371,6 +371,17 @@ export class App extends Vue {
                       Vue.observable()
                     </router-link>
                   </MenuItem>
+                  <MenuItem
+                    index={ROUTES.WHATS_NEW_2_6_BIND_PROP_SHORTCUT.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_BIND_PROP_SHORTCUT.NAME
+                      }}
+                    >
+                      A short syntax for v-bind .prop modifier
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

@@ -9,7 +9,7 @@ import { Button } from "element-ui";
 const state: { count: number } = Vue.observable({ count: 0 });
 
 @Component({})
-export default class C01 extends Vue {
+export default class C0101 extends Vue {
   public render() {
     return (
       <Button
