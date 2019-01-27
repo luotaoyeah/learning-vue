@@ -391,6 +391,17 @@ export class App extends Vue {
                       Use custom toString() when interpolating objects
                     </router-link>
                   </MenuItem>
+                  <MenuItem
+                    index={ROUTES.WHATS_NEW_2_6_ASYNC_ERROR_HANDLING.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_ASYNC_ERROR_HANDLING.NAME
+                      }}
+                    >
+                      async error handling
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

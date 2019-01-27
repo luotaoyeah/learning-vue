@@ -57,6 +57,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_CUSTOM_TOSTRING: {
     NAME: "WHATS_NEW_2_6_CUSTOM_TOSTRING",
     PATH: "/whats-new/2-6-custom-tostring"
+  },
+  WHATS_NEW_2_6_ASYNC_ERROR_HANDLING: {
+    NAME: "WHATS_NEW_2_6_ASYNC_ERROR_HANDLING",
+    PATH: "/whats-new/2-6-async-error-handling"
   }
 };
 

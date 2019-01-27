@@ -21,5 +21,11 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
     name: ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.NAME,
     component: () =>
       import("../doc/whats-new/vue@2.6/03-custom-tostring/C0301.vue")
+  },
+  {
+    path: ROUTES.WHATS_NEW_2_6_ASYNC_ERROR_HANDLING.PATH,
+    name: ROUTES.WHATS_NEW_2_6_ASYNC_ERROR_HANDLING.NAME,
+    component: () =>
+      import("../doc/whats-new/vue@2.6/04-async-error-handling/C0401")
   }
 ];
