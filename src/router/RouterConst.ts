@@ -1,4 +1,4 @@
-const ROUTES: { [index: string]: { NAME: string; PATH: string } } = {
+const ROUTES_API = {
   GUIDE_INTRODUCTION_DECLARATIVE_RENDERING: {
     NAME: "GUIDE_INTRODUCTION_DECLARATIVE_RENDERING",
     PATH: "/guide/declarative-rendering"
@@ -43,6 +43,18 @@ const ROUTES: { [index: string]: { NAME: string; PATH: string } } = {
     NAME: "API_BUILTIN_COMPONENTS",
     PATH: "/api/builtin-components"
   }
+};
+
+const ROUTES_WHATS_NEW = {
+  WHATS_NEW_2_6_OBSERVABLE: {
+    NAME: "WHATS_NEW_2_6_OBSERVABLE",
+    PATH: "/whats-new/2-6-observable"
+  }
+};
+
+const ROUTES = {
+  ...ROUTES_API,
+  ...ROUTES_WHATS_NEW
 };
 
 export { ROUTES };

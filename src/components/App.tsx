@@ -33,7 +33,7 @@ export class App extends Vue {
               style={{ border: "none" }}
             >
               <Submenu index="1">
-                <template slot="title">Guide</template>
+                <template slot="title">GUIDE</template>
                 <Submenu index="1-1">
                   <template slot="title">Introduction</template>
                   <MenuItem
@@ -240,7 +240,7 @@ export class App extends Vue {
                 </MenuItem>
               </Submenu>
               <Submenu index="2">
-                <template slot="title">Style Guide</template>
+                <template slot="title">STYLE GUIDE</template>
                 <MenuItem index="2-1">
                   <router-link to={{ name: "style-guide-essential" }}>
                     Essential
@@ -359,6 +359,19 @@ export class App extends Vue {
                     Built-in Components
                   </router-link>
                 </MenuItem>
+              </Submenu>
+              <Submenu index="4">
+                <template slot="title">WHAT'S NEW</template>
+                <Submenu index="3-3">
+                  <template slot="title">vue@2.6</template>
+                  <MenuItem index={ROUTES.WHATS_NEW_2_6_OBSERVABLE.NAME}>
+                    <router-link
+                      to={{ name: ROUTES.WHATS_NEW_2_6_OBSERVABLE.NAME }}
+                    >
+                      Vue.observable()
+                    </router-link>
+                  </MenuItem>
+                </Submenu>
               </Submenu>
             </Menu>
           </Aside>
