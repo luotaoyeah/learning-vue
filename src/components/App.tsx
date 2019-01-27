@@ -13,13 +13,13 @@ export class App extends Vue {
   get defaultActive() {
     const vm = this;
     return (
-      _.find(ROUTES, item => item.NAME === vm.$route.name) || {
+      _.find(ROUTES, i => i.NAME === vm.$route.name) || {
         NAME: ""
       }
     ).NAME;
   }
 
-  render() {
+  public render() {
     const vm = this;
 
     return (

@@ -1,23 +1,23 @@
-const ROUTES = {
+const ROUTES: { [index: string]: { NAME: string; PATH: string } } = {
   GUIDE_INTRODUCTION_DECLARATIVE_RENDERING: {
     NAME: "GUIDE_INTRODUCTION_DECLARATIVE_RENDERING",
-    PATH: "/guide/declarative_rendering"
+    PATH: "/guide/declarative-rendering"
   },
   GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP: {
     NAME: "GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP",
-    PATH: "/guide/conditional_and_loop"
+    PATH: "/guide/conditional-and-loop"
   },
   API_OPTIONS_DATA: {
     NAME: "API_OPTIONS_DATA",
-    PATH: "/api/options_data"
+    PATH: "/api/options-data"
   },
   API_OPTIONS_COMPOSITION: {
     NAME: "API_OPTIONS_COMPOSITION",
-    PATH: "/api/options_composition"
+    PATH: "/api/options-composition"
   },
   API_OPTIONS_MISC: {
     NAME: "API_OPTIONS_MISC",
-    PATH: "/api/options_misc"
+    PATH: "/api/options-misc"
   },
   API_INSTANCE_PROPERTIES: {
     NAME: "API_INSTANCE_PROPERTIES",
@@ -25,7 +25,7 @@ const ROUTES = {
   },
   API_INSTANCE_METHODS_DATA: {
     NAME: "API_INSTANCE_METHODS_DATA",
-    PATH: "/api/instance_methods/data"
+    PATH: "/api/instance-methods/data"
   },
   API_INSTANCE_METHODS_EVENTS: {
     NAME: "API_INSTANCE_METHODS_EVENTS",
@@ -44,4 +44,5 @@ const ROUTES = {
     PATH: "/api/builtin-components"
   }
 };
+
 export { ROUTES };
