@@ -148,8 +148,7 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   {
     name: ROUTES.GUIDE_SLOTS_COMPILATION_SCOPE.NAME,
     path: ROUTES.GUIDE_SLOTS_COMPILATION_SCOPE.PATH,
-    component: () =>
-      import("../doc/guide/14-slots/04-compilation-scope/slots-compilation-scope.vue")
+    component: () => import("../doc/guide/14-slots/04-compilation-scope/C0401")
   },
   {
     name: ROUTES.GUIDE_SLOTS_SCOPED_SLOT.NAME,
