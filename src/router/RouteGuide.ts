@@ -153,8 +153,7 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   {
     name: ROUTES.GUIDE_SLOTS_SCOPED_SLOT.NAME,
     path: ROUTES.GUIDE_SLOTS_SCOPED_SLOT.PATH,
-    component: () =>
-      import("../doc/guide/14-slots/05-scoped-slot/slots-scoped-slots.vue")
+    component: () => import("../doc/guide/14-slots/05-scoped-slot/C05")
   },
   {
     path: "/guide/dynamic-async-component",
