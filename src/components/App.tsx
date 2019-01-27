@@ -402,6 +402,17 @@ export class App extends Vue {
                       async error handling
                     </router-link>
                   </MenuItem>
+                  <MenuItem
+                    index={ROUTES.WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE.NAME
+                      }}
+                    >
+                      v-for support iterable
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>
