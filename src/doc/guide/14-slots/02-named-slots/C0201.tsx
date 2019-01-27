@@ -3,7 +3,7 @@ import { Component } from "vue-property-decorator";
 import { Button } from "element-ui";
 
 @Component({})
-export default class C0101 extends Vue {
+export default class C0201 extends Vue {
   public render() {
     return (
       <div>
