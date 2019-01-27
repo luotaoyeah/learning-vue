@@ -132,8 +132,7 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   {
     name: ROUTES.GUIDE_SLOTS_SLOT_CONTENT.NAME,
     path: ROUTES.GUIDE_SLOTS_SLOT_CONTENT.PATH,
-    component: () =>
-      import("../doc/guide/14-slots/01-slot-content/slots-slot-content.vue")
+    component: () => import("../doc/guide/14-slots/01-slot-content/C0101")
   },
   {
     name: ROUTES.GUIDE_SLOTS_NAMED_SLOT.NAME,
