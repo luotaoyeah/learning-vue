@@ -15,5 +15,11 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
     name: ROUTES.WHATS_NEW_2_6_BIND_PROP_SHORTCUT.NAME,
     component: () =>
       import("../doc/whats-new/vue@2.6/02-v-bind.prop-shortcut/C0201.vue")
+  },
+  {
+    path: ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.PATH,
+    name: ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.NAME,
+    component: () =>
+      import("../doc/whats-new/vue@2.6/03-custom-tostring/C0301.vue")
   }
 ];

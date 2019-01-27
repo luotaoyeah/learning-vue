@@ -382,6 +382,15 @@ export class App extends Vue {
                       A short syntax for v-bind .prop modifier
                     </router-link>
                   </MenuItem>
+                  <MenuItem index={ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.NAME
+                      }}
+                    >
+                      Use custom toString() when interpolating objects
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

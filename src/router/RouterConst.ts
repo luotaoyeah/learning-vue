@@ -53,6 +53,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_BIND_PROP_SHORTCUT: {
     NAME: "WHATS_NEW_2_6_BIND_PROP_SHORTCUT",
     PATH: "/whats-new/2-6-bind-prop-shortcut"
+  },
+  WHATS_NEW_2_6_CUSTOM_TOSTRING: {
+    NAME: "WHATS_NEW_2_6_CUSTOM_TOSTRING",
+    PATH: "/whats-new/2-6-custom-tostring"
   }
 };
 
