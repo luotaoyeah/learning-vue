@@ -5,6 +5,7 @@
     <el-tab-pane label="components"> <C03></C03> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-directives";
 import C02 from "./02-filters";

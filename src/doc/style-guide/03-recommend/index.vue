@@ -7,6 +7,7 @@
     </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-component-options-order";
 import C02 from "./02-element-attribute-order";

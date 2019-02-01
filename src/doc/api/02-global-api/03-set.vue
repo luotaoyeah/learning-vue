@@ -26,6 +26,7 @@
     <p><ElAlert :title="x.z" :closable="false"></ElAlert></p>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 import Picture01 from "./03-set.png";

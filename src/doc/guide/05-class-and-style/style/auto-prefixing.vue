@@ -11,6 +11,7 @@
     <p :style="styleObj01">:style="styleObj01"</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

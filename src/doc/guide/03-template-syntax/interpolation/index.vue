@@ -6,6 +6,7 @@
     <InteroplationExpression></InteroplationExpression>
   </div>
 </template>
+
 <script>
 import InteroplationText from "./interpolation-text";
 import InteroplationHtml from "./interpolation-html";

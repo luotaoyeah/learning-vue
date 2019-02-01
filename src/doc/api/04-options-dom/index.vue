@@ -6,6 +6,7 @@
     <el-tab-pane label="renderError"> <C04></C04> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-el";
 import C02 from "./02-template";

@@ -47,6 +47,7 @@
     <button @click="handleFilter">filter</button>
   </div>
 </template>
+
 <script>
 export default {
   data() {

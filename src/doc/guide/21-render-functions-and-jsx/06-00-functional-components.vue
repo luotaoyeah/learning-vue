@@ -39,6 +39,7 @@
     <C02></C02>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 import C01 from "./06-01-passing-attributes-and-events-to-child-elements";

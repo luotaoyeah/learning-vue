@@ -15,6 +15,7 @@
     <ComputedPropertiesSetter></ComputedPropertiesSetter>
   </div>
 </template>
+
 <script>
 import ComputedPropertiesBasic from "./computed-properties-basic";
 import ComputedPropertiesVsMethod from "./computed-properties-vs-method";

@@ -18,6 +18,7 @@
     <my-component-a></my-component-a>
   </div>
 </template>
+
 <script>
 const MyComponent = {
   template: "<p>MyComponent</p>"

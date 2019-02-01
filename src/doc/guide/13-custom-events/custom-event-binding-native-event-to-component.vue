@@ -28,6 +28,7 @@
     <p><MyComponent130102 @click01="handleClick01"></MyComponent130102></p>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

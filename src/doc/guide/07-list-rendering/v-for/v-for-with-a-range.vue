@@ -9,6 +9,7 @@
     <span v-for="item in 10" :key="item">{{ item }} </span>
   </div>
 </template>
+
 <script>
 export default {
   data() {

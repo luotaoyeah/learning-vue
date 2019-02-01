@@ -12,6 +12,7 @@
     <p><span id="span_01"></span></p>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

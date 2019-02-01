@@ -24,6 +24,7 @@
     <ButtonCounter2></ButtonCounter2>
   </div>
 </template>
+
 <script>
 /* eslint-disable vue/no-shared-component-data */
 import Vue from "vue";

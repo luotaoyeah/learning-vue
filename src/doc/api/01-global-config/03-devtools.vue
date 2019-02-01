@@ -19,6 +19,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 import Picture01 from "./03-devtools.png";
 

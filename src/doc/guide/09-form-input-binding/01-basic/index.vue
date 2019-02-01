@@ -27,6 +27,7 @@
     <FormInputSelect></FormInputSelect>
   </div>
 </template>
+
 <script>
 import FormInputText from "./form-input-text";
 import FormInputMultilineText from "./form-input-multiline-text";

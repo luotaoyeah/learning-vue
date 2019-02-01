@@ -41,6 +41,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 /* eslint-disable vue/no-reserved-keys */
 export default {

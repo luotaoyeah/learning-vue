@@ -10,6 +10,7 @@
     </el-tabs>
   </div>
 </template>
+
 <script>
 import C01 from "./01-basics";
 import C02 from "./02-option-merging";

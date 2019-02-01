@@ -80,6 +80,7 @@
     <CustomInput v-model="searchText01"></CustomInput>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

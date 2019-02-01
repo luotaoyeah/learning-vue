@@ -7,6 +7,7 @@
     <PropsNoPropAttribute></PropsNoPropAttribute>
   </div>
 </template>
+
 <script>
 import PropsCasing from "./props-casing";
 import PropsStaticAndDynamicProps from "./props-static-and-dynamic-props";

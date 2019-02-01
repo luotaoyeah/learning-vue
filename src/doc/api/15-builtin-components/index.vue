@@ -7,6 +7,7 @@
     <el-tab-pane label="slot"> <C05></C05> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-component";
 import C02 from "./02-transition";

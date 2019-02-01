@@ -10,6 +10,7 @@
     <el-tab-pane label="Non-flux state management"> <C04></C04> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-vif-without-key";
 import C02 from "./02-element-selector-with-scoped";

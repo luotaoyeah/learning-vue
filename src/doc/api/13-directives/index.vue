@@ -15,6 +15,7 @@
     <el-tab-pane label="v-once"> <C13></C13> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-v-text";
 import C02 from "./02-v-html";

@@ -35,6 +35,7 @@
     </small>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 import P01 from "./edge-case-circular-reference-01.png";

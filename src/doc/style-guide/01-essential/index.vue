@@ -9,6 +9,7 @@
     <el-tab-pane label="Private property names"> <C07></C07> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-multiword-component-names";
 import C02 from "./02-component-data";

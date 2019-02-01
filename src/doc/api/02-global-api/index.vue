@@ -13,6 +13,7 @@
     <el-tab-pane label="version"> <C11></C11> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-extend";
 import C02 from "./02-nextTick";

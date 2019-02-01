@@ -7,6 +7,7 @@
     <p><C02 /></p>
   </div>
 </template>
+
 <script>
 const C01 = {
   created() {

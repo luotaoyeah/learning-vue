@@ -6,6 +6,7 @@
     <ComponentPassingDataToChildComponent></ComponentPassingDataToChildComponent>
   </div>
 </template>
+
 <script>
 import ComponentBaseExample from "./01-component-name";
 import ComponentReusingComponent from "./02-global-registration";

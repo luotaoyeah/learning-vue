@@ -19,6 +19,7 @@
     <BlogPost v-for="post in posts" :key="post.id" v-bind="post"></BlogPost>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

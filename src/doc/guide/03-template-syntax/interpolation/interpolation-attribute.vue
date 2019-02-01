@@ -18,6 +18,7 @@
     <p><button v-bind:disabled="isButtonDisabled">Button</button></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

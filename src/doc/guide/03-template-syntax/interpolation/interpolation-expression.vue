@@ -46,6 +46,7 @@
     <p>Math.LN10：{{ Math.LN10 }}</p>
   </div>
 </template>
+
 <script>
 window.MyGolbalVar = "MyGolbalVar";
 

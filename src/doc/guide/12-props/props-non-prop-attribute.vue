@@ -46,6 +46,7 @@
     ></MyComponent02>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

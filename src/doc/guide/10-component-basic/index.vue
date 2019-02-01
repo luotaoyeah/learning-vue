@@ -11,6 +11,7 @@
     <ComponentDomTemplateParsingCaveat></ComponentDomTemplateParsingCaveat>
   </div>
 </template>
+
 <script>
 import ComponentBaseExample from "./component-base-example";
 import ComponentReusingComponent from "./component-reusing-component";

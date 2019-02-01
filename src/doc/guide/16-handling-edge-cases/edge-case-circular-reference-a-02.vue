@@ -4,6 +4,7 @@
     <B02 :children="folder.children"></B02>
   </p>
 </template>
+
 <script>
 export default {
   name: "a02",

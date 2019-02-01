@@ -36,6 +36,7 @@
     <p :class="classObj02">:class="classObj02"</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

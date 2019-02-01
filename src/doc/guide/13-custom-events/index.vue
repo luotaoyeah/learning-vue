@@ -6,6 +6,7 @@
     <CustomEventSyncModifier></CustomEventSyncModifier>
   </div>
 </template>
+
 <script>
 import CustomEventEventNames from "./custom-events-event-names";
 import CustomEventComponentVModel from "./custom-event-customizing-component-v-model";

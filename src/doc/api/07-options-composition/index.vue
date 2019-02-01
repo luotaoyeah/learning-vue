@@ -6,6 +6,7 @@
     <el-tab-pane label="provide-inject"> <C04></C04> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-parent";
 import C02 from "./02-mixins";

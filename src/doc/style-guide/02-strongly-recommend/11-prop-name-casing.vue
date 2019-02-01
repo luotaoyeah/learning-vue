@@ -7,6 +7,7 @@
     <p><C01 :user-name="'tom'"></C01></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

@@ -28,6 +28,7 @@
     <button @click="handle02">add properties 'age' and 'score'</button>
   </div>
 </template>
+
 <script>
 export default {
   data() {

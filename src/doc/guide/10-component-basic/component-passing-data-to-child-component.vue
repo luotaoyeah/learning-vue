@@ -11,6 +11,7 @@
     <post :title="title01"></post> <post :title="title02"></post>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

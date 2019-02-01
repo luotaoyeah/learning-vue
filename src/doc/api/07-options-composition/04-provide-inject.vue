@@ -34,6 +34,7 @@
     <C01 />
   </div>
 </template>
+
 <script>
 export default {
   data() {

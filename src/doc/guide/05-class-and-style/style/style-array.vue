@@ -9,6 +9,7 @@
     <p :style="[styleObj01, styleObj02]">:style="[styleObj01, styleObj02]"</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

@@ -9,6 +9,7 @@
     <p><C01 name="tom" /></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

@@ -11,6 +11,7 @@
     <MyComponent><i>content from parent using slot</i></MyComponent>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

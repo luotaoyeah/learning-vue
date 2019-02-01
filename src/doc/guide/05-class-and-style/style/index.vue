@@ -6,6 +6,7 @@
     <AutoPrefixing></AutoPrefixing>
   </div>
 </template>
+
 <script>
 import StyleString from "./style-string";
 import StyleObject from "./style-object";

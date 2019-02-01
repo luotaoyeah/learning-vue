@@ -17,6 +17,7 @@
     <ClassWithComponent></ClassWithComponent>
   </div>
 </template>
+
 <script>
 import ClassObject from "./class-object";
 import ClassArray from "./class-array";

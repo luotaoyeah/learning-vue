@@ -16,6 +16,7 @@
     <p id="p_01">{{ message }}</p>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

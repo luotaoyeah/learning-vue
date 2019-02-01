@@ -27,6 +27,7 @@
     </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 export default {
   data() {

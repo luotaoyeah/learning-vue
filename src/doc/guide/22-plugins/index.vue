@@ -42,6 +42,7 @@
     </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import Vue from "vue";
 

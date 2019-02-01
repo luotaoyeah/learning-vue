@@ -12,6 +12,7 @@
     <WhyListenerInHtml></WhyListenerInHtml>
   </div>
 </template>
+
 <script>
 import ListeningToEvent from "./listening-to-event";
 import EventHandler from "./event-handler";

@@ -15,6 +15,7 @@
     <p>You clicked the button {{ counter }} times.</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

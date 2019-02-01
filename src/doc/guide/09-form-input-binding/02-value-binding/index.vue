@@ -21,6 +21,7 @@
     <FormInputSelect></FormInputSelect>
   </div>
 </template>
+
 <script>
 import FormInputCheckbox from "./form-input-checkbox";
 import FormInputRadio from "./form-input-radio";

@@ -43,6 +43,7 @@
     <button @click="handle05">Array.prototype.splice()</button>
   </div>
 </template>
+
 <script>
 export default {
   data() {

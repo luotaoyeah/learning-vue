@@ -15,6 +15,7 @@
     <p><span :id="id01"></span></p>
   </div>
 </template>
+
 <script>
 import _ from "lodash";
 import Vue from "vue";

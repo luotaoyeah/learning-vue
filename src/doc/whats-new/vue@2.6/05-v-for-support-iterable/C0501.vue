@@ -5,6 +5,7 @@
     </ul>
   </div>
 </template>
+
 <script lang="ts">
 /*
  * v-for 现在支持 iterable 对象

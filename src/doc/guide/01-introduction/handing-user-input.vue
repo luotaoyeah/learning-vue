@@ -7,6 +7,7 @@
     <input type="text" v-model="message" />
   </div>
 </template>
+
 <script>
 export default {
   name: "HandingUserInput",

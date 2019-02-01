@@ -16,6 +16,7 @@
     <p>invoking method in the expression 2：{{ reverseMessage() }}</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

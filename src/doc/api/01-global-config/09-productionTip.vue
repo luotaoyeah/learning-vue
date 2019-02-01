@@ -10,6 +10,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 import Picture01 from "./09-productionTip.png";
 

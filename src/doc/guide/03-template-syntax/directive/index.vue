@@ -13,6 +13,7 @@
     <DirectiveShorthands></DirectiveShorthands>
   </div>
 </template>
+
 <script>
 import DirectiveArgument from "./directive-argument";
 import DirectiveModifier from "./directive-modifier";

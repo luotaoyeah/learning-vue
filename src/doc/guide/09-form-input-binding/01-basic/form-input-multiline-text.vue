@@ -11,6 +11,7 @@
     <p>Message: {{ message }}</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

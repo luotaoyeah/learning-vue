@@ -5,6 +5,7 @@
     <el-tab-pane label="vm.$delete"> <C03></C03> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-watch";
 import C02 from "./02-set";

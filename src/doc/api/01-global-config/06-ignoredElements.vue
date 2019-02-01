@@ -17,6 +17,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 import Picture01 from "./06-ignoredElements.png";
 

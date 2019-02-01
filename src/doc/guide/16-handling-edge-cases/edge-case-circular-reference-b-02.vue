@@ -6,6 +6,7 @@
     </li>
   </ul>
 </template>
+
 <script>
 import A02 from "./edge-case-circular-reference-a-02";
 

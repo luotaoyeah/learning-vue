@@ -8,6 +8,7 @@
     <el-tab-pane label="is"> <C06></C06> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-key";
 import C02 from "./02-ref";

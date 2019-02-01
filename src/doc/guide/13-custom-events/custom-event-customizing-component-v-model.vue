@@ -12,6 +12,7 @@
     <MyCheckbox v-model="checked"></MyCheckbox>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

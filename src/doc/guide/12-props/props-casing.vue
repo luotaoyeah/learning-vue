@@ -14,6 +14,7 @@
     <MyComponent :postTitle="title"></MyComponent>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

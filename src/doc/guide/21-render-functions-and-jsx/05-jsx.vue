@@ -14,6 +14,7 @@
     </ul>
   </div>
 </template>
+
 <script type="text/babel">
 import Vue from "vue";
 import { Button as ElButton } from "element-ui";

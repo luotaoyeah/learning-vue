@@ -26,6 +26,7 @@
     <MyComponent02 v-bind:date.sync="date02"></MyComponent02>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

@@ -4,6 +4,7 @@
     <el-tab-pane label="Async Components"> <C02></C02> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-dynamic-async-component-dynamic-component";
 import C02 from "./02-dynamic-async-component-async-component";

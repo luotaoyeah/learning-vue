@@ -19,6 +19,7 @@
     </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import Basics from "./01-basics";
 import NodesTreesAndVirtualDOM from "./02-nodes-trees-and-virtual-dom";

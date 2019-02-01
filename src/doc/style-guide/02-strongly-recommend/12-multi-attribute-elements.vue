@@ -7,6 +7,7 @@
     <p><C01 :foo="'tom'" :bar="18"></C01></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

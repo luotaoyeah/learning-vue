@@ -11,6 +11,7 @@
     <p>fullName: <input v-model="fullName" /></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

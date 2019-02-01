@@ -39,6 +39,7 @@
     <p>Selected: {{ selected02 }}</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

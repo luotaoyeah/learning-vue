@@ -13,6 +13,7 @@
     <el-tab-pane label="errorCaptured"> <C11></C11> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-beforeCreate";
 import C02 from "./02-created";

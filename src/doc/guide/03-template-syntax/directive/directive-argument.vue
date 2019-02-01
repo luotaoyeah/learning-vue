@@ -16,6 +16,7 @@
     <p><button v-on:click="handleClick">Click Me</button></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

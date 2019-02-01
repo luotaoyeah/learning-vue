@@ -15,6 +15,7 @@
     <el-tab-pane label="vm.$listeners"> <C13></C13> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-data";
 import C02 from "./02-props";

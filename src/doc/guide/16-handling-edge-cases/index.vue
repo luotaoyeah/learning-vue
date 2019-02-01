@@ -7,6 +7,7 @@
     <EdgeCaseControlUpdate></EdgeCaseControlUpdate>
   </div>
 </template>
+
 <script>
 import EdgeCaseElementComponentAccess from "./edge-case-element-component-access";
 import EdgeCaseProgrammaticEventListener from "./edge-case-programmatic-event-listener";

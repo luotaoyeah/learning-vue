@@ -17,6 +17,7 @@
     <p v-else>D</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

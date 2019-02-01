@@ -14,6 +14,7 @@
     <p>Message：{{ htmlStr }}</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

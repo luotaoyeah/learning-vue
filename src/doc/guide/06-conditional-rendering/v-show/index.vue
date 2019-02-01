@@ -1,6 +1,7 @@
 <template>
   <div><VShow></VShow></div>
 </template>
+
 <script>
 import VShow from "./v-show";
 

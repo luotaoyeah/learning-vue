@@ -8,6 +8,7 @@
     <el-tab-pane label="Async Update Qunee"> <C04></C04> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-how-changes-are-tracked";
 import C02 from "./02-change-detection-caveats";

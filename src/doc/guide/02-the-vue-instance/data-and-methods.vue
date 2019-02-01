@@ -21,6 +21,7 @@
     <h1>4. instance lifecycle hooks</h1>
   </div>
 </template>
+
 <script>
 const dataObj = {
   name: "tom",

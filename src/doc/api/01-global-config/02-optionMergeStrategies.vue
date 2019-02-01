@@ -7,6 +7,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 import Picture01 from "./02-optionMergeStrategies.png";
 

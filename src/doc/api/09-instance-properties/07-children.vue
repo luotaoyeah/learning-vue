@@ -9,6 +9,7 @@
     <p><ElButton @click="handleClick">vm.$children</ElButton></p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

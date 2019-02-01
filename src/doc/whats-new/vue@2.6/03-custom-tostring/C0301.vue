@@ -12,6 +12,7 @@
     <ElButton>{{ `${b}` }}</ElButton>
   </div>
 </template>
+
 <script lang="ts">
 class A {
   x: string = "A";

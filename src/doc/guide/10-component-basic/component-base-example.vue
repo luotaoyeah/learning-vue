@@ -11,6 +11,7 @@
     <ButtonCounter></ButtonCounter>
   </div>
 </template>
+
 <script>
 import Vue from "vue";
 

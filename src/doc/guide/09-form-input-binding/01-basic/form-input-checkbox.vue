@@ -46,6 +46,7 @@
     <p>Checked Names: {{ checkedNames }}</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

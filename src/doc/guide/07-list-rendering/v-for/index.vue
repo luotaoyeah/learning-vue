@@ -13,6 +13,7 @@
     <VForWithAComponent></VForWithAComponent>
   </div>
 </template>
+
 <script>
 import VFor from "./v-for";
 import VForWithObject from "./v-for-with-object";

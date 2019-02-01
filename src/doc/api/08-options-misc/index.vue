@@ -8,6 +8,7 @@
     <el-tab-pane label="comments"> <C06></C06> </el-tab-pane>
   </el-tabs>
 </template>
+
 <script>
 import C01 from "./01-name";
 import C02 from "./02-delimiters";
