@@ -545,6 +545,18 @@ export class App extends Vue {
                       add scopedSlots to context in functional components
                     </router-link>
                   </MenuItem>
+                  <MenuItem
+                    index={ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name:
+                          ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.NAME
+                      }}
+                    >
+                      Support dynamic values in directive arguments
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

@@ -44,5 +44,11 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
     name: ROUTES.WHATS_NEW_2_6_SCOPED_SLOTS.NAME,
     component: () =>
       import("../doc/whats-new/vue@2.6/07-add-scopedslots-to-context-in-functional-components/C07")
+  },
+  {
+    path: ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.PATH,
+    name: ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.NAME,
+    component: () =>
+      import("../doc/whats-new/vue@2.6/08-dynamic-directive-arguments/C08")
   }
 ];
