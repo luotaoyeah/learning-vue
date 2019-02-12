@@ -220,7 +220,7 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-06-functional-components/06-00-functional-components.vue")
+      import("../doc/guide/21-render-functions-and-jsx/21-06-functional-components/C2106")
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION.NAME,

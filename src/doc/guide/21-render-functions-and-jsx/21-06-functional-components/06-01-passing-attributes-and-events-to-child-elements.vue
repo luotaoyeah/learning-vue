@@ -22,10 +22,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  },
-  components: {}
-};
+import Vue from "vue";
+
+export default Vue.extend({});
 </script>
