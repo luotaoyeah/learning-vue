@@ -120,6 +120,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_V_SLOT: {
     NAME: "WHATS_NEW_2_6_V_SLOT",
     PATH: "/whats-new/2-6-v-slot"
+  },
+  WHATS_NEW_2_6_SCOPED_SLOTS: {
+    NAME: "WHATS_NEW_2_6_SCOPED_SLOTS",
+    PATH: "/whats-new/2-6-scoped-slots"
   }
 };
 

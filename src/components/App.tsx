@@ -536,6 +536,15 @@ export class App extends Vue {
                       v-slot
                     </router-link>
                   </MenuItem>
+                  <MenuItem index={ROUTES.WHATS_NEW_2_6_SCOPED_SLOTS.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_SCOPED_SLOTS.NAME
+                      }}
+                    >
+                      add scopedSlots to context in functional components
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

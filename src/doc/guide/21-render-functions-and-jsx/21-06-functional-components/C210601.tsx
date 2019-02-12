@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue, { RenderContext } from "vue";
 import { Component } from "vue-property-decorator";
 import { Button } from "element-ui";
 
@@ -26,9 +26,7 @@ export class C210601 extends Vue {
                     color: "#ff0000"
                   }
                 }}
-              >
-                h2
-              </C01>
+              />
             </p>
             <p>
               <C01
@@ -37,9 +35,7 @@ export class C210601 extends Vue {
                     color: "#0000ff"
                   }
                 }}
-              >
-                h3
-              </C01>
+              />
             </p>
           </li>
           <li>
@@ -75,6 +71,6 @@ export class C210601 extends Vue {
  * @param color
  * @constructor
  */
-const C01 = ({ props: { color } }: { props: { color: string } }) => (
+const C01 = ({ props: { color } }: Pick<RenderContext, "props">) => (
   <Button style={{ color }}>{color}</Button>
 );
