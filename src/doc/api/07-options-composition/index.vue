@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="parent"> <C01></C01> </el-tab-pane>
     <el-tab-pane label="mixins"> <C02></C02> </el-tab-pane>
     <el-tab-pane label="extends"> <C03></C03> </el-tab-pane>

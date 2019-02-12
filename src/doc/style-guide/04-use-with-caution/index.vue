@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="v-if / v-else without key"> <C01></C01> </el-tab-pane>
     <el-tab-pane label="Element selector with scoped">
       <C02></C02>

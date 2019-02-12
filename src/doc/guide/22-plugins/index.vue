@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="Writing a Plugin">
       <ul>
         <li>

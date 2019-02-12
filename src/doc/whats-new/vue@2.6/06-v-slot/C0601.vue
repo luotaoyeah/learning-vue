@@ -1,7 +1,6 @@
 <template>
   <div>
-    <p>在 vue@2.6 之前，需要通过 slot='slot01' 的形式来指定某个 slot；</p>
-    <hr />
+    <p>在 vue@2.6 之前，需要通过 slot="slot01" 的形式来指定某个 slot</p>
     <C01>
       <template slot="header">
         <p>
@@ -15,8 +14,7 @@
       </template>
     </C01>
     <hr />
-    <p>在 vue@2.6 之后，可以通过 v-slot:slot01 的形式来指定某个 slot；</p>
-    <hr />
+    <p>在 vue@2.6 之后，可以通过 v-slot:slot01 的形式来指定某个 slot</p>
     <C01>
       <template v-slot:header>
         <p>
@@ -46,9 +44,9 @@ const C01 = Vue.component("C01", {
   }
 });
 
-export default {
+export default Vue.extend({
   components: {
     C01
   }
-};
+});
 </script>

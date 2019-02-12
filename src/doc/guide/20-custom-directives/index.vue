@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="Intro"> <Intro></Intro> </el-tab-pane>
     <el-tab-pane label="Hook Functions">
       <HookFunctions></HookFunctions>

@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="1.1.">
       <ul>
         <li>vue 支持过滤器（filters）， 用来格式化文本；</li>

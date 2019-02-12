@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="How Changes are Tracked"> <C01></C01> </el-tab-pane>
     <el-tab-pane label="Change Detection Caveats"> <C02></C02> </el-tab-pane>
     <el-tab-pane label="Declaring Reactive Properties">

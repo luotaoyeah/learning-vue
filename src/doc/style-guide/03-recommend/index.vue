@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="Component options order"> <C01></C01> </el-tab-pane>
     <el-tab-pane label="Element attribute order"> <C02></C02> </el-tab-pane>
     <el-tab-pane label="Single-file component element order">

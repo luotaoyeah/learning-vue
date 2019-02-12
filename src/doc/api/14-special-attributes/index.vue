@@ -1,5 +1,5 @@
 <template>
-  <el-tabs tab-position="left" style="height: 100%;">
+  <el-tabs tabPosition="right" style="height: 100%;">
     <el-tab-pane label="key"> <C01></C01> </el-tab-pane>
     <el-tab-pane label="ref"> <C02></C02> </el-tab-pane>
     <el-tab-pane label="slot"> <C03></C03> </el-tab-pane>

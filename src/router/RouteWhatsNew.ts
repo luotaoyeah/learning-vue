@@ -37,6 +37,6 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
   {
     path: ROUTES.WHATS_NEW_2_6_V_SLOT.PATH,
     name: ROUTES.WHATS_NEW_2_6_V_SLOT.NAME,
-    component: () => import("../doc/whats-new/vue@2.6/06-v-slot/C0601.vue")
+    component: () => import("../doc/whats-new/vue@2.6/06-v-slot/C06")
   }
 ];
