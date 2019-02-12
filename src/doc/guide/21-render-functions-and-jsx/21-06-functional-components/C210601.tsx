@@ -20,6 +20,8 @@ export class C210601 extends Vue {
             函数组件的 render 方法接收第 2 个参数：context，
             作为没有组件实例的补充；
             <p>
+              {/*
+               // @ts-ignore*/}
               <C01
                 {...{
                   props: {
@@ -29,6 +31,8 @@ export class C210601 extends Vue {
               />
             </p>
             <p>
+              {/*
+               // @ts-ignore*/}
               <C01
                 {...{
                   props: {
@@ -71,6 +75,6 @@ export class C210601 extends Vue {
  * @param color
  * @constructor
  */
-const C01 = ({ props: { color } }: Pick<RenderContext, "props">) => (
+const C01 = ({ props: { color } }: RenderContext<{ color: string }>) => (
   <Button style={{ color }}>{color}</Button>
 );
