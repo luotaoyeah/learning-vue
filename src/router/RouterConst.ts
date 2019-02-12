@@ -26,6 +26,34 @@ const ROUTES_GUIDE = {
   GUIDE_SLOTS_SCOPED_SLOT: {
     NAME: "GUIDE_SLOTS_SCOPED_SLOT",
     PATH: "/guide/slots/scoped-slot"
+  },
+  GUIDE_RENDER_FUNCTIONS_BASIC: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_BASIC",
+    PATH: "/guide/render-function-and-jsx/basic"
+  },
+  GUIDE_RENDER_FUNCTIONS_VDOM: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_VDOM",
+    PATH: "/guide/render-function-and-jsx/vdom"
+  },
+  GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT",
+    PATH: "/guide/render-function-and-jsx/create-element"
+  },
+  GUIDE_RENDER_FUNCTIONS_TEMPLATE: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_TEMPLATE",
+    PATH: "/guide/render-function-and-jsx/template"
+  },
+  GUIDE_RENDER_FUNCTIONS_JSX: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_JSX",
+    PATH: "/guide/render-function-and-jsx/jsx"
+  },
+  GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT",
+    PATH: "/guide/render-function-and-jsx/functional-component"
+  },
+  GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION: {
+    NAME: "GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION",
+    PATH: "/guide/render-function-and-jsx/template-compilation"
   }
 };
 

@@ -187,10 +187,46 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     component: () => import("../doc/guide/20-custom-directives/index.vue")
   },
   {
-    path: "/guide/render-function-and-jsx",
-    name: "guide-render-function-and-jsx",
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/index.vue")
+      import("../doc/guide/21-render-functions-and-jsx/21-01-basics/01-basics.vue")
+  },
+  {
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_VDOM.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_VDOM.PATH,
+    component: () =>
+      import("../doc/guide/21-render-functions-and-jsx/21-02-nodes-trees-and-the-virtual-dom/02-nodes-trees-and-virtual-dom.vue")
+  },
+  {
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT.PATH,
+    component: () =>
+      import("../doc/guide/21-render-functions-and-jsx/21-03-createelement-arguments/03-createelement-arguments.vue")
+  },
+  {
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE.PATH,
+    component: () =>
+      import("../doc/guide/21-render-functions-and-jsx/21-04-replacing-template-features-with-plain-javascript/04-00-replacing-template-features-with-plain-js.vue")
+  },
+  {
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_JSX.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_JSX.PATH,
+    component: () =>
+      import("../doc/guide/21-render-functions-and-jsx/21-05-jsx/05-jsx.vue")
+  },
+  {
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.PATH,
+    component: () =>
+      import("../doc/guide/21-render-functions-and-jsx/21-06-functional-components/06-00-functional-components.vue")
+  },
+  {
+    name: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION.NAME,
+    path: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION.PATH,
+    component: () =>
+      import("../doc/guide/21-render-functions-and-jsx/21-07-template-compilation/07-template-compilation.vue")
   },
   {
     path: "/guide/plugins",

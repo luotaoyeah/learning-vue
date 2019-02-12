@@ -257,11 +257,86 @@ export class App extends Vue {
                     Custom Directives
                   </router-link>
                 </MenuItem>
-                <MenuItem index="1-21">
-                  <router-link to={{ name: "guide-render-function-and-jsx" }}>
-                    Render Functions & JSX
-                  </router-link>
-                </MenuItem>
+                <Submenu index="1-21">
+                  <template slot="title">Render Functions & JSX</template>
+                  <MenuItem index={ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME
+                      }}
+                    >
+                      Basics
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem index={ROUTES.GUIDE_RENDER_FUNCTIONS_VDOM.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.GUIDE_RENDER_FUNCTIONS_VDOM.NAME
+                      }}
+                    >
+                      Nodes, Trees, and the Virtual DOM
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem
+                    index={ROUTES.GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name: ROUTES.GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT.NAME
+                      }}
+                    >
+                      createElement Arguments
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem index={ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE.NAME
+                      }}
+                    >
+                      Replacing Template Features with Plain JavaScript
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem index={ROUTES.GUIDE_RENDER_FUNCTIONS_JSX.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.GUIDE_RENDER_FUNCTIONS_JSX.NAME
+                      }}
+                    >
+                      JSX
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem
+                    index={
+                      ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.NAME
+                    }
+                  >
+                    <router-link
+                      to={{
+                        name:
+                          ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT
+                            .NAME
+                      }}
+                    >
+                      Functional Components
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem
+                    index={
+                      ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION.NAME
+                    }
+                  >
+                    <router-link
+                      to={{
+                        name:
+                          ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION
+                            .NAME
+                      }}
+                    >
+                      Template Compilation
+                    </router-link>
+                  </MenuItem>
+                </Submenu>
                 <MenuItem index="1-22">
                   <router-link to={{ name: "guide-plugins" }}>
                     Plugins
