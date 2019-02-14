@@ -557,6 +557,18 @@ export class App extends Vue {
                       Support dynamic values in directive arguments
                     </router-link>
                   </MenuItem>
+                  <MenuItem
+                    index={ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.NAME}
+                  >
+                    <router-link
+                      to={{
+                        name:
+                          ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.NAME
+                      }}
+                    >
+                      expose all normal slots on $scopedSlots as functions
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

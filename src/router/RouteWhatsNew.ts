@@ -50,5 +50,11 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
     name: ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.NAME,
     component: () =>
       import("../doc/whats-new/vue@2.6/08-dynamic-directive-arguments/C08")
+  },
+  {
+    path: ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.PATH,
+    name: ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.NAME,
+    component: () =>
+      import("../doc/whats-new/vue@2.6/09-expose-all-normal-slots-on-$scopedslots-as-functions/C09")
   }
 ];

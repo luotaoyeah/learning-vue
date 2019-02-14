@@ -128,6 +128,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT: {
     NAME: "WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT",
     PATH: "/whats-new/2-6/dynamic-directive-argument"
+  },
+  WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS: {
+    NAME: "WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS",
+    PATH: "/whats-new/2-6/all-slots-on-$scopedslots"
   }
 };
 
