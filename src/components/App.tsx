@@ -569,6 +569,15 @@ export class App extends Vue {
                       expose all normal slots on $scopedSlots as functions
                     </router-link>
                   </MenuItem>
+                  <MenuItem index={ROUTES.WHATS_NEW_2_6_KEBAB_CASE_UPDATE.NAME}>
+                    <router-link
+                      to={{
+                        name: ROUTES.WHATS_NEW_2_6_KEBAB_CASE_UPDATE.NAME
+                      }}
+                    >
+                      v-bind.sync also listens for kebab-case update event
+                    </router-link>
+                  </MenuItem>
                 </Submenu>
               </Submenu>
             </Menu>

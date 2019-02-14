@@ -132,6 +132,10 @@ const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS: {
     NAME: "WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS",
     PATH: "/whats-new/2-6/all-slots-on-$scopedslots"
+  },
+  WHATS_NEW_2_6_KEBAB_CASE_UPDATE: {
+    NAME: "WHATS_NEW_2_6_KEBAB_CASE_UPDATE",
+    PATH: "/whats-new/2-6/kebab-case-update"
   }
 };
 

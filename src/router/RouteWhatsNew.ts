@@ -56,5 +56,11 @@ export const ROUTE_WHATS_NEW: Array<RouteConfig> = [
     name: ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.NAME,
     component: () =>
       import("../doc/whats-new/vue@2.6/09-expose-all-normal-slots-on-$scopedslots-as-functions/C09")
+  },
+  {
+    path: ROUTES.WHATS_NEW_2_6_KEBAB_CASE_UPDATE.PATH,
+    name: ROUTES.WHATS_NEW_2_6_KEBAB_CASE_UPDATE.NAME,
+    component: () =>
+      import("../doc/whats-new/vue@2.6/10-v-bind.sync-also-listens-for-kebab-case-update-event/C10")
   }
 ];

@@ -31,7 +31,7 @@ export class C0901 extends Vue {
 
 // tslint:disable-next-line:max-classes-per-file
 @Component({})
-export class C01 extends Vue {
+class C01 extends Vue {
   /*
    * 从 vue@2.6 开始，无论是 normal slots 还是 scoped slots，
    * 都会作为一个 function 暴露在 this.$scopedSlots 对象上面，
