@@ -1,6 +1,6 @@
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
-import { Button } from "element-ui";
+import { Button } from "ant-design-vue";
 
 /**
  *
