@@ -69,3 +69,23 @@ hr {
   border-top: 1px dashed #dddddd;
   margin: 20px 0;
 }
+
+/*
+ * ant-design-vue
+ * --------------------------------------------------
+ */
+.ant-menu-inline .ant-menu-item {
+  margin: 0 !important;
+
+  &:hover {
+    background-color: #e6f7ff !important;
+  }
+}
+
+.ant-menu-inline .ant-menu-submenu-title {
+  margin: 0 !important;
+
+  &:hover {
+    background-color: #e6f7ff !important;
+  }
+}
