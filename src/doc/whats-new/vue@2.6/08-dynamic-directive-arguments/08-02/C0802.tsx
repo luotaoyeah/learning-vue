@@ -1,5 +1,6 @@
 import Vue, { RenderContext } from "vue";
 import { Component } from "vue-property-decorator";
+import { Button } from "ant-design-vue";
 
 /**
  *
@@ -19,7 +20,7 @@ const C01 = (ctx: RenderContext): JSX.Element => {
  */
 @Component({
   // @ts-ignore
-  components: { C01 }
+  components: { C01, Button }
 })
 export default class C0802 extends Vue {
   public key01: string = "foo";

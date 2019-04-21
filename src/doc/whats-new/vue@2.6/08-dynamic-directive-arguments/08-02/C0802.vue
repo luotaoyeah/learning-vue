@@ -3,20 +3,25 @@
     <!--
         v-slot 指令也支持动态参数
     -->
+
     <C01 v-slot:foo="{ msg }">
-      <ElButton>
+      <Button>
         {{ msg }}
-      </ElButton>
+      </Button>
     </C01>
+    <br />
+
     <C01 v-slot:[key01]="{ msg }">
-      <ElButton>
+      <Button>
         {{ msg }}
-      </ElButton>
+      </Button>
     </C01>
+    <br />
+
     <C01 #[key01]="{ msg }">
-      <ElButton>
+      <Button>
         {{ msg }}
-      </ElButton>
+      </Button>
     </C01>
   </div>
 </template>

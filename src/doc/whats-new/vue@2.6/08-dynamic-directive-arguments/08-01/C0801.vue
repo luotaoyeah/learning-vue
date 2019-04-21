@@ -4,7 +4,7 @@
         在 vue@2.6 之前，如果指令参数是动态的，
         则需要使用 v-bind 指令的对象形式
     -->
-    <ElButton
+    <Button
       v-bind="{
         [key01]: 'FOO'
       }"
@@ -15,16 +15,19 @@
       }"
     >
       FOO
-    </ElButton>
+    </Button>
+    &nbsp;
+
     <!--
         在 vue@2.6 之后，可以直接使用下面的形式
     -->
-    <ElButton v-bind:[key01]="'FOO'" v-on:[key02]="$message.error('CLICK')">
+    <Button v-bind:[key01]="'FOO'" v-on:[key02]="$message.error('CLICK')">
       FOO
-    </ElButton>
-    <ElButton :[key01]="'FOO'" @[key02]="$message.info('CLICK')">
+    </Button>
+    &nbsp;
+    <Button :[key01]="'FOO'" @[key02]="$message.info('CLICK')">
       FOO
-    </ElButton>
+    </Button>
   </div>
 </template>
 
