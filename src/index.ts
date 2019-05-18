@@ -10,6 +10,7 @@ import "vue-router";
  * 将 lodash 添加为 vue 的全局属性
  */
 declare module "vue/types/vue" {
+  // tslint:disable-next-line:interface-name
   interface VueConstructor {
     _: LoDashStatic;
   }
@@ -46,6 +47,7 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
     console.error(msg, trace);
   };
 */
+
 Vue.config.ignoredElements = ["my-ignored-element"];
 Vue.config.keyCodes = { "lucky-eight": 56 };
 Vue.config.performance = false;

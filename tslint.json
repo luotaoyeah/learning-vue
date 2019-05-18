@@ -43,10 +43,7 @@
         }
       ]
     },
-    "no-console": {
-      "options": ["log"],
-      "severity": "warning"
-    },
+    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
     "quotemark": false,
     "no-shadowed-variable": false,
     "no-namespace": false,

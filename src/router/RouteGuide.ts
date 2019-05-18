@@ -51,13 +51,17 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     path: "/guide/computed-properties",
     name: "guide-computed-properties",
     component: () =>
-      import("../doc/guide/04-computed-properties-and-watchers/computed-properties/index.vue")
+      import(
+        "../doc/guide/04-computed-properties-and-watchers/computed-properties/index.vue"
+      )
   },
   {
     path: "/guide/watchers",
     name: "guide-watchers",
     component: () =>
-      import("../doc/guide/04-computed-properties-and-watchers/watchers/index.vue")
+      import(
+        "../doc/guide/04-computed-properties-and-watchers/watchers/index.vue"
+      )
   },
   {
     path: "/guide/class",
@@ -190,43 +194,55 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-01-basics/01-basics.vue")
+      import(
+        "../doc/guide/21-render-functions-and-jsx/21-01-basics/01-basics.vue"
+      )
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_VDOM.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_VDOM.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-02-nodes-trees-and-the-virtual-dom/02-nodes-trees-and-virtual-dom.vue")
+      import(
+        "../doc/guide/21-render-functions-and-jsx/21-02-nodes-trees-and-the-virtual-dom/02-nodes-trees-and-virtual-dom.vue"
+      )
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_CREATE_ELEMENT.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-03-createelement-arguments/03-createelement-arguments.vue")
+      import(
+        "../doc/guide/21-render-functions-and-jsx/21-03-createelement-arguments/03-createelement-arguments.vue"
+      )
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-04-replacing-template-features-with-plain-javascript/04-00-replacing-template-features-with-plain-js.vue")
+      import(
+        "../doc/guide/21-render-functions-and-jsx/21-04-replacing-template-features-with-plain-javascript/04-00-replacing-template-features-with-plain-js.vue"
+      )
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_JSX.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_JSX.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-05-jsx/05-jsx.vue")
+      import("../doc/guide/21-render-functions-and-jsx/21-05-jsx/C2105")
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_FUNCTIONAL_COMPONENT.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-06-functional-components/C2106")
+      import(
+        "../doc/guide/21-render-functions-and-jsx/21-06-functional-components/C2106"
+      )
   },
   {
     name: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION.NAME,
     path: ROUTES.GUIDE_RENDER_FUNCTIONS_TEMPLATE_COMPILATION.PATH,
     component: () =>
-      import("../doc/guide/21-render-functions-and-jsx/21-07-template-compilation/07-template-compilation.vue")
+      import(
+        "../doc/guide/21-render-functions-and-jsx/21-07-template-compilation/07-template-compilation.vue"
+      )
   },
   {
     path: "/guide/plugins",
