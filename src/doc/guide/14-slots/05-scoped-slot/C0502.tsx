@@ -1,7 +1,7 @@
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
 import { map } from "lodash-es";
-import { Button } from "ant-design-vue";
+import { Button, Divider } from "ant-design-vue";
 
 @Component({})
 export default class C0502 extends Vue {
@@ -14,10 +14,8 @@ export default class C0502 extends Vue {
   public render() {
     return (
       <div>
-        <ul>
-          <li>scoped slot 也可以是一个 named slot</li>
-        </ul>
-        <hr />
+        <p>scoped slot 也可以是一个 named slot</p>
+        <Divider dashed={true} />
         <C01
           items={this.items}
           {...{

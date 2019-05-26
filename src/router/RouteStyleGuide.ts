@@ -7,7 +7,7 @@ export const ROUTE_STYLE_GUIDE: Array<RouteConfig> = [
   {
     path: "/guide/reactivity-in-depth",
     name: "guide-reactivity-in-depth",
-    component: () => import("../doc/guide/24-reactivity-in-depth/index.vue")
+    component: () => import("../doc/guide/24-reactivity-in-depth/C24")
   },
   {
     path: "/style-guide/essential",

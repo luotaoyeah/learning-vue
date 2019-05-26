@@ -70,10 +70,16 @@ hr {
   margin: 20px 0;
 }
 
-/*
- * ant-design-vue
- * --------------------------------------------------
- */
+code {
+  margin: 0 4px;
+  padding: 2px 4px;
+  font-size: 80%;
+  background-color: #f7f7f7;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+//region ant-design-vue
 .ant-menu-inline .ant-menu-item {
   margin: 0 !important;
 
@@ -89,3 +95,5 @@ hr {
     background-color: #e6f7ff !important;
   }
 }
+
+//endregion
