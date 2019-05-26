@@ -1,6 +1,6 @@
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
-import _ from "lodash";
+import { map } from "lodash-es";
 import { Button } from "element-ui";
 
 @Component({})
@@ -32,7 +32,7 @@ export default class C0501 extends Vue {
             { id: "3", name: "c" }
           ]}
         >
-          {({ item }: { item: Item }) => (
+          {({ item }: { item: IItem }) => (
             <Button>{item.name.toUpperCase()}</Button>
           )}
         </C01>
@@ -50,12 +50,12 @@ class C01 extends Vue {
       return [];
     }
   })
-  public items!: Array<Item>;
+  public items!: Array<IItem>;
 
   public render() {
     return (
       <ul>
-        {_.map(this.items, (item: Item) => (
+        {map(this.items, (item: IItem) => (
           <li key={item.id}>
             {this.$scopedSlots.default
               ? this.$scopedSlots.default({ item })
@@ -67,7 +67,7 @@ class C01 extends Vue {
   }
 }
 
-interface Item {
+interface IItem {
   id: string;
   name: string;
 }

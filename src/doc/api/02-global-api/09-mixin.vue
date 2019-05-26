@@ -19,14 +19,17 @@
         </ul>
       </li>
     </ul>
-    <p><C20180427153537 /></p>
+    <p>
+      <C20180427153537 />
+    </p>
   </div>
 </template>
 
 <script>
+import { once } from "lodash-es";
 import Vue from "vue";
 
-const f01 = Vue._.once(() => {
+const f01 = once(() => {
   console.log("MyPlugin.mounted()");
 });
 

@@ -32,8 +32,9 @@
 
 <script>
 import Vue from "vue";
+import { uniqueId } from "lodash-es";
 
-const id01 = Vue._.uniqueId("span_");
+const id01 = uniqueId("span_");
 
 const C01 = Vue.extend({
   data() {

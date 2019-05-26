@@ -15,9 +15,10 @@
 </template>
 
 <script>
+import { uniqueId } from "lodash-es";
 import Vue from "vue";
 
-const id01 = Vue._.uniqueId("span_");
+const id01 = uniqueId("span_");
 
 const C01 = Vue.extend({
   template: '<ElButton @click="handleClick01">click me</ElButton>',

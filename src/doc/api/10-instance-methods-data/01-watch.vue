@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import _ from "lodash";
+import { isFunction } from "lodash-es";
 
 export default {
   data() {
@@ -90,7 +90,7 @@ export default {
       if (!vm.unwatch) {
         return;
       }
-      if (_.isFunction(vm.unwatch)) {
+      if (isFunction(vm.unwatch)) {
         vm.unwatch();
       }
     }

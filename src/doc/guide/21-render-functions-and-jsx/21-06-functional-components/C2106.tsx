@@ -1,6 +1,6 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
-import { Tabs, TabPane } from "element-ui";
+import { TabPane, Tabs } from "element-ui";
 import { C210601 } from "./C210601";
 import C210602 from "./06-01-passing-attributes-and-events-to-child-elements.vue";
 import C210603 from "./06-02-slots-vs-children.vue";

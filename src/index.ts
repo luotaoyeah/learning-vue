@@ -3,27 +3,7 @@ import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import { App } from "./components/App";
 import router from "./router";
-import _, { LoDashStatic } from "lodash";
 import "vue-router";
-
-/*
- * 将 lodash 添加为 vue 的全局属性
- */
-declare module "vue/types/vue" {
-  // tslint:disable-next-line:interface-name
-  interface VueConstructor {
-    _: LoDashStatic;
-  }
-}
-
-Vue._ = _;
-Object.defineProperties(Vue.prototype, {
-  _: {
-    get() {
-      return _;
-    }
-  }
-});
 
 Vue.config.silent = false;
 Vue.config.devtools = true;

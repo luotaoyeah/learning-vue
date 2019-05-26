@@ -14,10 +14,11 @@
 </template>
 
 <script>
+import { uniqueId } from "lodash-es";
 import Vue from "vue";
 
-const id01 = Vue._.uniqueId("C");
-const id02 = Vue._.uniqueId("span_");
+const id01 = uniqueId("C");
+const id02 = uniqueId("span_");
 
 Vue.component(id01, {
   render: Vue.compile("<ElButton @click='handleClick01'>click me</ElButton>")

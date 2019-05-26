@@ -10,18 +10,24 @@
         </ul>
       </li>
     </ul>
-    <p><component :is="id02"></component></p>
-    <p><component :is="id03"></component></p>
-    <p><span :id="id01"></span></p>
+    <p>
+      <component :is="id02"></component>
+    </p>
+    <p>
+      <component :is="id03"></component>
+    </p>
+    <p>
+      <span :id="id01"></span>
+    </p>
   </div>
 </template>
 
 <script>
-import _ from "lodash";
+import { uniqueId } from "lodash-es";
 import Vue from "vue";
 
-const id02 = Vue._.uniqueId("C");
-const id03 = Vue._.uniqueId("C");
+const id02 = uniqueId("C");
+const id03 = uniqueId("C");
 
 /* 注册全局组件 */
 Vue.component(
@@ -39,7 +45,7 @@ export default {
   data() {
     const vm = this;
     return {
-      id01: _.uniqueId("span_"),
+      id01: uniqueId("span_"),
       id02,
       id03
     };

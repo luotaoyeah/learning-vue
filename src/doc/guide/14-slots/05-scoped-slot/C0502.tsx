@@ -1,11 +1,11 @@
 import Vue from "vue";
 import { Component, Prop } from "vue-property-decorator";
-import _ from "lodash";
-import { Button } from "element-ui";
+import { map } from "lodash-es";
+import { Button } from "ant-design-vue";
 
 @Component({})
 export default class C0502 extends Vue {
-  private items: Array<Item> = [
+  private items: Array<IItem> = [
     { id: "1", name: "a" },
     { id: "2", name: "b" },
     { id: "3", name: "c" }
@@ -22,7 +22,7 @@ export default class C0502 extends Vue {
           items={this.items}
           {...{
             scopedSlots: {
-              slot02: ({ item }: { item: Item }) => (
+              slot02: ({ item }: { item: IItem }) => (
                 <Button>{item.name.toUpperCase()}</Button>
               )
             }
@@ -42,12 +42,12 @@ class C01 extends Vue {
       return [];
     }
   })
-  public items!: Array<Item>;
+  public items!: Array<IItem>;
 
   public render() {
     return (
       <ul>
-        {_.map(this.items, (item: Item) => (
+        {map(this.items, (item: IItem) => (
           <li key={item.id}>
             {this.$scopedSlots.slot02
               ? this.$scopedSlots.slot02({ item })
@@ -59,7 +59,7 @@ class C01 extends Vue {
   }
 }
 
-interface Item {
+interface IItem {
   id: string;
   name: string;
 }

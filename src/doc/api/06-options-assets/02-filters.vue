@@ -3,7 +3,9 @@
     <ul>
       <li>
         定义本地过滤器；
-        <p><ElInput v-model="message" style="width: 200px;" /></p>
+        <p>
+          <ElInput v-model="message" style="width: 200px;" />
+        </p>
         <p>
           <ElButton>{{ message | upperCaseFilter }}</ElButton>
         </p>
@@ -13,7 +15,7 @@
 </template>
 
 <script>
-import Vue from "vue";
+import { isString } from "lodash-es";
 
 export default {
   data() {
@@ -27,7 +29,7 @@ export default {
         return "";
       }
 
-      if (!Vue._.isString(value)) {
+      if (!isString(value)) {
         return;
       }
 

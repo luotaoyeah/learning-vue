@@ -37,12 +37,13 @@
 </template>
 
 <script>
+import { uniqueId } from "lodash-es";
 import Vue from "vue";
 
-const id01 = Vue._.uniqueId("span_");
-const id02 = Vue._.uniqueId("span_");
-const id03 = Vue._.uniqueId("span_");
-const id04 = Vue._.uniqueId("span_");
+const id01 = uniqueId("span_");
+const id02 = uniqueId("span_");
+const id03 = uniqueId("span_");
+const id04 = uniqueId("span_");
 
 const C01 = Vue.extend({
   template: "<ElButton>C01</ElButton>"

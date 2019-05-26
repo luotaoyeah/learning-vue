@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import _ from "lodash";
+import { map } from "lodash-es";
 
 export default {
   data() {
@@ -58,7 +58,7 @@ export default {
             [vm.$slots.button || "C01"]
           ),
           h("ul", [
-            _.map(vm.items, item =>
+            map(vm.items, item =>
               h("li", [
                 vm.$scopedSlots.li ? vm.$scopedSlots.li({ item }) : item.text
               ])

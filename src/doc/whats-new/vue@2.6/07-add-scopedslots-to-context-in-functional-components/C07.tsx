@@ -1,6 +1,6 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
-import { Tabs, TabPane } from "element-ui";
+import { TabPane, Tabs } from "element-ui";
 import { C0701 } from "./C0701";
 
 @Component({})

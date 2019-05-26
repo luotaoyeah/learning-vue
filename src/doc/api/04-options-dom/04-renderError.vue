@@ -18,12 +18,13 @@
 
 <script>
 import Vue from "vue";
+import { uniqueId, random } from "lodash-es";
 
-const id01 = Vue._.uniqueId("span");
+const id01 = uniqueId("span");
 
 const C01 = Vue.extend({
   render(h) {
-    if (Vue._.random() > 0.5) {
+    if (random() > 0.5) {
       throw new Error("error within render()");
     }
 

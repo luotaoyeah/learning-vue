@@ -16,9 +16,10 @@
 
 <script>
 import Vue from "vue";
+import { uniqueId } from "lodash-es";
 
-const id01 = Vue._.uniqueId("C_");
-const id02 = Vue._.uniqueId("C_");
+const id01 = uniqueId("C_");
+const id02 = uniqueId("C_");
 
 Vue.component(id01, {
   template: `<p><ElTag>${id01}</ElTag><component is="${id01}" v-if="recursive"/></p>`,

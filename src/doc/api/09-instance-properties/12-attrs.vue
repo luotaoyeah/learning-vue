@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import Vue from "vue";
+import { uniqueId } from "lodash-es";
 
-const id01 = Vue._.uniqueId("id_");
+const id01 = uniqueId("id_");
 
 export default {
   data() {
