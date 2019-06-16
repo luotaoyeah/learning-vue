@@ -497,6 +497,11 @@ export default class App extends Vue {
                     tooltip
                   </router-link>
                 </Menu.Item>
+                <Menu.Item key={ROUTES._05_03_45.NAME}>
+                  <router-link to={{ name: ROUTES._05_03_45.NAME }}>
+                    modal
+                  </router-link>
+                </Menu.Item>
               </Menu.SubMenu>
             </Menu.SubMenu>
           </Menu>

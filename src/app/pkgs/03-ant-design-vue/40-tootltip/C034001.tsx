@@ -3,7 +3,7 @@ import { Component } from "vue-property-decorator";
 import { Button, Divider, Tooltip } from "ant-design-vue";
 
 @Component({})
-export default class C034001 extends Vue {
+export class C034001 extends Vue {
   public render() {
     return (
       <div>
