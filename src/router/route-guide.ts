@@ -168,34 +168,34 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   },
   {
     path: "/guide/dynamic-async-component",
-    name: "guide-dynamic-async-component",
+    name: "01-15",
     component: () =>
       import("../app/doc/guide/15-dynamic-async-component/index.vue")
   },
   {
     path: "/guide/handling-edge-cases",
-    name: "guide-handling-edge-cases",
+    name: "01-16",
     component: () => import("../app/doc/guide/16-handling-edge-cases/index.vue")
   },
   {
     path: "/guide/transition-and-animation",
-    name: "guide-transition-and-animation",
+    name: "01-17",
     component: () =>
       import("../app/doc/guide/17-enter-leave-list-transitions/index.vue")
   },
   {
     path: "/guide/state-transition",
-    name: "guide-state-transition",
+    name: "01-18",
     component: () => import("../app/doc/guide/18-state-transitions/index.vue")
   },
   {
     path: "/guide/mixins",
-    name: "guide-mixins",
+    name: "01-19",
     component: () => import("../app/doc/guide/19-mixins/index.vue")
   },
   {
     path: "/guide/custom-directives",
-    name: "guide-custom-directives",
+    name: "01-20",
     component: () => import("../app/doc/guide/20-custom-directives/index.vue")
   },
   {
@@ -254,12 +254,12 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   },
   {
     path: "/guide/plugins",
-    name: "guide-plugins",
+    name: "01-22",
     component: () => import("../app/doc/guide/22-plugins/index.vue")
   },
   {
     path: "/guide/filters",
-    name: "guide-filters",
+    name: "01-23",
     component: () => import("../app/doc/guide/23-filters/index.vue")
   }
 ];

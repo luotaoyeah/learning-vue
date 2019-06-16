@@ -58,84 +58,84 @@ const ROUTES_GUIDE = {
 };
 
 const ROUTES_API = {
-  API_OPTIONS_DATA: {
-    NAME: "API_OPTIONS_DATA",
+  _03_03_01: {
+    NAME: "03-01-01",
     PATH: "/api/options-data"
   },
-  API_OPTIONS_COMPOSITION: {
-    NAME: "API_OPTIONS_COMPOSITION",
+  _03_03_05: {
+    NAME: "03-03-05",
     PATH: "/api/options-composition"
   },
-  API_OPTIONS_MISC: {
-    NAME: "API_OPTIONS_MISC",
+  _03_03_06: {
+    NAME: "03-03-06",
     PATH: "/api/options-misc"
   },
-  API_INSTANCE_PROPERTIES: {
-    NAME: "API_INSTANCE_PROPERTIES",
+  _03_04: {
+    NAME: "03-04",
     PATH: "/api/instance_properties"
   },
-  API_INSTANCE_METHODS_DATA: {
-    NAME: "API_INSTANCE_METHODS_DATA",
+  _03_05_01: {
+    NAME: "03-05-01",
     PATH: "/api/instance-methods/data"
   },
-  API_INSTANCE_METHODS_EVENTS: {
-    NAME: "API_INSTANCE_METHODS_EVENTS",
+  _03_05_02: {
+    NAME: "03-05-02",
     PATH: "/api/instance-methods-events"
   },
-  API_INSTANCE_METHODS_LIFECYCLE: {
-    NAME: "API_INSTANCE_METHODS_LIFECYCLE",
+  _03_05_03: {
+    NAME: "03-05-03",
     PATH: "/api/instance-methods-lifecycle"
   },
-  API_SPECIAL_ATTRIBUTES: {
-    NAME: "API_SPECIAL_ATTRIBUTES",
+  _03_07: {
+    NAME: "03-07",
     PATH: "/api/special-attributes"
   },
-  API_BUILTIN_COMPONENTS: {
-    NAME: "API_BUILTIN_COMPONENTS",
+  _03_08: {
+    NAME: "03-08",
     PATH: "/api/builtin-components"
   }
 };
 
 const ROUTES_WHATS_NEW = {
-  WHATS_NEW_2_6_OBSERVABLE: {
+  _04_01_01: {
     NAME: "04-01-01",
-    PATH: "/whats-new/2-6/observable"
+    PATH: "/04/2-6/observable"
   },
-  WHATS_NEW_2_6_BIND_PROP_SHORTCUT: {
+  _04_01_02: {
     NAME: "WHATS_NEW_2_6_BIND_PROP_SHORTCUT",
-    PATH: "/whats-new/2-6/bind-prop-shortcut"
+    PATH: "/04/2-6/bind-prop-shortcut"
   },
-  WHATS_NEW_2_6_CUSTOM_TOSTRING: {
+  _04_01_03: {
     NAME: "WHATS_NEW_2_6_CUSTOM_TOSTRING",
-    PATH: "/whats-new/2-6/custom-tostring"
+    PATH: "/04/2-6/custom-tostring"
   },
-  WHATS_NEW_2_6_ASYNC_ERROR_HANDLING: {
+  _04_01_04: {
     NAME: "WHATS_NEW_2_6_ASYNC_ERROR_HANDLING",
-    PATH: "/whats-new/2-6/async-error-handling"
+    PATH: "/04/2-6/async-error-handling"
   },
-  WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE: {
+  _04_01_05: {
     NAME: "WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE",
-    PATH: "/whats-new/2-6/v-for-support-iterable"
+    PATH: "/04/2-6/v-for-support-iterable"
   },
-  WHATS_NEW_2_6_V_SLOT: {
+  _04_01_06: {
     NAME: "WHATS_NEW_2_6_V_SLOT",
-    PATH: "/whats-new/2-6/v-slot"
+    PATH: "/04/2-6/v-slot"
   },
-  WHATS_NEW_2_6_SCOPED_SLOTS: {
+  _04_01_07: {
     NAME: "WHATS_NEW_2_6_SCOPED_SLOTS",
-    PATH: "/whats-new/2-6/scoped-slots"
+    PATH: "/04/2-6/scoped-slots"
   },
-  WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT: {
+  _04_01_08: {
     NAME: "WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT",
-    PATH: "/whats-new/2-6/dynamic-directive-argument"
+    PATH: "/04/2-6/dynamic-directive-argument"
   },
-  WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS: {
+  _04_01_09: {
     NAME: "WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS",
-    PATH: "/whats-new/2-6/all-slots-on-$scopedslots"
+    PATH: "/04/2-6/all-slots-on-$scopedslots"
   },
-  WHATS_NEW_2_6_KEBAB_CASE_UPDATE: {
+  _04_01_10: {
     NAME: "WHATS_NEW_2_6_KEBAB_CASE_UPDATE",
-    PATH: "/whats-new/2-6/kebab-case-update"
+    PATH: "/04/2-6/kebab-case-update"
   }
 };
 

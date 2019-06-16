@@ -78,7 +78,7 @@ export default class App extends Vue {
           >
             <Menu.SubMenu key="01">
               <template slot="title">GUIDE</template>
-              <Menu.SubMenu key="01-1">
+              <Menu.SubMenu key="01-01">
                 <template slot="title">Introduction</template>
                 <Menu.Item
                   key={ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME}
@@ -102,74 +102,74 @@ export default class App extends Vue {
                     Conditionals And Loops
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-1-3">
+                <Menu.Item key="01-01-03">
                   <router-link to={{ name: "HandingUserInput" }}>
                     Handing User Input
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-1-4">
+                <Menu.Item key="01-01-04">
                   <router-link to={{ name: "ComposingWithComponents" }}>
                     Composing With Components
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="01-2">
+              <Menu.SubMenu key="01-02">
                 <template slot="title">The Vue Instance</template>
-                <Menu.Item key="01-2-1">
+                <Menu.Item key="01-02-01">
                   <router-link to={{ name: "DataAndMethods" }}>
                     Data And Methods
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="01-3">
+              <Menu.SubMenu key="01-03">
                 <template slot="title">Template Syntax</template>
-                <Menu.Item key="01-3-1">
+                <Menu.Item key="01-03-01">
                   <router-link to={{ name: "template-syntax-interpolation" }}>
                     Interpolation
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-3-2">
+                <Menu.Item key="01-03-02">
                   <router-link to={{ name: "template-syntax-directive" }}>
                     Directive
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="01-4">
+              <Menu.SubMenu key="01-04">
                 <template slot="title">
                   Computed Properties and Watchers
                 </template>
-                <Menu.Item key="01-4-1">
+                <Menu.Item key="01-04-01">
                   <router-link to={{ name: "guide-computed-properties" }}>
                     Computed Properties
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-4-2">
+                <Menu.Item key="01-04-02">
                   <router-link to={{ name: "guide-watchers" }}>
                     Watchers
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="01-5">
+              <Menu.SubMenu key="01-05">
                 <template slot="title">Classes and Styles</template>
-                <Menu.Item key="01-5-1">
+                <Menu.Item key="01-05-01">
                   <router-link to={{ name: "guide-class" }}>
                     Classes
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-5-2">
+                <Menu.Item key="01-05-02">
                   <router-link to={{ name: "guide-style" }}>Styles</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="01-6">
+              <Menu.SubMenu key="01-06">
                 <template slot="title">Conditional Rendering</template>
-                <Menu.Item key="01-6-1">
+                <Menu.Item key="01-06-01">
                   <router-link
                     to={{ name: "guide-conditional-rendering-v-if" }}
                   >
                     v-if
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-6-2">
+                <Menu.Item key="01-06-02">
                   <router-link
                     to={{ name: "guide-conditional-rendering-v-show" }}
                   >
@@ -177,29 +177,29 @@ export default class App extends Vue {
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="01-7">
+              <Menu.Item key="01-07">
                 <router-link to={{ name: "guide-list-rendering" }}>
                   List Rendering
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="01-8">
+              <Menu.Item key="01-08">
                 <router-link to={{ name: "guide-event-handling" }}>
                   Event Handling
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="01-9">
+              <Menu.SubMenu key="01-09">
                 <template slot="title">Form Input Binding</template>
-                <Menu.Item key="01-9-1">
+                <Menu.Item key="01-09-01">
                   <router-link to={{ name: "guide-form-input-basic" }}>
                     Basic
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-9-2">
+                <Menu.Item key="01-09-02">
                   <router-link to={{ name: "guide-form-input-value-binding" }}>
                     Value Binding
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="01-9-3">
+                <Menu.Item key="01-09-03">
                   <router-link to={{ name: "guide-form-input-modifier" }}>
                     Modifiers
                   </router-link>
@@ -264,30 +264,30 @@ export default class App extends Vue {
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.Item key="01-15">
-                <router-link to={{ name: "guide-dynamic-async-component" }}>
+                <router-link to={{ name: "01-15" }}>
                   Dynamic & Async Components
                 </router-link>
               </Menu.Item>
               <Menu.Item key="01-16">
-                <router-link to={{ name: "guide-handling-edge-cases" }}>
+                <router-link to={{ name: "01-16" }}>
                   Handling Edge Cases
                 </router-link>
               </Menu.Item>
               <Menu.Item key="01-17">
-                <router-link to={{ name: "guide-transition-and-animation" }}>
+                <router-link to={{ name: "01-17" }}>
                   Transitions and Animations
                 </router-link>
               </Menu.Item>
               <Menu.Item key="01-18">
-                <router-link to={{ name: "guide-state-transition" }}>
+                <router-link to={{ name: "01-18" }}>
                   State Transitions
                 </router-link>
               </Menu.Item>
               <Menu.Item key="01-19">
-                <router-link to={{ name: "guide-mixins" }}>Mixins</router-link>
+                <router-link to={{ name: "01-19" }}>Mixins</router-link>
               </Menu.Item>
               <Menu.Item key="01-20">
-                <router-link to={{ name: "guide-custom-directives" }}>
+                <router-link to={{ name: "01-20" }}>
                   Custom Directives
                 </router-link>
               </Menu.Item>
@@ -366,132 +366,106 @@ export default class App extends Vue {
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.Item key="01-22">
-                <router-link to={{ name: "guide-plugins" }}>
-                  Plugins
-                </router-link>
+                <router-link to={{ name: "01-22" }}>Plugins</router-link>
               </Menu.Item>
               <Menu.Item key="01-23">
-                <router-link to={{ name: "guide-filters" }}>
-                  Filters
-                </router-link>
+                <router-link to={{ name: "01-23" }}>Filters</router-link>
               </Menu.Item>
               <Menu.Item key="01-24">
-                <router-link to={{ name: "guide-reactivity-in-depth" }}>
+                <router-link to={{ name: "01-24" }}>
                   Reactivity in Depth
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
             <Menu.SubMenu key="02">
               <template slot="title">STYLE GUIDE</template>
-              <Menu.Item key="02-1">
-                <router-link to={{ name: "style-guide-essential" }}>
-                  Essential
-                </router-link>
+              <Menu.Item key="02-01">
+                <router-link to={{ name: "02-01" }}>Essential</router-link>
               </Menu.Item>
-              <Menu.Item key="02-2">
-                <router-link to={{ name: "style-guide-strongly-recommend" }}>
+              <Menu.Item key="02-02">
+                <router-link to={{ name: "02-02" }}>
                   Strongly Recommended
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="02-3">
-                <router-link to={{ name: "style-guide-recommend" }}>
-                  Recommended
-                </router-link>
+              <Menu.Item key="02-03">
+                <router-link to={{ name: "02-03" }}>Recommended</router-link>
               </Menu.Item>
-              <Menu.Item key="02-4">
-                <router-link to={{ name: "style-guide-use-with-caution" }}>
+              <Menu.Item key="02-04">
+                <router-link to={{ name: "02-04" }}>
                   Use with Caution
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
             <Menu.SubMenu key="03">
               <template slot="title">API</template>
-              <Menu.Item key="03-1">
-                <router-link to={{ name: "api-global-config" }}>
-                  Global Config
-                </router-link>
+              <Menu.Item key="03-01">
+                <router-link to={{ name: "03-01" }}>Global Config</router-link>
               </Menu.Item>
-              <Menu.Item key="03-2">
-                <router-link to={{ name: "api-global-api" }}>
-                  Global API
-                </router-link>
+              <Menu.Item key="03-02">
+                <router-link to={{ name: "03-02" }}>Global API</router-link>
               </Menu.Item>
-              <Menu.SubMenu key="03-3">
+              <Menu.SubMenu key="03-03">
                 <template slot="title">Options</template>
-                <Menu.Item key={ROUTES.API_OPTIONS_DATA.NAME}>
-                  <router-link to={{ name: ROUTES.API_OPTIONS_DATA.NAME }}>
+                <Menu.Item key={ROUTES._03_03_01.NAME}>
+                  <router-link to={{ name: ROUTES._03_03_01.NAME }}>
                     Data
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="03-3-2">
-                  <router-link to={{ name: "api-options-dom" }}>
-                    DOM
-                  </router-link>
+                <Menu.Item key="03-03-02">
+                  <router-link to={{ name: "03-03-02" }}>DOM</router-link>
                 </Menu.Item>
-                <Menu.Item key="03-3-3">
-                  <router-link to={{ name: "api-options-lifecycle-hooks" }}>
+                <Menu.Item key="03-03-03">
+                  <router-link to={{ name: "03-03-03" }}>
                     Lifecycle Hooks
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="03-3-4">
-                  <router-link to={{ name: "api-options-assets" }}>
-                    Assets
-                  </router-link>
+                <Menu.Item key="03-03-04">
+                  <router-link to={{ name: "03-03-04" }}>Assets</router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.API_OPTIONS_COMPOSITION.NAME}>
-                  <router-link
-                    to={{ name: ROUTES.API_OPTIONS_COMPOSITION.NAME }}
-                  >
+                <Menu.Item key={ROUTES._03_03_05.NAME}>
+                  <router-link to={{ name: ROUTES._03_03_05.NAME }}>
                     Composition
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.API_OPTIONS_MISC.NAME}>
-                  <router-link to={{ name: ROUTES.API_OPTIONS_MISC.NAME }}>
+                <Menu.Item key={ROUTES._03_03_06.NAME}>
+                  <router-link to={{ name: ROUTES._03_03_06.NAME }}>
                     Misc
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key={ROUTES.API_INSTANCE_PROPERTIES.NAME}>
-                <router-link to={{ name: ROUTES.API_INSTANCE_PROPERTIES.NAME }}>
+              <Menu.Item key={ROUTES._03_04.NAME}>
+                <router-link to={{ name: ROUTES._03_04.NAME }}>
                   Instance Properties
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="03-5">
+              <Menu.SubMenu key="03-05">
                 <template slot="title">Instance Methods</template>
-                <Menu.Item key={ROUTES.API_INSTANCE_METHODS_DATA.NAME}>
-                  <router-link
-                    to={{ name: ROUTES.API_INSTANCE_METHODS_DATA.NAME }}
-                  >
+                <Menu.Item key={ROUTES._03_05_01.NAME}>
+                  <router-link to={{ name: ROUTES._03_05_01.NAME }}>
                     Data
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.API_INSTANCE_METHODS_EVENTS.NAME}>
-                  <router-link
-                    to={{ name: ROUTES.API_INSTANCE_METHODS_EVENTS.NAME }}
-                  >
+                <Menu.Item key={ROUTES._03_05_02.NAME}>
+                  <router-link to={{ name: ROUTES._03_05_02.NAME }}>
                     Events
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.API_INSTANCE_METHODS_LIFECYCLE.NAME}>
-                  <router-link
-                    to={{ name: ROUTES.API_INSTANCE_METHODS_LIFECYCLE.NAME }}
-                  >
+                <Menu.Item key={ROUTES._03_05_03.NAME}>
+                  <router-link to={{ name: ROUTES._03_05_03.NAME }}>
                     Lifecycle
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="03-6">
-                <router-link to={{ name: "api-directives" }}>
-                  Directives
-                </router-link>
+              <Menu.Item key="03-06">
+                <router-link to={{ name: "03-06" }}>Directives</router-link>
               </Menu.Item>
-              <Menu.Item key={ROUTES.API_SPECIAL_ATTRIBUTES.NAME}>
-                <router-link to={{ name: ROUTES.API_SPECIAL_ATTRIBUTES.NAME }}>
+              <Menu.Item key={ROUTES._03_07.NAME}>
+                <router-link to={{ name: ROUTES._03_07.NAME }}>
                   Special Attributes
                 </router-link>
               </Menu.Item>
-              <Menu.Item key={ROUTES.API_BUILTIN_COMPONENTS.NAME}>
-                <router-link to={{ name: ROUTES.API_BUILTIN_COMPONENTS.NAME }}>
+              <Menu.Item key={ROUTES._03_08.NAME}>
+                <router-link to={{ name: ROUTES._03_08.NAME }}>
                   Built-in Components
                 </router-link>
               </Menu.Item>
@@ -500,97 +474,53 @@ export default class App extends Vue {
               <template slot="title">WHAT'S NEW</template>
               <Menu.SubMenu key="04-01">
                 <template slot="title">vue@2.6</template>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_OBSERVABLE.NAME}>
-                  <router-link
-                    to={{ name: ROUTES.WHATS_NEW_2_6_OBSERVABLE.NAME }}
-                  >
+                <Menu.Item key={ROUTES._04_01_01.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_01.NAME }}>
                     Vue.observable()
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_BIND_PROP_SHORTCUT.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_BIND_PROP_SHORTCUT.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_02.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_02.NAME }}>
                     A short syntax for v-bind .prop modifier
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_CUSTOM_TOSTRING.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_03.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_03.NAME }}>
                     Use custom toString() when interpolating objects
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_ASYNC_ERROR_HANDLING.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_ASYNC_ERROR_HANDLING.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_04.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_04.NAME }}>
                     async error handling
                   </router-link>
                 </Menu.Item>
-                <Menu.Item
-                  key={ROUTES.WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE.NAME}
-                >
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_05.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_05.NAME }}>
                     v-for support iterable
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_V_SLOT.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_V_SLOT.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_06.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_06.NAME }}>
                     v-slot
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_SCOPED_SLOTS.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_SCOPED_SLOTS.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_07.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_07.NAME }}>
                     add scopedSlots to context in functional components
                   </router-link>
                 </Menu.Item>
-                <Menu.Item
-                  key={ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.NAME}
-                >
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_08.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_08.NAME }}>
                     Support dynamic values in directive arguments
                   </router-link>
                 </Menu.Item>
-                <Menu.Item
-                  key={ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.NAME}
-                >
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_09.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_09.NAME }}>
                     expose all normal slots on $scopedSlots as functions
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key={ROUTES.WHATS_NEW_2_6_KEBAB_CASE_UPDATE.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.WHATS_NEW_2_6_KEBAB_CASE_UPDATE.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._04_01_10.NAME}>
+                  <router-link to={{ name: ROUTES._04_01_10.NAME }}>
                     v-bind.sync also listens for kebab-case update event
                   </router-link>
                 </Menu.Item>
