@@ -14,25 +14,34 @@ export default class App extends Vue {
   private selectedKeys: Array<string> = [];
 
   public mounted() {
+    const vm = this;
+
     if (this.$route.name) {
-      const routes: Array<string> = this.$route.name.split("-");
-
-      this.openKeys = reduce<string, Array<string>>(
-        routes,
-        (prev: Array<string>, curr: string, index: number) => {
-          if (prev.length === 0) {
-            prev.push(curr);
-          } else {
-            prev.push(`${last(prev)}-${curr}`);
-          }
-
-          return prev;
-        },
-        []
-      );
-
+      this.openKeys = vm.calcOpenKeys(this.$route.name);
       this.selectedKeys = this.openKeys;
     }
+  }
+
+  /**
+   * 计算当前展开的菜单项
+   * @param currentKey 发生变更的菜单项的 KEY 值
+   */
+  private calcOpenKeys(currentKey: string): Array<string> {
+    const routes: Array<string> = currentKey.split("-");
+
+    return reduce<string, Array<string>>(
+      routes,
+      (prev: Array<string>, curr: string, index: number) => {
+        if (prev.length === 0) {
+          prev.push(curr);
+        } else {
+          prev.push(`${last(prev)}-${curr}`);
+        }
+
+        return prev;
+      },
+      []
+    );
   }
 
   // tslint:disable-next-line:member-ordering
@@ -45,8 +54,10 @@ export default class App extends Vue {
           style={{
             display: "inline-block",
             width: "480px",
-            height: "100%",
-            borderRight: "1px solid #eeeeee"
+            height: "calc(100% - 2px)",
+            borderRight: "1px solid #eeeeee",
+            overflowY: "auto",
+            overflowX: "hidden"
           }}
         >
           <Menu
@@ -55,8 +66,10 @@ export default class App extends Vue {
             {...{
               on: {
                 "update:openKeys": (openKeys: Array<string>) => {
-                  vm.openKeys = openKeys;
-                  vm.selectedKeys = openKeys;
+                  const name: string | undefined = last(openKeys);
+                  if (name) {
+                    this.openKeys = vm.calcOpenKeys(name);
+                  }
                 }
               }
             }}
