@@ -6,50 +6,50 @@ import { RouteConfig } from "vue-router";
  */
 export const ROUTE_GUIDE: Array<RouteConfig> = [
   {
-    path: ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.PATH,
-    name: ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME,
+    path: ROUTES._01_01_01.PATH,
+    name: ROUTES._01_01_01.NAME,
     component: () =>
       import("../app/doc/guide/01-introduction/declarative-rendering.vue")
   },
   {
-    path: ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.PATH,
-    name: ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.NAME,
+    path: ROUTES._01_01_02.PATH,
+    name: ROUTES._01_01_02.NAME,
     component: () =>
       import("../app/doc/guide/01-introduction/conditional-and-loop.vue")
   },
   {
     path: "/guide/handing-user-input",
-    name: "HandingUserInput",
+    name: "01-01-03",
     component: () =>
       import("../app/doc/guide/01-introduction/handing-user-input.vue")
   },
   {
     path: "/guide/composing-with-components",
-    name: "ComposingWithComponents",
+    name: "01-01-04",
     component: () =>
       import("../app/doc/guide/01-introduction/composing-with-components.vue")
   },
   {
     path: "/guide/data-and-methods",
-    name: "DataAndMethods",
+    name: "01-02-01",
     component: () =>
       import("../app/doc/guide/02-the-vue-instance/data-and-methods.vue")
   },
   {
     path: "/guide/template-syntax/interpolation",
-    name: "template-syntax-interpolation",
+    name: "01-03-01",
     component: () =>
       import("../app/doc/guide/03-template-syntax/interpolation/index.vue")
   },
   {
     path: "/guide/template-syntax/directive",
-    name: "template-syntax-directive",
+    name: "01-03-02",
     component: () =>
       import("../app/doc/guide/03-template-syntax/directive/index.vue")
   },
   {
     path: "/guide/computed-properties",
-    name: "guide-computed-properties",
+    name: "01-04-01",
     component: () =>
       import(
         "../app/doc/guide/04-computed-properties-and-watchers/computed-properties/index.vue"
@@ -57,7 +57,7 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   },
   {
     path: "/guide/watchers",
-    name: "guide-watchers",
+    name: "01-04-02",
     component: () =>
       import(
         "../app/doc/guide/04-computed-properties-and-watchers/watchers/index.vue"
@@ -65,48 +65,48 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   },
   {
     path: "/guide/class",
-    name: "guide-class",
+    name: "01-05-01",
     component: () =>
       import("../app/doc/guide/05-class-and-style/class/index.vue")
   },
   {
     path: "/guide/style",
-    name: "guide-style",
+    name: "01-05-02",
     component: () =>
       import("../app/doc/guide/05-class-and-style/style/index.vue")
   },
   {
     path: "/guide/conditional-rendering-v-if",
-    name: "guide-conditional-rendering-v-if",
+    name: "01-06-01",
     component: () =>
       import("../app/doc/guide/06-conditional-rendering/v-if/index.vue")
   },
   {
     path: "/guide/conditional-rendering-v-show",
-    name: "guide-conditional-rendering-v-show",
+    name: "01-06-02",
     component: () =>
       import("../app/doc/guide/06-conditional-rendering/v-show/index.vue")
   },
   {
     path: "/guide/list-rendering",
-    name: "guide-list-rendering",
+    name: "01-07",
     component: () =>
       import("../app/doc/guide/07-list-rendering/v-for/index.vue")
   },
   {
     path: "/guide/event-handling",
-    name: "guide-event-handling",
+    name: "01-08",
     component: () => import("../app/doc/guide/08-event-handling/index.vue")
   },
   {
     path: "/guide/form-input/basic",
-    name: "guide-form-input-basic",
+    name: "01-09-01",
     component: () =>
       import("../app/doc/guide/09-form-input-binding/01-basic/index.vue")
   },
   {
     path: "/guide/form-input/value-binding",
-    name: "guide-form-input-value-binding",
+    name: "01-09-02",
     component: () =>
       import(
         "../app/doc/guide/09-form-input-binding/02-value-binding/index.vue"
@@ -114,29 +114,29 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
   },
   {
     path: "/guide/form-input/modifier",
-    name: "guide-form-input-modifier",
+    name: "01-09-03",
     component: () =>
       import("../app/doc/guide/09-form-input-binding/03-modifiers/index.vue")
   },
   {
     path: "/guide/component-basic",
-    name: "guide-component-basic",
+    name: "01-10",
     component: () => import("../app/doc/guide/10-component-basic/index.vue")
   },
   {
     path: "/guide/component-registration",
-    name: "guide-component-registration",
+    name: "01-11",
     component: () =>
       import("../app/doc/guide/11-component-registration/index.vue")
   },
   {
     path: "/guide/props",
-    name: "guide-props",
+    name: "01-12",
     component: () => import("../app/doc/guide/12-props/index.vue")
   },
   {
     path: "/guide/custom-events",
-    name: "guide-custom-events",
+    name: "01-13",
     component: () => import("../app/doc/guide/13-custom-events/index.vue")
   },
   {
@@ -199,8 +199,8 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     component: () => import("../app/doc/guide/20-custom-directives/index.vue")
   },
   {
-    name: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME,
-    path: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.PATH,
+    name: ROUTES._01_21_01.NAME,
+    path: ROUTES._01_21_01.PATH,
     component: () =>
       import(
         "../app/doc/guide/21-render-functions-and-jsx/21-01-basics/01-basics.vue"

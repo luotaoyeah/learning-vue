@@ -80,35 +80,23 @@ export default class App extends Vue {
               <template slot="title">GUIDE</template>
               <Menu.SubMenu key="01-01">
                 <template slot="title">Introduction</template>
-                <Menu.Item
-                  key={ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME}
-                >
-                  <router-link
-                    to={{
-                      name: ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._01_01_01.NAME}>
+                  <router-link to={{ name: ROUTES._01_01_01.NAME }}>
                     Declarative Rendering
                   </router-link>
                 </Menu.Item>
-                <Menu.Item
-                  key={ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.NAME}
-                >
-                  <router-link
-                    to={{
-                      name: ROUTES.GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._01_01_02.NAME}>
+                  <router-link to={{ name: ROUTES._01_01_02.NAME }}>
                     Conditionals And Loops
                   </router-link>
                 </Menu.Item>
                 <Menu.Item key="01-01-03">
-                  <router-link to={{ name: "HandingUserInput" }}>
-                    Handing User Input
+                  <router-link to={{ name: "01-01-03" }}>
+                    Handling User Input
                   </router-link>
                 </Menu.Item>
                 <Menu.Item key="01-01-04">
-                  <router-link to={{ name: "ComposingWithComponents" }}>
+                  <router-link to={{ name: "01-01-04" }}>
                     Composing With Components
                   </router-link>
                 </Menu.Item>
@@ -116,7 +104,7 @@ export default class App extends Vue {
               <Menu.SubMenu key="01-02">
                 <template slot="title">The Vue Instance</template>
                 <Menu.Item key="01-02-01">
-                  <router-link to={{ name: "DataAndMethods" }}>
+                  <router-link to={{ name: "01-02-01" }}>
                     Data And Methods
                   </router-link>
                 </Menu.Item>
@@ -124,14 +112,12 @@ export default class App extends Vue {
               <Menu.SubMenu key="01-03">
                 <template slot="title">Template Syntax</template>
                 <Menu.Item key="01-03-01">
-                  <router-link to={{ name: "template-syntax-interpolation" }}>
+                  <router-link to={{ name: "01-03-01" }}>
                     Interpolation
                   </router-link>
                 </Menu.Item>
                 <Menu.Item key="01-03-02">
-                  <router-link to={{ name: "template-syntax-directive" }}>
-                    Directive
-                  </router-link>
+                  <router-link to={{ name: "01-03-02" }}>Directive</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.SubMenu key="01-04">
@@ -139,89 +125,67 @@ export default class App extends Vue {
                   Computed Properties and Watchers
                 </template>
                 <Menu.Item key="01-04-01">
-                  <router-link to={{ name: "guide-computed-properties" }}>
+                  <router-link to={{ name: "01-04-01" }}>
                     Computed Properties
                   </router-link>
                 </Menu.Item>
                 <Menu.Item key="01-04-02">
-                  <router-link to={{ name: "guide-watchers" }}>
-                    Watchers
-                  </router-link>
+                  <router-link to={{ name: "01-04-02" }}>Watchers</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.SubMenu key="01-05">
                 <template slot="title">Classes and Styles</template>
                 <Menu.Item key="01-05-01">
-                  <router-link to={{ name: "guide-class" }}>
-                    Classes
-                  </router-link>
+                  <router-link to={{ name: "01-05-01" }}>Classes</router-link>
                 </Menu.Item>
                 <Menu.Item key="01-05-02">
-                  <router-link to={{ name: "guide-style" }}>Styles</router-link>
+                  <router-link to={{ name: "01-05-02" }}>Styles</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.SubMenu key="01-06">
                 <template slot="title">Conditional Rendering</template>
                 <Menu.Item key="01-06-01">
-                  <router-link
-                    to={{ name: "guide-conditional-rendering-v-if" }}
-                  >
-                    v-if
-                  </router-link>
+                  <router-link to={{ name: "01-06-01" }}>v-if</router-link>
                 </Menu.Item>
                 <Menu.Item key="01-06-02">
-                  <router-link
-                    to={{ name: "guide-conditional-rendering-v-show" }}
-                  >
-                    v-show
-                  </router-link>
+                  <router-link to={{ name: "01-06-02" }}>v-show</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.Item key="01-07">
-                <router-link to={{ name: "guide-list-rendering" }}>
-                  List Rendering
-                </router-link>
+                <router-link to={{ name: "01-07" }}>List Rendering</router-link>
               </Menu.Item>
               <Menu.Item key="01-08">
-                <router-link to={{ name: "guide-event-handling" }}>
-                  Event Handling
-                </router-link>
+                <router-link to={{ name: "01-08" }}>Event Handling</router-link>
               </Menu.Item>
               <Menu.SubMenu key="01-09">
                 <template slot="title">Form Input Binding</template>
                 <Menu.Item key="01-09-01">
-                  <router-link to={{ name: "guide-form-input-basic" }}>
-                    Basic
-                  </router-link>
+                  <router-link to={{ name: "01-09-01" }}>Basic</router-link>
                 </Menu.Item>
                 <Menu.Item key="01-09-02">
-                  <router-link to={{ name: "guide-form-input-value-binding" }}>
+                  <router-link to={{ name: "01-09-02" }}>
                     Value Binding
                   </router-link>
                 </Menu.Item>
                 <Menu.Item key="01-09-03">
-                  <router-link to={{ name: "guide-form-input-modifier" }}>
-                    Modifiers
-                  </router-link>
+                  <router-link to={{ name: "01-09-03" }}>Modifiers</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
               <Menu.Item key="01-10">
-                <router-link to={{ name: "guide-component-basic" }}>
+                <router-link to={{ name: "01-10" }}>
                   Component Basic
                 </router-link>
               </Menu.Item>
               <Menu.Item key="01-11">
-                <router-link to={{ name: "guide-component-registration" }}>
+                <router-link to={{ name: "01-11" }}>
                   Component Registration
                 </router-link>
               </Menu.Item>
               <Menu.Item key="01-12">
-                <router-link to={{ name: "guide-props" }}>Props</router-link>
+                <router-link to={{ name: "01-12" }}>Props</router-link>
               </Menu.Item>
               <Menu.Item key="01-13">
-                <router-link to={{ name: "guide-custom-events" }}>
-                  Custom Events
-                </router-link>
+                <router-link to={{ name: "01-13" }}>Custom Events</router-link>
               </Menu.Item>
               <Menu.SubMenu key="01-14">
                 <template slot="title">Slots</template>
@@ -293,12 +257,8 @@ export default class App extends Vue {
               </Menu.Item>
               <Menu.SubMenu key="01-21">
                 <template slot="title">Render Functions & JSX</template>
-                <Menu.Item key={ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME}>
-                  <router-link
-                    to={{
-                      name: ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME
-                    }}
-                  >
+                <Menu.Item key={ROUTES._01_21_01.NAME}>
+                  <router-link to={{ name: ROUTES._01_21_01.NAME }}>
                     Basics
                   </router-link>
                 </Menu.Item>
@@ -533,6 +493,7 @@ export default class App extends Vue {
             display: "inline-block",
             width: "calc(100% - 480px)",
             height: "100%",
+            overflow: "auto",
             position: "absolute",
             padding: "10px"
           }}

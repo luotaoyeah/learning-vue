@@ -1,10 +1,10 @@
 const ROUTES_GUIDE = {
-  GUIDE_INTRODUCTION_DECLARATIVE_RENDERING: {
-    NAME: "GUIDE_INTRODUCTION_DECLARATIVE_RENDERING",
+  _01_01_01: {
+    NAME: "01-01-01",
     PATH: "/guide/introduction/declarative-rendering"
   },
-  GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP: {
-    NAME: "GUIDE_INTRODUCTION_CONDITIONAL_AND_LOOP",
+  _01_01_02: {
+    NAME: "01-01-02",
     PATH: "/guide/introduction/conditional-and-loop"
   },
   GUIDE_SLOTS_SLOT_CONTENT: {
@@ -27,8 +27,8 @@ const ROUTES_GUIDE = {
     NAME: "GUIDE_SLOTS_SCOPED_SLOT",
     PATH: "/guide/slots/scoped-slot"
   },
-  GUIDE_RENDER_FUNCTIONS_BASIC: {
-    NAME: "GUIDE_RENDER_FUNCTIONS_BASIC",
+  _01_21_01: {
+    NAME: "01-21-01",
     PATH: "/guide/render-function-and-jsx/basic"
   },
   GUIDE_RENDER_FUNCTIONS_VDOM: {
