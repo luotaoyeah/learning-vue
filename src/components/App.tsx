@@ -1,6 +1,6 @@
 import Vue from "vue";
 import "./App.scss";
-import { ROUTES } from "../router/RouterConst";
+import { ROUTES } from "../router/router-const";
 import { Menu } from "ant-design-vue";
 import { Component } from "vue-property-decorator";
 

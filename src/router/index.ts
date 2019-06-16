@@ -1,9 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import { ROUTE_API } from "./RouteApi";
-import { ROUTE_STYLE_GUIDE } from "./RouteStyleGuide";
-import { ROUTE_GUIDE } from "./RouteGuide";
-import { ROUTE_WHATS_NEW } from "./RouteWhatsNew";
+import { ROUTE_API } from "./route-api";
+import { ROUTE_STYLE_GUIDE } from "./route-style-guide";
+import { ROUTE_GUIDE } from "./route-guide";
+import { ROUTE_WHATS_NEW } from "./route-whats-new";
 
 Vue.use(Router);
 
