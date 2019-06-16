@@ -1,4 +1,4 @@
-const ROUTES_GUIDE = {
+const ROUTES_01 = {
   _01_01_01: {
     NAME: "01-01-01",
     PATH: "/guide/introduction/declarative-rendering"
@@ -57,7 +57,14 @@ const ROUTES_GUIDE = {
   }
 };
 
-const ROUTES_API = {
+const ROUTES_02 = {
+  _02_01: {
+    NAME: "02-01",
+    PATH: "/02/01"
+  }
+};
+
+const ROUTES_03 = {
   _03_03_01: {
     NAME: "03-01-01",
     PATH: "/api/options-data"
@@ -96,53 +103,54 @@ const ROUTES_API = {
   }
 };
 
-const ROUTES_WHATS_NEW = {
+const ROUTES_04 = {
   _04_01_01: {
     NAME: "04-01-01",
     PATH: "/04/2-6/observable"
   },
   _04_01_02: {
-    NAME: "WHATS_NEW_2_6_BIND_PROP_SHORTCUT",
+    NAME: "04-01-02",
     PATH: "/04/2-6/bind-prop-shortcut"
   },
   _04_01_03: {
-    NAME: "WHATS_NEW_2_6_CUSTOM_TOSTRING",
+    NAME: "04-01-03",
     PATH: "/04/2-6/custom-tostring"
   },
   _04_01_04: {
-    NAME: "WHATS_NEW_2_6_ASYNC_ERROR_HANDLING",
+    NAME: "04-01-04",
     PATH: "/04/2-6/async-error-handling"
   },
   _04_01_05: {
-    NAME: "WHATS_NEW_2_6_V_FOR_SUPPORT_ITERABLE",
+    NAME: "04-01-05",
     PATH: "/04/2-6/v-for-support-iterable"
   },
   _04_01_06: {
-    NAME: "WHATS_NEW_2_6_V_SLOT",
+    NAME: "04-01-06",
     PATH: "/04/2-6/v-slot"
   },
   _04_01_07: {
-    NAME: "WHATS_NEW_2_6_SCOPED_SLOTS",
+    NAME: "04-01-07",
     PATH: "/04/2-6/scoped-slots"
   },
   _04_01_08: {
-    NAME: "WHATS_NEW_2_6_DYNAMIC_DIRECTIVE_ARGUMENT",
+    NAME: "04-01-08",
     PATH: "/04/2-6/dynamic-directive-argument"
   },
   _04_01_09: {
-    NAME: "WHATS_NEW_2_6_ALL_SLOTS_ON_$SCOPEDSLOTS",
+    NAME: "04-01-09",
     PATH: "/04/2-6/all-slots-on-$scopedslots"
   },
   _04_01_10: {
-    NAME: "WHATS_NEW_2_6_KEBAB_CASE_UPDATE",
+    NAME: "04-01-10",
     PATH: "/04/2-6/kebab-case-update"
   }
 };
 
 const ROUTES = {
-  ...ROUTES_GUIDE,
-  ...ROUTES_API,
-  ...ROUTES_WHATS_NEW
+  ...ROUTES_01,
+  ...ROUTES_02,
+  ...ROUTES_03,
+  ...ROUTES_04
 };
 
 export { ROUTES };

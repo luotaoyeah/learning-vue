@@ -1,17 +1,13 @@
 import { RouteConfig } from "vue-router";
+import { ROUTES } from "./router-const";
 
 /**
  * style guide
  */
-export const ROUTE_STYLE_GUIDE: Array<RouteConfig> = [
+const ROUTE_STYLE_GUIDE: Array<RouteConfig> = [
   {
-    path: "/guide/reactivity-in-depth",
-    name: "01-24",
-    component: () => import("../app/doc/guide/24-reactivity-in-depth/C24")
-  },
-  {
-    path: "/style-guide/essential",
-    name: "02-01",
+    path: ROUTES._02_01.PATH,
+    name: ROUTES._02_01.NAME,
     component: () => import("../app/doc/style-guide/01-essential/index.vue")
   },
   {
@@ -32,3 +28,5 @@ export const ROUTE_STYLE_GUIDE: Array<RouteConfig> = [
       import("../app/doc/style-guide/04-use-with-caution/index.vue")
   }
 ];
+
+export { ROUTE_STYLE_GUIDE };

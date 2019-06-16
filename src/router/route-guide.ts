@@ -261,5 +261,10 @@ export const ROUTE_GUIDE: Array<RouteConfig> = [
     path: "/guide/filters",
     name: "01-23",
     component: () => import("../app/doc/guide/23-filters/index.vue")
+  },
+  {
+    path: "/guide/reactivity-in-depth",
+    name: "01-24",
+    component: () => import("../app/doc/guide/24-reactivity-in-depth/C24")
   }
 ];

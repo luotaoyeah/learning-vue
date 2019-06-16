@@ -339,8 +339,10 @@ export default class App extends Vue {
             </Menu.SubMenu>
             <Menu.SubMenu key="02">
               <template slot="title">STYLE GUIDE</template>
-              <Menu.Item key="02-01">
-                <router-link to={{ name: "02-01" }}>Essential</router-link>
+              <Menu.Item key={ROUTES._02_01.NAME}>
+                <router-link to={{ name: ROUTES._02_01.NAME }}>
+                  Essential
+                </router-link>
               </Menu.Item>
               <Menu.Item key="02-02">
                 <router-link to={{ name: "02-02" }}>
