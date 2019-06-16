@@ -3,27 +3,35 @@ import "./App.scss";
 import { ROUTES } from "../router/router-const";
 import { Menu } from "ant-design-vue";
 import { Component } from "vue-property-decorator";
+import { last, reduce } from "lodash-es";
 
 /**
  * 主页
  */
 @Component<App>({})
-export class App extends Vue {
-  private rootSubmenuKeys: Array<string> = ["1", "2", "3", "4"];
-  private openKeys: Array<string> = [""];
+export default class App extends Vue {
+  private openKeys: Array<string> = [];
+  private selectedKeys: Array<string> = [];
 
-  /**
-   * 菜单展开状态发生变更
-   * @param openKeys 当前展开的菜单项
-   */
-  private handleOpenChange(openKeys: Array<string>) {
-    const latestOpenKey: string | undefined = openKeys.find(
-      key => this.openKeys.indexOf(key) === -1
-    );
-    if (!latestOpenKey || this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-      this.openKeys = openKeys;
-    } else {
-      this.openKeys = latestOpenKey ? [latestOpenKey] : [];
+  public mounted() {
+    if (this.$route.name) {
+      const routes: Array<string> = this.$route.name.split("-");
+
+      this.openKeys = reduce<string, Array<string>>(
+        routes,
+        (prev: Array<string>, curr: string, index: number) => {
+          if (prev.length === 0) {
+            prev.push(curr);
+          } else {
+            prev.push(`${last(prev)}-${curr}`);
+          }
+
+          return prev;
+        },
+        []
+      );
+
+      this.selectedKeys = this.openKeys;
     }
   }
 
@@ -44,12 +52,20 @@ export class App extends Vue {
           <Menu
             mode="inline"
             openKeys={vm.openKeys}
-            onOpenChange={vm.handleOpenChange}
+            {...{
+              on: {
+                "update:openKeys": (openKeys: Array<string>) => {
+                  vm.openKeys = openKeys;
+                  vm.selectedKeys = openKeys;
+                }
+              }
+            }}
+            vModel={vm.selectedKeys}
             style={{ border: "none" }}
           >
-            <Menu.SubMenu key="1">
+            <Menu.SubMenu key="01">
               <template slot="title">GUIDE</template>
-              <Menu.SubMenu key="1-1">
+              <Menu.SubMenu key="01-1">
                 <template slot="title">Introduction</template>
                 <Menu.Item
                   key={ROUTES.GUIDE_INTRODUCTION_DECLARATIVE_RENDERING.NAME}
@@ -73,74 +89,74 @@ export class App extends Vue {
                     Conditionals And Loops
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-1-3">
+                <Menu.Item key="01-1-3">
                   <router-link to={{ name: "HandingUserInput" }}>
                     Handing User Input
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-1-4">
+                <Menu.Item key="01-1-4">
                   <router-link to={{ name: "ComposingWithComponents" }}>
                     Composing With Components
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="1-2">
+              <Menu.SubMenu key="01-2">
                 <template slot="title">The Vue Instance</template>
-                <Menu.Item key="1-2-1">
+                <Menu.Item key="01-2-1">
                   <router-link to={{ name: "DataAndMethods" }}>
                     Data And Methods
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="1-3">
+              <Menu.SubMenu key="01-3">
                 <template slot="title">Template Syntax</template>
-                <Menu.Item key="1-3-1">
+                <Menu.Item key="01-3-1">
                   <router-link to={{ name: "template-syntax-interpolation" }}>
                     Interpolation
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-3-2">
+                <Menu.Item key="01-3-2">
                   <router-link to={{ name: "template-syntax-directive" }}>
                     Directive
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="1-4">
+              <Menu.SubMenu key="01-4">
                 <template slot="title">
                   Computed Properties and Watchers
                 </template>
-                <Menu.Item key="1-4-1">
+                <Menu.Item key="01-4-1">
                   <router-link to={{ name: "guide-computed-properties" }}>
                     Computed Properties
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-4-2">
+                <Menu.Item key="01-4-2">
                   <router-link to={{ name: "guide-watchers" }}>
                     Watchers
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="1-5">
+              <Menu.SubMenu key="01-5">
                 <template slot="title">Classes and Styles</template>
-                <Menu.Item key="1-5-1">
+                <Menu.Item key="01-5-1">
                   <router-link to={{ name: "guide-class" }}>
                     Classes
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-5-2">
+                <Menu.Item key="01-5-2">
                   <router-link to={{ name: "guide-style" }}>Styles</router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.SubMenu key="1-6">
+              <Menu.SubMenu key="01-6">
                 <template slot="title">Conditional Rendering</template>
-                <Menu.Item key="1-6-1">
+                <Menu.Item key="01-6-1">
                   <router-link
                     to={{ name: "guide-conditional-rendering-v-if" }}
                   >
                     v-if
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-6-2">
+                <Menu.Item key="01-6-2">
                   <router-link
                     to={{ name: "guide-conditional-rendering-v-show" }}
                   >
@@ -148,53 +164,53 @@ export class App extends Vue {
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="1-7">
+              <Menu.Item key="01-7">
                 <router-link to={{ name: "guide-list-rendering" }}>
                   List Rendering
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-8">
+              <Menu.Item key="01-8">
                 <router-link to={{ name: "guide-event-handling" }}>
                   Event Handling
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="1-9">
+              <Menu.SubMenu key="01-9">
                 <template slot="title">Form Input Binding</template>
-                <Menu.Item key="1-9-1">
+                <Menu.Item key="01-9-1">
                   <router-link to={{ name: "guide-form-input-basic" }}>
                     Basic
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-9-2">
+                <Menu.Item key="01-9-2">
                   <router-link to={{ name: "guide-form-input-value-binding" }}>
                     Value Binding
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="1-9-3">
+                <Menu.Item key="01-9-3">
                   <router-link to={{ name: "guide-form-input-modifier" }}>
                     Modifiers
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="1-10">
+              <Menu.Item key="01-10">
                 <router-link to={{ name: "guide-component-basic" }}>
                   Component Basic
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-11">
+              <Menu.Item key="01-11">
                 <router-link to={{ name: "guide-component-registration" }}>
                   Component Registration
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-12">
+              <Menu.Item key="01-12">
                 <router-link to={{ name: "guide-props" }}>Props</router-link>
               </Menu.Item>
-              <Menu.Item key="1-13">
+              <Menu.Item key="01-13">
                 <router-link to={{ name: "guide-custom-events" }}>
                   Custom Events
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="1-14">
+              <Menu.SubMenu key="01-14">
                 <template slot="title">Slots</template>
                 <Menu.Item key={ROUTES.GUIDE_SLOTS_SLOT_CONTENT.NAME}>
                   <router-link
@@ -234,35 +250,35 @@ export class App extends Vue {
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="1-15">
+              <Menu.Item key="01-15">
                 <router-link to={{ name: "guide-dynamic-async-component" }}>
                   Dynamic & Async Components
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-16">
+              <Menu.Item key="01-16">
                 <router-link to={{ name: "guide-handling-edge-cases" }}>
                   Handling Edge Cases
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-17">
+              <Menu.Item key="01-17">
                 <router-link to={{ name: "guide-transition-and-animation" }}>
                   Transitions and Animations
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-18">
+              <Menu.Item key="01-18">
                 <router-link to={{ name: "guide-state-transition" }}>
                   State Transitions
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-19">
+              <Menu.Item key="01-19">
                 <router-link to={{ name: "guide-mixins" }}>Mixins</router-link>
               </Menu.Item>
-              <Menu.Item key="1-20">
+              <Menu.Item key="01-20">
                 <router-link to={{ name: "guide-custom-directives" }}>
                   Custom Directives
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="1-21">
+              <Menu.SubMenu key="01-21">
                 <template slot="title">Render Functions & JSX</template>
                 <Menu.Item key={ROUTES.GUIDE_RENDER_FUNCTIONS_BASIC.NAME}>
                   <router-link
@@ -336,75 +352,75 @@ export class App extends Vue {
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="1-22">
+              <Menu.Item key="01-22">
                 <router-link to={{ name: "guide-plugins" }}>
                   Plugins
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-23">
+              <Menu.Item key="01-23">
                 <router-link to={{ name: "guide-filters" }}>
                   Filters
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="1-24">
+              <Menu.Item key="01-24">
                 <router-link to={{ name: "guide-reactivity-in-depth" }}>
                   Reactivity in Depth
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
-            <Menu.SubMenu key="2">
+            <Menu.SubMenu key="02">
               <template slot="title">STYLE GUIDE</template>
-              <Menu.Item key="2-1">
+              <Menu.Item key="02-1">
                 <router-link to={{ name: "style-guide-essential" }}>
                   Essential
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="2-2">
+              <Menu.Item key="02-2">
                 <router-link to={{ name: "style-guide-strongly-recommend" }}>
                   Strongly Recommended
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="2-3">
+              <Menu.Item key="02-3">
                 <router-link to={{ name: "style-guide-recommend" }}>
                   Recommended
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="2-4">
+              <Menu.Item key="02-4">
                 <router-link to={{ name: "style-guide-use-with-caution" }}>
                   Use with Caution
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
-            <Menu.SubMenu key="3">
+            <Menu.SubMenu key="03">
               <template slot="title">API</template>
-              <Menu.Item key="3-1">
+              <Menu.Item key="03-1">
                 <router-link to={{ name: "api-global-config" }}>
                   Global Config
                 </router-link>
               </Menu.Item>
-              <Menu.Item key="3-2">
+              <Menu.Item key="03-2">
                 <router-link to={{ name: "api-global-api" }}>
                   Global API
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="3-3">
+              <Menu.SubMenu key="03-3">
                 <template slot="title">Options</template>
                 <Menu.Item key={ROUTES.API_OPTIONS_DATA.NAME}>
                   <router-link to={{ name: ROUTES.API_OPTIONS_DATA.NAME }}>
                     Data
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="3-3-2">
+                <Menu.Item key="03-3-2">
                   <router-link to={{ name: "api-options-dom" }}>
                     DOM
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="3-3-3">
+                <Menu.Item key="03-3-3">
                   <router-link to={{ name: "api-options-lifecycle-hooks" }}>
                     Lifecycle Hooks
                   </router-link>
                 </Menu.Item>
-                <Menu.Item key="3-3-4">
+                <Menu.Item key="03-3-4">
                   <router-link to={{ name: "api-options-assets" }}>
                     Assets
                   </router-link>
@@ -427,7 +443,7 @@ export class App extends Vue {
                   Instance Properties
                 </router-link>
               </Menu.Item>
-              <Menu.SubMenu key="3-5">
+              <Menu.SubMenu key="03-5">
                 <template slot="title">Instance Methods</template>
                 <Menu.Item key={ROUTES.API_INSTANCE_METHODS_DATA.NAME}>
                   <router-link
@@ -451,7 +467,7 @@ export class App extends Vue {
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>
-              <Menu.Item key="3-6">
+              <Menu.Item key="03-6">
                 <router-link to={{ name: "api-directives" }}>
                   Directives
                 </router-link>
@@ -467,9 +483,9 @@ export class App extends Vue {
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
-            <Menu.SubMenu key="4">
+            <Menu.SubMenu key="04">
               <template slot="title">WHAT'S NEW</template>
-              <Menu.SubMenu key="3-3">
+              <Menu.SubMenu key="04-01">
                 <template slot="title">vue@2.6</template>
                 <Menu.Item key={ROUTES.WHATS_NEW_2_6_OBSERVABLE.NAME}>
                   <router-link

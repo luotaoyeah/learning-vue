@@ -1,7 +1,7 @@
-import Vue, { CreateElement } from "vue";
+import "./class-component-hooks";
+import Vue from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-import { App } from "./components/App";
 import router from "./router";
 import "vue-router";
 
@@ -36,7 +36,7 @@ Vue.config.productionTip = true;
 Vue.use(ElementUI, { size: "small" });
 
 new Vue({
-  render: (h: CreateElement) => h(App),
+  template: "<router-view></router-view>",
   data() {
     return {
       message: "hello world"

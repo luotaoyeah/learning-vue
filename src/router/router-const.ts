@@ -98,7 +98,7 @@ const ROUTES_API = {
 
 const ROUTES_WHATS_NEW = {
   WHATS_NEW_2_6_OBSERVABLE: {
-    NAME: "WHATS_NEW_2_6_OBSERVABLE",
+    NAME: "04-01-01",
     PATH: "/whats-new/2-6/observable"
   },
   WHATS_NEW_2_6_BIND_PROP_SHORTCUT: {

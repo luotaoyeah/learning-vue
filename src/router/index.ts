@@ -9,9 +9,16 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    ...ROUTE_GUIDE,
-    ...ROUTE_API,
-    ...ROUTE_STYLE_GUIDE,
-    ...ROUTE_WHATS_NEW
+    {
+      path: "/",
+      name: "index",
+      component: () => import("../components/App"),
+      children: [
+        ...ROUTE_GUIDE,
+        ...ROUTE_API,
+        ...ROUTE_STYLE_GUIDE,
+        ...ROUTE_WHATS_NEW
+      ]
+    }
   ]
 });
