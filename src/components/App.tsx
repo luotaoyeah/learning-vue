@@ -488,6 +488,17 @@ export default class App extends Vue {
                 </Menu.Item>
               </Menu.SubMenu>
             </Menu.SubMenu>
+            <Menu.SubMenu key="05">
+              <template slot="title">PKGS</template>
+              <Menu.SubMenu key="05-03">
+                <template slot="title">ant-design-vue</template>
+                <Menu.Item key={ROUTES._05_03_40.NAME}>
+                  <router-link to={{ name: ROUTES._05_03_40.NAME }}>
+                    tooltip
+                  </router-link>
+                </Menu.Item>
+              </Menu.SubMenu>
+            </Menu.SubMenu>
           </Menu>
         </div>
         <div

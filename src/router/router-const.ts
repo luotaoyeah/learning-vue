@@ -146,11 +146,19 @@ const ROUTES_04 = {
   }
 };
 
+const ROUTES_05 = {
+  _05_03_40: {
+    NAME: "05-03-40",
+    PATH: "/05/03/40"
+  }
+};
+
 const ROUTES = {
   ...ROUTES_01,
   ...ROUTES_02,
   ...ROUTES_03,
-  ...ROUTES_04
+  ...ROUTES_04,
+  ...ROUTES_05
 };
 
 export { ROUTES };
