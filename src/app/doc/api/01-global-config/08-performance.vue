@@ -17,12 +17,13 @@
 </template>
 
 <script>
+import { Vue } from "vue-property-decorator";
 import Picture01 from "./08-performance.png";
 
-export default {
+export default Vue.extend({
   data() {
     return { Picture01 };
   },
   components: {}
-};
+});
 </script>

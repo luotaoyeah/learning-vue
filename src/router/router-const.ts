@@ -65,9 +65,13 @@ const ROUTES_02 = {
 };
 
 const ROUTES_03 = {
+  _03_01_04: {
+    NAME: "03-01-04",
+    PATH: "/api/03/01/04"
+  },
   _03_03_01: {
-    NAME: "03-01-01",
-    PATH: "/api/options-data"
+    NAME: "03-03-01",
+    PATH: "/api/03/03/01"
   },
   _03_03_05: {
     NAME: "03-03-05",

@@ -6,9 +6,10 @@ import { RouteConfig } from "vue-router";
  */
 export const ROUTE_API: Array<RouteConfig> = [
   {
-    path: "/api/global-config",
-    name: "03-01",
-    component: () => import("../app/doc/api/01-global-config/index.vue")
+    path: ROUTES._03_01_04.PATH,
+    name: ROUTES._03_01_04.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/04-error-handler/C0104")
   },
   {
     path: "/api/global-api",

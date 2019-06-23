@@ -360,9 +360,14 @@ export default class App extends Vue {
             </Menu.SubMenu>
             <Menu.SubMenu key="03">
               <template slot="title">API</template>
-              <Menu.Item key="03-01">
-                <router-link to={{ name: "03-01" }}>Global Config</router-link>
-              </Menu.Item>
+              <Menu.SubMenu key="03-01">
+                <template slot="title">Global Config</template>
+                <Menu.Item key={ROUTES._03_01_04.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_04.NAME }}>
+                    errorHandler
+                  </router-link>
+                </Menu.Item>
+              </Menu.SubMenu>
               <Menu.Item key="03-02">
                 <router-link to={{ name: "03-02" }}>Global API</router-link>
               </Menu.Item>

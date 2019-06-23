@@ -6,7 +6,7 @@ import { Button, Modal } from "ant-design-vue";
 export class C034501 extends Vue {
   public handleClick() {
     /*
-     * 若 closable wei true, 则确认对话框右上角会显示一个关闭按钮(X)
+     * 若 closable 为 true, 则确认对话框右上角会显示一个关闭按钮(X)
      */
     Modal.confirm({
       title: "CONFIRM",

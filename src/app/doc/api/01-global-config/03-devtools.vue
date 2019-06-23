@@ -22,11 +22,12 @@
 
 <script>
 import Picture01 from "./03-devtools.png";
+import { Vue } from "vue-property-decorator";
 
-export default {
+export default Vue.extend({
   data() {
     return { Picture01 };
   },
   components: {}
-};
+});
 </script>

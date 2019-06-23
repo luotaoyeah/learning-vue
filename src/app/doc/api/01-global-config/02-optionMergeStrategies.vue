@@ -10,13 +10,14 @@
 
 <script>
 import Picture01 from "./02-optionMergeStrategies.png";
+import { Vue } from "vue-property-decorator";
 
-export default {
+export default Vue.extend({
   data() {
     return { Picture01 };
   },
   components: {},
   "my-option-01": "a",
   mixins: [{ "my-option-01": "b" }]
-};
+});
 </script>
