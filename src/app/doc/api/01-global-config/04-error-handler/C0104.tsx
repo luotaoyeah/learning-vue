@@ -1,5 +1,6 @@
 import { Component, Vue } from "vue-property-decorator";
 import { Button, Collapse, Divider } from "ant-design-vue";
+import { C010401 } from "./C0104.01";
 
 /*
  * https://vuejs.org/v2/api/#errorHandler
@@ -57,6 +58,14 @@ export default class C0104 extends Vue {
           >
             THROW BAR
           </Button>
+
+          <Divider dashed={true}></Divider>
+
+          <Collapse>
+            <Collapse.Panel header={"01"}>
+              <C010401></C010401>
+            </Collapse.Panel>
+          </Collapse>
         </Collapse.Panel>
       </Collapse>
     );
