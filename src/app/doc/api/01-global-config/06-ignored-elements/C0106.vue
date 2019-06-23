@@ -20,7 +20,7 @@
 
 <script>
 import { Vue } from "vue-property-decorator";
-import Picture01 from "./06-ignoredElements.png";
+import Picture01 from "./C0106.png";
 
 export default Vue.extend({
   data() {

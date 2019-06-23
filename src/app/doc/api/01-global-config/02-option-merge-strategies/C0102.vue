@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Picture01 from "./02-optionMergeStrategies.png";
+import Picture01 from "./C0102.png";
 import { Vue } from "vue-property-decorator";
 
 export default Vue.extend({

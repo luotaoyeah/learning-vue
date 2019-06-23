@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Picture01 from "./09-productionTip.png";
+import Picture01 from "./C0109.png";
 import { Vue } from "vue-property-decorator";
 
 export default Vue.extend({

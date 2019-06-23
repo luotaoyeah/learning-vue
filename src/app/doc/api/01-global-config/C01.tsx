@@ -1,13 +1,13 @@
 import { Component, Vue } from "vue-property-decorator";
 import { Collapse } from "ant-design-vue";
-import C0101 from "./01-silent.vue";
-import C02 from "./02-optionMergeStrategies.vue";
-import C03 from "./03-devtools.vue";
-import C05 from "./05-warnHandler.vue";
-import C06 from "./06-ignoredElements.vue";
-import C07 from "./07-keyCodes.vue";
-import C08 from "./08-performance.vue";
-import C09 from "./09-productionTip.vue";
+import C0101 from "./01-silent/C0101.vue";
+import C02 from "./02-option-merge-strategies/C0102.vue";
+import C03 from "./03-devtools/C0103.vue";
+import C05 from "./05-warn-handler/C0105.vue";
+import C06 from "./06-ignored-elements/C0106.vue";
+import C07 from "./07-key-codes/0107.vue";
+import C08 from "./08-performance/C0108.vue";
+import C09 from "./09-production-tip/C0109.vue";
 
 @Component({})
 export default class C01 extends Vue {

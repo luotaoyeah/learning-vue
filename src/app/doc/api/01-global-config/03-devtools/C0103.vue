@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Picture01 from "./03-devtools.png";
+import Picture01 from "./C0103.png";
 import { Vue } from "vue-property-decorator";
 
 export default Vue.extend({
