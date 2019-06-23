@@ -362,9 +362,49 @@ export default class App extends Vue {
               <template slot="title">API</template>
               <Menu.SubMenu key="03-01">
                 <template slot="title">Global Config</template>
+                <Menu.Item key={ROUTES._03_01_01.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_01.NAME }}>
+                    silent
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_02.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_02.NAME }}>
+                    optionMergeStrategies
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_03.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_03.NAME }}>
+                    devtools
+                  </router-link>
+                </Menu.Item>
                 <Menu.Item key={ROUTES._03_01_04.NAME}>
                   <router-link to={{ name: ROUTES._03_01_04.NAME }}>
                     errorHandler
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_05.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_05.NAME }}>
+                    warnHandler
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_06.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_06.NAME }}>
+                    ignoredElements
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_07.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_07.NAME }}>
+                    keyCodes
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_08.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_08.NAME }}>
+                    performance
+                  </router-link>
+                </Menu.Item>
+                <Menu.Item key={ROUTES._03_01_09.NAME}>
+                  <router-link to={{ name: ROUTES._03_01_09.NAME }}>
+                    productionTip
                   </router-link>
                 </Menu.Item>
               </Menu.SubMenu>

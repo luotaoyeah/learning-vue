@@ -18,7 +18,7 @@
 
 <script>
 import { Vue } from "vue-property-decorator";
-import Picture01 from "./08-performance.png";
+import Picture01 from "./C0108.png";
 
 export default Vue.extend({
   data() {

@@ -6,10 +6,60 @@ import { RouteConfig } from "vue-router";
  */
 export const ROUTE_API: Array<RouteConfig> = [
   {
+    path: ROUTES._03_01_01.PATH,
+    name: ROUTES._03_01_01.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/01-silent/C0101.vue")
+  },
+  {
+    path: ROUTES._03_01_02.PATH,
+    name: ROUTES._03_01_02.NAME,
+    component: () =>
+      import(
+        "../app/doc/api/01-global-config/02-option-merge-strategies/C0102.vue"
+      )
+  },
+  {
+    path: ROUTES._03_01_03.PATH,
+    name: ROUTES._03_01_03.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/03-devtools/C0103.vue")
+  },
+  {
     path: ROUTES._03_01_04.PATH,
     name: ROUTES._03_01_04.NAME,
     component: () =>
       import("../app/doc/api/01-global-config/04-error-handler/C0104")
+  },
+  {
+    path: ROUTES._03_01_05.PATH,
+    name: ROUTES._03_01_05.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/05-warn-handler/C0105.vue")
+  },
+  {
+    path: ROUTES._03_01_06.PATH,
+    name: ROUTES._03_01_06.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/06-ignored-elements/C0106.vue")
+  },
+  {
+    path: ROUTES._03_01_07.PATH,
+    name: ROUTES._03_01_07.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/07-key-codes/C0107.vue")
+  },
+  {
+    path: ROUTES._03_01_08.PATH,
+    name: ROUTES._03_01_08.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/08-performance/C0108.vue")
+  },
+  {
+    path: ROUTES._03_01_09.PATH,
+    name: ROUTES._03_01_09.NAME,
+    component: () =>
+      import("../app/doc/api/01-global-config/09-production-tip/C0109.vue")
   },
   {
     path: "/api/global-api",
