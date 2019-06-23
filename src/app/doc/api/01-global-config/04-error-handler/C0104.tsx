@@ -1,28 +1,26 @@
 import { Component, Vue } from "vue-property-decorator";
-import { Collapse } from "ant-design-vue";
+import { Button, Collapse, Divider } from "ant-design-vue";
 
 /*
  * https://vuejs.org/v2/api/#errorHandler
  */
 @Component({})
 export default class C0104 extends Vue {
-  public mounted() {
-    if (Math.random() < 0.5) {
-      /*
-       * 未处理的错误会被处理器拦截
-       */
-      throw new Error(`[${C0104.name}] FOO`);
-    }
-
+  public handleClick01() {
     /*
-     * 已处理的错误**不**会被处理器拦截
+     * 此处抛出的错误, 会被全局的错误处理函数捕获
      */
+    throw new Error(`[${C0104.name}] FOO`);
+  }
+
+  public handleClick02() {
     try {
-      if (Math.random() < 0.5) {
-        throw new Error(`[${C0104.name}] BAR`);
-      }
+      /*
+       * 此处抛出的错误, **不**会被全局的错误处理函数捕获
+       */
+      throw new Error(`[${C0104.name}] BAR`);
     } catch (e) {
-      /*  */
+      console.log(`%c[${C0104.name}]\n${e.message}`, "color:red");
     }
   }
 
@@ -41,23 +39,24 @@ export default class C0104 extends Vue {
             <code>console.error()</code> 方法打印到控制台, 而不是让整个应用崩溃
           </p>
 
+          <p>处理器函数接收 3 个参数:</p>
           <ul>
-            <li>
-              如果未定义错误处理器, 则组件中未被捕获的错误默认会使用
-              console.error 打印到控制台
-            </li>
-            <li>
-              如果定义了错误处理器, 则组件中未被捕获的错误会被该处理器拦截
-            </li>
-            <li>
-              处理器函数接收 3 个参数:
-              <ul>
-                <li>err: 错误对象</li>
-                <li>vm: 组件实例</li>
-                <li>info: 环境信息</li>
-              </ul>
-            </li>
+            <li>err: 错误对象</li>
+            <li>vm: 组件实例</li>
+            <li>info: 环境信息</li>
           </ul>
+
+          <Divider dashed={true}></Divider>
+
+          <Button onClick={this.handleClick01}>THROW FOO</Button>
+          <Button
+            onClick={this.handleClick02}
+            style={{
+              marginLeft: "8px"
+            }}
+          >
+            THROW BAR
+          </Button>
         </Collapse.Panel>
       </Collapse>
     );

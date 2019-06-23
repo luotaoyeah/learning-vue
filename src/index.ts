@@ -16,11 +16,9 @@ Vue.config.optionMergeStrategies["my-option-01"] = (
   return `${parentVal}-${childVal}`;
 };
 
-/*
-  Vue.config.errorHandler = (e: Error, vm: Vue, info: string) => {
-    console.log("Vue.config.errorHandler():", e.message);
-  };
-*/
+Vue.config.errorHandler = (e: Error, vm: Vue, info: string) => {
+  console.log(`%c[Vue.config.errorHandler()]\n${e.message}`, "color:red");
+};
 
 /*
   Vue.config.warnHandler = (msg, vm, trace) => {
