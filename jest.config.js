@@ -13,6 +13,11 @@ module.exports = {
   testMatch: ["**/*.test.(js|jsx|ts|tsx)"],
   testURL: "http://localhost/",
   collectCoverage: true,
-  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"],
+  // FIXME 在 circleci 环境执行测试, 会抛出 ENOMEM 错误
+  // collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"],
+  collectCoverageFrom: [
+    "src/app/doc/api/01-global-config/06-ignored-elements/C0106.tsx",
+    "!**/node_modules/**"
+  ],
   coverageReporters: ["lcovonly", "text-summary"]
 };
