@@ -11,5 +11,7 @@ module.exports = {
   },
   snapshotSerializers: ["jest-serializer-vue"],
   testMatch: ["**/*.test.(js|jsx|ts|tsx)"],
-  testURL: "http://localhost/"
+  testURL: "http://localhost/",
+  collectCoverage: true,
+  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"]
 };
