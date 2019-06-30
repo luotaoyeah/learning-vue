@@ -35,7 +35,7 @@ export const ROUTE_API: Array<RouteConfig> = [
     path: ROUTES._03_01_05.PATH,
     name: ROUTES._03_01_05.NAME,
     component: () =>
-      import("../app/doc/api/01-global-config/05-warn-handler/C0105.vue")
+      import("../app/doc/api/01-global-config/05-warn-handler/C0105")
   },
   {
     path: ROUTES._03_01_06.PATH,

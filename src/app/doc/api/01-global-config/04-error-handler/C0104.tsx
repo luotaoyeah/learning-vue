@@ -17,7 +17,8 @@ export default class C0104 extends Vue {
   public handleClick02() {
     try {
       /*
-       * 此处抛出的错误, **不**会被全局的错误处理函数捕获
+       * 此处抛出的错误, **不**会被全局的错误处理函数捕获,
+       * 因为此处被组件自己捕获并处理掉了
        */
       throw new Error(`[${C0104.name}] BAR`);
     } catch (e) {

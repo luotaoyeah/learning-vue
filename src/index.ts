@@ -20,11 +20,9 @@ Vue.config.errorHandler = (e: Error, vm: Vue, info: string) => {
   console.log(`%c[Vue.config.errorHandler()]\n${e.message}`, "color:red");
 };
 
-/*
-  Vue.config.warnHandler = (msg, vm, trace) => {
-    console.error(msg, trace);
-  };
-*/
+Vue.config.warnHandler = (msg, vm, trace) => {
+  console.warn(`[Vue.config.warnHandler()]\n${msg}`, trace);
+};
 
 Vue.config.ignoredElements = ["my-ignored-element"];
 Vue.config.keyCodes = { "lucky-eight": 56 };
