@@ -21,10 +21,10 @@ Vue.config.errorHandler = (e: Error, vm: Vue, info: string) => {
 };
 
 Vue.config.warnHandler = (msg, vm, trace) => {
-  console.warn(`[Vue.config.warnHandler()]\n${msg}`, trace);
+  console.error(`[Vue.config.warnHandler()]\n${msg}`, trace);
 };
 
-Vue.config.ignoredElements = ["my-ignored-element"];
+Vue.config.ignoredElements = ["c-01-06-01"];
 Vue.config.keyCodes = { "lucky-eight": 56 };
 Vue.config.performance = false;
 Vue.config.productionTip = true;

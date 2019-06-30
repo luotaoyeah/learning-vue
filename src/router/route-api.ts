@@ -41,7 +41,7 @@ export const ROUTE_API: Array<RouteConfig> = [
     path: ROUTES._03_01_06.PATH,
     name: ROUTES._03_01_06.NAME,
     component: () =>
-      import("../app/doc/api/01-global-config/06-ignored-elements/C0106.vue")
+      import("../app/doc/api/01-global-config/06-ignored-elements/C0106")
   },
   {
     path: ROUTES._03_01_07.PATH,
