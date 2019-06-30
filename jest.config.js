@@ -13,5 +13,6 @@ module.exports = {
   testMatch: ["**/*.test.(js|jsx|ts|tsx)"],
   testURL: "http://localhost/",
   collectCoverage: true,
-  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"]
+  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"],
+  coverageReporters: ["lcovonly", "text-summary"]
 };
