@@ -5,7 +5,7 @@
       <div class="detail">
         <div class="main" v-if="!$route.meta.hiddenHeaderContent">
           <div class="row">
-            <img v-if="logo" :src="logo" class="logo"/>
+            <img v-if="logo" :src="logo" class="logo" />
             <h1 v-if="title" class="title">{{ title }}</h1>
             <div class="action">
               <slot name="action"></slot>
@@ -32,12 +32,12 @@
 </template>
 
 <script>
-import Breadcrumb from '@/components/tools/Breadcrumb'
+import Breadcrumb from "@/components/tools/Breadcrumb";
 
 export default {
-  name: 'PageHeader',
+  name: "PageHeader",
   components: {
-    's-breadcrumb': Breadcrumb
+    "s-breadcrumb": Breadcrumb
   },
   props: {
     title: {
@@ -47,19 +47,19 @@ export default {
     },
     logo: {
       type: String,
-      default: '',
+      default: "",
       required: false
     },
     avatar: {
       type: String,
-      default: '',
+      default: "",
       required: false
     }
   },
-  data () {
-    return {}
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style lang="less" scoped>

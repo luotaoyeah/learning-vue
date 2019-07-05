@@ -11,16 +11,16 @@
 
 <script>
 const classes = [
-  'antd-pro-components-standard-form-row-index-standardFormRowBlock',
-  'antd-pro-components-standard-form-row-index-standardFormRowGrid',
-  'antd-pro-components-standard-form-row-index-standardFormRowLast'
-]
+  "antd-pro-components-standard-form-row-index-standardFormRowBlock",
+  "antd-pro-components-standard-form-row-index-standardFormRowGrid",
+  "antd-pro-components-standard-form-row-index-standardFormRowLast"
+];
 export default {
-  name: 'StandardFormRow',
+  name: "StandardFormRow",
   props: {
     prefixCls: {
       type: String,
-      default: 'antd-pro-components-standard-form-row-index-standardFormRow'
+      default: "antd-pro-components-standard-form-row-index-standardFormRow"
     },
     title: {
       type: String,
@@ -37,21 +37,21 @@ export default {
     }
   },
   computed: {
-    lastCls () {
-      return this.last ? classes[2] : null
+    lastCls() {
+      return this.last ? classes[2] : null;
     },
-    blockCls () {
-      return this.block ? classes[0] : null
+    blockCls() {
+      return this.block ? classes[0] : null;
     },
-    gridCls () {
-      return this.grid ? classes[1] : null
+    gridCls() {
+      return this.grid ? classes[1] : null;
     }
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
-@import '../index.less';
+@import "../index.less";
 
 .antd-pro-components-standard-form-row-index-standardFormRow {
   display: flex;
@@ -83,7 +83,7 @@ export default {
       height: 32px;
       line-height: 32px;
       &::after {
-        content: '：';
+        content: "：";
       }
     }
   }
@@ -109,14 +109,13 @@ export default {
   }
 
   &.antd-pro-components-standard-form-row-index-standardFormRowGrid {
-      /deep/ .ant-form-item,
-      div.ant-form-item-control-wrapper {
-        display: block;
-      }
-      /deep/ .ant-form-item-label {
-        float: left;
-      }
+    /deep/ .ant-form-item,
+    div.ant-form-item-control-wrapper {
+      display: block;
+    }
+    /deep/ .ant-form-item-label {
+      float: left;
+    }
   }
 }
-
 </style>

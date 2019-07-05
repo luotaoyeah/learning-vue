@@ -12,7 +12,7 @@
 
 <script>
 const axis1Opts = {
-  dataKey: 'item',
+  dataKey: "item",
   line: null,
   tickLine: null,
   grid: {
@@ -21,48 +21,47 @@ const axis1Opts = {
     },
     hideFirstLine: false
   }
-}
+};
 const axis2Opts = {
-  dataKey: 'score',
+  dataKey: "score",
   line: null,
   tickLine: null,
   grid: {
-    type: 'polygon',
+    type: "polygon",
     lineStyle: {
       lineDash: null
     }
   }
-}
+};
 
 const scale = [
   {
-    dataKey: 'score',
+    dataKey: "score",
     min: 0,
     max: 80
-  }, {
-    dataKey: 'user',
-    alias: '类型'
+  },
+  {
+    dataKey: "user",
+    alias: "类型"
   }
-]
+];
 
 export default {
-  name: 'Radar',
+  name: "Radar",
   props: {
     data: {
       type: Array,
       default: null
     }
   },
-  data () {
+  data() {
     return {
       axis1Opts,
       axis2Opts,
       scale
-    }
+    };
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

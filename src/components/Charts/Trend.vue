@@ -8,11 +8,11 @@
 
 <script>
 export default {
-  name: 'Trend',
+  name: "Trend",
   props: {
     term: {
       type: String,
-      default: '',
+      default: "",
       required: true
     },
     percentage: {
@@ -36,47 +36,51 @@ export default {
       default: 2
     }
   },
-  data () {
+  data() {
     return {
-      trend: this.type && 'up' || 'down',
+      trend: (this.type && "up") || "down",
       rate: this.percentage
-    }
+    };
   },
-  created () {
-    const type = this.type === null ? this.value >= this.target : this.type
-    this.trend = type ? 'up' : 'down'
-    this.rate = (this.percentage === null ? Math.abs(this.value - this.target) * 100 / this.target : this.percentage).toFixed(this.fixed)
+  created() {
+    const type = this.type === null ? this.value >= this.target : this.type;
+    this.trend = type ? "up" : "down";
+    this.rate = (this.percentage === null
+      ? (Math.abs(this.value - this.target) * 100) / this.target
+      : this.percentage
+    ).toFixed(this.fixed);
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
-  .chart-trend {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 22px;
+.chart-trend {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
 
-    .trend-icon {
-      font-size: 12px;
+  .trend-icon {
+    font-size: 12px;
 
-      &.up, &.down {
-        margin-left: 4px;
-        position: relative;
-        top: 1px;
+    &.up,
+    &.down {
+      margin-left: 4px;
+      position: relative;
+      top: 1px;
 
-        i {
-          font-size: 12px;
-          transform: scale(.83);
-        }
-      }
-
-      &.up {
-        color: #f5222d;
-      }
-      &.down {
-        color: #52c41a;
-        top: -1px;
+      i {
+        font-size: 12px;
+        transform: scale(0.83);
       }
     }
+
+    &.up {
+      color: #f5222d;
+    }
+    &.down {
+      color: #52c41a;
+      top: -1px;
+    }
   }
+}
 </style>

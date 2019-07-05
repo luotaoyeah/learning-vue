@@ -12,11 +12,11 @@
 
 <script>
 export default {
-  name: 'MiniSmoothArea',
+  name: "MiniSmoothArea",
   props: {
     prefixCls: {
       type: String,
-      default: 'ant-pro-smooth-area'
+      default: "ant-pro-smooth-area"
     },
     scale: {
       type: [Object, Array],
@@ -27,14 +27,14 @@ export default {
       required: true
     }
   },
-  data () {
+  data() {
     return {
       height: 100
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
-  @import "smooth.area.less";
+@import "smooth.area.less";
 </style>

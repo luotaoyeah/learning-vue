@@ -7,9 +7,9 @@
 
 <script>
 export default {
-  name: 'IconText',
+  name: "IconText",
   props: {
-    'type': {
+    type: {
       type: String,
       required: true
     },
@@ -18,5 +18,5 @@ export default {
       required: true
     }
   }
-}
+};
 </script>

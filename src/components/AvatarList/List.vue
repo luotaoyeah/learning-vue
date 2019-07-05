@@ -16,13 +16,13 @@
 -->
 
 <script>
-import Avatar from 'ant-design-vue/es/avatar'
-import AvatarItem from './Item'
-import { filterEmpty } from '@/components/_util/util'
+import Avatar from "ant-design-vue/es/avatar";
+import AvatarItem from "./Item";
+import { filterEmpty } from "@/components/_util/util";
 
 export default {
   AvatarItem,
-  name: 'AvatarList',
+  name: "AvatarList",
   components: {
     Avatar,
     AvatarItem
@@ -30,70 +30,64 @@ export default {
   props: {
     prefixCls: {
       type: String,
-      default: 'ant-pro-avatar-list'
+      default: "ant-pro-avatar-list"
     },
     /**
-       * 头像大小 类型: large、small 、mini, default
-       * 默认值: default
-       */
+     * 头像大小 类型: large、small 、mini, default
+     * 默认值: default
+     */
     size: {
       type: [String, Number],
-      default: 'default'
+      default: "default"
     },
     /**
-       * 要显示的最大项目
-       */
+     * 要显示的最大项目
+     */
     maxLength: {
       type: Number,
       default: 0
     },
     /**
-       * 多余的项目风格
-       */
+     * 多余的项目风格
+     */
     excessItemsStyle: {
       type: Object,
       default: () => {
         return {
-          color: '#f56a00',
-          backgroundColor: '#fde3cf'
-        }
+          color: "#f56a00",
+          backgroundColor: "#fde3cf"
+        };
       }
     }
   },
-  data () {
-    return {}
+  data() {
+    return {};
   },
   methods: {
-    getItems (items) {
+    getItems(items) {
       const classString = {
         [`${this.prefixCls}-item`]: true,
         [`${this.size}`]: true
-      }
+      };
 
       if (this.maxLength > 0) {
-        items = items.slice(0, this.maxLength)
-        items.push((<Avatar size={ this.size } style={ this.excessItemsStyle }>{`+${this.maxLength}`}</Avatar>))
+        items = items.slice(0, this.maxLength);
+        items.push(<Avatar size={this.size} style={this.excessItemsStyle}>{`+${this.maxLength}`}</Avatar>);
       }
-      const itemList = items.map((item) => (
-        <li class={ classString }>{ item }</li>
-      ))
-      return itemList
+      const itemList = items.map(item => <li class={classString}>{item}</li>);
+      return itemList;
     }
   },
-  render () {
-    const { prefixCls, size } = this.$props
+  render() {
+    const { prefixCls, size } = this.$props;
     const classString = {
       [`${prefixCls}`]: true,
       [`${size}`]: true
-    }
-    const items = filterEmpty(this.$slots.default)
-    const itemsDom = items && items.length ? <ul class={`${prefixCls}-items`}>{ this.getItems(items) }</ul> : null
+    };
+    const items = filterEmpty(this.$slots.default);
+    const itemsDom = items && items.length ? <ul class={`${prefixCls}-items`}>{this.getItems(items)}</ul> : null;
 
-    return (
-      <div class={ classString }>
-        { itemsDom }
-      </div>
-    )
+    return <div class={classString}>{itemsDom}</div>;
   }
-}
+};
 </script>

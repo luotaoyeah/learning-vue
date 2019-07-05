@@ -17,7 +17,7 @@
       </div>
       <slot slot="extra" name="extra">
         <div class="extra-img">
-          <img v-if="typeof extraImage !== 'undefined'" :src="extraImage"/>
+          <img v-if="typeof extraImage !== 'undefined'" :src="extraImage" />
         </div>
       </slot>
       <div slot="pageMenu">
@@ -31,7 +31,7 @@
         </div>
         <div class="page-menu-tabs" v-if="tabs && tabs.items">
           <!-- @change="callback" :activeKey="activeKey" -->
-          <a-tabs :tabBarStyle="{margin: 0}" :activeKey="tabs.active()" @change="tabs.callback">
+          <a-tabs :tabBarStyle="{ margin: 0 }" :activeKey="tabs.active()" @change="tabs.callback">
             <a-tab-pane v-for="item in tabs.items" :tab="item.title" :key="item.key"></a-tab-pane>
           </a-tabs>
         </div>
@@ -52,11 +52,11 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import PageHeader from '@/components/PageHeader'
+import { mapState } from "vuex";
+import PageHeader from "@/components/PageHeader";
 
 export default {
-  name: 'PageView',
+  name: "PageView",
   components: {
     PageHeader
   },
@@ -78,104 +78,104 @@ export default {
       default: null
     }
   },
-  data () {
+  data() {
     return {
       pageTitle: null,
       description: null,
       linkList: [],
-      extraImage: '',
+      extraImage: "",
       search: false,
       tabs: {}
-    }
+    };
   },
   computed: {
     ...mapState({
       multiTab: state => state.app.multiTab
     })
   },
-  mounted () {
-    this.tabs = this.directTabs
-    this.getPageMeta()
+  mounted() {
+    this.tabs = this.directTabs;
+    this.getPageMeta();
   },
-  updated () {
-    this.getPageMeta()
+  updated() {
+    this.getPageMeta();
   },
   methods: {
-    getPageMeta () {
+    getPageMeta() {
       // eslint-disable-next-line
-      this.pageTitle = (typeof(this.title) === 'string' || !this.title) ? this.title : this.$route.meta.title
+      this.pageTitle = typeof this.title === "string" || !this.title ? this.title : this.$route.meta.title;
 
-      const content = this.$refs.content
+      const content = this.$refs.content;
       if (content) {
         if (content.pageMeta) {
-          Object.assign(this, content.pageMeta)
+          Object.assign(this, content.pageMeta);
         } else {
-          this.description = content.description
-          this.linkList = content.linkList
-          this.extraImage = content.extraImage
-          this.search = content.search === true
-          this.tabs = content.tabs
+          this.description = content.description;
+          this.linkList = content.linkList;
+          this.extraImage = content.extraImage;
+          this.search = content.search === true;
+          this.tabs = content.tabs;
         }
+      }
+    }
+  }
+};
+</script>
+
+<style lang="less" scoped>
+.content {
+  margin: 24px 24px 0;
+  .link {
+    margin-top: 16px;
+    &:not(:empty) {
+      margin-bottom: 16px;
+    }
+    a {
+      margin-right: 32px;
+      height: 24px;
+      line-height: 24px;
+      display: inline-block;
+      i {
+        font-size: 24px;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+      span {
+        height: 24px;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: middle;
       }
     }
   }
 }
-</script>
+.page-menu-search {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.page-menu-tabs {
+  margin-top: 48px;
+}
 
-<style lang="less" scoped>
-  .content {
-    margin: 24px 24px 0;
-    .link {
-      margin-top: 16px;
-      &:not(:empty) {
-        margin-bottom: 16px;
-      }
-      a {
-        margin-right: 32px;
-        height: 24px;
-        line-height: 24px;
-        display: inline-block;
-        i {
-          font-size: 24px;
-          margin-right: 8px;
-          vertical-align: middle;
-        }
-        span {
-          height: 24px;
-          line-height: 24px;
-          display: inline-block;
-          vertical-align: middle;
-        }
-      }
-    }
-  }
-  .page-menu-search {
-    text-align: center;
-    margin-bottom: 16px;
-  }
-  .page-menu-tabs {
-    margin-top: 48px;
-  }
+.extra-img {
+  margin-top: -60px;
+  text-align: center;
+  width: 195px;
 
+  img {
+    width: 100%;
+  }
+}
+
+.mobile {
   .extra-img {
-    margin-top: -60px;
+    margin-top: 0;
     text-align: center;
-    width: 195px;
+    width: 96px;
 
     img {
       width: 100%;
     }
   }
-
-  .mobile {
-    .extra-img{
-      margin-top: 0;
-      text-align: center;
-      width: 96px;
-
-      img{
-        width: 100%;
-      }
-    }
-  }
+}
 </style>

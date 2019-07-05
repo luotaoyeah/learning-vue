@@ -1,6 +1,6 @@
 <script>
-import Tooltip from 'ant-design-vue/es/tooltip'
-import { cutStrByFullLength, getStrFullLength } from '@/components/_util/util'
+import Tooltip from "ant-design-vue/es/tooltip";
+import { cutStrByFullLength, getStrFullLength } from "@/components/_util/util";
 /*
     const isSupportLineClamp = document.body.style.webkitLineClamp !== undefined;
 
@@ -11,14 +11,14 @@ import { cutStrByFullLength, getStrFullLength } from '@/components/_util/util'
   */
 
 export default {
-  name: 'Ellipsis',
+  name: "Ellipsis",
   components: {
     Tooltip
   },
   props: {
     prefixCls: {
       type: String,
-      default: 'ant-pro-ellipsis'
+      default: "ant-pro-ellipsis"
     },
     tooltip: {
       type: Boolean
@@ -37,28 +37,24 @@ export default {
     }
   },
   methods: {
-    getStrDom (str, fullLength) {
-      return (
-        <span>{ cutStrByFullLength(str, this.length) + (fullLength > this.length ? '...' : '') }</span>
-      )
+    getStrDom(str, fullLength) {
+      return <span>{cutStrByFullLength(str, this.length) + (fullLength > this.length ? "..." : "")}</span>;
     },
-    getTooltip (fullStr, fullLength) {
+    getTooltip(fullStr, fullLength) {
       return (
         <Tooltip>
-          <template slot="title">{ fullStr }</template>
-          { this.getStrDom(fullStr, fullLength) }
+          <template slot="title">{fullStr}</template>
+          {this.getStrDom(fullStr, fullLength)}
         </Tooltip>
-      )
+      );
     }
   },
-  render () {
-    const { tooltip, length } = this.$props
-    const str = this.$slots.default.map(vNode => vNode.text).join('')
-    const fullLength = getStrFullLength(str)
-    const strDom = tooltip && fullLength > length ? this.getTooltip(str, fullLength) : this.getStrDom(str, fullLength)
-    return (
-      strDom
-    )
+  render() {
+    const { tooltip, length } = this.$props;
+    const str = this.$slots.default.map(vNode => vNode.text).join("");
+    const fullLength = getStrFullLength(str);
+    const strDom = tooltip && fullLength > length ? this.getTooltip(str, fullLength) : this.getStrDom(str, fullLength);
+    return strDom;
   }
-}
+};
 </script>

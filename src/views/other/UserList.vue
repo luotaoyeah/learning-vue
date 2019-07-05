@@ -5,7 +5,7 @@
         <a-row :gutter="48">
           <a-col :md="8" :sm="24">
             <a-form-item label="角色ID">
-              <a-input placeholder="请输入"/>
+              <a-input placeholder="请输入" />
             </a-form-item>
           </a-col>
           <a-col :md="8" :sm="24">
@@ -27,18 +27,9 @@
       </a-form>
     </div>
 
-    <s-table
-      size="default"
-      :columns="columns"
-      :data="loadData"
-    >
-      <div
-        slot="expandedRowRender"
-        slot-scope="record"
-        style="margin: 0">
-        <a-row
-          :gutter="24"
-          :style="{ marginBottom: '12px' }">
+    <s-table size="default" :columns="columns" :data="loadData">
+      <div slot="expandedRowRender" slot-scope="record" style="margin: 0">
+        <a-row :gutter="24" :style="{ marginBottom: '12px' }">
           <a-col :span="12" v-for="(role, index) in record.permissions" :key="index" :style="{ marginBottom: '12px' }">
             <a-col :lg="4" :md="24">
               <span>{{ role.permissionName }}：</span>
@@ -54,9 +45,7 @@
         <a @click="handleEdit(record)">编辑</a>
         <a-divider type="vertical" />
         <a-dropdown>
-          <a class="ant-dropdown-link">
-            更多 <a-icon type="down" />
-          </a>
+          <a class="ant-dropdown-link"> 更多 <a-icon type="down" /> </a>
           <a-menu slot="overlay">
             <a-menu-item>
               <a href="javascript:;">详情</a>
@@ -72,15 +61,14 @@
       </span>
     </s-table>
 
-    <a-modal
-      title="操作"
-      style="top: 20px;"
-      :width="800"
-      v-model="visible"
-      @ok="handleOk"
-    >
-      <a-form :autoFormCreate="(form)=>{this.form = form}">
-
+    <a-modal title="操作" style="top: 20px;" :width="800" v-model="visible" @ok="handleOk">
+      <a-form
+        :autoFormCreate="
+          form => {
+            this.form = form;
+          }
+        "
+      >
         <a-form-item
           :labelCol="labelCol"
           :wrapperCol="wrapperCol"
@@ -101,65 +89,45 @@
           <a-input placeholder="起一个名字" v-model="mdl.name" id="role_name" />
         </a-form-item>
 
-        <a-form-item
-          :labelCol="labelCol"
-          :wrapperCol="wrapperCol"
-          label="状态"
-          hasFeedback
-          validateStatus="warning"
-        >
+        <a-form-item :labelCol="labelCol" :wrapperCol="wrapperCol" label="状态" hasFeedback validateStatus="warning">
           <a-select v-model="mdl.status">
             <a-select-option value="1">正常</a-select-option>
             <a-select-option value="2">禁用</a-select-option>
           </a-select>
         </a-form-item>
 
-        <a-form-item
-          :labelCol="labelCol"
-          :wrapperCol="wrapperCol"
-          label="描述"
-          hasFeedback
-        >
-          <a-textarea :rows="5" v-model="mdl.describe" placeholder="..." id="describe"/>
+        <a-form-item :labelCol="labelCol" :wrapperCol="wrapperCol" label="描述" hasFeedback>
+          <a-textarea :rows="5" v-model="mdl.describe" placeholder="..." id="describe" />
         </a-form-item>
 
         <a-divider />
 
-        <a-form-item
-          :labelCol="labelCol"
-          :wrapperCol="wrapperCol"
-          label="拥有权限"
-          hasFeedback
-        >
+        <a-form-item :labelCol="labelCol" :wrapperCol="wrapperCol" label="拥有权限" hasFeedback>
           <a-row :gutter="16" v-for="(permission, index) in mdl.permissions" :key="index">
-            <a-col :span="4">
-              {{ permission.permissionName }}：
-            </a-col>
+            <a-col :span="4"> {{ permission.permissionName }}： </a-col>
             <a-col :span="20">
-              <a-checkbox-group :options="permission.actionsOptions"/>
+              <a-checkbox-group :options="permission.actionsOptions" />
             </a-col>
           </a-row>
-
         </a-form-item>
-
       </a-form>
     </a-modal>
-
   </a-card>
 </template>
 
 <script>
-import { STable } from '@/components'
-import { getRoleList, getServiceList } from '@/api/manage'
+import { STable } from "@/components";
+import { getRoleList, getServiceList } from "@/api/manage";
 
 export default {
-  name: 'TableList',
+  name: "TableList",
   components: {
     STable
   },
-  data () {
+  data() {
     return {
-      description: '列表使用场景：后台管理中的权限管理以及角色管理，可用于基于 RBAC 设计的角色权限控制，颗粒度细到每一个操作类型。',
+      description:
+        "列表使用场景：后台管理中的权限管理以及角色管理，可用于基于 RBAC 设计的角色权限控制，颗粒度细到每一个操作类型。",
 
       visible: false,
       labelCol: {
@@ -180,71 +148,69 @@ export default {
       // 表头
       columns: [
         {
-          title: '唯一识别码',
-          dataIndex: 'id'
+          title: "唯一识别码",
+          dataIndex: "id"
         },
         {
-          title: '角色名称',
-          dataIndex: 'name'
+          title: "角色名称",
+          dataIndex: "name"
         },
         {
-          title: '状态',
-          dataIndex: 'status'
+          title: "状态",
+          dataIndex: "status"
         },
         {
-          title: '创建时间',
-          dataIndex: 'createTime',
+          title: "创建时间",
+          dataIndex: "createTime",
           sorter: true
-        }, {
-          title: '操作',
-          width: '150px',
-          dataIndex: 'action',
-          scopedSlots: { customRender: 'action' }
+        },
+        {
+          title: "操作",
+          width: "150px",
+          dataIndex: "action",
+          scopedSlots: { customRender: "action" }
         }
       ],
       // 加载数据方法 必须为 Promise 对象
       loadData: parameter => {
-        return getRoleList(parameter)
-          .then(res => {
-            console.log('getRoleList', res)
-            return res.result
-          })
+        return getRoleList(parameter).then(res => {
+          console.log("getRoleList", res);
+          return res.result;
+        });
       },
 
       selectedRowKeys: [],
       selectedRows: []
-    }
+    };
   },
-  created () {
+  created() {
     getServiceList().then(res => {
-      console.log('getServiceList.call()', res)
-    })
+      console.log("getServiceList.call()", res);
+    });
 
     getRoleList().then(res => {
-      console.log('getRoleList.call()', res)
-    })
+      console.log("getRoleList.call()", res);
+    });
   },
   methods: {
-    handleEdit (record) {
-      this.mdl = Object.assign({}, record)
+    handleEdit(record) {
+      this.mdl = Object.assign({}, record);
 
       this.mdl.permissions.forEach(permission => {
         permission.actionsOptions = permission.actionEntitySet.map(action => {
-          return { label: action.describe, value: action.action, defaultCheck: action.defaultCheck }
-        })
-      })
+          return { label: action.describe, value: action.action, defaultCheck: action.defaultCheck };
+        });
+      });
 
-      this.visible = true
+      this.visible = true;
     },
-    handleOk () {
-
+    handleOk() {},
+    onChange(selectedRowKeys, selectedRows) {
+      this.selectedRowKeys = selectedRowKeys;
+      this.selectedRows = selectedRows;
     },
-    onChange (selectedRowKeys, selectedRows) {
-      this.selectedRowKeys = selectedRowKeys
-      this.selectedRows = selectedRows
-    },
-    toggleAdvanced () {
-      this.advanced = !this.advanced
+    toggleAdvanced() {
+      this.advanced = !this.advanced;
     }
   },
   watch: {
@@ -261,5 +227,5 @@ export default {
       }
       */
   }
-}
+};
 </script>

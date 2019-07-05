@@ -15,15 +15,15 @@
 
 <script>
 export default {
-  name: 'ArticleListContent',
+  name: "ArticleListContent",
   props: {
     prefixCls: {
       type: String,
-      default: 'antd-pro-components-article-list-content-index-listContent'
+      default: "antd-pro-components-article-list-content-index-listContent"
     },
     description: {
       type: String,
-      default: ''
+      default: ""
     },
     owner: {
       type: String,
@@ -42,11 +42,11 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
-@import '../index.less';
+@import "../index.less";
 
 .antd-pro-components-article-list-content-index-listContent {
   .description {

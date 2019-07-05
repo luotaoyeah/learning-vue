@@ -36,11 +36,7 @@
             </a-col>
             <a-col :lg="8" :md="10" :sm="10" :xs="24">
               <a-form-item :wrapper-col="{ sm: { span: 16 }, xs: { span: 24 } }" label="好评度">
-                <a-select
-                  style="max-width: 200px; width: 100%;"
-                  placeholder="不限"
-                  v-decorator="['rate']"
-                >
+                <a-select style="max-width: 200px; width: 100%;" placeholder="不限" v-decorator="['rate']">
                   <a-select-option value="good">优秀</a-select-option>
                   <a-select-option value="normal">普通</a-select-option>
                 </a-select>
@@ -82,10 +78,10 @@
 </template>
 
 <script>
-import moment from 'moment'
-import { TagSelect, StandardFormRow, Ellipsis, AvatarList } from '@/components'
-const TagSelectOption = TagSelect.Option
-const AvatarListItem = AvatarList.AvatarItem
+import moment from "moment";
+import { TagSelect, StandardFormRow, Ellipsis, AvatarList } from "@/components";
+const TagSelectOption = TagSelect.Option;
+const AvatarListItem = AvatarList.AvatarItem;
 
 export default {
   components: {
@@ -96,34 +92,34 @@ export default {
     TagSelectOption,
     StandardFormRow
   },
-  data () {
+  data() {
     return {
       data: [],
       form: this.$form.createForm(this),
       loading: true
-    }
+    };
   },
   filters: {
-    fromNow (date) {
-      return moment(date).fromNow()
+    fromNow(date) {
+      return moment(date).fromNow();
     }
   },
-  mounted () {
-    this.getList()
+  mounted() {
+    this.getList();
   },
   methods: {
-    handleChange (value) {
-      console.log(`selected ${value}`)
+    handleChange(value) {
+      console.log(`selected ${value}`);
     },
-    getList () {
-      this.$http.get('/list/article', { params: { count: 8 } }).then(res => {
-        console.log('res', res)
-        this.data = res.result
-        this.loading = false
-      })
+    getList() {
+      this.$http.get("/list/article", { params: { count: 8 } }).then(res => {
+        console.log("res", res);
+        this.data = res.result;
+        this.loading = false;
+      });
     }
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
@@ -156,7 +152,7 @@ export default {
 
     > span {
       flex: 1 1;
-      color: rgba(0,0,0,.45);
+      color: rgba(0, 0, 0, 0.45);
       font-size: 12px;
     }
 

@@ -11,20 +11,18 @@
 
 <script>
 export default {
-  name: 'FooterToolBar',
+  name: "FooterToolBar",
   props: {
     prefixCls: {
       type: String,
-      default: 'ant-pro-footer-toolbar'
+      default: "ant-pro-footer-toolbar"
     },
     extra: {
       type: [String, Object],
-      default: ''
+      default: ""
     }
   }
-}
+};
 </script>
 
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>

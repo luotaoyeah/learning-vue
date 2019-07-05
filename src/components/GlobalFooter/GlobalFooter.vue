@@ -1,33 +1,17 @@
 <template>
   <div class="footer">
-    <div class="links">
-      <a
-        href="https://pro.loacg.com/"
-        target="_blank"
-      >Pro 首页</a>
-      <a
-        href="https://github.com/sendya/ant-design-pro-vue"
-        target="_blank"
-      >
-        <a-icon type="github" />
-      </a>
-      <a href="https://ant.design/">Ant Design</a>
-      <a href="https://vue.ant.design/">Vue Antd</a>
-    </div>
-    <div class="copyright">
-      Copyright
-      <a-icon type="copyright" /> 2018 <span>白鹭学园技术组出品</span>
-    </div>
+    <div class="links"></div>
+    <div class="copyright"><a-icon type="copyright" /> 2018 <span>LUOTAO</span></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'GlobalFooter',
-  data () {
-    return {}
+  name: "GlobalFooter",
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style lang="less" scoped>

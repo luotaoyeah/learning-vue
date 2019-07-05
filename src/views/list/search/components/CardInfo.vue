@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'CardInfo',
+  name: "CardInfo",
   props: {
     activeUser: {
       type: [String, Number],
@@ -24,7 +24,7 @@ export default {
       default: 0
     }
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
@@ -32,7 +32,6 @@ export default {
 @import "~@/utils/utils.less";
 
 .cardInfo {
-
   .clearfix();
 
   margin-top: 16px;

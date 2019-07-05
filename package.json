@@ -1,6 +1,6 @@
 {
-  "name": "vue-antd-pro",
-  "version": "2.0.0",
+  "name": "learning-vue",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -98,7 +98,7 @@
       "no-tabs": 0,
       "quotes": [
         2,
-        "single",
+        "double",
         {
           "avoidEscape": true,
           "allowTemplateLiterals": true
@@ -106,10 +106,7 @@
       ],
       "semi": [
         2,
-        "never",
-        {
-          "beforeStatementContinuationChars": "never"
-        }
+        "always"
       ],
       "no-delete-var": 2,
       "prefer-const": [
@@ -117,21 +114,11 @@
         {
           "ignoreReadBeforeAssign": false
         }
+      ],
+      "space-before-function-paren": [
+        2,
+        "never"
       ]
     }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 10"
-  ],
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/ant-design-pro-vue"
   }
 }

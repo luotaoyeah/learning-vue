@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import Avatar from 'ant-design-vue/es/avatar'
-import Tooltip from 'ant-design-vue/es/tooltip'
+import Avatar from "ant-design-vue/es/avatar";
+import Tooltip from "ant-design-vue/es/tooltip";
 
 export default {
-  name: 'AvatarItem',
+  name: "AvatarItem",
   components: {
     Avatar,
     Tooltip
@@ -19,28 +19,28 @@ export default {
   props: {
     tips: {
       type: String,
-      default: '',
+      default: "",
       required: false
     },
     src: {
       type: String,
-      default: ''
+      default: ""
     }
   },
-  data () {
+  data() {
     return {
       size: this.$parent.size
-    }
+    };
   },
   computed: {
-    avatarSize () {
-      return this.size !== 'mini' && this.size || 20
+    avatarSize() {
+      return (this.size !== "mini" && this.size) || 20;
     }
   },
   watch: {
-    '$parent.size' (val) {
-      this.size = val
+    "$parent.size"(val) {
+      this.size = val;
     }
   }
-}
+};
 </script>
