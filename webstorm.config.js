@@ -8,7 +8,7 @@ function resolve(dir) {
 module.exports = {
   context: path.resolve(__dirname, "./"),
   resolve: {
-    extensions: [".js", ".vue", ".json"],
+    extensions: [".js", ".ts", ".tsx", ".vue", ".json"],
     alias: {
       "@": resolve("src")
     }

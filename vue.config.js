@@ -41,6 +41,12 @@ module.exports = {
   },
 
   chainWebpack: config => {
+    /* 修改入口文件 */
+    config
+      .entry("app")
+      .clear()
+      .add("./src/index.ts");
+
     config.resolve.alias.set("@$", resolve("src"));
 
     const svgRule = config.module.rule("svg");
@@ -90,8 +96,7 @@ module.exports = {
   },
 
   devServer: {
-    // development server port 8000
-    port: 8000
+    port: 3000
     // proxy: {
     //   '/api': {
     //     // target: 'https://mock.ihx.me/mock/5baf3052f7da7e07e04a5116/antd-pro',
@@ -104,7 +109,7 @@ module.exports = {
 
   // disable source map in production
   productionSourceMap: false,
-  lintOnSave: undefined,
+  lintOnSave: false,
   // babel-loader no-ignore node_modules/*
   transpileDependencies: []
 };
