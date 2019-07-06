@@ -1,6 +1,5 @@
-// eslint-disable-next-line
-import { UserLayout, BasicLayout, RouteView, BlankLayout, PageView } from "@/layouts";
-import { bxAnaalyse } from "@/core/icons";
+import { UserLayout, BasicLayout, RouteView, BlankLayout, PageView } from "../layouts";
+import { bxAnaalyse } from "../core/icons";
 
 export const asyncRouterMap = [
   {
@@ -10,6 +9,30 @@ export const asyncRouterMap = [
     meta: { title: "首页" },
     redirect: "/dashboard/workplace",
     children: [
+      {
+        path: "/01",
+        name: "01",
+        redirect: "/01/01",
+        component: RouteView,
+        meta: { title: "GUIDE", keepAlive: true, icon: bxAnaalyse, permission: ["dashboard"] },
+        children: [
+          {
+            path: "/01/01",
+            name: "01-01",
+            redirect: "/01/01/01",
+            component: RouteView,
+            meta: { title: "Essentials", keepAlive: true, permission: ["dashboard"] },
+            children: [
+              {
+                path: "/01/01/01",
+                name: "Introduction",
+                component: () => import("@/views/doc/guide/01-introduction/declarative-rendering.vue"),
+                meta: { title: "Introduction", keepAlive: false, permission: ["dashboard"] }
+              }
+            ]
+          }
+        ]
+      },
       // dashboard
       {
         path: "/dashboard",
@@ -21,7 +44,7 @@ export const asyncRouterMap = [
           {
             path: "/dashboard/analysis",
             name: "Analysis",
-            component: () => import("@/views/dashboard/Analysis"),
+            component: () => import("@/views/dashboard/Analysis.vue"),
             meta: { title: "分析页", keepAlive: false, permission: ["dashboard"] }
           },
           // 外部链接
@@ -33,7 +56,7 @@ export const asyncRouterMap = [
           {
             path: "/dashboard/workplace",
             name: "Workplace",
-            component: () => import("@/views/dashboard/Workplace"),
+            component: () => import("@/views/dashboard/Workplace.vue"),
             meta: { title: "工作台", keepAlive: true, permission: ["dashboard"] }
           }
         ]
@@ -49,19 +72,19 @@ export const asyncRouterMap = [
           {
             path: "/form/base-form",
             name: "BaseForm",
-            component: () => import("@/views/form/BasicForm"),
+            component: () => import("@/views/form/BasicForm.vue"),
             meta: { title: "基础表单", keepAlive: true, permission: ["form"] }
           },
           {
             path: "/form/step-form",
             name: "StepForm",
-            component: () => import("@/views/form/stepForm/StepForm"),
+            component: () => import("@/views/form/stepForm/StepForm.vue"),
             meta: { title: "分步表单", keepAlive: true, permission: ["form"] }
           },
           {
             path: "/form/advanced-form",
             name: "AdvanceForm",
-            component: () => import("@/views/form/advancedForm/AdvancedForm"),
+            component: () => import("@/views/form/advancedForm/AdvancedForm.vue"),
             meta: { title: "高级表单", keepAlive: true, permission: ["form"] }
           }
         ]
@@ -79,44 +102,44 @@ export const asyncRouterMap = [
             path: "/list/table-list/:pageNo([1-9]\\d*)?",
             name: "TableListWrapper",
             hideChildrenInMenu: true, // 强制显示 MenuItem 而不是 SubMenu
-            component: () => import("@/views/list/TableList"),
+            component: () => import("@/views/list/TableList.vue"),
             meta: { title: "查询表格", keepAlive: true, permission: ["table"] }
           },
           {
             path: "/list/basic-list",
             name: "BasicList",
-            component: () => import("@/views/list/StandardList"),
+            component: () => import("@/views/list/StandardList.vue"),
             meta: { title: "标准列表", keepAlive: true, permission: ["table"] }
           },
           {
             path: "/list/card",
             name: "CardList",
-            component: () => import("@/views/list/CardList"),
+            component: () => import("@/views/list/CardList.vue"),
             meta: { title: "卡片列表", keepAlive: true, permission: ["table"] }
           },
           {
             path: "/list/search",
             name: "SearchList",
-            component: () => import("@/views/list/search/SearchLayout"),
+            component: () => import("@/views/list/search/SearchLayout.vue"),
             redirect: "/list/search/article",
             meta: { title: "搜索列表", keepAlive: true, permission: ["table"] },
             children: [
               {
                 path: "/list/search/article",
                 name: "SearchArticles",
-                component: () => import("../views/list/search/Article"),
+                component: () => import("../views/list/search/Article.vue"),
                 meta: { title: "搜索列表（文章）", permission: ["table"] }
               },
               {
                 path: "/list/search/project",
                 name: "SearchProjects",
-                component: () => import("../views/list/search/Projects"),
+                component: () => import("../views/list/search/Projects.vue"),
                 meta: { title: "搜索列表（项目）", permission: ["table"] }
               },
               {
                 path: "/list/search/application",
                 name: "SearchApplications",
-                component: () => import("../views/list/search/Applications"),
+                component: () => import("../views/list/search/Applications.vue"),
                 meta: { title: "搜索列表（应用）", permission: ["table"] }
               }
             ]
@@ -135,13 +158,13 @@ export const asyncRouterMap = [
           {
             path: "/profile/basic",
             name: "ProfileBasic",
-            component: () => import("@/views/profile/basic/Index"),
+            component: () => import("@/views/profile/basic/Index.vue"),
             meta: { title: "基础详情页", permission: ["profile"] }
           },
           {
             path: "/profile/advanced",
             name: "ProfileAdvanced",
-            component: () => import("@/views/profile/advanced/Advanced"),
+            component: () => import("@/views/profile/advanced/Advanced.vue"),
             meta: { title: "高级详情页", permission: ["profile"] }
           }
         ]
@@ -158,13 +181,13 @@ export const asyncRouterMap = [
           {
             path: "/result/success",
             name: "ResultSuccess",
-            component: () => import(/* webpackChunkName: "result" */ "@/views/result/Success"),
+            component: () => import(/* webpackChunkName: "result" */ "@/views/result/Success.vue"),
             meta: { title: "成功", keepAlive: false, hiddenHeaderContent: true, permission: ["result"] }
           },
           {
             path: "/result/fail",
             name: "ResultFail",
-            component: () => import(/* webpackChunkName: "result" */ "@/views/result/Error"),
+            component: () => import(/* webpackChunkName: "result" */ "@/views/result/Error.vue"),
             meta: { title: "失败", keepAlive: false, hiddenHeaderContent: true, permission: ["result"] }
           }
         ]
@@ -181,19 +204,19 @@ export const asyncRouterMap = [
           {
             path: "/exception/403",
             name: "Exception403",
-            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/403"),
+            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/403.vue"),
             meta: { title: "403", permission: ["exception"] }
           },
           {
             path: "/exception/404",
             name: "Exception404",
-            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/404"),
+            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/404.vue"),
             meta: { title: "404", permission: ["exception"] }
           },
           {
             path: "/exception/500",
             name: "Exception500",
-            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/500"),
+            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/500.vue"),
             meta: { title: "500", permission: ["exception"] }
           }
         ]
@@ -210,13 +233,13 @@ export const asyncRouterMap = [
           {
             path: "/account/center",
             name: "center",
-            component: () => import("@/views/account/center/Index"),
+            component: () => import("@/views/account/center/Index.vue"),
             meta: { title: "个人中心", keepAlive: true, permission: ["user"] }
           },
           {
             path: "/account/settings",
             name: "settings",
-            component: () => import("@/views/account/settings/Index"),
+            component: () => import("@/views/account/settings/Index.vue"),
             meta: { title: "个人设置", hideHeader: true, permission: ["user"] },
             redirect: "/account/settings/base",
             hideChildrenInMenu: true,
@@ -224,31 +247,31 @@ export const asyncRouterMap = [
               {
                 path: "/account/settings/base",
                 name: "BaseSettings",
-                component: () => import("@/views/account/settings/BaseSetting"),
+                component: () => import("@/views/account/settings/BaseSetting.vue"),
                 meta: { title: "基本设置", hidden: true, permission: ["user"] }
               },
               {
                 path: "/account/settings/security",
                 name: "SecuritySettings",
-                component: () => import("@/views/account/settings/Security"),
+                component: () => import("@/views/account/settings/Security.vue"),
                 meta: { title: "安全设置", hidden: true, keepAlive: true, permission: ["user"] }
               },
               {
                 path: "/account/settings/custom",
                 name: "CustomSettings",
-                component: () => import("@/views/account/settings/Custom"),
+                component: () => import("@/views/account/settings/Custom.vue"),
                 meta: { title: "个性化设置", hidden: true, keepAlive: true, permission: ["user"] }
               },
               {
                 path: "/account/settings/binding",
                 name: "BindingSettings",
-                component: () => import("@/views/account/settings/Binding"),
+                component: () => import("@/views/account/settings/Binding.vue"),
                 meta: { title: "账户绑定", hidden: true, keepAlive: true, permission: ["user"] }
               },
               {
                 path: "/account/settings/notification",
                 name: "NotificationSettings",
-                component: () => import("@/views/account/settings/Notification"),
+                component: () => import("@/views/account/settings/Notification.vue"),
                 meta: { title: "新消息通知", hidden: true, keepAlive: true, permission: ["user"] }
               }
             ]
@@ -267,7 +290,7 @@ export const asyncRouterMap = [
           {
             path: "/other/icon-selector",
             name: "TestIconSelect",
-            component: () => import("@/views/other/IconSelectorView"),
+            component: () => import("@/views/other/IconSelectorView.vue"),
             meta: { title: "IconSelector", icon: "tool", keepAlive: true, permission: ["dashboard"] }
           },
           {
@@ -279,37 +302,37 @@ export const asyncRouterMap = [
               {
                 path: "/other/list/tree-list",
                 name: "TreeList",
-                component: () => import("@/views/other/TreeList"),
+                component: () => import("@/views/other/TreeList.vue"),
                 meta: { title: "树目录表格", keepAlive: true }
               },
               {
                 path: "/other/list/edit-table",
                 name: "EditList",
-                component: () => import("@/views/other/TableInnerEditList"),
+                component: () => import("@/views/other/TableInnerEditList.vue"),
                 meta: { title: "内联编辑表格", keepAlive: true }
               },
               {
                 path: "/other/list/user-list",
                 name: "UserList",
-                component: () => import("@/views/other/UserList"),
+                component: () => import("@/views/other/UserList.vue"),
                 meta: { title: "用户列表", keepAlive: true }
               },
               {
                 path: "/other/list/role-list",
                 name: "RoleList",
-                component: () => import("@/views/other/RoleList"),
+                component: () => import("@/views/other/RoleList.vue"),
                 meta: { title: "角色列表", keepAlive: true }
               },
               {
                 path: "/other/list/system-role",
                 name: "SystemRole",
-                component: () => import("@/views/role/RoleList"),
+                component: () => import("@/views/role/RoleList.vue"),
                 meta: { title: "角色列表2", keepAlive: true }
               },
               {
                 path: "/other/list/permission-list",
                 name: "PermissionList",
-                component: () => import("@/views/other/PermissionList"),
+                component: () => import("@/views/other/PermissionList.vue"),
                 meta: { title: "权限列表", keepAlive: true }
               }
             ]
@@ -339,17 +362,17 @@ export const constantRouterMap = [
       {
         path: "login",
         name: "login",
-        component: () => import(/* webpackChunkName: "user" */ "@/views/user/Login")
+        component: () => import(/* webpackChunkName: "user" */ "@/views/user/Login.vue")
       },
       {
         path: "register",
         name: "register",
-        component: () => import(/* webpackChunkName: "user" */ "@/views/user/Register")
+        component: () => import(/* webpackChunkName: "user" */ "@/views/user/Register.vue")
       },
       {
         path: "register-result",
         name: "registerResult",
-        component: () => import(/* webpackChunkName: "user" */ "@/views/user/RegisterResult")
+        component: () => import(/* webpackChunkName: "user" */ "@/views/user/RegisterResult.vue")
       }
     ]
   },
@@ -362,13 +385,13 @@ export const constantRouterMap = [
       {
         path: "home",
         name: "TestHome",
-        component: () => import("@/views/Home")
+        component: () => import("@/views/Home.vue")
       }
     ]
   },
 
   {
     path: "/404",
-    component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/404")
+    component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/404.vue")
   }
 ];
