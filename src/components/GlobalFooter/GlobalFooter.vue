@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="links"></div>
-    <div class="copyright"><a-icon type="copyright" /> 2018 <span>LUOTAO</span></div>
+    <div class="copyright"><a-icon type="copyright" /> 2019 <span>LUOTAO</span></div>
   </div>
 </template>
 

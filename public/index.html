@@ -6,89 +6,96 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>logo.png" />
     <title>LEARNING-VUE</title>
-    <style>
-      #loading-mask {
+    <style type="text/css">
+      .preloader {
         position: fixed;
-        left: 0;
         top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #49a9ee;
+        z-index: 9999;
+        transition: opacity 0.65s;
+      }
+
+      .preloader-hidden-add {
+        opacity: 1;
+        display: block;
+      }
+
+      .preloader-hidden-add-active {
+        opacity: 0;
+      }
+
+      .preloader-hidden {
+        display: none;
+      }
+
+      .cs-loader {
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 100%;
         width: 100%;
-        background: #fff;
-        user-select: none;
-        z-index: 9999;
-        overflow: hidden;
       }
-      .loading-wrapper {
-        position: absolute;
+
+      .cs-loader-inner {
+        transform: translateY(-50%);
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-      }
-      .loading-dot {
-        animation: antRotate 1.2s infinite linear;
-        transform: rotate(45deg);
-        position: relative;
-        display: inline-block;
-        font-size: 64px;
-        width: 64px;
-        height: 64px;
-        box-sizing: border-box;
-      }
-      .loading-dot i {
-        width: 22px;
-        height: 22px;
         position: absolute;
-        display: block;
-        background-color: #1890ff;
-        border-radius: 100%;
-        transform: scale(0.75);
-        transform-origin: 50% 50%;
-        opacity: 0.3;
-        animation: antSpinMove 1s infinite linear alternate;
+        width: 100%;
+        color: #fff;
+        text-align: center;
       }
-      .loading-dot i:nth-child(1) {
-        top: 0;
-        left: 0;
+
+      .cs-loader-inner label {
+        font-size: 20px;
+        opacity: 0;
+        display: inline-block;
       }
-      .loading-dot i:nth-child(2) {
-        top: 0;
-        right: 0;
-        -webkit-animation-delay: 0.4s;
-        animation-delay: 0.4s;
-      }
-      .loading-dot i:nth-child(3) {
-        right: 0;
-        bottom: 0;
-        -webkit-animation-delay: 0.8s;
-        animation-delay: 0.8s;
-      }
-      .loading-dot i:nth-child(4) {
-        bottom: 0;
-        left: 0;
-        -webkit-animation-delay: 1.2s;
-        animation-delay: 1.2s;
-      }
-      @keyframes antRotate {
-        to {
-          -webkit-transform: rotate(405deg);
-          transform: rotate(405deg);
+
+      @keyframes lol {
+        0% {
+          opacity: 0;
+          transform: translateX(-300px);
         }
-      }
-      @-webkit-keyframes antRotate {
-        to {
-          -webkit-transform: rotate(405deg);
-          transform: rotate(405deg);
-        }
-      }
-      @keyframes antSpinMove {
-        to {
+        33% {
           opacity: 1;
+          transform: translateX(0);
+        }
+        66% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(300px);
         }
       }
-      @-webkit-keyframes antSpinMove {
-        to {
-          opacity: 1;
-        }
+
+      .cs-loader-inner label:nth-child(6) {
+        animation: lol 3s infinite ease-in-out;
+      }
+
+      .cs-loader-inner label:nth-child(5) {
+        animation: lol 3s 0.1s infinite ease-in-out;
+      }
+
+      .cs-loader-inner label:nth-child(4) {
+        animation: lol 3s 0.2s infinite ease-in-out;
+      }
+
+      .cs-loader-inner label:nth-child(3) {
+        animation: lol 3s 0.3s infinite ease-in-out;
+      }
+
+      .cs-loader-inner label:nth-child(2) {
+        animation: lol 3s 0.4s infinite ease-in-out;
+      }
+
+      .cs-loader-inner label:nth-child(1) {
+        animation: lol 3s 0.5s infinite ease-in-out;
       }
     </style>
   </head>
@@ -97,9 +104,16 @@
       <strong>We're sorry but learning-vue doesn't work properly without JS</strong>
     </noscript>
     <div id="app">
-      <div id="loading-mask">
-        <div class="loading-wrapper">
-          <span class="loading-dot loading-dot-spin"><i></i><i></i><i></i><i></i></span>
+      <div class="preloader">
+        <div class="cs-loader">
+          <div class="cs-loader-inner">
+            <label> ●</label>
+            <label> ●</label>
+            <label> ●</label>
+            <label> ●</label>
+            <label> ●</label>
+            <label> ●</label>
+          </div>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ export const asyncRouterMap = [
               {
                 path: "/01/01/01",
                 name: "Introduction",
-                component: () => import("@/views/doc/guide/01-introduction/declarative-rendering.vue"),
+                component: () => import("@/views/doc/guide/01-essentials/01-introduction/C0101"),
                 meta: { title: "Introduction", keepAlive: false, permission: ["dashboard"] }
               }
             ]

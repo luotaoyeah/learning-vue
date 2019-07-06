@@ -83,12 +83,21 @@ module.exports = {
     loaderOptions: {
       less: {
         modifyVars: {
-          /* less 变量覆盖，用于自定义 ant design 主题 */
-          /*
-          'primary-color': '#F5222D',
-          'link-color': '#F5222D',
-          */
-          "border-radius-base": "3px"
+          "border-radius-base": "3px",
+          "ease-base-out ": "none",
+          "ease-base-in ": "none",
+          "ease-out": "none",
+          "ease-in ": "none",
+          "ease-in-out ": "none",
+          "ease-out-back ": "none",
+          "ease-in-back": "none",
+          "ease-in-out-back": "none",
+          "ease-out-circ": "none",
+          "ease-in-circ ": "none",
+          "ease-in-out-circ ": "none",
+          "ease-out-quint": "none",
+          "ease-in-quint": "none",
+          "ease-in-out-quint ": "none"
         },
         javascriptEnabled: true
       }
