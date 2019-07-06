@@ -1,5 +1,6 @@
 import zhCN from "ant-design-vue/lib/locale-provider/zh_CN";
 import { Component, Vue } from "vue-property-decorator";
+// TODO fix the mixin
 // import { AppDeviceEnquire } from "@/utils/mixin";
 
 @Component({})

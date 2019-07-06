@@ -8,7 +8,7 @@ import bootstrap from "./core/bootstrap";
 import "./core/use";
 import "./permission";
 import "./utils/filter";
-import { App } from "./App";
+import { App } from "./app";
 import store from "./store/";
 
 Vue.config.silent = false;
