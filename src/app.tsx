@@ -1,11 +1,11 @@
 import zhCN from "ant-design-vue/lib/locale-provider/zh_CN";
-import { Component, Vue } from "vue-property-decorator";
+import { Component } from "vue-property-decorator";
 import { LocaleProvider } from "ant-design-vue";
-// TODO fix the mixin
-// import { AppDeviceEnquire } from "@/utils/mixin";
+import { mixins } from "vue-class-component";
+import { AppDeviceEnquire } from "@/utils/mixin";
 
 @Component({})
-export class App extends Vue {
+export class App extends mixins(AppDeviceEnquire) {
   public render() {
     return (
       <LocaleProvider locale={zhCN}>
