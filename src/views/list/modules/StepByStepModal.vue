@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import pick from "lodash.pick";
+import { pick } from "lodash-es";
 
 const stepForms = [["name", "desc"], ["target", "template", "type"], ["time", "frequency"]];
 

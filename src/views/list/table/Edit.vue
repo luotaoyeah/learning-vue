@@ -58,7 +58,7 @@
 
 <script>
 import moment from "moment";
-import pick from "lodash.pick";
+import { pick } from "lodash-es";
 
 export default {
   name: "TableEdit",

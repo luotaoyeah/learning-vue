@@ -1,5 +1,6 @@
 import zhCN from "ant-design-vue/lib/locale-provider/zh_CN";
 import { Component, Vue } from "vue-property-decorator";
+import { LocaleProvider } from "ant-design-vue";
 // TODO fix the mixin
 // import { AppDeviceEnquire } from "@/utils/mixin";
 
@@ -7,11 +8,11 @@ import { Component, Vue } from "vue-property-decorator";
 export class App extends Vue {
   public render() {
     return (
-      <a-locale-provider locale={zhCN}>
+      <LocaleProvider locale={zhCN}>
         <div id="app">
           <router-view />
         </div>
-      </a-locale-provider>
+      </LocaleProvider>
     );
   }
 }
