@@ -1,5 +1,4 @@
 import { UserLayout, BasicLayout, RouteView, BlankLayout, PageView } from "../layouts";
-import { bxAnaalyse } from "../core/icons";
 
 export const asyncRouterMap = [
   {
@@ -14,7 +13,7 @@ export const asyncRouterMap = [
         name: "01",
         redirect: "/01/01",
         component: RouteView,
-        meta: { title: "GUIDE", keepAlive: true, icon: bxAnaalyse, permission: ["dashboard"] },
+        meta: { title: "GUIDE", keepAlive: true, icon: "info-circle", permission: ["dashboard"] },
         children: [
           {
             path: "/01/01",
@@ -39,7 +38,7 @@ export const asyncRouterMap = [
         name: "dashboard",
         redirect: "/dashboard/workplace",
         component: RouteView,
-        meta: { title: "仪表盘", keepAlive: true, icon: bxAnaalyse, permission: ["dashboard"] },
+        meta: { title: "仪表盘", keepAlive: true, icon: "info-circle", permission: ["dashboard"] },
         children: [
           {
             path: "/dashboard/analysis",
