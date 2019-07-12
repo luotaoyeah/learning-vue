@@ -3,7 +3,7 @@ import { UserLayout, BasicLayout, RouteView, BlankLayout, PageView } from "../la
 export const asyncRouterMap = [
   {
     path: "/",
-    name: "index",
+    name: "index.ts.ts",
     component: BasicLayout,
     meta: { title: "首页" },
     redirect: "/dashboard/workplace",
@@ -209,7 +209,7 @@ export const asyncRouterMap = [
           {
             path: "/exception/404",
             name: "Exception404",
-            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/404.vue"),
+            component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/c404"),
             meta: { title: "404", permission: ["exception"] }
           },
           {
@@ -391,6 +391,6 @@ export const constantRouterMap = [
 
   {
     path: "/404",
-    component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/404.vue")
+    component: () => import(/* webpackChunkName: "fail" */ "@/views/exception/c404")
   }
 ];

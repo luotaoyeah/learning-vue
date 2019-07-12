@@ -15,8 +15,9 @@
 
 <script>
 import types from "./type";
+import { Vue } from "vue-property-decorator";
 
-export default {
+export default Vue.extend({
   name: "Exception",
   props: {
     type: {
@@ -34,7 +35,7 @@ export default {
       this.$router.push({ name: "dashboard" });
     }
   }
-};
+});
 </script>
 <style lang="less">
 @import "~ant-design-vue/lib/style/index";

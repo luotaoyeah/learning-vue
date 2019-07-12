@@ -1,4 +1,4 @@
-import AvatarList from "./List";
+import AvatarList from "./List.vue";
 import "./index.less";
 
 export default AvatarList;

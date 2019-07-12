@@ -284,7 +284,7 @@ const searchUserScale = [
 
 const searchTableColumns = [
   {
-    dataIndex: "index",
+    dataIndex: "index.ts.ts",
     title: "排名",
     width: 90
   },
