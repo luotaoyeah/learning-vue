@@ -163,8 +163,8 @@ export default {
           style={{ height: 0 }}
           tab={this.renderTabPane(page.meta.title, page.fullPath)}
           key={page.fullPath}
-          closable={pages.length > 1}
-        ></a-tab-pane>
+          closable={false}
+        />
       );
     });
 
