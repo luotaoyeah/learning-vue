@@ -3,7 +3,7 @@ import { UserLayout, BasicLayout, RouteView, BlankLayout, PageView } from "../la
 export const asyncRouterMap = [
   {
     path: "/",
-    name: "index.ts.ts",
+    name: "index",
     component: BasicLayout,
     meta: { title: "首页" },
     redirect: "/dashboard/workplace",
