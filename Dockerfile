@@ -1,5 +1,3 @@
-# docker build -t learning-vue . && docker run -p 3000:80 learning-vue
-
 # stage-build
 FROM node:12 AS stage-build
 
