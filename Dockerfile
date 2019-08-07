@@ -20,6 +20,5 @@ WORKDIR /app
 COPY /config/nginx/nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 80
-EXPOSE 8888
 
 CMD ["nginx", "-g", "daemon off;"]
