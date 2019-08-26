@@ -21,9 +21,6 @@
           <a href="#">隐私</a>
           <a href="#">条款</a>
         </div>
-        <div class="copyright">
-          Copyright &copy; 2018 LUOTAO
-        </div>
       </div>
     </div>
   </div>

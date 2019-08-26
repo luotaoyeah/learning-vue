@@ -16,4 +16,4 @@ export const setDocumentTitle = function(title) {
   }
 };
 
-export const domTitle = "LEARNING-VUE";
+export const domTitle = "learning-vue";
