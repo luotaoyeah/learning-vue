@@ -1,6 +1,6 @@
 <template>
   <div class="setting-drawer" ref="settingDrawer">
-    <a-drawer width="300" placement="right" @close="onClose" :closable="false" :visible="visible">
+    <a-drawer width="300" placement="right" @close="onClose" :closable="false" :visible="visible" :handle="handle">
       <div class="setting-drawer-index-content">
         <div :style="{ marginBottom: '24px' }">
           <h3 class="setting-drawer-index-title">整体风格设置</h3>
@@ -196,16 +196,13 @@ export default {
   mixins: [mixin, mixinDevice],
   data() {
     return {
-      visible: true,
-      colorList
+      visible: false,
+      colorList,
+      handle: <div />
     };
   },
   watch: {},
   mounted() {
-    const vm = this;
-    setTimeout(() => {
-      vm.visible = false;
-    }, 16);
     updateTheme(this.primaryColor);
     if (this.colorWeak !== config.colorWeak) {
       updateColorWeak(this.colorWeak);

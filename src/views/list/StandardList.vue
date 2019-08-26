@@ -16,10 +16,10 @@
 
     <a-card style="margin-top: 24px" :bordered="false" title="标准列表">
       <div slot="extra">
-        <a-radio-group>
-          <a-radio-button>全部</a-radio-button>
-          <a-radio-button>进行中</a-radio-button>
-          <a-radio-button>等待中</a-radio-button>
+        <a-radio-group v-model="status">
+          <a-radio-button value="all">全部</a-radio-button>
+          <a-radio-button value="processing">进行中</a-radio-button>
+          <a-radio-button value="waiting">等待中</a-radio-button>
         </a-radio-group>
         <a-input-search style="margin-left: 16px; width: 272px;" />
       </div>
@@ -107,7 +107,7 @@ data.push({
   }
 });
 data.push({
-  title: "LEARNING-VUE",
+  title: "Ant Design Pro",
   avatar: "https://gw.alipayobjects.com/zos/rmsportal/sfjbOqnsXXJgNCjCzDBL.png",
   description: "城镇中有那么多的酒馆，她却偏偏走进了我的酒馆",
   owner: "周星星",
@@ -136,7 +136,8 @@ export default {
   },
   data() {
     return {
-      data
+      data,
+      status: "all"
     };
   }
 };

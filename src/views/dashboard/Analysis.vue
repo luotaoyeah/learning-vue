@@ -106,14 +106,9 @@
     </a-card>
 
     <div class="antd-pro-pages-dashboard-analysis-twoColLayout" :class="isDesktop() ? 'desktop' : ''">
-      <a-row :gutter="24">
+      <a-row :gutter="24" type="flex" :style="{ marginTop: '24px' }">
         <a-col :xl="12" :lg="24" :md="24" :sm="24" :xs="24">
-          <a-card
-            :loading="loading"
-            :bordered="false"
-            title="线上热门搜索"
-            :style="{ marginTop: '24px', minHeight: '500px' }"
-          >
+          <a-card :loading="loading" :bordered="false" title="线上热门搜索" :style="{ height: '100%' }">
             <a-dropdown :trigger="['click']" placement="bottomLeft" slot="extra">
               <a class="ant-dropdown-link" href="#">
                 <a-icon type="ellipsis" />
@@ -178,7 +173,7 @@
             :loading="loading"
             :bordered="false"
             title="销售额类别占比"
-            :style="{ marginTop: '24px', minHeight: '500px' }"
+            :style="{ height: '100%' }"
           >
             <div slot="extra" style="height: inherit;">
               <!-- style="bottom: 12px;display: inline-block;" -->
@@ -409,12 +404,6 @@ export default {
   display: flex;
   display: block;
   flex-flow: row wrap;
-
-  &.desktop div[class^="ant-col"]:last-child {
-    position: absolute;
-    right: 0;
-    height: 100%;
-  }
 }
 
 .antd-pro-pages-dashboard-analysis-salesCard {

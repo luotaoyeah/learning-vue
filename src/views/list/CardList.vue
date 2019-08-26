@@ -1,8 +1,8 @@
 <template>
   <div class="card-list" ref="content">
-    <a-list :grid="{ gutter: 24, lg: 3, md: 2, sm: 1, xs: 1 }" :dataSource="dataSource">
+    <a-list rowKey="id" :grid="{ gutter: 24, lg: 3, md: 2, sm: 1, xs: 1 }" :dataSource="dataSource">
       <a-list-item slot="renderItem" slot-scope="item">
-        <template v-if="item === null">
+        <template v-if="!item || item.id === undefined">
           <a-button class="new-btn" type="dashed">
             <a-icon type="plus" />
             新增产品
@@ -11,7 +11,7 @@
         <template v-else>
           <a-card :hoverable="true">
             <a-card-meta>
-              <div style="margin-bottom: 3px" slot="title">{{ item.title }}</div>
+              <a slot="title">{{ item.title }}</a>
               <a-avatar class="card-avatar" slot="avatar" :src="item.avatar" size="large" />
               <div class="meta-content" slot="description">{{ item.content }}</div>
             </a-card-meta>
@@ -28,9 +28,10 @@
 
 <script>
 const dataSource = [];
-dataSource.push(null);
+dataSource.push({});
 for (let i = 0; i < 11; i++) {
   dataSource.push({
+    id: i,
     title: "Alipay",
     avatar: "https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png",
     content:
@@ -57,6 +58,38 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@import "~@/components/index.less";
+
+.card-list {
+  /deep/ .ant-card-body:hover {
+    .ant-card-meta-title > a {
+      color: @primary-color;
+    }
+  }
+
+  /deep/ .ant-card-meta-title {
+    margin-bottom: 12px;
+
+    & > a {
+      display: inline-block;
+      max-width: 100%;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  /deep/ .meta-content {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    height: 64px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    margin-bottom: 1em;
+  }
+}
+
 .card-avatar {
   width: 48px;
   height: 48px;
@@ -65,6 +98,7 @@ export default {
 
 .ant-card-actions {
   background: #f7f9fa;
+
   li {
     float: left;
     text-align: center;
@@ -82,7 +116,7 @@ export default {
       display: inline-block;
       width: 100%;
       &:hover {
-        color: #1890ff;
+        color: @primary-color;
       }
     }
   }
@@ -93,15 +127,5 @@ export default {
   border-radius: 2px;
   width: 100%;
   height: 188px;
-}
-
-.meta-content {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  height: 64px;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 }
 </style>
