@@ -14,8 +14,7 @@
     },
     "sourceMap": true,
     "strict": true,
-    "target": "esnext",
-    "types": ["webpack-env", "jest"]
+    "target": "esnext"
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"]

@@ -7,7 +7,7 @@
     "codecov": "codecov --token=e0b919d2-e7cf-4b4b-a619-eae87be3fb47 --disable=gcov",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "node --max-old-space-size=4096 ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -15,6 +15,7 @@
     "vue-class-component": "^7.2.2",
     "vue-property-decorator": "^8.3.0",
     "vue-router": "^3.1.5",
+    "vuetify": "^2.2.11",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -40,7 +41,11 @@
     "less-loader": "^5.0.0",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
     "typescript": "~3.7.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-cli-plugin-vuetify": "~2.0.5",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.3.0"
   }
 }
