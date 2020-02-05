@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "jsx": "preserve",
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {
