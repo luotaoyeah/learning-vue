@@ -1,36 +1,37 @@
 <template>
-  <a-layout id="components-layout-demo-custom-trigger" :style="{ height: '100%' }">
-    <a-layout-sider v-model:collapsed="collapsed" :style="{ paddingTop: '64px' }" :width="400" collapsible>
-      <a-menu v-model:selectedKeys="selectedKeys" mode="inline" theme="dark">
-        <a-menu-item key="home">
+  <Layout id="components-layout-demo-custom-trigger" :style="{ height: '100%' }">
+    <Layout.Sider v-model:collapsed="collapsed" :style="{ paddingTop: '64px' }" :width="400" collapsible>
+      <Menu v-model:selectedKeys="selectedKeys" mode="inline" theme="dark">
+        <Menu.Item key="home">
           <router-link to="/">
             <InfoCircleOutlined></InfoCircleOutlined>
             <span>HOME</span>
           </router-link>
-        </a-menu-item>
+        </Menu.Item>
 
-        <a-sub-menu key="introduction">
+        <Menu.SubMenu key="introduction">
           <template v-slot:title>
             <span>
               <InfoCircleOutlined></InfoCircleOutlined>
               <span>INTRODUCTION</span>
             </span>
           </template>
-          <a-menu-item key="declarative-rendering">
+
+          <Menu.Item key="declarative-rendering">
             <router-link to="/introduction/declarative-rendering">
               <span>DECLARATIVE RENDERING</span>
             </router-link>
-          </a-menu-item>
-        </a-sub-menu>
-      </a-menu>
-    </a-layout-sider>
+          </Menu.Item>
+        </Menu.SubMenu>
+      </Menu>
+    </Layout.Sider>
 
-    <a-layout :style="{ height: '100%' }">
-      <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%', padding: '0 24px' }">
+    <Layout :style="{ height: '100%' }">
+      <Layout.Header :style="{ position: 'fixed', zIndex: 1, width: '100%', padding: '0 24px' }">
         <div :style="{ color: '#ffffff', fontSize: '20px' }">@luotao/learning-vue</div>
-      </a-layout-header>
+      </Layout.Header>
 
-      <a-layout-content
+      <Layout.Content
         :style="{
           margin: '64px 0 0 0',
           padding: '12px',
@@ -41,18 +42,26 @@
         }"
       >
         <router-view />
-      </a-layout-content>
-    </a-layout>
-  </a-layout>
+      </Layout.Content>
+    </Layout>
+  </Layout>
 </template>
 
 <script lang="ts">
 import { InfoCircleOutlined } from '@ant-design/icons-vue';
+import { Layout, Menu } from 'ant-design-vue';
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
   components: {
     InfoCircleOutlined,
+    Layout,
+    'Layout.Content': Layout.Content,
+    'Layout.Sider': Layout.Sider,
+    'Layout.Header': Layout.Header,
+    Menu,
+    'Menu.Item': Menu.Item,
+    'Menu.SubMenu': Menu.SubMenu,
   },
   data() {
     return {
