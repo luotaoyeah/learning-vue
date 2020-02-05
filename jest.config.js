@@ -1,9 +1,9 @@
 module.exports = {
-  preset: "@vue/cli-plugin-unit-jest/presets/typescript-and-babel",
+  preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
   transform: {
-    "^.+\\.vue$": "vue-jest",
+    '^.+\\.vue$': 'vue-jest',
   },
   collectCoverage: true,
-  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/node_modules/**"],
-  coverageReporters: ["lcovonly", "text-summary"],
+  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**'],
+  coverageReporters: ['lcovonly', 'text-summary'],
 };

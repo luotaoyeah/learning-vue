@@ -1,5 +1,5 @@
 # stage-build
-FROM node:12 AS stage-build
+FROM node:14.14 AS stage-build
 
 WORKDIR /app
 COPY . .
