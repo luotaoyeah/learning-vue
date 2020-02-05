@@ -78,6 +78,10 @@ export default class App extends Vue {}
   padding: 0px 1px;
 }
 
+.ant-menu-vertical.ant-menu-sub {
+  padding: 1px 1px 0px;
+}
+
 .ant-menu-item {
   border-radius: 1px;
 
