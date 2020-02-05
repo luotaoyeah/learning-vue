@@ -2,30 +2,25 @@
   <a-layout id="components-layout-demo-custom-trigger" :style="{ height: '100%' }">
     <a-layout-sider v-model:collapsed="collapsed" :style="{ paddingTop: '64px' }" :width="400" collapsible>
       <a-menu v-model:selectedKeys="selectedKeys" mode="inline" theme="dark">
-        <a-menu-item key="1">
+        <a-menu-item key="home">
           <router-link to="/">
             <InfoCircleOutlined></InfoCircleOutlined>
             <span>HOME</span>
           </router-link>
         </a-menu-item>
 
-        <a-menu-item key="2">
-          <router-link to="/about">
-            <InfoCircleOutlined></InfoCircleOutlined>
-            <span>ABOUT</span>
-          </router-link>
-        </a-menu-item>
-
-        <a-sub-menu key="sub1">
+        <a-sub-menu key="introduction">
           <template v-slot:title>
             <span>
               <InfoCircleOutlined></InfoCircleOutlined>
-              <span>BAZ</span>
+              <span>INTRODUCTION</span>
             </span>
           </template>
-          <a-menu-item key="4">A</a-menu-item>
-          <a-menu-item key="5">B</a-menu-item>
-          <a-menu-item key="6">C</a-menu-item>
+          <a-menu-item key="declarative-rendering">
+            <router-link to="/introduction/declarative-rendering">
+              <span>DECLARATIVE RENDERING</span>
+            </router-link>
+          </a-menu-item>
         </a-sub-menu>
       </a-menu>
     </a-layout-sider>
@@ -61,7 +56,7 @@ import { Options, Vue } from 'vue-class-component';
   },
   data() {
     return {
-      selectedKeys: ['1'],
+      selectedKeys: ['home'],
       collapsed: false,
     };
   },
