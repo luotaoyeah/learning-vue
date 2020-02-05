@@ -4,6 +4,6 @@
     <option name="languageLevel" value="JSX" />
   </component>
   <component name="WebPackConfiguration">
-    <option name="path" value="$PROJECT_DIR$/build/webpack.dev.conf.js" />
+    <option name="path" value="$PROJECT_DIR$/webstorm.config.js" />
   </component>
 </project>
