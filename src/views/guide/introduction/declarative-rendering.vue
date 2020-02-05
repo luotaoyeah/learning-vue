@@ -1,16 +1,19 @@
 <template>
   <div>
-    <Button v-bind:title="this.counter.toString()">{{ counter }}</Button>
+    <Button v-bind:title="counter.toString()">{{ counter }}</Button>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 // https://v3.vuejs.org/guide/introduction.html#declarative-rendering
+//
+// 1. {{}} 用于 text interpolation
+// 2. v-bind 是一个指令（directive），用来绑定 element attribute
+//
 
 import { Button } from 'ant-design-vue';
-import { Options, Vue } from 'vue-class-component';
 
-@Options({
+export default {
   components: {
     Button,
   },
@@ -27,6 +30,5 @@ import { Options, Vue } from 'vue-class-component';
       }
     }, 1000);
   },
-})
-export default class DeclarativeRendering extends Vue {}
+};
 </script>

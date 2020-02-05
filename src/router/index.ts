@@ -10,6 +10,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/introduction/declarative-rendering',
     component: () => import('../views/guide/introduction/declarative-rendering.vue'),
   },
+  {
+    path: '/introduction/handling-user-input',
+    component: () => import('../views/guide/introduction/handling-user-input.vue'),
+  },
 ];
 
 const router = createRouter({
