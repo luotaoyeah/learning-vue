@@ -2,12 +2,18 @@
   <div>
     <section>
       <Button type="primary" v-on:click="onClick">toggle</Button>
+      <!------------------------------------------------------------------------------------------------------
+          v-if 实现条件语句
+      ------------------------------------------------------------------------------------------------------->
       <Button v-if="!hidden" :style="{ marginLeft: '12px' }">NOW YOU SEE ME</Button>
     </section>
 
     <hr />
 
     <section>
+      <!------------------------------------------------------------------------------------------------------
+          v-for 实现循环
+      ------------------------------------------------------------------------------------------------------->
       <Button v-for="item in items" v-bind:key="item.text" :style="{ marginRight: '12px' }">
         {{ item.text }}
       </Button>
@@ -23,9 +29,6 @@
 
 <script>
 // https://v3.vuejs.org/guide/introduction.html#conditionals-and-loops
-//
-// 1. v-if 实现条件语句
-// 2. v-for 实现循环
 
 import { Button } from 'ant-design-vue';
 

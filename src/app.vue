@@ -9,31 +9,53 @@
           </router-link>
         </Menu.Item>
 
-        <Menu.SubMenu key="introduction">
+        <Menu.SubMenu key="guide">
           <template v-slot:title>
             <span>
               <InfoCircleOutlined></InfoCircleOutlined>
-              <span>INTRODUCTION</span>
+              <span>GUIDE</span>
             </span>
           </template>
 
-          <Menu.Item key="/introduction/declarative-rendering">
-            <router-link to="/introduction/declarative-rendering">
-              <span>DECLARATIVE RENDERING</span>
-            </router-link>
-          </Menu.Item>
+          <Menu.SubMenu key="introduction">
+            <template v-slot:title>
+              <span>
+                <span>INTRODUCTION</span>
+              </span>
+            </template>
 
-          <Menu.Item key="/introduction/handling-user-input">
-            <router-link to="/introduction/handling-user-input">
-              <span>HANDLING USER INPUT</span>
-            </router-link>
-          </Menu.Item>
+            <Menu.Item key="/guide/introduction/declarative-rendering">
+              <router-link to="/guide/introduction/declarative-rendering">
+                <span>DECLARATIVE RENDERING</span>
+              </router-link>
+            </Menu.Item>
 
-          <Menu.Item key="/introduction/conditionals-and-loops">
-            <router-link to="/introduction/conditionals-and-loops">
-              <span>CONDITIONALS AND LOOPS</span>
-            </router-link>
-          </Menu.Item>
+            <Menu.Item key="/guide/introduction/handling-user-input">
+              <router-link to="/guide/introduction/handling-user-input">
+                <span>HANDLING USER INPUT</span>
+              </router-link>
+            </Menu.Item>
+
+            <Menu.Item key="/guide/introduction/conditionals-and-loops">
+              <router-link to="/guide/introduction/conditionals-and-loops">
+                <span>CONDITIONALS AND LOOPS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
+
+          <Menu.SubMenu key="template-syntax">
+            <template v-slot:title>
+              <span>
+                <span>TEMPLATE SYNTAX</span>
+              </span>
+            </template>
+
+            <Menu.Item key="/guide/template-syntax/interpolations">
+              <router-link to="/guide/template-syntax/interpolations">
+                <span>INTERPOLATIONS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

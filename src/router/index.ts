@@ -7,16 +7,20 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
-    path: '/introduction/declarative-rendering',
+    path: '/guide/introduction/declarative-rendering',
     component: () => import('../views/guide/introduction/declarative-rendering.vue'),
   },
   {
-    path: '/introduction/handling-user-input',
+    path: '/guide/introduction/handling-user-input',
     component: () => import('../views/guide/introduction/handling-user-input.vue'),
   },
   {
-    path: '/introduction/conditionals-and-loops',
+    path: '/guide/introduction/conditionals-and-loops',
     component: () => import('../views/guide/introduction/conditionals-and-loops.vue'),
+  },
+  {
+    path: '/guide/template-syntax/interpolations',
+    component: () => import('../views/guide/template-syntax/interpolations.vue'),
   },
 ];
 
