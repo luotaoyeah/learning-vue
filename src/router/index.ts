@@ -50,6 +50,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/computed/computed-setter',
     component: () => import('../views/guide/computed/computed-properties/computed-setter.vue'),
   },
+  {
+    path: '/guide/computed/watchers',
+    component: () => import('../views/guide/computed/watchers.vue'),
+  },
 ];
 
 const router = createRouter({

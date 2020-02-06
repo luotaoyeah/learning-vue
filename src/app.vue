@@ -121,6 +121,12 @@
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
+
+            <Menu.Item key="/guide/computed/watchers">
+              <router-link to="/guide/computed/watchers">
+                <span>WATCHERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
