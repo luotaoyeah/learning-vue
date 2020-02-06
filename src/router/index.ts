@@ -22,6 +22,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/template-syntax/interpolations',
     component: () => import('../views/guide/template-syntax/interpolations.vue'),
   },
+  {
+    path: '/guide/template-syntax/directives',
+    component: () => import('../views/guide/template-syntax/directives.vue'),
+  },
 ];
 
 const router = createRouter({

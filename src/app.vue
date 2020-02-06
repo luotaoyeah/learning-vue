@@ -55,6 +55,12 @@
                 <span>INTERPOLATIONS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/guide/template-syntax/directives">
+              <router-link to="/guide/template-syntax/directives">
+                <span>DIRECTIVES</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
