@@ -22,9 +22,16 @@
               <span>DECLARATIVE RENDERING</span>
             </router-link>
           </Menu.Item>
+
           <Menu.Item key="/introduction/handling-user-input">
             <router-link to="/introduction/handling-user-input">
               <span>HANDLING USER INPUT</span>
+            </router-link>
+          </Menu.Item>
+
+          <Menu.Item key="/introduction/conditionals-and-loops">
+            <router-link to="/introduction/conditionals-and-loops">
+              <span>CONDITIONALS AND LOOPS</span>
             </router-link>
           </Menu.Item>
         </Menu.SubMenu>

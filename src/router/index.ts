@@ -14,6 +14,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/introduction/handling-user-input',
     component: () => import('../views/guide/introduction/handling-user-input.vue'),
   },
+  {
+    path: '/introduction/conditionals-and-loops',
+    component: () => import('../views/guide/introduction/conditionals-and-loops.vue'),
+  },
 ];
 
 const router = createRouter({
