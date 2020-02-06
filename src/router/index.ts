@@ -42,6 +42,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/computed/basic-example',
     component: () => import('../views/guide/computed/computed-properties/basic-example.vue'),
   },
+  {
+    path: '/guide/computed/computed-caching-vs-methods',
+    component: () => import('../views/guide/computed/computed-properties/computed-caching-vs-methods.vue'),
+  },
 ];
 
 const router = createRouter({

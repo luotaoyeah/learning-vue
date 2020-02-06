@@ -108,6 +108,12 @@
                   <span>BASIC EXAMPLE</span>
                 </router-link>
               </Menu.Item>
+
+              <Menu.Item key="/guide/computed/computed-caching-vs-methods">
+                <router-link to="/guide/computed/computed-caching-vs-methods">
+                  <span>COMPUTED CACHING VS METHODS</span>
+                </router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>
