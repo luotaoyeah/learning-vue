@@ -61,6 +61,12 @@
                 <span>DIRECTIVES</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/guide/template-syntax/shorthands">
+              <router-link to="/guide/template-syntax/shorthands">
+                <span>SHORTHANDS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

@@ -26,6 +26,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/template-syntax/directives',
     component: () => import('../views/guide/template-syntax/directives.vue'),
   },
+  {
+    path: '/guide/template-syntax/shorthands',
+    component: () => import('../views/guide/template-syntax/shorthands.vue'),
+  },
 ];
 
 const router = createRouter({
