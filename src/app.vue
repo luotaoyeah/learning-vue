@@ -81,6 +81,12 @@
                 <span>DATA PROPERTIES</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/guide/data-methods/methods">
+              <router-link to="/guide/data-methods/methods">
+                <span>METHODS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

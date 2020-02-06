@@ -34,6 +34,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/data-methods/data-properties',
     component: () => import('../views/guide/data-methods/data-properties.vue'),
   },
+  {
+    path: '/guide/data-methods/methods',
+    component: () => import('../views/guide/data-methods/methods.vue'),
+  },
 ];
 
 const router = createRouter({
