@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <Button :style="{ marginRight: '12px' }" @click="push">PUSH</Button>
+      <Button :style="{ marginRight: '12px', marginBottom: '12px' }" @click="push">PUSH</Button>
 
       <br />
 

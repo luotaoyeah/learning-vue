@@ -114,6 +114,12 @@
                   <span>COMPUTED CACHING VS METHODS</span>
                 </router-link>
               </Menu.Item>
+
+              <Menu.Item key="/guide/computed/computed-setter">
+                <router-link to="/guide/computed/computed-setter">
+                  <span>COMPUTED SETTER</span>
+                </router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>
