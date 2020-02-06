@@ -68,6 +68,20 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="data-methods">
+            <template v-slot:title>
+              <span>
+                <span>DATA PROPERTIES AND METHODS</span>
+              </span>
+            </template>
+
+            <Menu.Item key="/guide/data-methods/data-properties">
+              <router-link to="/guide/data-methods/data-properties">
+                <span>DATA PROPERTIES</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

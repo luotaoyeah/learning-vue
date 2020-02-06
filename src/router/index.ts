@@ -30,6 +30,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/template-syntax/shorthands',
     component: () => import('../views/guide/template-syntax/shorthands.vue'),
   },
+  {
+    path: '/guide/data-methods/data-properties',
+    component: () => import('../views/guide/data-methods/data-properties.vue'),
+  },
 ];
 
 const router = createRouter({
