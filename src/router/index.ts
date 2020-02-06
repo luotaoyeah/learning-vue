@@ -38,6 +38,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/data-methods/methods',
     component: () => import('../views/guide/data-methods/methods.vue'),
   },
+  {
+    path: '/guide/computed/basic-example',
+    component: () => import('../views/guide/computed/computed-properties/basic-example.vue'),
+  },
 ];
 
 const router = createRouter({

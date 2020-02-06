@@ -88,6 +88,28 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="computed">
+            <template v-slot:title>
+              <span>
+                <span>COMPUTED PROPERTIES AND WATCHERS</span>
+              </span>
+            </template>
+
+            <Menu.SubMenu key="computed-properties">
+              <template v-slot:title>
+                <span>
+                  <span>COMPUTED PROPERTIES</span>
+                </span>
+              </template>
+
+              <Menu.Item key="/guide/computed/basic-example">
+                <router-link to="/guide/computed/basic-example">
+                  <span>BASIC EXAMPLE</span>
+                </router-link>
+              </Menu.Item>
+            </Menu.SubMenu>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
