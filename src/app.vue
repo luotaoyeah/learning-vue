@@ -128,6 +128,28 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="class-and-style">
+            <template v-slot:title>
+              <span>
+                <span>CLASS AND STYLE BINDINGS</span>
+              </span>
+            </template>
+
+            <Menu.SubMenu key="binding-html-classes">
+              <template v-slot:title>
+                <span>
+                  <span>BINDING HTML CLASSES</span>
+                </span>
+              </template>
+
+              <Menu.Item key="/guide/class-and-style/object-syntax">
+                <router-link to="/guide/class-and-style/object-syntax">
+                  <span>OBJECT SYNTAX</span>
+                </router-link>
+              </Menu.Item>
+            </Menu.SubMenu>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

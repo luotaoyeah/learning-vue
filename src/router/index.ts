@@ -54,6 +54,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/computed/watchers',
     component: () => import('../views/guide/computed/watchers.vue'),
   },
+  {
+    path: '/guide/class-and-style/object-syntax',
+    component: () => import('../views/guide/class-and-style/binding-html-classes/object-syntax.vue'),
+  },
 ];
 
 const router = createRouter({
