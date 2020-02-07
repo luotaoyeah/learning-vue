@@ -37,14 +37,12 @@
     "eslint": "6.7.2",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-vue": "7.0.1",
+    "husky": "4.3.0",
     "less": "3.0.4",
     "less-loader": "5.0.0",
     "lint-staged": "9.5.0",
     "prettier": "2.1.2",
     "typescript": "3.9.7",
     "vue-jest": "5.0.0-alpha.5"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
   }
 }
