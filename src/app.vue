@@ -154,6 +154,12 @@
                   <span>ARRAY SYNTAX</span>
                 </router-link>
               </Menu.Item>
+
+              <Menu.Item key="/guide/class-and-style/with-components">
+                <router-link to="/guide/class-and-style/with-components">
+                  <span>WITH COMPONENTS</span>
+                </router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>

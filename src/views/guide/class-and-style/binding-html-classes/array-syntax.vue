@@ -23,7 +23,7 @@
 // https://v3.vuejs.org/guide/class-and-style.html#array-syntax
 
 export default {
-  data(y = false) {
+  data() {
     return {
       bar: 'bar',
       class01: {
