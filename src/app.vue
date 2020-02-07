@@ -148,6 +148,12 @@
                   <span>OBJECT SYNTAX</span>
                 </router-link>
               </Menu.Item>
+
+              <Menu.Item key="/guide/class-and-style/array-syntax">
+                <router-link to="/guide/class-and-style/array-syntax">
+                  <span>ARRAY SYNTAX</span>
+                </router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>

@@ -58,6 +58,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/guide/class-and-style/object-syntax',
     component: () => import('../views/guide/class-and-style/binding-html-classes/object-syntax.vue'),
   },
+  {
+    path: '/guide/class-and-style/array-syntax',
+    component: () => import('../views/guide/class-and-style/binding-html-classes/array-syntax.vue'),
+  },
 ];
 
 const router = createRouter({
