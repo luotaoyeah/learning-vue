@@ -161,6 +161,20 @@
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
+
+            <Menu.SubMenu key="binding-inline-styles">
+              <template v-slot:title>
+                <span>
+                  <span>BINDING INLINE STYLES</span>
+                </span>
+              </template>
+
+              <Menu.Item key="/guide/class-and-style/binding-inline-styles">
+                <router-link to="/guide/class-and-style/binding-inline-styles">
+                  <span>OBJECT SYNTAX</span>
+                </router-link>
+              </Menu.Item>
+            </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
@@ -213,65 +227,4 @@ import { Options, Vue } from 'vue-class-component';
 export default class App extends Vue {}
 </script>
 
-<style lang="less">
-.ant-layout-sider-children {
-  overflow-y: auto;
-}
-
-.ant-menu {
-  padding: 0px 1px;
-}
-
-.ant-menu-vertical.ant-menu-sub {
-  padding: 1px 1px 0px;
-}
-
-.ant-menu-item {
-  border-radius: 1px;
-
-  a {
-    color: inherit;
-    display: inline-block;
-    width: calc(100% - 0px);
-  }
-}
-
-.ant-menu-vertical .ant-menu-item:not(:last-child),
-.ant-menu-vertical-left .ant-menu-item:not(:last-child),
-.ant-menu-vertical-right .ant-menu-item:not(:last-child),
-.ant-menu-inline .ant-menu-item:not(:last-child) {
-  margin-bottom: 1px;
-}
-
-.ant-menu-vertical .ant-menu-item,
-.ant-menu-vertical-left .ant-menu-item,
-.ant-menu-vertical-right .ant-menu-item,
-.ant-menu-inline .ant-menu-item,
-.ant-menu-vertical .ant-menu-submenu-title,
-.ant-menu-vertical-left .ant-menu-submenu-title,
-.ant-menu-vertical-right .ant-menu-submenu-title,
-.ant-menu-inline .ant-menu-submenu-title {
-  margin-top: 0px;
-}
-
-.ant-menu-vertical .ant-menu-item,
-.ant-menu-vertical-left .ant-menu-item,
-.ant-menu-vertical-right .ant-menu-item,
-.ant-menu-inline .ant-menu-item,
-.ant-menu-vertical .ant-menu-submenu-title,
-.ant-menu-vertical-left .ant-menu-submenu-title,
-.ant-menu-vertical-right .ant-menu-submenu-title,
-.ant-menu-inline .ant-menu-submenu-title {
-  margin-bottom: 1px;
-  border-radius: 1px;
-}
-
-.ant-menu-dark .ant-menu-item:hover {
-  background-color: #40a9ff;
-}
-
-.ant-menu-dark .ant-menu-item:hover,
-.ant-menu-dark .ant-menu-submenu-title:hover {
-  background-color: #40a9ff;
-}
-</style>
+<style lang="less"></style>

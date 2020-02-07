@@ -64,7 +64,11 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/guide/class-and-style/with-components',
-    component: () => import('../views/guide/class-and-style/binding-html-classes/with-components.vue'),
+    component: () => import('../views/guide/class-and-style/binding-html-classes/with-components/with-components.vue'),
+  },
+  {
+    path: '/guide/class-and-style/binding-inline-styles',
+    component: () => import('../views/guide/class-and-style/binding-inline-styles/object-syntax.vue'),
   },
 ];
 
