@@ -1,3 +1,20 @@
+* {
+  outline: none !important;
+  font-family: '宋体', Monaco, sans-serif;
+  letter-spacing: 0.3px;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: '宋体', 'SimSun', sans-serif;
+}
+
 .ant-menu,
 .ant-menu-item,
 .ant-menu-submenu,
@@ -115,7 +132,18 @@
   background-color: #40a9ff;
 }
 
-* {
-  user-select: none;
-  letter-spacing: 0.3px;
+.ant-menu-inline-collapsed > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+.ant-menu-inline-collapsed
+  > .ant-menu-item-group
+  > .ant-menu-item-group-list
+  > .ant-menu-submenu
+  > .ant-menu-submenu-title,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  padding: 0 32px !important;
+}
+
+.ant-layout-header {
+  height: 50px;
+  line-height: 50px;
 }

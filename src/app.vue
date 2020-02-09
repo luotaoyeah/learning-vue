@@ -1,6 +1,6 @@
 <template>
   <Layout id="components-layout-demo-custom-trigger" :style="{ height: '100%' }">
-    <Layout.Sider v-model:collapsed="collapsed" :style="{ paddingTop: '64px' }" :width="400" collapsible>
+    <Layout.Sider v-model:collapsed="collapsed" :style="{ paddingTop: '50px' }" :width="400" collapsible>
       <Menu v-model:selectedKeys="selectedKeys" mode="inline" theme="dark">
         <Menu.Item key="home">
           <router-link to="/">
@@ -187,7 +187,7 @@
 
       <Layout.Content
         :style="{
-          margin: '64px 0 0 0',
+          margin: '50px 0 0 0',
           padding: '12px',
           background: '#ffffff',
           height: '100%',
