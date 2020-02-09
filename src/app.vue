@@ -24,20 +24,20 @@
               </span>
             </template>
 
-            <Menu.Item key="/guide/introduction/declarative-rendering">
-              <router-link to="/guide/introduction/declarative-rendering">
+            <Menu.Item key="/doc/guide/introduction/declarative-rendering">
+              <router-link to="/doc/guide/introduction/declarative-rendering">
                 <span>DECLARATIVE RENDERING</span>
               </router-link>
             </Menu.Item>
 
-            <Menu.Item key="/guide/introduction/handling-user-input">
-              <router-link to="/guide/introduction/handling-user-input">
+            <Menu.Item key="/doc/guide/introduction/handling-user-input">
+              <router-link to="/doc/guide/introduction/handling-user-input">
                 <span>HANDLING USER INPUT</span>
               </router-link>
             </Menu.Item>
 
-            <Menu.Item key="/guide/introduction/conditionals-and-loops">
-              <router-link to="/guide/introduction/conditionals-and-loops">
+            <Menu.Item key="/doc/guide/introduction/conditionals-and-loops">
+              <router-link to="/doc/guide/introduction/conditionals-and-loops">
                 <span>CONDITIONALS AND LOOPS</span>
               </router-link>
             </Menu.Item>
@@ -50,20 +50,20 @@
               </span>
             </template>
 
-            <Menu.Item key="/guide/template-syntax/interpolations">
-              <router-link to="/guide/template-syntax/interpolations">
+            <Menu.Item key="/doc/guide/template-syntax/interpolations">
+              <router-link to="/doc/guide/template-syntax/interpolations">
                 <span>INTERPOLATIONS</span>
               </router-link>
             </Menu.Item>
 
-            <Menu.Item key="/guide/template-syntax/directives">
-              <router-link to="/guide/template-syntax/directives">
+            <Menu.Item key="/doc/guide/template-syntax/directives">
+              <router-link to="/doc/guide/template-syntax/directives">
                 <span>DIRECTIVES</span>
               </router-link>
             </Menu.Item>
 
-            <Menu.Item key="/guide/template-syntax/shorthands">
-              <router-link to="/guide/template-syntax/shorthands">
+            <Menu.Item key="/doc/guide/template-syntax/shorthands">
+              <router-link to="/doc/guide/template-syntax/shorthands">
                 <span>SHORTHANDS</span>
               </router-link>
             </Menu.Item>
@@ -76,14 +76,14 @@
               </span>
             </template>
 
-            <Menu.Item key="/guide/data-methods/data-properties">
-              <router-link to="/guide/data-methods/data-properties">
+            <Menu.Item key="/doc/guide/data-methods/data-properties">
+              <router-link to="/doc/guide/data-methods/data-properties">
                 <span>DATA PROPERTIES</span>
               </router-link>
             </Menu.Item>
 
-            <Menu.Item key="/guide/data-methods/methods">
-              <router-link to="/guide/data-methods/methods">
+            <Menu.Item key="/doc/guide/data-methods/methods">
+              <router-link to="/doc/guide/data-methods/methods">
                 <span>METHODS</span>
               </router-link>
             </Menu.Item>
@@ -103,27 +103,27 @@
                 </span>
               </template>
 
-              <Menu.Item key="/guide/computed/basic-example">
-                <router-link to="/guide/computed/basic-example">
+              <Menu.Item key="/doc/guide/computed/basic-example">
+                <router-link to="/doc/guide/computed/basic-example">
                   <span>BASIC EXAMPLE</span>
                 </router-link>
               </Menu.Item>
 
-              <Menu.Item key="/guide/computed/computed-caching-vs-methods">
-                <router-link to="/guide/computed/computed-caching-vs-methods">
+              <Menu.Item key="/doc/guide/computed/computed-caching-vs-methods">
+                <router-link to="/doc/guide/computed/computed-caching-vs-methods">
                   <span>COMPUTED CACHING VS METHODS</span>
                 </router-link>
               </Menu.Item>
 
-              <Menu.Item key="/guide/computed/computed-setter">
-                <router-link to="/guide/computed/computed-setter">
+              <Menu.Item key="/doc/guide/computed/computed-setter">
+                <router-link to="/doc/guide/computed/computed-setter">
                   <span>COMPUTED SETTER</span>
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
 
-            <Menu.Item key="/guide/computed/watchers">
-              <router-link to="/guide/computed/watchers">
+            <Menu.Item key="/doc/guide/computed/watchers">
+              <router-link to="/doc/guide/computed/watchers">
                 <span>WATCHERS</span>
               </router-link>
             </Menu.Item>
@@ -143,20 +143,20 @@
                 </span>
               </template>
 
-              <Menu.Item key="/guide/class-and-style/object-syntax">
-                <router-link to="/guide/class-and-style/object-syntax">
+              <Menu.Item key="/doc/guide/class-and-style/object-syntax">
+                <router-link to="/doc/guide/class-and-style/object-syntax">
                   <span>OBJECT SYNTAX</span>
                 </router-link>
               </Menu.Item>
 
-              <Menu.Item key="/guide/class-and-style/array-syntax">
-                <router-link to="/guide/class-and-style/array-syntax">
+              <Menu.Item key="/doc/guide/class-and-style/array-syntax">
+                <router-link to="/doc/guide/class-and-style/array-syntax">
                   <span>ARRAY SYNTAX</span>
                 </router-link>
               </Menu.Item>
 
-              <Menu.Item key="/guide/class-and-style/with-components">
-                <router-link to="/guide/class-and-style/with-components">
+              <Menu.Item key="/doc/guide/class-and-style/with-components">
+                <router-link to="/doc/guide/class-and-style/with-components">
                   <span>WITH COMPONENTS</span>
                 </router-link>
               </Menu.Item>
@@ -169,8 +169,8 @@
                 </span>
               </template>
 
-              <Menu.Item key="/guide/class-and-style/binding-inline-styles">
-                <router-link to="/guide/class-and-style/binding-inline-styles">
+              <Menu.Item key="/doc/guide/class-and-style/binding-inline-styles">
+                <router-link to="/doc/guide/class-and-style/binding-inline-styles">
                   <span>OBJECT SYNTAX</span>
                 </router-link>
               </Menu.Item>
