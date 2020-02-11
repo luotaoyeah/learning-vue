@@ -169,9 +169,15 @@
                 </span>
               </template>
 
-              <Menu.Item key="/doc/guide/class-and-style/binding-inline-styles">
-                <router-link to="/doc/guide/class-and-style/binding-inline-styles">
+              <Menu.Item key="/doc/guide/class-and-style/binding-inline-styles/object-syntax">
+                <router-link to="/doc/guide/class-and-style/binding-inline-styles/object-syntax">
                   <span>OBJECT SYNTAX</span>
+                </router-link>
+              </Menu.Item>
+
+              <Menu.Item key="/doc/guide/class-and-style/binding-inline-styles/array-syntax">
+                <router-link to="/doc/guide/class-and-style/binding-inline-styles/array-syntax">
+                  <span>ARRAY SYNTAX</span>
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>

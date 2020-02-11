@@ -68,8 +68,12 @@ const routes: Array<RouteRecordRaw> = [
       import('../views/doc/guide/class-and-style/binding-html-classes/with-components/with-components.vue'),
   },
   {
-    path: '/doc/guide/class-and-style/binding-inline-styles',
+    path: '/doc/guide/class-and-style/binding-inline-styles/object-syntax',
     component: () => import('../views/doc/guide/class-and-style/binding-inline-styles/object-syntax.vue'),
+  },
+  {
+    path: '/doc/guide/class-and-style/binding-inline-styles/array-syntax',
+    component: () => import('../views/doc/guide/class-and-style/binding-inline-styles/array-syntax.vue'),
   },
 ];
 
