@@ -2,13 +2,13 @@
   <div>
     <section>
       <!------------------------------------------------------------------------------------------------------
-          当多个组件需要同时应用 v-if 时，可以使用 <template> 包裹，<template> 不会渲染到页面，
+          v-if / v-else 配套使用，类似于 if / else
       ------------------------------------------------------------------------------------------------------->
       <template v-if="visible">
         <span>a</span>
         <span>b</span>
       </template>
-      <template v-if="!visible">
+      <template v-else>
         <span>c</span>
         <span>d</span>
       </template>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-// https://v3.vuejs.org/guide/conditional.html#conditional-groups-with-v-if-on-template
+// https://v3.vuejs.org/guide/conditional.html#v-else
 
 export default {
   data() {

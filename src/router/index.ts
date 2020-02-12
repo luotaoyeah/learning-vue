@@ -80,6 +80,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import('../views/doc/guide/conditional-rendering/v-if/conditional-groups-with-v-if-on-template.vue'),
   },
+  {
+    path: '/doc/guide/conditional/v-if/v-else',
+    component: () => import('../views/doc/guide/conditional-rendering/v-if/v-else.vue'),
+  },
 ];
 
 const router = createRouter({

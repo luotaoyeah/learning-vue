@@ -179,7 +179,13 @@
 
               <Menu.Item key="/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template">
                 <router-link to="/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template">
-                  <span>CONDITIONAL GROUPS WITH V-IF ON TEMPLATE</span>
+                  <span>CONDITIONAL GROUP WITH V-IF ON TEMPLATE</span>
+                </router-link>
+              </Menu.Item>
+
+              <Menu.Item key="/doc/guide/conditional/v-if/v-else">
+                <router-link to="/doc/guide/conditional/v-if/v-else">
+                  <span>V-ELSE</span>
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
