@@ -75,6 +75,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/class-and-style/binding-inline-styles/array-syntax',
     component: () => import('../views/doc/guide/class-and-style/binding-inline-styles/array-syntax.vue'),
   },
+  {
+    path: '/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template',
+    component: () =>
+      import('../views/doc/guide/conditional-rendering/v-if/conditional-groups-with-v-if-on-template.vue'),
+  },
 ];
 
 const router = createRouter({

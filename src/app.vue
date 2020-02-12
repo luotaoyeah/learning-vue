@@ -19,9 +19,7 @@
 
           <Menu.SubMenu key="introduction">
             <template v-slot:title>
-              <span>
-                <span>INTRODUCTION</span>
-              </span>
+              <span>INTRODUCTION</span>
             </template>
 
             <Menu.Item key="/doc/guide/introduction/declarative-rendering">
@@ -45,9 +43,7 @@
 
           <Menu.SubMenu key="template-syntax">
             <template v-slot:title>
-              <span>
-                <span>TEMPLATE SYNTAX</span>
-              </span>
+              <span>TEMPLATE SYNTAX</span>
             </template>
 
             <Menu.Item key="/doc/guide/template-syntax/interpolations">
@@ -71,9 +67,7 @@
 
           <Menu.SubMenu key="data-methods">
             <template v-slot:title>
-              <span>
-                <span>DATA PROPERTIES AND METHODS</span>
-              </span>
+              <span>DATA PROPERTIES AND METHODS</span>
             </template>
 
             <Menu.Item key="/doc/guide/data-methods/data-properties">
@@ -91,16 +85,12 @@
 
           <Menu.SubMenu key="computed">
             <template v-slot:title>
-              <span>
-                <span>COMPUTED PROPERTIES AND WATCHERS</span>
-              </span>
+              <span>COMPUTED PROPERTIES AND WATCHERS</span>
             </template>
 
             <Menu.SubMenu key="computed-properties">
               <template v-slot:title>
-                <span>
-                  <span>COMPUTED PROPERTIES</span>
-                </span>
+                <span>COMPUTED PROPERTIES</span>
               </template>
 
               <Menu.Item key="/doc/guide/computed/basic-example">
@@ -131,16 +121,12 @@
 
           <Menu.SubMenu key="class-and-style">
             <template v-slot:title>
-              <span>
-                <span>CLASS AND STYLE BINDINGS</span>
-              </span>
+              <span>CLASS AND STYLE BINDINGS</span>
             </template>
 
             <Menu.SubMenu key="binding-html-classes">
               <template v-slot:title>
-                <span>
-                  <span>BINDING HTML CLASSES</span>
-                </span>
+                <span>BINDING HTML CLASSES</span>
               </template>
 
               <Menu.Item key="/doc/guide/class-and-style/object-syntax">
@@ -164,9 +150,7 @@
 
             <Menu.SubMenu key="binding-inline-styles">
               <template v-slot:title>
-                <span>
-                  <span>BINDING INLINE STYLES</span>
-                </span>
+                <span>BINDING INLINE STYLES</span>
               </template>
 
               <Menu.Item key="/doc/guide/class-and-style/binding-inline-styles/object-syntax">
@@ -178,6 +162,24 @@
               <Menu.Item key="/doc/guide/class-and-style/binding-inline-styles/array-syntax">
                 <router-link to="/doc/guide/class-and-style/binding-inline-styles/array-syntax">
                   <span>ARRAY SYNTAX</span>
+                </router-link>
+              </Menu.Item>
+            </Menu.SubMenu>
+          </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/conditional">
+            <template v-slot:title>
+              <span>CONDITIONAL RENDERING</span>
+            </template>
+
+            <Menu.SubMenu key="/doc/guide/conditional/v-if">
+              <template v-slot:title>
+                <span>V-IF</span>
+              </template>
+
+              <Menu.Item key="/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template">
+                <router-link to="/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template">
+                  <span>CONDITIONAL GROUPS WITH V-IF ON TEMPLATE</span>
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
