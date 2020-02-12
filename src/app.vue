@@ -188,6 +188,12 @@
                   <span>V-ELSE</span>
                 </router-link>
               </Menu.Item>
+
+              <Menu.Item key="/doc/guide/conditional/v-if/v-else-if">
+                <router-link to="/doc/guide/conditional/v-if/v-else-if">
+                  <span>V-ELSE-IF</span>
+                </router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>
