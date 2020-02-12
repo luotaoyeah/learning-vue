@@ -4,7 +4,7 @@
       <!------------------------------------------------------------------------------------------------------
           v-show 通过是否应用 `display: none;` 样式，来显示和隐藏组件，组件不会从页面被移除，
       ------------------------------------------------------------------------------------------------------->
-      <p><button @click="toggle()">toggle</button></p>
+      <p><button :style="{ borderRadius: '3px' }" @click="toggle()">toggle</button></p>
       <p>
         <span v-show="visible">a</span>
         <span v-if="!visible">b</span>

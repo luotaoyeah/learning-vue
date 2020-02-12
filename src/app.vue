@@ -201,6 +201,12 @@
                 <span>V-SHOW</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/conditional/v-if-with-v-for">
+              <router-link to="/doc/guide/conditional/v-if-with-v-for">
+                <span>V-IF WITH V-FOR</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
