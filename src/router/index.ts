@@ -88,6 +88,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/conditional/v-if/v-else-if',
     component: () => import('../views/doc/guide/conditional-rendering/v-if/v-else-if.vue'),
   },
+  {
+    path: '/doc/guide/conditional/v-show',
+    component: () => import('../views/doc/guide/conditional-rendering/v-show.vue'),
+  },
 ];
 
 const router = createRouter({

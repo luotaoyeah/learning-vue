@@ -195,6 +195,12 @@
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
+
+            <Menu.Item key="/doc/guide/conditional/v-show">
+              <router-link to="/doc/guide/conditional/v-show">
+                <span>V-SHOW</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
