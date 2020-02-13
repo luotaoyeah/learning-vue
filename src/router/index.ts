@@ -100,6 +100,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/mapping-an-array-to-elements-with-v-for',
     component: () => import('../views/doc/guide/list/mapping-an-array-to-elements-with-v-for.vue'),
   },
+  {
+    path: '/doc/guide/list/v-for-with-an-object',
+    component: () => import('../views/doc/guide/list/v-for-with-an-object.vue'),
+  },
 ];
 
 const router = createRouter({
