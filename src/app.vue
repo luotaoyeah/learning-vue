@@ -174,37 +174,49 @@
 
             <Menu.SubMenu key="/doc/guide/conditional/v-if">
               <template v-slot:title>
-                <span>V-IF</span>
+                <span>v-if</span>
               </template>
 
               <Menu.Item key="/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template">
                 <router-link to="/doc/guide/conditional/v-if/conditional-groups-with-v-if-on-template">
-                  <span>CONDITIONAL GROUP WITH V-IF ON TEMPLATE</span>
+                  <span>CONDITIONAL GROUP WITH v-if ON TEMPLATE</span>
                 </router-link>
               </Menu.Item>
 
               <Menu.Item key="/doc/guide/conditional/v-if/v-else">
                 <router-link to="/doc/guide/conditional/v-if/v-else">
-                  <span>V-ELSE</span>
+                  <span>v-else</span>
                 </router-link>
               </Menu.Item>
 
               <Menu.Item key="/doc/guide/conditional/v-if/v-else-if">
                 <router-link to="/doc/guide/conditional/v-if/v-else-if">
-                  <span>V-ELSE-IF</span>
+                  <span>v-else-if</span>
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
 
             <Menu.Item key="/doc/guide/conditional/v-show">
               <router-link to="/doc/guide/conditional/v-show">
-                <span>V-SHOW</span>
+                <span>v-show</span>
               </router-link>
             </Menu.Item>
 
             <Menu.Item key="/doc/guide/conditional/v-if-with-v-for">
               <router-link to="/doc/guide/conditional/v-if-with-v-for">
-                <span>V-IF WITH V-FOR</span>
+                <span>v-if WITH v-for</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/list">
+            <template v-slot:title>
+              <span>LIST RENDERING</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/list/mapping-an-array-to-elements-with-v-for">
+              <router-link to="/doc/guide/list/mapping-an-array-to-elements-with-v-for">
+                <span>MAPPING AN ARRAY TO ELEMENTS WITH v-for</span>
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>

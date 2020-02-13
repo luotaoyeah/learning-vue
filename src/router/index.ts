@@ -96,6 +96,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/conditional/v-if-with-v-for',
     component: () => import('../views/doc/guide/conditional-rendering/v-if-with-v-for.vue'),
   },
+  {
+    path: '/doc/guide/list/mapping-an-array-to-elements-with-v-for',
+    component: () => import('../views/doc/guide/list/mapping-an-array-to-elements-with-v-for.vue'),
+  },
 ];
 
 const router = createRouter({
