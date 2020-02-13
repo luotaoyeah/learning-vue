@@ -219,9 +219,16 @@
                 <span>MAPPING AN ARRAY TO ELEMENTS WITH v-for</span>
               </router-link>
             </Menu.Item>
+
             <Menu.Item key="/doc/guide/list/v-for-with-an-object">
               <router-link to="/doc/guide/list/v-for-with-an-object">
                 <span>v-for WITH AN OBJECT</span>
+              </router-link>
+            </Menu.Item>
+
+            <Menu.Item key="/doc/guide/list/maintaining-state">
+              <router-link to="/doc/guide/list/maintaining-state">
+                <span>MAINTAINING STATE</span>
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>

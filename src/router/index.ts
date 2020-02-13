@@ -104,6 +104,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/v-for-with-an-object',
     component: () => import('../views/doc/guide/list/v-for-with-an-object.vue'),
   },
+  {
+    path: '/doc/guide/list/maintaining-state',
+    component: () => import('../views/doc/guide/list/maintaining-state.vue'),
+  },
 ];
 
 const router = createRouter({
