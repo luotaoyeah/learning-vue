@@ -30,6 +30,7 @@
 <script>
 // https://v3.vuejs.org/guide/list.html#maintaining-state
 
+import { cloneDeep } from 'lodash-es';
 import comp01 from './maintaining-state.01';
 
 export default {
@@ -44,7 +45,7 @@ export default {
   },
   methods: {
     reverse() {
-      this.items = this.items.reverse();
+      this.items = cloneDeep(this.items.reverse());
     },
   },
   components: {
