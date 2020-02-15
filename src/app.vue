@@ -274,6 +274,17 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+          <Menu.SubMenu key="/doc/guide/events">
+            <template v-slot:title>
+              <span>EVENT HANDLING</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/events/listening-to-events">
+              <router-link to="/doc/guide/events/listening-to-events">
+                <span>LISTENING TO EVENTS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

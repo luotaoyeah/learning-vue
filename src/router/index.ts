@@ -132,6 +132,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/v-for-with-a-component',
     component: () => import('../views/doc/guide/list/v-for-with-a-component.vue'),
   },
+  {
+    path: '/doc/guide/events/listening-to-events',
+    component: () => import('../views/doc/guide/events/listening-to-events.vue'),
+  },
 ];
 
 const router = createRouter({
