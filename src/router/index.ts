@@ -136,6 +136,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/events/listening-to-events',
     component: () => import('../views/doc/guide/events/listening-to-events.vue'),
   },
+  {
+    path: '/doc/guide/events/method-event-handlers',
+    component: () => import('../views/doc/guide/events/method-event-handlers.vue'),
+  },
 ];
 
 const router = createRouter({

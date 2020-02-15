@@ -284,6 +284,12 @@
                 <span>LISTENING TO EVENTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/events/method-event-handlers">
+              <router-link to="/doc/guide/events/method-event-handlers">
+                <span>METHOD EVENT HANDLERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
