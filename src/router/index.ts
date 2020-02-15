@@ -112,6 +112,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/array-change-detection/mutation-methods',
     component: () => import('../views/doc/guide/list/array-change-detection/mutation-methods.vue'),
   },
+  {
+    path: '/doc/guide/list/array-change-detection/replacing-an-array',
+    component: () => import('../views/doc/guide/list/array-change-detection/replacing-an-array.vue'),
+  },
 ];
 
 const router = createRouter({

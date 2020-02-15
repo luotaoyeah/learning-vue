@@ -242,6 +242,12 @@
                   <span>MUTATION METHODS</span>
                 </router-link>
               </Menu.Item>
+
+              <Menu.Item key="/doc/guide/list/array-change-detection/replacing-an-array">
+                <router-link to="/doc/guide/list/array-change-detection/replacing-an-array">
+                  <span>REPLACING AN ARRAY</span>
+                </router-link>
+              </Menu.Item>
             </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>
