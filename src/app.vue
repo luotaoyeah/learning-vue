@@ -255,6 +255,12 @@
                 <span>DISPLAYING FILTERED/SORTED RESULTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/list/v-for-with-a-range">
+              <router-link to="/doc/guide/list/v-for-with-a-range">
+                <span>v-for WITH A RANGE</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

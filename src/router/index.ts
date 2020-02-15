@@ -120,6 +120,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/displaying-filtered-sorted-results',
     component: () => import('../views/doc/guide/list/displaying-filtered-sorted-results.vue'),
   },
+  {
+    path: '/doc/guide/list/v-for-with-a-range',
+    component: () => import('../views/doc/guide/list/v-for-with-a-range.vue'),
+  },
 ];
 
 const router = createRouter({
