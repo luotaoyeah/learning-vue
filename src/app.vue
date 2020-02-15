@@ -290,6 +290,12 @@
                 <span>METHOD EVENT HANDLERS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/events/methods-in-inline-handlers">
+              <router-link to="/doc/guide/events/methods-in-inline-handlers">
+                <span>METHODS IN INLINE HANDLERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
