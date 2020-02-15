@@ -128,6 +128,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/v-for-on-a-template',
     component: () => import('../views/doc/guide/list/v-for-on-a-template.vue'),
   },
+  {
+    path: '/doc/guide/list/v-for-with-a-component',
+    component: () => import('../views/doc/guide/list/v-for-with-a-component.vue'),
+  },
 ];
 
 const router = createRouter({
