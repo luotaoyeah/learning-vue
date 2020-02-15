@@ -261,6 +261,12 @@
                 <span>v-for WITH A RANGE</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/list/v-for-on-a-template">
+              <router-link to="/doc/guide/list/v-for-on-a-template">
+                <span>v-for ON A template</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

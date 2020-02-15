@@ -124,6 +124,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/v-for-with-a-range',
     component: () => import('../views/doc/guide/list/v-for-with-a-range.vue'),
   },
+  {
+    path: '/doc/guide/list/v-for-on-a-template',
+    component: () => import('../views/doc/guide/list/v-for-on-a-template.vue'),
+  },
 ];
 
 const router = createRouter({
