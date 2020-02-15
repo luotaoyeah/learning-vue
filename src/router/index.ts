@@ -116,6 +116,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/array-change-detection/replacing-an-array',
     component: () => import('../views/doc/guide/list/array-change-detection/replacing-an-array.vue'),
   },
+  {
+    path: '/doc/guide/list/displaying-filtered-sorted-results',
+    component: () => import('../views/doc/guide/list/displaying-filtered-sorted-results.vue'),
+  },
 ];
 
 const router = createRouter({

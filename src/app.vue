@@ -249,6 +249,12 @@
                 </router-link>
               </Menu.Item>
             </Menu.SubMenu>
+
+            <Menu.Item key="/doc/guide/list/displaying-filtered-sorted-results">
+              <router-link to="/doc/guide/list/displaying-filtered-sorted-results">
+                <span>DISPLAYING FILTERED/SORTED RESULTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
