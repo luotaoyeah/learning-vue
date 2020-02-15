@@ -108,6 +108,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/list/maintaining-state',
     component: () => import('../views/doc/guide/list/maintaining-state.vue'),
   },
+  {
+    path: '/doc/guide/list/array-change-detection/mutation-methods',
+    component: () => import('../views/doc/guide/list/array-change-detection/mutation-methods.vue'),
+  },
 ];
 
 const router = createRouter({

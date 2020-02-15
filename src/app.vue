@@ -231,6 +231,18 @@
                 <span>MAINTAINING STATE</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.SubMenu key="/doc/guide/list/array-change-detection">
+              <template v-slot:title>
+                <span>ARRAY CHANGE DETECTION</span>
+              </template>
+
+              <Menu.Item key="/doc/guide/list/array-change-detection/mutation-methods">
+                <router-link to="/doc/guide/list/array-change-detection/mutation-methods">
+                  <span>MUTATION METHODS</span>
+                </router-link>
+              </Menu.Item>
+            </Menu.SubMenu>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
