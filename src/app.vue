@@ -308,6 +308,12 @@
                 <span>EVENT MODIFIERS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/events/key-modifiers">
+              <router-link to="/doc/guide/events/key-modifiers">
+                <span>KEY MODIFIERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

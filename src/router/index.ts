@@ -152,6 +152,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/events/event-modifiers',
     component: () => import('../views/doc/guide/events/event-modifiers.vue'),
   },
+  {
+    path: '/doc/guide/events/key-modifiers',
+    component: () => import('../views/doc/guide/events/key-modifiers.vue'),
+  },
 ];
 
 const router = createRouter({
