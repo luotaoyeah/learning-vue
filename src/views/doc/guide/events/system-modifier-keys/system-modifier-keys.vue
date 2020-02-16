@@ -15,12 +15,18 @@
     <legend>.exact MODIFIER</legend>
     <exact-modifier></exact-modifier>
   </fieldset>
+
+  <fieldset>
+    <legend>MOUSE BUTTON MODIFIERS</legend>
+    <mouse-button-modifiers></mouse-button-modifiers>
+  </fieldset>
 </template>
 
 <script>
 // https://v3.vuejs.org/guide/events.html#system-modifier-keys
 
 import exactModifier from './exact-modifier.vue';
+import mouseButtonModifiers from './mouse-button-modifiers.vue';
 
 export default {
   methods: {
@@ -30,6 +36,7 @@ export default {
   },
   components: {
     'exact-modifier': exactModifier,
+    'mouse-button-modifiers': mouseButtonModifiers,
   },
 };
 </script>
