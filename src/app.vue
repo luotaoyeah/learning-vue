@@ -350,6 +350,12 @@
                 <span>SELECT</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/forms/modifiers">
+              <router-link to="/doc/guide/forms/modifiers">
+                <span>MODIFIERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

@@ -176,6 +176,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/forms/select',
     component: () => import('../views/doc/guide/forms/select.vue'),
   },
+  {
+    path: '/doc/guide/forms/modifiers',
+    component: () => import('../views/doc/guide/forms/modifiers.vue'),
+  },
 ];
 
 const router = createRouter({
