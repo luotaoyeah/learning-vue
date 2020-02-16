@@ -158,7 +158,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/doc/guide/events/system-modifier-keys',
-    component: () => import('../views/doc/guide/events/system-modifier-keys.vue'),
+    component: () => import('../views/doc/guide/events/system-modifier-keys/system-modifier-keys.vue'),
   },
 ];
 

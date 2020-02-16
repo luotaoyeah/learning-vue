@@ -10,16 +10,26 @@
   <fieldset>
     <button :style="{ borderRadius: '3px' }" @click.alt="onClick">@click.alt</button>
   </fieldset>
+
+  <fieldset>
+    <legend>.exact MODIFIER</legend>
+    <exact-modifier></exact-modifier>
+  </fieldset>
 </template>
 
 <script>
 // https://v3.vuejs.org/guide/events.html#system-modifier-keys
+
+import exactModifier from './exact-modifier.vue';
 
 export default {
   methods: {
     onClick(event) {
       console.assert(event.altKey);
     },
+  },
+  components: {
+    'exact-modifier': exactModifier,
   },
 };
 </script>
