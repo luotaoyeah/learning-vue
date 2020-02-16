@@ -144,6 +144,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/events/methods-in-inline-handlers',
     component: () => import('../views/doc/guide/events/methods-in-inline-handlers.vue'),
   },
+  {
+    path: '/doc/guide/events/multiple-event-handlers',
+    component: () => import('../views/doc/guide/events/multiple-event-handlers.vue'),
+  },
 ];
 
 const router = createRouter({

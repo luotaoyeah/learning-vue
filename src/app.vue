@@ -296,6 +296,12 @@
                 <span>METHODS IN INLINE HANDLERS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/events/multiple-event-handlers">
+              <router-link to="/doc/guide/events/multiple-event-handlers">
+                <span>MULTIPLE EVENT HANDLERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
