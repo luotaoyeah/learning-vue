@@ -338,6 +338,12 @@
                 <span>CHECKBOX</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/forms/radio">
+              <router-link to="/doc/guide/forms/radio">
+                <span>RADIO</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

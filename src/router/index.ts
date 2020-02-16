@@ -168,6 +168,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/forms/checkbox',
     component: () => import('../views/doc/guide/forms/checkbox.vue'),
   },
+  {
+    path: '/doc/guide/forms/radio',
+    component: () => import('../views/doc/guide/forms/radio.vue'),
+  },
 ];
 
 const router = createRouter({
