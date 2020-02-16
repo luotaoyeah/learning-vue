@@ -274,6 +274,7 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
           <Menu.SubMenu key="/doc/guide/events">
             <template v-slot:title>
               <span>EVENT HANDLING</span>
@@ -318,6 +319,17 @@
             <Menu.Item key="/doc/guide/events/system-modifier-keys">
               <router-link to="/doc/guide/events/system-modifier-keys">
                 <span>SYSTEM MODIFIER KEYS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
+          <Menu.SubMenu key="/doc/forms">
+            <template v-slot:title>
+              <span>FORM INPUT BINDINGS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/forms/text">
+              <router-link to="/doc/guide/forms/text">
+                <span>TEXT</span>
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
