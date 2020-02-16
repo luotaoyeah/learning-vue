@@ -302,6 +302,12 @@
                 <span>MULTIPLE EVENT HANDLERS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/events/event-modifiers">
+              <router-link to="/doc/guide/events/event-modifiers">
+                <span>EVENT MODIFIERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

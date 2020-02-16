@@ -148,6 +148,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/events/multiple-event-handlers',
     component: () => import('../views/doc/guide/events/multiple-event-handlers.vue'),
   },
+  {
+    path: '/doc/guide/events/event-modifiers',
+    component: () => import('../views/doc/guide/events/event-modifiers.vue'),
+  },
 ];
 
 const router = createRouter({
