@@ -156,6 +156,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/events/key-modifiers',
     component: () => import('../views/doc/guide/events/key-modifiers.vue'),
   },
+  {
+    path: '/doc/guide/events/system-modifier-keys',
+    component: () => import('../views/doc/guide/events/system-modifier-keys.vue'),
+  },
 ];
 
 const router = createRouter({

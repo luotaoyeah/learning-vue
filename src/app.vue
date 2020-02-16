@@ -314,6 +314,12 @@
                 <span>KEY MODIFIERS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/events/system-modifier-keys">
+              <router-link to="/doc/guide/events/system-modifier-keys">
+                <span>SYSTEM MODIFIER KEYS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
