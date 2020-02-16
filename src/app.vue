@@ -332,6 +332,12 @@
                 <span>TEXT</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/forms/checkbox">
+              <router-link to="/doc/guide/forms/checkbox">
+                <span>CHECKBOX</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

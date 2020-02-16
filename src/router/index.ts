@@ -164,6 +164,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/forms/text',
     component: () => import('../views/doc/guide/forms/text.vue'),
   },
+  {
+    path: '/doc/guide/forms/checkbox',
+    component: () => import('../views/doc/guide/forms/checkbox.vue'),
+  },
 ];
 
 const router = createRouter({
