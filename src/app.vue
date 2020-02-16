@@ -344,6 +344,12 @@
                 <span>RADIO</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/forms/select">
+              <router-link to="/doc/guide/forms/select">
+                <span>SELECT</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

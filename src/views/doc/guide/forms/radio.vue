@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 input[type='radio'] {
   vertical-align: text-bottom;
 }
