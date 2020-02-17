@@ -184,6 +184,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-basics/base-example',
     component: () => import('../views/doc/guide/component-basics/base-example.vue'),
   },
+  {
+    path: '/doc/guide/component-basics/passing-data-to-child-components-with-props',
+    component: () => import('../views/doc/guide/component-basics/passing-data-to-child-components-with-props.vue'),
+  },
 ];
 
 const router = createRouter({

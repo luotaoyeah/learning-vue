@@ -369,6 +369,12 @@
                 <span>BASE EXAMPLE</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-basics/passing-data-to-child-components-with-props">
+              <router-link to="/doc/guide/component-basics/passing-data-to-child-components-with-props">
+                <span>PASSING DATA TO CHILD COMPONENTS WITH PROPS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
