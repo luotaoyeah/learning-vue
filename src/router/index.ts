@@ -180,6 +180,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/forms/modifiers',
     component: () => import('../views/doc/guide/forms/modifiers.vue'),
   },
+  {
+    path: '/doc/guide/component-basics/base-example',
+    component: () => import('../views/doc/guide/component-basics/base-example.vue'),
+  },
 ];
 
 const router = createRouter({

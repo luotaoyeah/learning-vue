@@ -322,6 +322,7 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
           <Menu.SubMenu key="/doc/forms">
             <template v-slot:title>
               <span>FORM INPUT BINDINGS</span>
@@ -354,6 +355,18 @@
             <Menu.Item key="/doc/guide/forms/modifiers">
               <router-link to="/doc/guide/forms/modifiers">
                 <span>MODIFIERS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-basics">
+            <template v-slot:title>
+              <span>COMPONENTS BASICS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-basics/base-example">
+              <router-link to="/doc/guide/component-basics/base-example">
+                <span>BASE EXAMPLE</span>
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
