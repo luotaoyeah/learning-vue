@@ -387,6 +387,12 @@
                 <span>CONTENT DISTRIBUTION WITH SLOTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-basics/dynamic-components">
+              <router-link to="/doc/guide/component-basics/dynamic-components">
+                <span>DYNAMIC COMPONENTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

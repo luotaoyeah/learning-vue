@@ -196,6 +196,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-basics/content-distribution-with-slots',
     component: () => import('../views/doc/guide/component-basics/content-distribution-with-slots.vue'),
   },
+  {
+    path: '/doc/guide/component-basics/dynamic-components',
+    component: () => import('../views/doc/guide/component-basics/dynamic-components/dynamic-components.vue'),
+  },
 ];
 
 const router = createRouter({
