@@ -200,6 +200,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-basics/dynamic-components',
     component: () => import('../views/doc/guide/component-basics/dynamic-components/dynamic-components.vue'),
   },
+  {
+    path: '/doc/guide/component-basics/dom-template-parsing-caveats',
+    component: () =>
+      import('../views/doc/guide/component-basics/dom-template-parsing-caveats/dom-template-parsing-caveats.vue'),
+  },
 ];
 
 const router = createRouter({

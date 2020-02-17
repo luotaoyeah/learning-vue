@@ -393,6 +393,12 @@
                 <span>DYNAMIC COMPONENTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-basics/dom-template-parsing-caveats">
+              <router-link to="/doc/guide/component-basics/dom-template-parsing-caveats">
+                <span>DOM TEMPLATE PARSING CAVEATS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
