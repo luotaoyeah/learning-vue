@@ -192,6 +192,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-basics/listening-to-child-components-events',
     component: () => import('../views/doc/guide/component-basics/listening-to-child-components-events.vue'),
   },
+  {
+    path: '/doc/guide/component-basics/content-distribution-with-slots',
+    component: () => import('../views/doc/guide/component-basics/content-distribution-with-slots.vue'),
+  },
 ];
 
 const router = createRouter({
