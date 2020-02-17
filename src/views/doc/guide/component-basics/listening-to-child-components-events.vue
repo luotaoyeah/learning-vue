@@ -17,6 +17,17 @@
     ------------------------------------------------------------------------------------------------------->
     <comp-02 @event-01="(x, y, z) => onEvent01(x, y, z)"></comp-02>
   </fieldset>
+
+  <fieldset>
+    <legend></legend>
+
+    <comp-03 v-model="value01"></comp-03>
+    <span>{{ value01 }}</span>
+    <br />
+
+    <comp-04 v-model="value02"></comp-04>
+    <span>{{ value02 }}</span>
+  </fieldset>
 </template>
 
 <script>
@@ -24,6 +35,8 @@
 
 import comp01 from './listening-to-child-components-events.01';
 import comp02 from './listening-to-child-components-events.02';
+import comp03 from './listening-to-child-components-events.03';
+import comp04 from './listening-to-child-components-events.04';
 
 export default {
   data() {
@@ -34,6 +47,8 @@ export default {
         { id: 3, value: 'green' },
       ],
       color: 'red',
+      value01: '',
+      value02: '',
     };
   },
   methods: {
@@ -49,6 +64,8 @@ export default {
   components: {
     'comp-01': comp01,
     'comp-02': comp02,
+    'comp-03': comp03,
+    'comp-04': comp04,
   },
 };
 </script>
