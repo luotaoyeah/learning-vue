@@ -375,6 +375,11 @@
                 <span>PASSING DATA TO CHILD COMPONENTS WITH PROPS</span>
               </router-link>
             </Menu.Item>
+            <Menu.Item key="/doc/guide/component-basics/listening-to-child-components-events">
+              <router-link to="/doc/guide/component-basics/listening-to-child-components-events">
+                <span>LISTENING TO CHILD COMPONENTS EVENTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

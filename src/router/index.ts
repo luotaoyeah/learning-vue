@@ -188,6 +188,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-basics/passing-data-to-child-components-with-props',
     component: () => import('../views/doc/guide/component-basics/passing-data-to-child-components-with-props.vue'),
   },
+  {
+    path: '/doc/guide/component-basics/listening-to-child-components-events',
+    component: () => import('../views/doc/guide/component-basics/listening-to-child-components-events.vue'),
+  },
 ];
 
 const router = createRouter({
