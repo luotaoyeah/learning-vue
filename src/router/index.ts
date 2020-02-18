@@ -213,6 +213,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-props/prop-types',
     component: () => import('../views/doc/guide/component-props/prop-types.vue'),
   },
+  {
+    path: '/doc/guide/component-props/passing-static-or-dynamic-props',
+    component: () => import('../views/doc/guide/component-props/passing-static-or-dynamic-props.vue'),
+  },
 ];
 
 const router = createRouter({

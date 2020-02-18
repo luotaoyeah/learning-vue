@@ -423,6 +423,12 @@
                 <span>PROP TYPES</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-props/passing-static-or-dynamic-props">
+              <router-link to="/doc/guide/component-props/passing-static-or-dynamic-props">
+                <span>PASSING STATIC OR DYNAMIC PROPS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
