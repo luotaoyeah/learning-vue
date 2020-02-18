@@ -17,9 +17,13 @@
   <fieldset>
     <!------------------------------------------------------------------------------------------------------
         HTML 是 case-insensitive 的，props 和 event 的名称都必须使用 kebab-case，
+        但是在 sfc 的 template 中，kebab-case 和 camelCase 都可以使用，
     ------------------------------------------------------------------------------------------------------->
     <comp-02 :model-value="value01" @update:model-value="value01 = $event"></comp-02>
     <span>{{ value01 }}</span>
+    <br />
+    <comp-02 :modelValue="value02" @update:modelValue="value02 = $event"></comp-02>
+    <span>{{ value02 }}</span>
   </fieldset>
 </template>
 
@@ -31,7 +35,7 @@ import comp02 from './dom-template-parsing-caveats.02';
 
 export default {
   data() {
-    return { value01: '' };
+    return { value01: '', value02: '' };
   },
   components: {
     'comp-01': comp01,

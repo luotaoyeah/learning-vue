@@ -205,6 +205,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import('../views/doc/guide/component-basics/dom-template-parsing-caveats/dom-template-parsing-caveats.vue'),
   },
+  {
+    path: '/doc/guide/component-registration/component-registration',
+    component: () => import('../views/doc/guide/component-registration/component-registration.vue'),
+  },
 ];
 
 const router = createRouter({

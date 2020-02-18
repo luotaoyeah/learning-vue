@@ -400,6 +400,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-registration">
+            <template v-slot:title>
+              <span>COMPONENT REGISTRATION</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-registration/component-registration">
+              <router-link to="/doc/guide/component-registration/component-registration">
+                <span>COMPONENT REGISTRATION</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
