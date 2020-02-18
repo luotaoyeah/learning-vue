@@ -209,6 +209,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-registration/component-registration',
     component: () => import('../views/doc/guide/component-registration/component-registration.vue'),
   },
+  {
+    path: '/doc/guide/component-props/prop-types',
+    component: () => import('../views/doc/guide/component-props/prop-types.vue'),
+  },
 ];
 
 const router = createRouter({

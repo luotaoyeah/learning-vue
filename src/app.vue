@@ -412,6 +412,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-props">
+            <template v-slot:title>
+              <span>PROPS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-props/prop-types">
+              <router-link to="/doc/guide/component-props/prop-types">
+                <span>PROP TYPES</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
