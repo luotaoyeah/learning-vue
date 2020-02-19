@@ -27,9 +27,6 @@
 import comp01 from './non-prop-attributes.01';
 
 export default {
-  data() {
-    return {};
-  },
   components: {
     'comp-01': comp01,
   },

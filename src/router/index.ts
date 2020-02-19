@@ -229,6 +229,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-attrs/non-prop-attributes',
     component: () => import('../views/doc/guide/component-attrs/non-prop-attributes.vue'),
   },
+  {
+    path: '/doc/guide/component-attrs/attribute-inheritance',
+    component: () => import('../views/doc/guide/component-attrs/attribute-inheritance.vue'),
+  },
 ];
 
 const router = createRouter({

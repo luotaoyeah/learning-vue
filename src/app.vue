@@ -453,6 +453,12 @@
                 <span>NON-PROP ATTRIBUTES</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-attrs/attribute-inheritance">
+              <router-link to="/doc/guide/component-attrs/attribute-inheritance">
+                <span>ATTRIBUTE INHERITANCE</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
