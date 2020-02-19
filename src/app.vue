@@ -459,6 +459,12 @@
                 <span>ATTRIBUTE INHERITANCE</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-attrs/disabling-attribute-inheritance">
+              <router-link to="/doc/guide/component-attrs/disabling-attribute-inheritance">
+                <span>DISABLING ATTRIBUTE INHERITANCE</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
