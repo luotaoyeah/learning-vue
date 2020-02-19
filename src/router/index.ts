@@ -221,6 +221,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-props/one-way-data-flow',
     component: () => import('../views/doc/guide/component-props/one-way-data-flow.vue'),
   },
+  {
+    path: '/doc/guide/component-props/prop-validation',
+    component: () => import('../views/doc/guide/component-props/prop-validation.vue'),
+  },
 ];
 
 const router = createRouter({

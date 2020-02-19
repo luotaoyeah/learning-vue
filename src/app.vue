@@ -435,6 +435,12 @@
                 <span>ONE-WAY DATA FLOW</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-props/prop-validation">
+              <router-link to="/doc/guide/component-props/prop-validation">
+                <span>PROP VALIDATION</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
