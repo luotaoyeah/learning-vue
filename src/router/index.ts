@@ -217,6 +217,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-props/passing-static-or-dynamic-props',
     component: () => import('../views/doc/guide/component-props/passing-static-or-dynamic-props.vue'),
   },
+  {
+    path: '/doc/guide/component-props/one-way-data-flow',
+    component: () => import('../views/doc/guide/component-props/one-way-data-flow.vue'),
+  },
 ];
 
 const router = createRouter({

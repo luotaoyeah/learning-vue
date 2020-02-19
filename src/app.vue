@@ -429,6 +429,12 @@
                 <span>PASSING STATIC OR DYNAMIC PROPS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-props/one-way-data-flow">
+              <router-link to="/doc/guide/component-props/one-way-data-flow">
+                <span>ONE-WAY DATA FLOW</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
