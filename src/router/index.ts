@@ -225,6 +225,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-props/prop-validation',
     component: () => import('../views/doc/guide/component-props/prop-validation.vue'),
   },
+  {
+    path: '/doc/guide/component-attrs/non-prop-attributes',
+    component: () => import('../views/doc/guide/component-attrs/non-prop-attributes.vue'),
+  },
 ];
 
 const router = createRouter({

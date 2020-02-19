@@ -442,6 +442,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-attrs">
+            <template v-slot:title>
+              <span>NON-PROP ATTRIBUTES</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-attrs/non-prop-attributes">
+              <router-link to="/doc/guide/component-attrs/non-prop-attributes">
+                <span>NON-PROP ATTRIBUTES</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
