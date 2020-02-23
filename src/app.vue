@@ -483,6 +483,12 @@
                 <span>DEFINING CUSTOM EVENTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-custom-events/v-model-arguments">
+              <router-link to="/doc/guide/component-custom-events/v-model-arguments">
+                <span>v-model ARGUMENTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

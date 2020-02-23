@@ -25,5 +25,6 @@ export default {
 <style lang="less" scoped>
 button {
   border-radius: 3px;
+  margin-right: 12px;
 }
 </style>

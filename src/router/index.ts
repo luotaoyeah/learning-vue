@@ -245,6 +245,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-custom-events/defining-custom-events',
     component: () => import('../views/doc/guide/component-custom-events/defining-custom-events.vue'),
   },
+  {
+    path: '/doc/guide/component-custom-events/v-model-arguments',
+    component: () => import('../views/doc/guide/component-custom-events/v-model-arguments.vue'),
+  },
 ];
 
 const router = createRouter({
