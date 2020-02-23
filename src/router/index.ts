@@ -237,6 +237,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-attrs/disabling-attribute-inheritance',
     component: () => import('../views/doc/guide/component-attrs/disabling-attribute-inheritance.vue'),
   },
+  {
+    path: '/doc/guide/component-custom-events/event-names',
+    component: () => import('../views/doc/guide/component-custom-events/event-names.vue'),
+  },
 ];
 
 const router = createRouter({

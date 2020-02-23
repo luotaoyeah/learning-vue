@@ -466,6 +466,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-custom-events">
+            <template v-slot:title>
+              <span>CUSTOM EVENTS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-custom-events/event-names">
+              <router-link to="/doc/guide/component-custom-events/event-names">
+                <span>EVENT NAMES</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
