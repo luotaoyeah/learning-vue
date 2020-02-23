@@ -4,9 +4,9 @@
         通过给 v-model 提供参数，可以同时绑定多个 v-model，包括一个默认的 v-model，
     ------------------------------------------------------------------------------------------------------->
     <comp-01 v-model="value01" v-model:age="age" v-model:name="name"></comp-01>
+    <span>{{ value01 }}</span>
     <span>{{ name }}</span>
     <span>{{ age }}</span>
-    <span>{{ value01 }}</span>
   </fieldset>
 </template>
 

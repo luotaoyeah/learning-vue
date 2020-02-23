@@ -495,6 +495,12 @@
                 <span>MULTIPLE v-model BINDINGS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-custom-events/handling-v-model-modifiers">
+              <router-link to="/doc/guide/component-custom-events/handling-v-model-modifiers">
+                <span>HANDLING v-model MODIFIERS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
