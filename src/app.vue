@@ -477,6 +477,12 @@
                 <span>EVENT NAMES</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-custom-events/defining-custom-events">
+              <router-link to="/doc/guide/component-custom-events/defining-custom-events">
+                <span>DEFINING CUSTOM EVENTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
