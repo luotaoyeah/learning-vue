@@ -489,6 +489,12 @@
                 <span>v-model ARGUMENTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-custom-events/multiple-v-model-bindings">
+              <router-link to="/doc/guide/component-custom-events/multiple-v-model-bindings">
+                <span>MULTIPLE v-model BINDINGS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

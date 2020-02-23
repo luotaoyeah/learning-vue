@@ -249,6 +249,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-custom-events/v-model-arguments',
     component: () => import('../views/doc/guide/component-custom-events/v-model-arguments.vue'),
   },
+  {
+    path: '/doc/guide/component-custom-events/multiple-v-model-bindings',
+    component: () => import('../views/doc/guide/component-custom-events/multiple-v-model-bindings.vue'),
+  },
 ];
 
 const router = createRouter({
