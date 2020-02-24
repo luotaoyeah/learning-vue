@@ -513,6 +513,12 @@
                 <span>SLOT CONTENT</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-slots/render-scope">
+              <router-link to="/doc/guide/component-slots/render-scope">
+                <span>RENDER SCOPE</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
