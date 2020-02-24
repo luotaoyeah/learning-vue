@@ -273,6 +273,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-slots/named-slots',
     component: () => import('../views/doc/guide/component-slots/named-slots.vue'),
   },
+  {
+    path: '/doc/guide/component-slots/scoped-slots',
+    component: () => import('../views/doc/guide/component-slots/scoped-slots.vue'),
+  },
 ];
 
 const router = createRouter({
