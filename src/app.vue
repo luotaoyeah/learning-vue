@@ -525,6 +525,12 @@
                 <span>FALLBACK CONTENT</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-slots/named-slots">
+              <router-link to="/doc/guide/component-slots/named-slots">
+                <span>NAMED SLOTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
