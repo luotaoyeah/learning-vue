@@ -519,6 +519,12 @@
                 <span>RENDER SCOPE</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-slots/fallback-content">
+              <router-link to="/doc/guide/component-slots/fallback-content">
+                <span>FALLBACK CONTENT</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

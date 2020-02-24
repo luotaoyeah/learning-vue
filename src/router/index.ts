@@ -265,6 +265,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-slots/render-scope',
     component: () => import('../views/doc/guide/component-slots/render-scope.vue'),
   },
+  {
+    path: '/doc/guide/component-slots/fallback-content',
+    component: () => import('../views/doc/guide/component-slots/fallback-content.vue'),
+  },
 ];
 
 const router = createRouter({
