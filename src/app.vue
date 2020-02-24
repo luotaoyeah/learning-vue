@@ -537,6 +537,12 @@
                 <span>SCOPED SLOTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-slots/named-slots-shorthand">
+              <router-link to="/doc/guide/component-slots/named-slots-shorthand">
+                <span>NAMED SLOTS SHORTHAND</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
