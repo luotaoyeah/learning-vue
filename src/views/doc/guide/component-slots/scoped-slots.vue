@@ -13,6 +13,21 @@
       </template>
     </my-list>
   </fieldset>
+
+  <fieldset>
+    <legend>DESTRUCTURING SLOT PROPS</legend>
+
+    <my-list :items="items">
+      <!------------------------------------------------------------------------------------------------------
+          v-slot 的值可以使用 destructuring 语法，
+      ------------------------------------------------------------------------------------------------------->
+      <template v-slot:default="{ item, index: i }">
+        <span>{{ i }}</span>
+        .
+        <span>{{ item }}</span>
+      </template>
+    </my-list>
+  </fieldset>
 </template>
 
 <script>
