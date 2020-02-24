@@ -257,6 +257,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-custom-events/handling-v-model-modifiers',
     component: () => import('../views/doc/guide/component-custom-events/handling-v-model-modifiers.vue'),
   },
+  {
+    path: '/doc/guide/component-slots/slot-content',
+    component: () => import('../views/doc/guide/component-slots/slot-content.vue'),
+  },
 ];
 
 const router = createRouter({

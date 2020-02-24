@@ -502,6 +502,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-slots">
+            <template v-slot:title>
+              <span>SLOTS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-slots/slot-content">
+              <router-link to="/doc/guide/component-slots/slot-content">
+                <span>SLOT CONTENT</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
