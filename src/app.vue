@@ -544,6 +544,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-provide-inject">
+            <template v-slot:title>
+              <span>PROVIDE / INJECT</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-provide-inject/provide-inject">
+              <router-link to="/doc/guide/component-provide-inject/provide-inject">
+                <span>PROVIDE / INJECT</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
