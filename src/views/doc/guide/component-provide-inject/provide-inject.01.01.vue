@@ -1,12 +1,12 @@
 <template>
-  <span>
-    {{ value01 }}
-  </span>
+  <span>{{ value01 }}</span>
+  <span>{{ value02 }}</span>
+  <span>{{ value03.value }}</span>
 </template>
 
 <script>
 export default {
-  inject: ['value01'],
+  inject: ['value01', 'value02', 'value03'],
 };
 </script>
 
