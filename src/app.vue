@@ -557,14 +557,20 @@
             </Menu.Item>
           </Menu.SubMenu>
 
-          <Menu.SubMenu key="/doc/guide/component-dynamic-async/dynamic-components-with-keep-alive">
+          <Menu.SubMenu key="/doc/guide/component-dynamic-async">
             <template v-slot:title>
               <span>DYNAMIC & ASYNC COMPONENTS</span>
             </template>
 
-            <Menu.Item key="/doc/guide/component-dynamic-async">
+            <Menu.Item key="/doc/guide/component-dynamic-async/dynamic-components-with-keep-alive">
               <router-link to="/doc/guide/component-dynamic-async/dynamic-components-with-keep-alive">
                 <span>DYNAMIC COMPONENTS WITH keep-alive</span>
+              </router-link>
+            </Menu.Item>
+
+            <Menu.Item key="/doc/guide/component-dynamic-async/async-components">
+              <router-link to="/doc/guide/component-dynamic-async/async-components">
+                <span>ASYNC COMPONENTS</span>
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>

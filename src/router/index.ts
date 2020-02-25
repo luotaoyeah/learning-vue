@@ -289,6 +289,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-dynamic-async/dynamic-components-with-keep-alive',
     component: () => import('../views/doc/guide/component-dynamic-async/dynamic-components-with-keep-alive.vue'),
   },
+  {
+    path: '/doc/guide/component-dynamic-async/async-components',
+    component: () => import('../views/doc/guide/component-dynamic-async/async-components.vue'),
+  },
 ];
 
 const router = createRouter({
