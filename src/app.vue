@@ -586,6 +586,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/custom-directive">
+            <template v-slot:title>
+              <span>CUSTOM DIRECTIVES</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/custom-directive/intro">
+              <router-link to="/doc/guide/custom-directive/intro">
+                <span>INTRO</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

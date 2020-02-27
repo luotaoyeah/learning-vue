@@ -297,6 +297,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-template-refs/template-refs',
     component: () => import('../views/doc/guide/component-template-refs/template-refs.vue'),
   },
+  {
+    path: '/doc/guide/custom-directive/intro',
+    component: () => import('../views/doc/guide/custom-directive/intro.vue'),
+  },
 ];
 
 const router = createRouter({
