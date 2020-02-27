@@ -603,6 +603,12 @@
                 <span>HOOK FUNCTIONS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/custom-directive/dynamic-directive-arguments">
+              <router-link to="/doc/guide/custom-directive/dynamic-directive-arguments">
+                <span>DYNAMIC DIRECTIVE ARGUMENTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
