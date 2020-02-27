@@ -309,6 +309,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/custom-directive/dynamic-directive-arguments',
     component: () => import('../views/doc/guide/custom-directive/dynamic-directive-arguments.vue'),
   },
+  {
+    path: '/doc/guide/custom-directive/usage-on-components',
+    component: () => import('../views/doc/guide/custom-directive/usage-on-components.vue'),
+  },
 ];
 
 const router = createRouter({

@@ -609,6 +609,12 @@
                 <span>DYNAMIC DIRECTIVE ARGUMENTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/custom-directive/usage-on-components">
+              <router-link to="/doc/guide/custom-directive/usage-on-components">
+                <span>USAGE ON COMPONENTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
