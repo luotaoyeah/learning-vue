@@ -301,6 +301,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/custom-directive/intro',
     component: () => import('../views/doc/guide/custom-directive/intro.vue'),
   },
+  {
+    path: '/doc/guide/custom-directive/hook-functions',
+    component: () => import('../views/doc/guide/custom-directive/hook-functions.vue'),
+  },
 ];
 
 const router = createRouter({

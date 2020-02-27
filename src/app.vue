@@ -597,6 +597,12 @@
                 <span>INTRO</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/custom-directive/hook-functions">
+              <router-link to="/doc/guide/custom-directive/hook-functions">
+                <span>HOOK FUNCTIONS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
