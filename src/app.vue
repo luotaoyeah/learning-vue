@@ -574,6 +574,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/component-template-refs">
+            <template v-slot:title>
+              <span>TEMPLATE REFS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/component-template-refs/template-refs">
+              <router-link to="/doc/guide/component-template-refs/template-refs">
+                <span>TEMPLATE REFS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

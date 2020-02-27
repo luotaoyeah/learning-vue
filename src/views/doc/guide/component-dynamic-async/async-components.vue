@@ -22,7 +22,7 @@ export default {
     'comp-01': comp01,
     /*----------------------------------------------------------------------------------------------------
      * 使用 defineAsyncComponent() 方法定义一个 async component，
-     * 当 async component 被使用时，才会加载，
+     * 当 async component 被使用时，它才会被加载，
      *----------------------------------------------------------------------------------------------------*/
     'comp-02': defineAsyncComponent(() => import('./async-components.02.vue')),
   },

@@ -293,6 +293,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/component-dynamic-async/async-components',
     component: () => import('../views/doc/guide/component-dynamic-async/async-components.vue'),
   },
+  {
+    path: '/doc/guide/component-template-refs/template-refs',
+    component: () => import('../views/doc/guide/component-template-refs/template-refs.vue'),
+  },
 ];
 
 const router = createRouter({
