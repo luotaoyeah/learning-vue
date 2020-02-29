@@ -321,6 +321,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/render-function/render-functions',
     component: () => import('../views/doc/guide/render-function/render-functions.vue'),
   },
+  {
+    path: '/doc/guide/render-function/constraints',
+    component: () => import('../views/doc/guide/render-function/constraints.vue'),
+  },
 ];
 
 const router = createRouter({

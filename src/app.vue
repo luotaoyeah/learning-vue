@@ -639,6 +639,12 @@
                 <span>RENDER FUNCTIONS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/render-function/constraints">
+              <router-link to="/doc/guide/render-function/constraints">
+                <span>CONSTRAINTS</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
