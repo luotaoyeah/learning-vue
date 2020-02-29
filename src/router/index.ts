@@ -317,6 +317,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/teleport/teleport',
     component: () => import('../views/doc/guide/teleport/teleport.vue'),
   },
+  {
+    path: '/doc/guide/render-function/render-functions',
+    component: () => import('../views/doc/guide/render-function/render-functions.vue'),
+  },
 ];
 
 const router = createRouter({

@@ -628,6 +628,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/render-function">
+            <template v-slot:title>
+              <span>RENDER FUNCTIONS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/render-function/render-functions">
+              <router-link to="/doc/guide/render-function/render-functions">
+                <span>RENDER FUNCTIONS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
