@@ -658,6 +658,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/plugins">
+            <template v-slot:title>
+              <span>PLUGINS</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/plugins/plugins">
+              <router-link to="/doc/guide/plugins/plugins">
+                <span>PLUGINS</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>
@@ -683,12 +695,17 @@
   </Layout>
 </template>
 
-<script lang="ts">
+<script>
 import { InfoCircleOutlined } from '@ant-design/icons-vue';
 import { Layout, Menu } from 'ant-design-vue';
-import { Options, Vue } from 'vue-class-component';
 
-@Options({
+export default {
+  data() {
+    return {
+      selectedKeys: ['home'],
+      collapsed: false,
+    };
+  },
   components: {
     InfoCircleOutlined,
     Layout,
@@ -699,14 +716,5 @@ import { Options, Vue } from 'vue-class-component';
     'Menu.Item': Menu.Item,
     'Menu.SubMenu': Menu.SubMenu,
   },
-  data() {
-    return {
-      selectedKeys: ['home'],
-      collapsed: false,
-    };
-  },
-})
-export default class App extends Vue {}
+};
 </script>
-
-<style lang="less"></style>

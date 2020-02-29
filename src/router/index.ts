@@ -336,6 +336,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/render-function/jsx',
     component: () => import('../views/doc/guide/render-function/jsx/jsx.jsx'),
   },
+  {
+    path: '/doc/guide/plugins/plugins',
+    component: () => import('../views/doc/guide/plugins/plugins.vue'),
+  },
 ];
 
 const router = createRouter({
