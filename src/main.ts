@@ -1,4 +1,4 @@
-import App from '@/app.vue';
+import App from '@/app.jsx';
 import '@/index.less';
 import router from '@/router';
 import store from '@/store';
