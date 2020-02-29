@@ -645,6 +645,12 @@
                 <span>CONSTRAINTS</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/render-function/replacing-template-features-with-plain-javascript">
+              <router-link to="/doc/guide/render-function/replacing-template-features-with-plain-javascript">
+                <span>REPLACING TEMPLATE FEATURES WITH PLAIN JAVASCRIPT</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

@@ -325,6 +325,13 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/render-function/constraints',
     component: () => import('../views/doc/guide/render-function/constraints.vue'),
   },
+  {
+    path: '/doc/guide/render-function/replacing-template-features-with-plain-javascript',
+    component: () =>
+      import(
+        '../views/doc/guide/render-function/replacing-template-features-with-plain-javascript/replacing-template-features-with-plain-javascript.vue'
+      ),
+  },
 ];
 
 const router = createRouter({
