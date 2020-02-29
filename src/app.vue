@@ -616,6 +616,18 @@
               </router-link>
             </Menu.Item>
           </Menu.SubMenu>
+
+          <Menu.SubMenu key="/doc/guide/teleport">
+            <template v-slot:title>
+              <span>TELEPORT</span>
+            </template>
+
+            <Menu.Item key="/doc/guide/teleport/teleport">
+              <router-link to="/doc/guide/teleport/teleport">
+                <span>TELEPORT</span>
+              </router-link>
+            </Menu.Item>
+          </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>
     </Layout.Sider>

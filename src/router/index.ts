@@ -313,6 +313,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/custom-directive/usage-on-components',
     component: () => import('../views/doc/guide/custom-directive/usage-on-components.vue'),
   },
+  {
+    path: '/doc/guide/teleport/teleport',
+    component: () => import('../views/doc/guide/teleport/teleport.vue'),
+  },
 ];
 
 const router = createRouter({
