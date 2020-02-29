@@ -24,11 +24,18 @@
 
     <v-on-01>666</v-on-01>
   </fieldset>
+
+  <fieldset>
+    <legend>slots</legend>
+
+    <slots-01></slots-01>
+  </fieldset>
 </template>
 
 <script>
 // https://v3.vuejs.org/guide/render-function.html#replacing-template-features-with-plain-javascript
 
+import comp06 from './slots.01';
 import comp01 from './v-if-and-v-for.01';
 import comp02 from './v-if-and-v-for.02.vue';
 import comp03 from './v-model.01';
@@ -45,6 +52,7 @@ export default {
     'v-model-01': comp03,
     'v-model-02': comp04,
     'v-on-01': comp05,
+    'slots-01': comp06,
   },
 };
 </script>
