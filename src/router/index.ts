@@ -332,6 +332,10 @@ const routes: Array<RouteRecordRaw> = [
         '../views/doc/guide/render-function/replacing-template-features-with-plain-javascript/replacing-template-features-with-plain-javascript.vue'
       ),
   },
+  {
+    path: '/doc/guide/render-function/jsx',
+    component: () => import('../views/doc/guide/render-function/jsx/jsx.jsx'),
+  },
 ];
 
 const router = createRouter({

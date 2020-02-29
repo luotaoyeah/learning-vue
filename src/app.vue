@@ -651,6 +651,12 @@
                 <span>REPLACING TEMPLATE FEATURES WITH PLAIN JAVASCRIPT</span>
               </router-link>
             </Menu.Item>
+
+            <Menu.Item key="/doc/guide/render-function/jsx">
+              <router-link to="/doc/guide/render-function/jsx">
+                <span>JSX</span>
+              </router-link>
+            </Menu.Item>
           </Menu.SubMenu>
         </Menu.SubMenu>
       </Menu>

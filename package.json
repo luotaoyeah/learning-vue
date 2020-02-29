@@ -24,6 +24,7 @@
     "@types/lodash-es": "4.17.3",
     "@typescript-eslint/eslint-plugin": "4.7.0",
     "@typescript-eslint/parser": "4.7.0",
+    "@vue/babel-plugin-jsx": "1.0.0-rc.3",
     "@vue/cli-plugin-babel": "4.5.8",
     "@vue/cli-plugin-eslint": "4.5.8",
     "@vue/cli-plugin-router": "4.5.8",
