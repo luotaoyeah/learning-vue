@@ -1,10 +1,9 @@
-import Home from '@/views/home.jsx';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: Home,
+    component: () => import('../views/home.jsx'),
   },
   {
     path: '/doc/guide/introduction/declarative-rendering',
@@ -339,6 +338,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/doc/guide/plugins/plugins',
     component: () => import('../views/doc/guide/plugins/plugins.vue'),
+  },
+  {
+    path: '/doc/guide/reactivity-fundamentals/declaring-reactive-state',
+    component: () => import('../views/doc/guide/reactivity-fundamentals/declaring-reactive-state.jsx'),
   },
 ];
 

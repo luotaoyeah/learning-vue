@@ -1,8 +1,5 @@
 import { InfoCircleOutlined } from '@ant-design/icons-vue';
-import {
-  Layout,
-  Menu,
-} from 'ant-design-vue';
+import { Layout, Menu } from 'ant-design-vue';
 
 export default {
   data() {
@@ -722,6 +719,19 @@ export default {
                   <Menu.Item key="/doc/guide/plugins/plugins">
                     <router-link to="/doc/guide/plugins/plugins">
                       <span>PLUGINS</span>
+                    </router-link>
+                  </Menu.Item>
+                </Menu.SubMenu>
+
+                <Menu.SubMenu
+                  key="/doc/guide/reactivity-fundamentals"
+                  v-slots={{
+                    title: () => <span>REACTIVITY FUNDAMENTALS</span>,
+                  }}
+                >
+                  <Menu.Item key="/doc/guide/reactivity-fundamentals/declaring-reactive-state">
+                    <router-link to="/doc/guide/reactivity-fundamentals/declaring-reactive-state">
+                      <span>DECLARING REACTIVE STATE</span>
                     </router-link>
                   </Menu.Item>
                 </Menu.SubMenu>
