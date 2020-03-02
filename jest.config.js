@@ -3,7 +3,7 @@ module.exports = {
   transform: {
     '^.+\\.vue$': 'vue-jest',
   },
-  collectCoverage: true,
-  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**'],
+  testMatch: ['**/tests/unit/**/*.spec.[jt]s?(x)', '**/__tests__/*.[jt]s?(x)', '**/src/**/*.spec.[jt]s?(x)'],
+  collectCoverageFrom: ['**/*.{js,ts,jsx,tsx}', '!**/node_modules/**'],
   coverageReporters: ['lcovonly', 'text-summary'],
 };
