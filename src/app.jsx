@@ -746,6 +746,12 @@ export default {
                       <span>REF UNWRAPPING</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-fundamentals/access-in-reactive-objects">
+                    <router-link to="/doc/guide/reactivity-fundamentals/access-in-reactive-objects">
+                      <span>ACCESS IN REACTIVE OBJECTS</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>

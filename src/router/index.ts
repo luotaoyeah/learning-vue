@@ -352,6 +352,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/reactivity-fundamentals/ref-unwrapping',
     component: () => import('../views/doc/guide/reactivity-fundamentals/ref-unwrapping.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-fundamentals/access-in-reactive-objects',
+    component: () => import('../views/doc/guide/reactivity-fundamentals/access-in-reactive-objects.jsx'),
+  },
 ];
 
 const router = createRouter({
