@@ -734,6 +734,12 @@ export default {
                       <span>DECLARING REACTIVE STATE</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs">
+                    <router-link to="/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs">
+                      <span>CREATING STANDALONE REACTIVE VALUES AS REFS</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>

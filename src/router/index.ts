@@ -343,6 +343,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/reactivity-fundamentals/declaring-reactive-state',
     component: () => import('../views/doc/guide/reactivity-fundamentals/declaring-reactive-state.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs',
+    component: () =>
+      import('../views/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs.jsx'),
+  },
 ];
 
 const router = createRouter({
