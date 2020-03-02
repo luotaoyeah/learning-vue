@@ -348,6 +348,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import('../views/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-fundamentals/ref-unwrapping',
+    component: () => import('../views/doc/guide/reactivity-fundamentals/ref-unwrapping.jsx'),
+  },
 ];
 
 const router = createRouter({

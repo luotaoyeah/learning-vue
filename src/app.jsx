@@ -740,6 +740,12 @@ export default {
                       <span>CREATING STANDALONE REACTIVE VALUES AS REFS</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-fundamentals/ref-unwrapping">
+                    <router-link to="/doc/guide/reactivity-fundamentals/ref-unwrapping">
+                      <span>REF UNWRAPPING</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>
