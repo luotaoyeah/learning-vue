@@ -4,7 +4,7 @@ describe('src/views/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-
   /*----------------------------------------------------------------------------------------------------
    * readonly() 将 reactive 对象变成只读的，
    *----------------------------------------------------------------------------------------------------*/
-  it('should work 01', () => {
+  it('01', () => {
     const reactive01 = readonly(
       reactive({
         prop01: 666,

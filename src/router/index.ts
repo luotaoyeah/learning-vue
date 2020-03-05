@@ -365,6 +365,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import('../views/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-computed-watchers/computed-values',
+    component: () => import('../views/doc/guide/reactivity-computed-watchers/computed-values.jsx'),
+  },
 ];
 
 const router = createRouter({

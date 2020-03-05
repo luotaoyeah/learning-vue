@@ -765,6 +765,19 @@ export default {
                     </router-link>
                   </Menu.Item>
                 </Menu.SubMenu>
+
+                <Menu.SubMenu
+                  key="/doc/guide/reactivity-computed-watchers"
+                  v-slots={{
+                    title: () => <span>COMPUTED AND WATCH</span>,
+                  }}
+                >
+                  <Menu.Item key="/doc/guide/reactivity-computed-watchers/computed-values">
+                    <router-link to="/doc/guide/reactivity-computed-watchers/computed-values">
+                      <span>COMPUTED VALUES</span>
+                    </router-link>
+                  </Menu.Item>
+                </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>
           </Layout.Sider>
