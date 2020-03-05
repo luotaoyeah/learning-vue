@@ -7,11 +7,11 @@ describe('src/views/doc/guide/reactivity-computed-watchers/watch-effect/watch-ef
   it('01', () => {
     const ref01 = ref(1);
 
-    const actual01: Array<number> = [];
+    const values: Array<number> = [];
 
     watchEffect(
       () => {
-        actual01.push(ref01.value);
+        values.push(ref01.value);
       },
       {
         flush: 'sync',
@@ -20,6 +20,6 @@ describe('src/views/doc/guide/reactivity-computed-watchers/watch-effect/watch-ef
 
     ref01.value = 2;
     ref01.value = 4;
-    expect(actual01).toEqual([1, 2, 4]);
+    expect(values).toEqual([1, 2, 4]);
   });
 });
