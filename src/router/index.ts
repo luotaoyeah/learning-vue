@@ -360,6 +360,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/reactivity-fundamentals/destructuring-reactive-state',
     component: () => import('../views/doc/guide/reactivity-fundamentals/destructuring-reactive-state.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly',
+    component: () =>
+      import('../views/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly.jsx'),
+  },
 ];
 
 const router = createRouter({

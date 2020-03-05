@@ -758,6 +758,12 @@ export default {
                       <span>DESTRUCTURING REACTIVE STATE</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly">
+                    <router-link to="/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly">
+                      <span>PREVENT MUTATING REACTIVE OBJECTS WITH readonly</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>
