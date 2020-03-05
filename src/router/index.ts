@@ -369,6 +369,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/reactivity-computed-watchers/computed-values',
     component: () => import('../views/doc/guide/reactivity-computed-watchers/computed-values.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-computed-watchers/watch-effect',
+    component: () => import('../views/doc/guide/reactivity-computed-watchers/watch-effect/watch-effect.jsx'),
+  },
 ];
 
 const router = createRouter({

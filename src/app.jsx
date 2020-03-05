@@ -777,6 +777,12 @@ export default {
                       <span>COMPUTED VALUES</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-computed-watchers/watch-effect">
+                    <router-link to="/doc/guide/reactivity-computed-watchers/watch-effect">
+                      <span>watchEffect</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>
