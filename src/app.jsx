@@ -752,6 +752,12 @@ export default {
                       <span>ACCESS IN REACTIVE OBJECTS</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-fundamentals/destructuring-reactive-state">
+                    <router-link to="/doc/guide/reactivity-fundamentals/destructuring-reactive-state">
+                      <span>DESTRUCTURING REACTIVE STATE</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>

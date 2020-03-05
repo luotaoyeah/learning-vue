@@ -356,6 +356,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/reactivity-fundamentals/access-in-reactive-objects',
     component: () => import('../views/doc/guide/reactivity-fundamentals/access-in-reactive-objects.jsx'),
   },
+  {
+    path: '/doc/guide/reactivity-fundamentals/destructuring-reactive-state',
+    component: () => import('../views/doc/guide/reactivity-fundamentals/destructuring-reactive-state.jsx'),
+  },
 ];
 
 const router = createRouter({
