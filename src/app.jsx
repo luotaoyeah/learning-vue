@@ -808,6 +808,25 @@ export default {
                     </Menu.Item>
                   </Menu.SubMenu>
                 </Menu.SubMenu>
+                <Menu.SubMenu
+                  key="/doc/guide/composition-api"
+                  v-slots={{
+                    title: () => <span>COMPOSITION API</span>,
+                  }}
+                >
+                  <Menu.SubMenu
+                    key="/doc/guide/composition-api-setup"
+                    v-slots={{
+                      title: () => <span>SETUP</span>,
+                    }}
+                  >
+                    <Menu.Item key="/doc/guide/composition-api-setup/arguments">
+                      <router-link to="/doc/guide/composition-api-setup/arguments">
+                        <span>ARGUMENTS</span>
+                      </router-link>
+                    </Menu.Item>
+                  </Menu.SubMenu>
+                </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>
           </Layout.Sider>
