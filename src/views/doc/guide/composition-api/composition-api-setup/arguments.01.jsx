@@ -22,8 +22,20 @@ export default {
     watch(prop03, (value, preValue) => {
       console.log(`%cprop03：[${preValue}, ${value}]`, 'color:red;');
     });
+
+    /*----------------------------------------------------------------------------------------------------
+     * 第二个参数 context 中包含 attrs / slots / emit()，
+     *----------------------------------------------------------------------------------------------------*/
+    console.assert(context.attrs.attr01 === 666);
+    console.assert(typeof context.slots.slot01 === 'function');
+    console.assert(typeof context.emit === 'function');
   },
   render() {
-    return <p>{this.prop01}</p>;
+    return (
+      <div>
+        <p>{this.prop01}</p>
+        <p>{this.$slots.slot01()}</p>
+      </div>
+    );
   },
 };
