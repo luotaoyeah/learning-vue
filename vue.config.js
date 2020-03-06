@@ -98,7 +98,6 @@ const vueConfig = {
       }
     }
   },
-
   devServer: {
     // development server port 8000
     //region DO NOT TOUCH
