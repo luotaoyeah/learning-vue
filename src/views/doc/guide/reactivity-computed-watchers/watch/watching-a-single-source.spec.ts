@@ -5,7 +5,7 @@ describe('src/views/doc/guide/reactivity-computed-watchers/watch/watching-a-sing
     const cb = jest.fn();
     const reactive01 = reactive({ prop01: 666 });
     /*----------------------------------------------------------------------------------------------------
-     * getter 函数返回要监视的值，
+     * 监视 reactive 对象的某个属性，需要使用 getter 函数返回要监视的值，不能直接监视，
      *----------------------------------------------------------------------------------------------------*/
     watch(() => reactive01.prop01, cb, {
       flush: 'sync',
