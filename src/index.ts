@@ -1,19 +1,18 @@
-import "@babel/polyfill";
 import "./class-component-hooks";
 import Vue from "vue";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 import router from "./router";
-import "./mock";
-import { VueAxios } from "./utils/request";
-import bootstrap from "./core/bootstrap";
-import "./core/use";
-import "./permission";
-import "./utils/filter";
-import { App } from "./app";
-import store from "./store/";
+import "vue-router";
 
 Vue.config.silent = false;
 Vue.config.devtools = true;
-Vue.config.optionMergeStrategies["my-option-01"] = (parentVal, childVal, vm, key) => {
+Vue.config.optionMergeStrategies["my-option-01"] = (
+  parentVal,
+  childVal,
+  vm,
+  key
+) => {
   return `${parentVal}-${childVal}`;
 };
 
@@ -28,14 +27,16 @@ Vue.config.warnHandler = (msg, vm, trace) => {
 Vue.config.ignoredElements = ["c-01-06-01"];
 Vue.config.keyCodes = { "lucky-eight": 56 };
 Vue.config.performance = false;
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
-Vue.use(VueAxios);
+Vue.use(ElementUI, { size: "small" });
 
 new Vue({
-  // @ts-ignore
-  router,
-  store,
-  created: bootstrap,
-  render: h => h(App)
+  template: "<router-view></router-view>",
+  data() {
+    return {
+      message: "hello world"
+    };
+  },
+  router
 }).$mount("#app");
