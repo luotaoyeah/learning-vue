@@ -1,4 +1,4 @@
-import C01 from './jsx.01.jsx';
+import C01 from './jsx.01';
 
 // https://v3.vuejs.org/guide/render-function.html#jsx
 

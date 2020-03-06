@@ -8,16 +8,6 @@ export default {
       collapsed: false,
     };
   },
-  components: {
-    InfoCircleOutlined,
-    Layout,
-    'Layout.Content': Layout.Content,
-    'Layout.Sider': Layout.Sider,
-    'Layout.Header': Layout.Header,
-    Menu,
-    'Menu.Item': Menu.Item,
-    'Menu.SubMenu': Menu.SubMenu,
-  },
   render() {
     return (
       <>

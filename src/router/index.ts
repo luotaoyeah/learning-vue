@@ -3,7 +3,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: () => import('../views/home.jsx'),
+    component: () => import('../views/home'),
   },
   {
     path: '/doc/guide/introduction/declarative-rendering',
@@ -333,7 +333,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/doc/guide/render-function/jsx',
-    component: () => import('../views/doc/guide/render-function/jsx/jsx.jsx'),
+    component: () => import('../views/doc/guide/render-function/jsx/jsx'),
   },
   {
     path: '/doc/guide/plugins/plugins',
@@ -341,37 +341,36 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/doc/guide/reactivity-fundamentals/declaring-reactive-state',
-    component: () => import('../views/doc/guide/reactivity-fundamentals/declaring-reactive-state.jsx'),
+    component: () => import('../views/doc/guide/reactivity-fundamentals/declaring-reactive-state'),
   },
   {
     path: '/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs',
-    component: () =>
-      import('../views/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs.jsx'),
+    component: () => import('../views/doc/guide/reactivity-fundamentals/creating-standalone-reactive-values-as-refs'),
   },
   {
     path: '/doc/guide/reactivity-fundamentals/ref-unwrapping',
-    component: () => import('../views/doc/guide/reactivity-fundamentals/ref-unwrapping.jsx'),
+    component: () => import('../views/doc/guide/reactivity-fundamentals/ref-unwrapping'),
   },
   {
     path: '/doc/guide/reactivity-fundamentals/access-in-reactive-objects',
-    component: () => import('../views/doc/guide/reactivity-fundamentals/access-in-reactive-objects.jsx'),
+    component: () => import('../views/doc/guide/reactivity-fundamentals/access-in-reactive-objects'),
   },
   {
     path: '/doc/guide/reactivity-fundamentals/destructuring-reactive-state',
-    component: () => import('../views/doc/guide/reactivity-fundamentals/destructuring-reactive-state.jsx'),
+    component: () => import('../views/doc/guide/reactivity-fundamentals/destructuring-reactive-state'),
   },
   {
     path: '/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly',
     component: () =>
-      import('../views/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly.jsx'),
+      import('../views/doc/guide/reactivity-fundamentals/prevent-mutating-reactive-objects-with-readonly'),
   },
   {
     path: '/doc/guide/reactivity-computed-watchers/computed-values',
-    component: () => import('../views/doc/guide/reactivity-computed-watchers/computed-values.jsx'),
+    component: () => import('../views/doc/guide/reactivity-computed-watchers/computed-values'),
   },
   {
     path: '/doc/guide/reactivity-computed-watchers/watch-effect',
-    component: () => import('../views/doc/guide/reactivity-computed-watchers/watch-effect/watch-effect.jsx'),
+    component: () => import('../views/doc/guide/reactivity-computed-watchers/watch-effect/watch-effect'),
   },
 ];
 
