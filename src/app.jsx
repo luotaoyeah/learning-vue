@@ -831,6 +831,12 @@ export default {
                         <span>USAGE WITH TEMPLATES</span>
                       </router-link>
                     </Menu.Item>
+
+                    <Menu.Item key="/doc/guide/composition-api-setup/usage-with-render-functions">
+                      <router-link to="/doc/guide/composition-api-setup/usage-with-render-functions">
+                        <span>USAGE WITH RENDER FUNCTIONS</span>
+                      </router-link>
+                    </Menu.Item>
                   </Menu.SubMenu>
                 </Menu.SubMenu>
               </Menu.SubMenu>
