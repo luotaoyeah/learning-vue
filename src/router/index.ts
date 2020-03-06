@@ -392,6 +392,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/doc/guide/composition-api-setup/arguments',
     component: () => import('../views/doc/guide/composition-api/composition-api-setup/arguments'),
   },
+  {
+    path: '/doc/guide/composition-api-setup/usage-with-templates',
+    component: () => import('../views/doc/guide/composition-api/composition-api-setup/usage-with-templates'),
+  },
 ];
 
 const router = createRouter({

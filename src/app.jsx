@@ -825,6 +825,12 @@ export default {
                         <span>ARGUMENTS</span>
                       </router-link>
                     </Menu.Item>
+
+                    <Menu.Item key="/doc/guide/composition-api-setup/usage-with-templates">
+                      <router-link to="/doc/guide/composition-api-setup/usage-with-templates">
+                        <span>USAGE WITH TEMPLATES</span>
+                      </router-link>
+                    </Menu.Item>
                   </Menu.SubMenu>
                 </Menu.SubMenu>
               </Menu.SubMenu>
