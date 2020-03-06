@@ -773,6 +773,12 @@ export default {
                       <span>watchEffect</span>
                     </router-link>
                   </Menu.Item>
+
+                  <Menu.Item key="/doc/guide/reactivity-computed-watchers/watch">
+                    <router-link to="/doc/guide/reactivity-computed-watchers/watch">
+                      <span>watch</span>
+                    </router-link>
+                  </Menu.Item>
                 </Menu.SubMenu>
               </Menu.SubMenu>
             </Menu>
