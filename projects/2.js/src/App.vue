@@ -13,6 +13,9 @@
           <li>
             <router-link to="/guide/introduction">Introduction</router-link>
           </li>
+          <li>
+            <router-link to="/guide/instance">The Vue Instance</router-link>
+          </li>
         </ul>
       </li>
     </ul>
@@ -35,5 +38,20 @@
 
 .router-link-exact-active {
   color: #1890ff;
+}
+
+button {
+  font-family: 'simsun', sans-serif;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  color: #000000d9;
+  padding: 6px 12px;
+  height: 32px;
+  cursor: pointer;
+  box-shadow: 0 2px #00000004;
+}
+
+fieldset {
+  border-radius: 3px;
 }
 </style>

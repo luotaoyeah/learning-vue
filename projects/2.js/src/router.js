@@ -8,12 +8,15 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    { path: '/', name: 'home', component: Home },
-    { path: '/about', name: 'about', component: () => import(/* webpackChunkName: "about" */ './views/About.vue') },
+    { path: '/', component: Home },
+    { path: '/about', component: () => import(/* webpackChunkName: "about" */ './views/About') },
     {
       path: '/guide/introduction',
-      name: 'introduction',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/introduction/Introduction.vue'),
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/introduction/Introduction'),
+    },
+    {
+      path: '/guide/instance',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/instance/Instance'),
     },
   ],
 });
