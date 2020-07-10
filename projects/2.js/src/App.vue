@@ -1,70 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      |
-      <router-link to="/about">About</router-link>
+    <ul style="display: inline-block; width: 300px">
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/about">About</router-link>
+      </li>
+      <li>
+        Guide
+        <ul>
+          <li>
+            <router-link to="/guide/introduction">Introduction</router-link>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div style="display: inline-block; width: calc(100% - 360px); height: calc(100% - 26px); border: 1px solid #000; border-radius: 3px; padding: 12px">
+      <router-view />
     </div>
-
-    <div style="border: 1px solid #000; border-radius: 3px; padding: 12px">
-      <div v-bind:title="message">
-        {{ message }}
-      </div>
-
-      <span>AAA</span>
-      <span v-if="false">BBB</span>
-
-      <ul>
-        <li v-for="i in items">{{ i }}</li>
-      </ul>
-
-      <div>
-        <button v-on:click="onClick">click me</button>
-      </div>
-
-      <div>
-        <input v-model="message" type="text" />
-      </div>
-    </div>
-
-    <router-view />
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      message: Date.now(),
-      items: [1, 2, 3],
-    };
-  },
-  methods: {
-    onClick() {
-      alert('hello');
-    },
-  },
-};
-</script>
+<script></script>
 
 <style lang="less">
 #app {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
   font-family: 'simsun', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router-link-exact-active {
+  color: #1890ff;
 }
 </style>
