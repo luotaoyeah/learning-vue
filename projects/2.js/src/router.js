@@ -18,5 +18,9 @@ export default new Router({
       path: '/guide/instance',
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/instance/Instance'),
     },
+    {
+      path: '/guide/syntax',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/syntax/TemplateSyntax'),
+    },
   ],
 });

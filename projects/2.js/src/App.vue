@@ -1,21 +1,14 @@
 <template>
   <div id="app">
     <ul style="display: inline-block; width: 300px">
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/about">About</router-link>
-      </li>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
       <li>
         Guide
         <ul>
-          <li>
-            <router-link to="/guide/introduction">Introduction</router-link>
-          </li>
-          <li>
-            <router-link to="/guide/instance">The Vue Instance</router-link>
-          </li>
+          <li><router-link to="/guide/introduction">Introduction</router-link></li>
+          <li><router-link to="/guide/instance">The Vue Instance</router-link></li>
+          <li><router-link to="/guide/syntax">Template Syntax</router-link></li>
         </ul>
       </li>
     </ul>
