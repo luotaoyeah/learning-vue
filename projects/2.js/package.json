@@ -20,6 +20,14 @@
     "prettier": "2.5.1",
     "vue-template-compiler": "^2.6.10"
   },
+  "prettier": {
+    "printWidth": 160,
+    "singleQuote": true,
+    "semi": true,
+    "endOfLine": "auto",
+    "trailingComma": "all",
+    "vueIndentScriptAndStyle": false
+  },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
