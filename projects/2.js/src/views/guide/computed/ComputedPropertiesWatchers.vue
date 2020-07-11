@@ -18,30 +18,53 @@
 </template>
 
 <script>
-export default {
+import Vue from 'vue';
+
+export default Vue.extend({
   name: 'ComputedPropertiesWatchers',
   data() {
     return {
+      /**
+       * 姓.
+       * @type { string }
+       */
       firstName01: 'luo',
+      /**
+       * 名.
+       * @type { string }
+       */
       lastName01: 'tao',
+      /** @type { string } */
       firstName02: 'luo',
+      /** @type { string } */
       lastName02: 'tao',
     };
   },
   computed: {
     /**
-     * 只有 getter
+     * 只有 getter.
+     *
+     * @returns { string }
      */
     fullName01() {
       return `${this.firstName01} ${this.lastName01}`;
     },
     /**
-     * 有 getter/setter
+     * 有 getter/setter.
      */
     fullName02: {
+      /**
+       *
+       * @returns { string }
+       */
       get() {
         return `${this.firstName02} ${this.lastName02}`;
       },
+      /**
+       *
+       * @param { string } value
+       * @returns { void }
+       */
       set(value) {
         const values = value.split(' ');
         this.firstName02 = values[0];
@@ -49,7 +72,7 @@ export default {
       },
     },
   },
-};
+});
 </script>
 
 <style scoped></style>

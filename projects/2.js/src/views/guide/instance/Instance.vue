@@ -13,10 +13,16 @@ export default {
   name: 'Instance',
   data() {
     return {
+      /**
+       * @type { number }
+       */
       message: Date.now(),
     };
   },
   methods: {
+    /**
+     * @returns { void }
+     */
     onClick() {
       this.message = Date.now();
     },

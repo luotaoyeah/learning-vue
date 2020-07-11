@@ -19,11 +19,13 @@
       <input v-model="message" type="text" />
     </div>
 
-    <div>
+    <fieldset>
+      <legend>todo item</legend>
+
       <ul>
         <todo-item v-for="i in items" v-bind:key="i.id" :item="i"></todo-item>
       </ul>
-    </div>
+    </fieldset>
   </div>
 </template>
 
@@ -33,7 +35,13 @@ import TodoItem from './TodoItem';
 export default {
   data() {
     return {
+      /**
+       * @type { number }
+       */
       message: Date.now(),
+      /**
+       * @type { Array<{ id: number, name: string }> }
+       */
       items: [
         {
           id: 1,
@@ -51,6 +59,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * @returns { void }
+     */
     onClick() {
       alert('hello');
     },

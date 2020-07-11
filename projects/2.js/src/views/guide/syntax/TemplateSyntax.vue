@@ -50,12 +50,24 @@ export default {
   name: 'TemplateSyntax',
   data() {
     return {
+      /**
+       * @type { string }
+       */
       rawHtml: '<span style="color: red;">v-html</span>',
+      /**
+       * @type { string }
+       */
       arg1: 'title',
+      /**
+       * @type { string }
+       */
       arg2: 'click',
     };
   },
   methods: {
+    /**
+     * @returns { void }
+     */
     onClick() {
       alert('hi~');
     },

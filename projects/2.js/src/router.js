@@ -9,7 +9,6 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     { path: '/', component: Home },
-    { path: '/about', component: () => import(/* webpackChunkName: "about" */ './views/About') },
     {
       path: '/guide/introduction',
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/introduction/Introduction'),
