@@ -35,6 +35,7 @@
 
 button {
   font-family: 'simsun', sans-serif;
+  margin-right: 12px;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
   color: #000000d9;

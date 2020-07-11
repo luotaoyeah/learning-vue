@@ -24,6 +24,24 @@
         <a href="https://www.github.com" v-on:click.prevent="onClick">https://www.github.com</a>
       </p>
     </fieldset>
+
+    <fieldset>
+      <legend>Shorthands</legend>
+
+      <p>v-bind 和 v-on 的简写方式</p>
+
+      <p>
+        <button v-bind:title="'000'">v-bind:title="'000'"</button>
+        <button :title="'000'">:title="'000'"</button>
+        <button :[arg1]="'000'">:[arg1]="'000'"</button>
+      </p>
+
+      <p>
+        <button v-on:click="onClick">v-on:click="onClick"</button>
+        <button @click="onClick">@click="onClick"</button>
+        <button @[arg2]="onClick">@[arg2]="onClick"</button>
+      </p>
+    </fieldset>
   </div>
 </template>
 
@@ -34,6 +52,7 @@ export default {
     return {
       rawHtml: '<span style="color: red;">v-html</span>',
       arg1: 'title',
+      arg2: 'click',
     };
   },
   methods: {
