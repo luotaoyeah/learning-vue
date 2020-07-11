@@ -14,6 +14,16 @@
       <p>指令 (directive) 的参数 (argument) 可以是动态绑定的, 用方括号 [] 包裹</p>
       <div v-bind:[arg1]="'HTML'">v-bind:[arg1]="'HTML'"</div>
     </fieldset>
+
+    <fieldset>
+      <legend>Modifiers</legend>
+
+      <p>directive 的 modifier</p>
+
+      <p>
+        <a href="https://www.github.com" v-on:click.prevent="onClick">https://www.github.com</a>
+      </p>
+    </fieldset>
   </div>
 </template>
 
@@ -25,6 +35,11 @@ export default {
       rawHtml: '<span style="color: red;">v-html</span>',
       arg1: 'title',
     };
+  },
+  methods: {
+    onClick() {
+      alert('hi~');
+    },
   },
 };
 </script>

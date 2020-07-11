@@ -45,6 +45,7 @@ button {
 }
 
 fieldset {
+  margin-bottom: 24px;
   border-radius: 3px;
 }
 </style>
