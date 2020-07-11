@@ -22,5 +22,9 @@ export default new Router({
       path: '/guide/syntax',
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/syntax/TemplateSyntax'),
     },
+    {
+      path: '/guide/computed',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/computed/ComputedPropertiesWatchers'),
+    },
   ],
 });
