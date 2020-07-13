@@ -26,6 +26,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/computed/ComputedPropertiesWatchers'),
     },
     {
+      path: '/guide/class-and-style',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/class-and-style/ClassStyleBindings'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },

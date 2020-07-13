@@ -20,6 +20,9 @@
           <li>
             <router-link to="/guide/computed">Computed Properties and Watchers</router-link>
           </li>
+          <li>
+            <router-link to="/guide/class-and-style">Class and Style Bindings</router-link>
+          </li>
         </ul>
       </li>
 
