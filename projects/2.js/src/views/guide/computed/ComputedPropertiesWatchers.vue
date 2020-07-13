@@ -14,6 +14,12 @@
         <input v-model="fullName02" type="text" />
       </p>
     </fieldset>
+
+    <fieldset>
+      <legend>Watchers</legend>
+
+      <input v-model="data01" type="text" />
+    </fieldset>
   </div>
 </template>
 
@@ -38,6 +44,8 @@ export default Vue.extend({
       firstName02: 'luo',
       /** @type { string } */
       lastName02: 'tao',
+      /** @type { string } */
+      data01: '',
     };
   },
   computed: {
@@ -70,6 +78,17 @@ export default Vue.extend({
         this.firstName02 = values[0];
         this.lastName02 = values[1];
       },
+    },
+  },
+  watch: {
+    /**
+     *
+     * @param { string } newValue
+     * @param { string } oldValue
+     * @returns { void }
+     */
+    data01(newValue, oldValue) {
+      console.log(`旧值:[${oldValue}]`, `新值:[${newValue}]`);
     },
   },
 });
