@@ -30,6 +30,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/class-and-style/ClassStyleBindings'),
     },
     {
+      path: '/guide/list',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/list/ListRendering'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },

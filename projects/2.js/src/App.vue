@@ -23,6 +23,9 @@
           <li>
             <router-link to="/guide/class-and-style">Class and Style Bindings</router-link>
           </li>
+          <li>
+            <router-link to="/guide/list">List Rendering</router-link>
+          </li>
         </ul>
       </li>
 

@@ -21,7 +21,7 @@
     </fieldset>
 
     <fieldset>
-      <legend>:class 和 class 可以共存</legend>
+      <legend>:class 和 class 可以共存.</legend>
 
       <p>class attribute 的值里面的 class 的顺序没有意义, 真正决定它们优先级的, 是它们在 css 文件中声明的顺序.</p>
       <p>如下的 class 的最终值为 "red blue", 但是由于在 css 中 red 声明在 blue 之后, 所以 red 中的 color 胜出.</p>
