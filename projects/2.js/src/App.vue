@@ -4,6 +4,7 @@
       <li>
         <router-link to="/">Home</router-link>
       </li>
+
       <li>
         Guide
         <ul>
@@ -18,6 +19,15 @@
           </li>
           <li>
             <router-link to="/guide/computed">Computed Properties and Watchers</router-link>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        API
+        <ul>
+          <li>
+            <router-link to="/api/vm-watch">vm.$watch()</router-link>
           </li>
         </ul>
       </li>
