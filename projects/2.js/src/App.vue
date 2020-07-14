@@ -30,7 +30,10 @@
             <router-link to="/guide/events">Event Handling</router-link>
           </li>
           <li>
-            <router-link to="/xxx/guide/forms">Form Input Bindings</router-link>
+            <router-link to="/guide/forms">Form Input Bindings</router-link>
+          </li>
+          <li>
+            <router-link to="/guide/components">Component Basics</router-link>
           </li>
         </ul>
       </li>

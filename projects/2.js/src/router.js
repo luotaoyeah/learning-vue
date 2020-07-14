@@ -42,6 +42,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/forms/FormInputBindings'),
     },
     {
+      path: '/guide/components',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components/ComponentBasics'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },
