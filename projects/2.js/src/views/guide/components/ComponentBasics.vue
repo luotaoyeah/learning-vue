@@ -10,10 +10,17 @@
         {{ data01 }}
       </p>
     </fieldset>
+
+    <fieldset>
+      <legend>Content Distribution with Slots</legend>
+
+      <alert-box>出错啦.</alert-box>
+    </fieldset>
   </div>
 </template>
 
 <script>
+import AlertBox from '@/views/guide/components/AlertBox';
 import CustomInput from '@/views/guide/components/CustomInput';
 
 export default {
@@ -25,6 +32,7 @@ export default {
   },
   components: {
     CustomInput,
+    AlertBox,
   },
 };
 </script>
