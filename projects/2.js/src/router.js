@@ -34,6 +34,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/list/ListRendering'),
     },
     {
+      path: '/guide/events',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/events/EventHandling'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },
