@@ -29,6 +29,9 @@
           <li>
             <router-link to="/guide/events">Event Handling</router-link>
           </li>
+          <li>
+            <router-link to="/xxx/guide/forms">Form Input Bindings</router-link>
+          </li>
         </ul>
       </li>
 
@@ -100,5 +103,12 @@ input[type='text'] {
 fieldset {
   margin-bottom: 24px;
   border-radius: 3px;
+}
+
+select {
+  min-height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  font-family: simsun, monospace;
 }
 </style>

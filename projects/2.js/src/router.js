@@ -38,6 +38,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/events/EventHandling'),
     },
     {
+      path: '/guide/forms',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/forms/FormInputBindings'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },
