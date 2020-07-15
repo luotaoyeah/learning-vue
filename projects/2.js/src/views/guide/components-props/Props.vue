@@ -27,6 +27,19 @@
       <comp-b :prop01="{ x: 2 }"></comp-b>
       <comp-b></comp-b>
     </fieldset>
+
+    <fieldset>
+      <legend>Non-Prop Attributes</legend>
+
+      <p>non-prop attribute 默认会传给根元素, 并且会覆盖根元素上的同名的 attr. class / style 会特殊处理, 会进行合并.</p>
+
+      <p>使用 inheritAttrs: false 禁用上面说的这种默认行为.</p>
+
+      <p>在子组件中可以通过 vm.$attrs 访问所有的 non-prop attribute, 除了 class / style.</p>
+
+      <comp-c :x="1" :y="2" :z="3"></comp-c>
+      <comp-d :x="1" :y="2" :z="3"></comp-d>
+    </fieldset>
   </div>
 </template>
 
@@ -87,6 +100,24 @@ export default {
             return { x: 1 };
           },
         },
+      },
+    },
+    CompC: {
+      template: `
+        <p :z='2'>{{ x }}</p>`,
+      props: {
+        x: { type: [Number, String] },
+      },
+    },
+    CompD: {
+      template: `
+        <p :z='2'>{{ x }}</p>`,
+      inheritAttrs: false,
+      props: {
+        x: { type: [Number, String] },
+      },
+      created() {
+        console.log(this.$attrs);
       },
     },
   },

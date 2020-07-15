@@ -54,7 +54,17 @@
       </li>
     </ul>
 
-    <div style="display: inline-block; width: calc(100% - 360px); height: calc(100% - 26px); border: 1px solid #000; border-radius: 3px; padding: 12px">
+    <div
+      style="
+        display: inline-block;
+        overflow: auto;
+        width: calc(100% - 360px);
+        height: calc(100% - 26px);
+        border: 1px solid #000;
+        border-radius: 3px;
+        padding: 12px;
+      "
+    >
       <router-view />
     </div>
   </div>
