@@ -9,12 +9,19 @@
       <blog-post v-bind:content="post.content" v-bind:title="post.title"></blog-post>
       <blog-post v-bind="post"></blog-post>
     </fieldset>
+
+    <fieldset>
+      <legend>One-Way Data Flow</legend>
+
+      <p>如果 prop 是一个对象, 则传的是对象引用, 在子组件中修改 prop 对象的属性, 父组件中绑定的数据也会被修改.</p>
+
+      <button @click="onClick">{{ data01.x }}</button>
+      <comp-a :obj="data01"></comp-a>
+    </fieldset>
   </div>
 </template>
 
 <script>
-import BlogPost from '@/views/guide/components-props/BlogPost';
-
 export default {
   name: 'Props',
   data() {
@@ -23,10 +30,44 @@ export default {
         title: 'TITLE',
         content: 'CONTENT',
       },
+      data01: {
+        x: 1,
+      },
     };
   },
+  methods: {
+    onClick() {
+      this.data01.x += 1;
+    },
+  },
   components: {
-    BlogPost,
+    BlogPost: {
+      template: `
+        <fieldset>
+        <legend>{{ title }}</legend>
+        <p>{{ content }}</p>
+        </fieldset>`,
+      props: {
+        title: String,
+        content: String,
+      },
+    },
+    CompA: {
+      template: `
+        <button @click='onClick'>{{ dataObj.x }}</button>`,
+      props: ['obj'],
+      data() {
+        return { dataObj: this.obj };
+      },
+      created() {
+        console.assert(this.obj === this.dataObj);
+      },
+      methods: {
+        onClick() {
+          this.dataObj.x += 1;
+        },
+      },
+    },
   },
 };
 </script>
