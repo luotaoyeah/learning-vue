@@ -18,6 +18,15 @@
       <button @click="onClick">{{ data01.x }}</button>
       <comp-a :obj="data01"></comp-a>
     </fieldset>
+
+    <fieldset>
+      <legend>Prop Validation</legend>
+
+      <p>props 如果类型是 Object / Array, 则它的默认值需要使用函数返回.</p>
+
+      <comp-b :prop01="{ x: 2 }"></comp-b>
+      <comp-b></comp-b>
+    </fieldset>
   </div>
 </template>
 
@@ -65,6 +74,18 @@ export default {
       methods: {
         onClick() {
           this.dataObj.x += 1;
+        },
+      },
+    },
+    CompB: {
+      template: `
+        <p>{{ prop01.x }}</p>`,
+      props: {
+        prop01: {
+          type: Object,
+          default() {
+            return { x: 1 };
+          },
         },
       },
     },
