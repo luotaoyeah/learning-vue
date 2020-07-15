@@ -41,6 +41,9 @@
           <li>
             <router-link to="/guide/components-props">Props</router-link>
           </li>
+          <li>
+            <router-link to="/guide/components-custom-events">Custom Events</router-link>
+          </li>
         </ul>
       </li>
 

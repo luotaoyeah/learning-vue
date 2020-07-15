@@ -54,6 +54,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-props/Props'),
     },
     {
+      path: '/guide/components-custom-events',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-custom-events/ComponentsCustomEvents'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },
