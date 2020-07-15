@@ -50,6 +50,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-registration/ComponentRegistration'),
     },
     {
+      path: '/guide/components-props',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-props/Props'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },
