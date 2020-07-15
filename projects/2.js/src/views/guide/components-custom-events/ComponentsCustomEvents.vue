@@ -8,6 +8,14 @@
         {{ data01 }}
       </p>
     </fieldset>
+
+    <fieldset>
+      <legend>Binding Native Events to Components</legend>
+
+      <p>.native 表示: 监听组件的根元素上的这个事件, 否则默认就是监听组件本身的这个事件.</p>
+
+      <comp-b @click.native="onClick"></comp-b>
+    </fieldset>
   </div>
 </template>
 
@@ -17,10 +25,16 @@ export default {
   data() {
     return { data01: '1' };
   },
+  methods: {
+    onClick(event) {
+      console.log(event.target);
+    },
+  },
   components: {
     CompA: {
       template: `
-        <input type='text' :value='prop01' @input='onInput'>`,
+        <input type='text' :value='prop01' @input='onInput'>
+      `,
       props: { prop01: { type: String } },
       /*
        * v-model 用在自定义组件上时, 默认使用 value / input,
@@ -30,6 +44,22 @@ export default {
       methods: {
         onInput(event) {
           this.$emit('event01', event.target.value);
+        },
+      },
+    },
+    CompB: {
+      template: `
+        <comp-c>
+        <button @click.stop='$emit("click", $event)'>CompB</button>
+        </comp-c>
+      `,
+      components: {
+        CompC: {
+          template: `
+            <p style="border: 1px solid red; border-radius: 3px; padding: 12px;">
+              <slot></slot>
+            </p>
+          `,
         },
       },
     },
