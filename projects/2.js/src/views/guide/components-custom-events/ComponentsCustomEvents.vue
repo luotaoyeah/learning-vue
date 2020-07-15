@@ -16,6 +16,20 @@
 
       <comp-b @click.native="onClick"></comp-b>
     </fieldset>
+
+    <fieldset>
+      <legend>.sync Modifier</legend>
+
+      <p>
+        v-model 用来实现双向绑定, 但是一个组件上最多只能用一次 v-model. 如果组件中有多个 props 都需要实现双向绑定, 第一种方式是不要使用 v-model 这个语法糖,
+        而是直接绑定属性和事件. 第二种方式是使用 update:xxx 这个语法糖.
+      </p>
+
+      <comp-d :prop01="data02" :prop02.sync="data03" @update:prop01="data02 = $event"></comp-d>
+
+      <p>{{ data02 }}</p>
+      <p>{{ data03 }}</p>
+    </fieldset>
   </div>
 </template>
 
@@ -23,7 +37,7 @@
 export default {
   name: 'ComponentsCustomEvents',
   data() {
-    return { data01: '1' };
+    return { data01: '1', data02: '2', data03: '3' };
   },
   methods: {
     onClick(event) {
@@ -60,8 +74,20 @@ export default {
               <slot></slot>
             </p>
           `,
+          data() {
+            return {};
+          },
         },
       },
+    },
+    CompD: {
+      template: `
+        <p>
+        <input type='text' :value='prop01' @input="$emit('update:prop01', $event.target.value)" />
+        <input type='text' :value='prop02' @input="$emit('update:prop02', $event.target.value)" />
+        </p>
+      `,
+      props: ['prop01', 'prop02'],
     },
   },
 };
