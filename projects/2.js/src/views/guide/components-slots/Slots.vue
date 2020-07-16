@@ -7,12 +7,27 @@
 
       <p>如果 slot 没有声明 name, 则默认为 'default'.</p>
 
+      <p>v-slot: 可以简写为 #.</p>
+
       <comp-a>
         <template v-slot:legend>LEGEND</template>
         <template v-slot:content>CONTENT</template>
 
-        <template v-slot:default>DEFAULT</template>
+        <template #default>DEFAULT</template>
       </comp-a>
+    </fieldset>
+
+    <fieldset>
+      <legend>Scoped Slots</legend>
+
+      <p>子组件通过 slot 往父组件传数据, 这种 slot 叫做 scoped slot.</p>
+
+      <comp-b></comp-b>
+      <comp-b>
+        <template v-slot="{ item }">
+          <span style="color: red; font-style: italic">{{ item.name }}</span>
+        </template>
+      </comp-b>
     </fieldset>
   </div>
 </template>
@@ -39,6 +54,24 @@ export default {
       `,
       data() {
         return {};
+      },
+    },
+    CompB: {
+      template: `
+        <ul>
+        <li v-for='item in items'>
+          <slot name='default' v-bind:item='item'>{{ item.name }}</slot>
+        </li>
+        </ul>
+      `,
+      data() {
+        return {
+          items: [
+            { id: 1, name: 'A' },
+            { id: 2, name: 'B' },
+            { id: 3, name: 'C' },
+          ],
+        };
       },
     },
   },
