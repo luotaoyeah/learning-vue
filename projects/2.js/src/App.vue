@@ -44,6 +44,9 @@
           <li>
             <router-link to="/guide/components-custom-events">Custom Events</router-link>
           </li>
+          <li>
+            <router-link to="/guide/components-slots">Slots</router-link>
+          </li>
         </ul>
       </li>
 
