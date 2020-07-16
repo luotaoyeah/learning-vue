@@ -47,6 +47,9 @@
           <li>
             <router-link to="/guide/components-slots">Slots</router-link>
           </li>
+          <li>
+            <router-link to="/guide/components-dynamic-async">Dynamic & Async Components</router-link>
+          </li>
         </ul>
       </li>
 

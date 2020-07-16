@@ -62,6 +62,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-slots/Slots'),
     },
     {
+      path: '/guide/components-dynamic-async',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-dynamic-async/ComponentsDynamicAsync'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },
