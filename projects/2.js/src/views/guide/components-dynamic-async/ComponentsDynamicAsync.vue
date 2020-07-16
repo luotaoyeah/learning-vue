@@ -12,6 +12,21 @@
         <component :is="currentComponent"></component>
       </keep-alive>
     </fieldset>
+
+    <fieldset>
+      <legend>Async Components</legend>
+
+      <p>异步组件 (Async Component) 在真正渲染的时候才会加载, 加载之后会被缓存.</p>
+
+      <ul>
+        <li>CompB<input v-model="currentComponent02" type="radio" value="CompB" /></li>
+        <li>CompC<input v-model="currentComponent02" type="radio" value="CompC" /></li>
+      </ul>
+
+      <keep-alive>
+        <component :is="currentComponent02"></component>
+      </keep-alive>
+    </fieldset>
   </div>
 </template>
 
@@ -21,6 +36,7 @@ export default {
   data() {
     return {
       currentComponent: 'CompA',
+      currentComponent02: 'CompB',
     };
   },
   components: {
@@ -62,6 +78,7 @@ export default {
         console.log('CompB.deactivated()');
       },
     },
+    CompC: () => import('./CompC'),
   },
 };
 </script>
