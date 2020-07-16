@@ -50,6 +50,9 @@
           <li>
             <router-link to="/guide/components-dynamic-async">Dynamic & Async Components</router-link>
           </li>
+          <li>
+            <router-link to="/guide/components-edge-cases">Handling Edge Cases</router-link>
+          </li>
         </ul>
       </li>
 

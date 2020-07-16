@@ -66,6 +66,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-dynamic-async/ComponentsDynamicAsync'),
     },
     {
+      path: '/guide/components-edge-cases',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-edge-cases/HandlingEdgeCases'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },

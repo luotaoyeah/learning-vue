@@ -9,4 +9,5 @@ new Vue({
   router,
   store,
   render: (h) => h(App),
+  data: { foo: 'foo' },
 }).$mount('#app');
