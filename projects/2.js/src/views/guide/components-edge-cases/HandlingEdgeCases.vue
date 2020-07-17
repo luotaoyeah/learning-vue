@@ -22,6 +22,16 @@
 
       <comp-b></comp-b>
     </fieldset>
+
+    <fieldset>
+      <legend>Programmatic Event Listeners</legend>
+
+      <p>通过 xxx.$on('event01', () => {}) 手动监听 xxx 的 event01 事件.</p>
+
+      <p>
+        <button @click="$emit('event-01')">$emit("event-01")</button>
+      </p>
+    </fieldset>
   </div>
 </template>
 
@@ -30,6 +40,14 @@ export default {
   name: 'HandlingEdgeCases',
   mounted() {
     console.log('this.$root.foo', this.$root.foo);
+
+    this.$on('event-01', () => {
+      console.log('listen event-01 by $on()');
+    });
+  },
+  destroyed() {
+    // 退订对 event-01 事件的监听
+    this.$off('event-01');
   },
   methods: {
     focusCompA() {
