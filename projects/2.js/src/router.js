@@ -70,6 +70,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-edge-cases/HandlingEdgeCases'),
     },
     {
+      path: '/guide/mixins',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/mixins/Mixins'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },

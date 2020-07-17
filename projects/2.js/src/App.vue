@@ -53,6 +53,9 @@
           <li>
             <router-link to="/guide/components-edge-cases">Handling Edge Cases</router-link>
           </li>
+          <li>
+            <router-link to="/guide/mixins">Mixins</router-link>
+          </li>
         </ul>
       </li>
 
