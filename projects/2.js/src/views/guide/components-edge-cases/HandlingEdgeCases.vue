@@ -32,12 +32,34 @@
         <button @click="$emit('event-01')">$emit("event-01")</button>
       </p>
     </fieldset>
+
+    <fieldset>
+      <legend>Forcing an Update</legend>
+
+      <p>调用 $forceUpdate() 强制渲染.</p>
+
+      <p>
+        {{ foo }}
+        <button @click="$forceUpdate()">force update</button>
+      </p>
+    </fieldset>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HandlingEdgeCases',
+  data() {
+    return {
+      timer: -1,
+    };
+  },
+  created() {
+    this.timer = setInterval(() => {
+      // 在组件实例创建之后再添加的数据, 不是响应式的, 需要调用 $forceUpdate() 来触发渲染.
+      this.foo = Date.now();
+    }, 1000);
+  },
   mounted() {
     console.log('this.$root.foo', this.$root.foo);
 
@@ -48,6 +70,8 @@ export default {
   destroyed() {
     // 退订对 event-01 事件的监听
     this.$off('event-01');
+
+    clearInterval(this.timer);
   },
   methods: {
     focusCompA() {
