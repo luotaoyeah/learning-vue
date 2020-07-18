@@ -86,6 +86,9 @@
               <li>
                 <router-link to="/vuex/guide/state">State</router-link>
               </li>
+              <li>
+                <router-link to="/vuex/guide/getters">Getters</router-link>
+              </li>
             </ul>
           </li>
         </ul>

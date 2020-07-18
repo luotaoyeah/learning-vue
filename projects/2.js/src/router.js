@@ -103,6 +103,10 @@ export default new Router({
               path: 'state',
               component: () => import('./views/vuex/guide/state/State'),
             },
+            {
+              path: 'getters',
+              component: () => import('./views/vuex/guide/getters/Getters'),
+            },
           ],
         },
       ],
