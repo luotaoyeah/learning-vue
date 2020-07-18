@@ -6,7 +6,7 @@
       <ol>
         <li>data 会进行深层次的属性合并, 如果有同名属性, 组件的优先.</li>
 
-        <li>组件的生命周期函数跟 mixin 的生命周期函数, 会放入一个数组, 组件的在后, 依次执行.</li>
+        <li>lifecycle hook 会放入一个数组, 组件的在后, 依次执行.</li>
 
         <li>methods / components / directives 等对象类型的, 会合并到一个对象, 如果有冲突, 组件的优先.</li>
       </ol>
