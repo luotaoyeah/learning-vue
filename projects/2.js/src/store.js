@@ -32,8 +32,17 @@ export default new Vuex.Store({
       },
   },
   mutations: {
-    INCREMENT(state) {
-      state.count += 1;
+    /**
+     * mutation 方法必须是同步方法.
+     *
+     * @param state
+     *        第一个参数为 state 对象.
+     *
+     * @param payload
+     *        第二个参数为额外的数据.
+     */
+    INCREMENT(state, payload = { offset: 1 }) {
+      state.count += payload.offset;
     },
   },
   actions: {},

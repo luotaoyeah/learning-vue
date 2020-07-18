@@ -107,6 +107,10 @@ export default new Router({
               path: 'getters',
               component: () => import('./views/vuex/guide/getters/Getters'),
             },
+            {
+              path: 'mutations',
+              component: () => import('./views/vuex/guide/mutations/Mutations'),
+            },
           ],
         },
       ],

@@ -89,6 +89,9 @@
               <li>
                 <router-link to="/vuex/guide/getters">Getters</router-link>
               </li>
+              <li>
+                <router-link to="/vuex/guide/mutations">Mutations</router-link>
+              </li>
             </ul>
           </li>
         </ul>
