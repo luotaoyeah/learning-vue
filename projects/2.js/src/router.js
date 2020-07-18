@@ -99,6 +99,10 @@ export default new Router({
               path: 'introduction',
               component: () => import('./views/vuex/guide/introduction/TheSimplestStore'),
             },
+            {
+              path: 'state',
+              component: () => import('./views/vuex/guide/state/State'),
+            },
           ],
         },
       ],

@@ -83,6 +83,9 @@
               <li>
                 <router-link to="/vuex/guide/introduction">Introduction</router-link>
               </li>
+              <li>
+                <router-link to="/vuex/guide/state">State</router-link>
+              </li>
             </ul>
           </li>
         </ul>
