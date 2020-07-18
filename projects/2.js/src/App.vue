@@ -95,6 +95,9 @@
               <li>
                 <router-link to="/vuex/guide/actions">Actions</router-link>
               </li>
+              <li>
+                <router-link to="/vuex/guide/modules">Modules</router-link>
+              </li>
             </ul>
           </li>
         </ul>

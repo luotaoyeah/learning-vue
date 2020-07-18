@@ -57,7 +57,7 @@ export default {
   created() {
     this.timer = setInterval(() => {
       // 在组件实例创建之后再添加的数据, 不是响应式的, 需要调用 $forceUpdate() 来触发渲染.
-      this.foo = Date.now();
+      this.fooModule = Date.now();
     }, 1000);
   },
   mounted() {

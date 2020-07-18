@@ -1,9 +1,12 @@
+import { barModule } from '@/store/modules/bar.module';
+import { fooModule } from '@/store/modules/foo.module';
 import Vue from 'vue';
 import Vuex, { ActionContext } from 'vuex';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  modules: { fooModule, barModule },
   state: {
     count: 1,
     foo: 1,
@@ -30,6 +33,18 @@ export default new Vuex.Store({
       (payload = 5) => {
         return state.items.filter((i) => i > payload);
       },
+    /**
+     * 在 root store 中访问 module 中的 state.
+     *
+     * @param state
+     * @return {*}
+     */
+    xFromFooModule(state) {
+      return state.fooModule.x;
+    },
+    xFromBarModule(state) {
+      return state.barModule.x;
+    },
   },
   mutations: {
     /**

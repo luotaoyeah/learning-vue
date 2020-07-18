@@ -115,6 +115,10 @@ export default new Router({
               path: 'actions',
               component: () => import('./views/vuex/guide/actions/Actions'),
             },
+            {
+              path: 'modules',
+              component: () => import('./views/vuex/guide/modules/Modules'),
+            },
           ],
         },
       ],
