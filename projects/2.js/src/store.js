@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+import Vuex, { ActionContext } from 'vuex';
 
 Vue.use(Vuex);
 
@@ -42,8 +42,20 @@ export default new Vuex.Store({
      *        第二个参数为额外的数据.
      */
     INCREMENT(state, payload = { offset: 1 }) {
+      console.log('mutation: INCREMENT()');
       state.count += payload.offset;
     },
   },
-  actions: {},
+  actions: {
+    /**
+     * action 方法可以是异步的.
+     *
+     * @param context { ActionContext<any, any> }
+     * @param payload
+     */
+    async incrementAccount(context, payload) {
+      console.log('action: incrementAccount()');
+      await context.commit('INCREMENT', payload);
+    },
+  },
 });

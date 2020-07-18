@@ -111,6 +111,10 @@ export default new Router({
               path: 'mutations',
               component: () => import('./views/vuex/guide/mutations/Mutations'),
             },
+            {
+              path: 'actions',
+              component: () => import('./views/vuex/guide/actions/Actions'),
+            },
           ],
         },
       ],
