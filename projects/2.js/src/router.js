@@ -78,6 +78,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "guide" */ './views/guide/custom-directive/CustomDirectives'),
     },
     {
+      path: '/guide/plugins',
+      component: () => import(/* webpackChunkName: "guide" */ './views/guide/plugins/Plugins'),
+    },
+    {
       path: '/api/vm-watch',
       component: () => import(/* webpackChunkName: "api" */ './views/api/vm/Watch'),
     },

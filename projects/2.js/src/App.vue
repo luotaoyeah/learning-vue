@@ -59,6 +59,9 @@
           <li>
             <router-link to="/guide/custom-directive">Custom Directives</router-link>
           </li>
+          <li>
+            <router-link to="/guide/plugins">Plugins</router-link>
+          </li>
         </ul>
       </li>
 
