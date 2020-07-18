@@ -73,6 +73,20 @@
           </li>
         </ul>
       </li>
+
+      <li>
+        Vuex
+        <ul>
+          <li>
+            Guide
+            <ul>
+              <li>
+                <router-link to="/vuex/guide/introduction">Introduction</router-link>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
 
     <div

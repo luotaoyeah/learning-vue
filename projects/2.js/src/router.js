@@ -10,76 +10,98 @@ export default new Router({
   routes: [
     { path: '/', component: Home },
     {
-      path: '/guide/introduction',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/introduction/Introduction'),
+      path: '/guide',
+      component: { template: '<router-view />' },
+      children: [
+        {
+          path: 'introduction',
+          component: () => import('./views/guide/introduction/Introduction'),
+        },
+        {
+          path: 'instance',
+          component: () => import('./views/guide/instance/Instance'),
+        },
+        {
+          path: 'syntax',
+          component: () => import('./views/guide/syntax/TemplateSyntax'),
+        },
+        {
+          path: 'computed',
+          component: () => import('./views/guide/computed/ComputedPropertiesWatchers'),
+        },
+        {
+          path: 'class-and-style',
+          component: () => import('./views/guide/class-and-style/ClassStyleBindings'),
+        },
+        {
+          path: 'list',
+          component: () => import('./views/guide/list/ListRendering'),
+        },
+        {
+          path: 'events',
+          component: () => import('./views/guide/events/EventHandling'),
+        },
+        {
+          path: 'forms',
+          component: () => import('./views/guide/forms/FormInputBindings'),
+        },
+        {
+          path: 'components',
+          component: () => import('./views/guide/components/ComponentBasics'),
+        },
+        {
+          path: 'components-registration',
+          component: () => import('./views/guide/components-registration/ComponentRegistration'),
+        },
+        {
+          path: 'components-props',
+          component: () => import('./views/guide/components-props/Props'),
+        },
+        {
+          path: 'components-custom-events',
+          component: () => import('./views/guide/components-custom-events/ComponentsCustomEvents'),
+        },
+        {
+          path: 'components-slots',
+          component: () => import('./views/guide/components-slots/Slots'),
+        },
+        {
+          path: 'components-dynamic-async',
+          component: () => import('./views/guide/components-dynamic-async/ComponentsDynamicAsync'),
+        },
+        {
+          path: 'components-edge-cases',
+          component: () => import('./views/guide/components-edge-cases/HandlingEdgeCases'),
+        },
+        {
+          path: 'mixins',
+          component: () => import('./views/guide/mixins/Mixins'),
+        },
+        {
+          path: 'custom-directive',
+          component: () => import('./views/guide/custom-directive/CustomDirectives'),
+        },
+        {
+          path: 'plugins',
+          component: () => import('./views/guide/plugins/Plugins'),
+        },
+      ],
     },
     {
-      path: '/guide/instance',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/instance/Instance'),
-    },
-    {
-      path: '/guide/syntax',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/syntax/TemplateSyntax'),
-    },
-    {
-      path: '/guide/computed',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/computed/ComputedPropertiesWatchers'),
-    },
-    {
-      path: '/guide/class-and-style',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/class-and-style/ClassStyleBindings'),
-    },
-    {
-      path: '/guide/list',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/list/ListRendering'),
-    },
-    {
-      path: '/guide/events',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/events/EventHandling'),
-    },
-    {
-      path: '/guide/forms',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/forms/FormInputBindings'),
-    },
-    {
-      path: '/guide/components',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components/ComponentBasics'),
-    },
-    {
-      path: '/guide/components-registration',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-registration/ComponentRegistration'),
-    },
-    {
-      path: '/guide/components-props',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-props/Props'),
-    },
-    {
-      path: '/guide/components-custom-events',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-custom-events/ComponentsCustomEvents'),
-    },
-    {
-      path: '/guide/components-slots',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-slots/Slots'),
-    },
-    {
-      path: '/guide/components-dynamic-async',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-dynamic-async/ComponentsDynamicAsync'),
-    },
-    {
-      path: '/guide/components-edge-cases',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/components-edge-cases/HandlingEdgeCases'),
-    },
-    {
-      path: '/guide/mixins',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/mixins/Mixins'),
-    },
-    {
-      path: '/guide/custom-directive',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/custom-directive/CustomDirectives'),
-    },
-    {
-      path: '/guide/plugins',
-      component: () => import(/* webpackChunkName: "guide" */ './views/guide/plugins/Plugins'),
+      path: '/vuex',
+      component: { template: '<router-view />' },
+      children: [
+        {
+          path: 'guide',
+          component: { template: '<router-view />' },
+          children: [
+            {
+              path: 'introduction',
+              component: () => import('./views/vuex/guide/introduction/TheSimplestStore'),
+            },
+          ],
+        },
+      ],
     },
     {
       path: '/api/vm-watch',
