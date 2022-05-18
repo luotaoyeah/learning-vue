@@ -17,6 +17,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/guide/essentials/template-syntax',
+      name: 'guide/essentials/template-syntax',
+      component: () => import('../views/guide/essentials/TemplateSyntax.vue'),
+    },
   ],
 });
 
