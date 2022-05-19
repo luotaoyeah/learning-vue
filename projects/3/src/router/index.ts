@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'guide/essentials/template-syntax',
       component: () => import('../views/guide/essentials/TemplateSyntax.vue'),
     },
+    {
+      path: '/guide/essentials/reactivity-fundamentals',
+      name: 'guide/essentials/reactivity-fundamentals',
+      component: () => import('../views/guide/essentials/ReactivityFundamentals.vue'),
+    },
   ],
 });
 
