@@ -49,6 +49,16 @@
       }}
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>directives</legend>
+
+    <!--directive 的 argument 可以是动态绑定的-->
+    <div :[attr01]="6">FOO</div>
+
+    <!--如果 argument 的绑定值为 null, 表示移除这个 directive（这儿的 directive 指的是 v-bind）-->
+    <div :[null]="6">BAR</div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
@@ -64,6 +74,8 @@ const attrs01 = ref({
   'data-foo': 1,
   'data-bar': 2,
 });
+
+const attr01 = 'data-foo';
 </script>
 
 <style scoped></style>
