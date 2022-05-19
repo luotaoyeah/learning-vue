@@ -62,20 +62,20 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+  import { ref } from 'vue';
 
-// http://localhost:8888/guide/essentials/template-syntax
+  // http://localhost:8888/guide/essentials/template-syntax
 
-const msg = ref('HELLO WORLD');
+  const msg = ref('HELLO WORLD');
 
-const rawHtml = ref<string>("<span style='color:red;'>红色</span>");
+  const rawHtml = ref<string>("<span style='color:red;'>红色</span>");
 
-const attrs01 = ref({
-  'data-foo': 1,
-  'data-bar': 2,
-});
+  const attrs01 = ref({
+    'data-foo': 1,
+    'data-bar': 2,
+  });
 
-const attr01 = 'data-foo';
+  const attr01 = 'data-foo';
 </script>
 
 <style scoped></style>

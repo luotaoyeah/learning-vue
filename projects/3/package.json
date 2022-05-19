@@ -38,9 +38,10 @@
   },
   "prettier": {
     "printWidth": 160,
+    "semi": true,
+    "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "all",
-    "singleQuote": true,
-    "semi": true
+    "vueIndentScriptAndStyle": true
   }
 }
