@@ -11,12 +11,16 @@
   </fieldset>
 
   <fieldset>
-    <legend>reactive-proxy-vs-original-1</legend>
+    <legend>reactive-variables-with-ref</legend>
+
+    <div>{{ ref01 }}</div>
+
+    <button @click="ref01++">++</button>
   </fieldset>
 </template>
 
 <script lang="ts" setup>
-import { reactive, watch } from 'vue';
+import { reactive, Ref, ref, UnwrapRef, watch } from 'vue';
 
 // http://localhost:8888/guide/essentials/reactivity-fundamentals
 
@@ -51,7 +55,26 @@ const count01 = state.count;
 watch(
   () => count01,
   (newValue, oldValue) => {
-    console.log(`count01:${oldValue},${newValue}`);
+    console.log(`count01: ${oldValue},${newValue}`);
+  },
+);
+
+// --------------------------------------------------
+
+const ref01: Ref<UnwrapRef<number>> = ref(1);
+watch(
+  () => ref01.value,
+  (newValue, oldValue) => {
+    console.log(`ref01: ${oldValue},${newValue}`);
+  },
+);
+
+// count02 不是响应式的
+const value01 = ref01.value;
+watch(
+  () => value01,
+  (newValue, oldValue) => {
+    console.log(`value01: ${oldValue},${newValue}`);
   },
 );
 </script>
