@@ -21,11 +21,14 @@
   <fieldset>
     <legend>ref-unwrapping-in-templates</legend>
 
-    <!--ref02 是一个 Ref 对象, 并且此时它是一个 top-level 属性, 因此自动省略 .value-->
-    <div>{{ ref02.count }}</div>
+    <!--ref02 是一个 ref, 并且此时它是一个 top-level 属性, 因此自动解包(即省略 .value)-->
+    <div>ref02.count: {{ ref02.count }}</div>
 
-    <!--obj02.foo 是一个 Ref 对象, 但是通过 obj02.foo 来访问 foo, 表示 foo 此时不是一个 top-level 属性, 因此不能省略 .value-->
-    <div>{{ obj02.foo.value.count }}</div>
+    <!--obj02.foo 是一个 ref, 但是通过 obj02.foo 来访问 foo, 表示 foo 此时不是一个 top-level 属性, 因此不能自动解包-->
+    <div>obj02.foo.value.count: {{ obj02.foo.value.count }}</div>
+
+    <!--此处的 reactive02.foo 虽然不是一个 top-level 的 ref, 但是因为它是 reactive 对象的属性, 因此自动解包-->
+    <div>reactive02: {{ reactive02.foo.count }}</div>
 
     <button @click="ref02.count++">++</button>
   </fieldset>
@@ -94,6 +97,11 @@
 
   const ref02 = ref({ count: 0 });
   const obj02 = { foo: ref02 };
+
+  // ref 作为 reactive 对象的属性时, 会自动解包
+  // 但是如果 reactive 对象是一个 array/Map/Set, 则不会自动解包
+  const reactive02 = reactive({ foo: ref02 });
+  console.log(`reactive02.foo.count: ${reactive02.foo.count}`);
 </script>
 
 <style lang="less" scoped></style>
