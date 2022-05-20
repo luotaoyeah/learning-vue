@@ -28,7 +28,7 @@
     set: (v) => {},
   });
 
-  // computed function 中不应该包含 side effect
+  // computed getter function 中不应该包含 side effect
 </script>
 
 <style lang="less" scoped></style>

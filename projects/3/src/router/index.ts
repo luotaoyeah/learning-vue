@@ -32,6 +32,11 @@ const router = createRouter({
       name: 'guide/essentials/computed',
       component: () => import('../views/guide/essentials/Computed.vue'),
     },
+    {
+      path: '/guide/essentials/class-and-style',
+      name: 'guide/essentials/class-and-style',
+      component: () => import('../views/guide/essentials/ClassAndStyle.vue'),
+    },
   ],
 });
 
