@@ -7,10 +7,20 @@
       <li v-for="(value, key, index) in obj01">{{ index }}. {{ key }}: {{ value }}</li>
     </ul>
   </fieldset>
+
+  <fieldset>
+    <legend>v-for-with-a-range</legend>
+
+    <!--遍历指定次数-->
+    <!--下面 i 的取值从 1 开始-->
+    <ul>
+      <li v-for="(i, index) in 3">{{ index }}: {{ i }}</li>
+    </ul>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
-  import { reactive, UnwrapNestedRefs } from 'vue';
+  import { reactive } from 'vue';
 
   // http://localhost:8888/guide/essentials/list
 
