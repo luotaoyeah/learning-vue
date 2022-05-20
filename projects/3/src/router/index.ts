@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'guide/essentials/reactivity-fundamentals',
       component: () => import('../views/guide/essentials/ReactivityFundamentals.vue'),
     },
+    {
+      path: '/guide/essentials/computed',
+      name: 'guide/essentials/computed',
+      component: () => import('../views/guide/essentials/Computed.vue'),
+    },
   ],
 });
 
