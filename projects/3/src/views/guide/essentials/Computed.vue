@@ -11,20 +11,24 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed, ComputedRef, reactive } from 'vue';
+  import { computed, ComputedRef, reactive, WritableComputedRef } from 'vue';
 
   // http://localhost:8888/guide/essentials/computed
 
   const reactive01 = reactive({ x: 1 });
+
   const computed01: ComputedRef<number> = computed(() => {
     return reactive01.x + 1;
   });
-  const computed02 = computed({
+
+  const computed02: WritableComputedRef<number> = computed({
     get: (args) => {
       return computed01.value + 1;
     },
     set: (v) => {},
   });
+
+  // computed function 中不应该包含 side effect
 </script>
 
 <style lang="less" scoped></style>
