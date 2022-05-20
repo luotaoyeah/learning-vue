@@ -37,6 +37,11 @@ const router = createRouter({
       name: 'guide/essentials/class-and-style',
       component: () => import('../views/guide/essentials/ClassAndStyle.vue'),
     },
+    {
+      path: '/guide/essentials/list',
+      name: 'guide/essentials/list',
+      component: () => import('../views/guide/essentials/List.vue'),
+    },
   ],
 });
 

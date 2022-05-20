@@ -31,4 +31,4 @@
   // computed getter function 中不应该包含 side effect
 </script>
 
-<style lang="less" scoped></style>
+<style lang="css" scoped></style>

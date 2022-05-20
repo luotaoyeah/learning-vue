@@ -104,4 +104,4 @@
   console.log(`reactive02.foo.count: ${reactive02.foo.count}`);
 </script>
 
-<style lang="less" scoped></style>
+<style lang="css" scoped></style>
