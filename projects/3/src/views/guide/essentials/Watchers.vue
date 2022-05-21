@@ -22,15 +22,17 @@
     <legend>deep-watchers</legend>
 
     <div>
-      <button
-        @click="
-          reactive02.x++;
-          ref01++;
-          ref02.x++;
-        "
-      >
-        ++
-      </button>
+      <button @click="reactive02.x++">reactive02.x++</button>
+      <button @click="ref01++">ref01++</button>
+      <button @click="ref02.x++">ref02.x++</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>eager-watchers</legend>
+
+    <div>
+      <button @click="ref03++">++</button>
     </div>
   </fieldset>
 </template>
@@ -81,7 +83,7 @@
     console.log(`reactive02: %c${oldValue.x}, ${newValue.x}`, 'color:red');
   });
 
-  // 被监视的是 getter, 则默认不是 deep 监视
+  // 被监视的是 getter, 且 getter 返回的是一个对象, 则默认不是 deep 监视
   watch(
     () => reactive02,
     (newValue, oldValue) => {
@@ -91,6 +93,15 @@
     { deep: true },
   );
 
+  // 被监视的是 getter, 但 getter 返回的是一个原始类型, 则不需要关心 deep 问题
+  watch(
+    () => reactive02.x,
+    (newValue, oldValue) => {
+      console.log(`reactive02.x: %c${oldValue}, ${newValue}`, 'color:blue');
+    },
+  );
+
+  // 被监视的是 ref, 但该 ref 是一个原始类型, 则不需要关心 deep 问题
   const ref01 = ref(0);
   watch(ref01, (newValue, oldValue) => {
     console.log(`ref01: %c${oldValue}, ${newValue}`, 'color:green');
@@ -112,6 +123,20 @@
     console.assert(newValue === oldValue);
     console.log(`ref02.value: %c${oldValue.x}, ${newValue.x}`, 'color:green');
   });
+
+  // --------------------------------------------------
+  // immediate: ture 表示对数据的初始值触发一次回调函数
+  const ref03 = ref(0);
+  watch(ref03, (newValue, oldValue) => {
+    console.log(`ref03: ${oldValue}, ${newValue}`);
+  });
+  watch(
+    ref03,
+    (newValue, oldValue) => {
+      console.log(`ref03.immediate: ${oldValue}, ${newValue}`);
+    },
+    { immediate: true },
+  );
 </script>
 
 <style lang="css" scoped></style>
