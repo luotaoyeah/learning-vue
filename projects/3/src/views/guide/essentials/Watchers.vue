@@ -35,10 +35,18 @@
       <button @click="ref03++">++</button>
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>watcheffect</legend>
+
+    <div>
+      <button @click="ref04++">++</button>
+    </div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
-  import { reactive, ref, watch } from 'vue';
+  import { reactive, ref, watch, watchEffect } from 'vue';
 
   // http://localhost:8888/guide/essentials/watchers
 
@@ -137,6 +145,22 @@
     },
     { immediate: true },
   );
+
+  // --------------------------------------------------
+  const ref04 = ref(0);
+  watch(
+    ref04,
+    () => {
+      console.log(`ref04: ${ref04.value}`);
+    },
+    { immediate: true },
+  );
+  // 满足下面两个条件时, 可以使用 watchEffect 替换 watch, 因此 watchEffect 是 watch 的语法糖:
+  //   1. '被监视的响应式数据'和回调函数中'依赖的所有响应式数据'完全一样
+  //   2. 设置了 immediate: true
+  watchEffect(() => {
+    console.log(`ref04.watchEffect: ${ref04.value}`);
+  });
 </script>
 
 <style lang="css" scoped></style>
