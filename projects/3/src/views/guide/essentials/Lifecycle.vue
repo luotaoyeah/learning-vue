@@ -3,8 +3,8 @@
     <legend>lifecycle-hooks</legend>
 
     <!--
+        onBeforeMount / onBeforeUnmount 是父组件先执行,
         onMounted / onUnmounted 是子组件先执行,
-        onBeforeMount / onBeforeUnmount 是父组件先执行
     -->
     <CompA v-if="visible">
       <CompB></CompB>

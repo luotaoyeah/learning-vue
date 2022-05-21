@@ -57,6 +57,11 @@ const router = createRouter({
       name: 'guide/essentials/lifecycle',
       component: () => import('../views/guide/essentials/Lifecycle.vue'),
     },
+    {
+      path: '/guide/essentials/watchers',
+      name: 'guide/essentials/watchers',
+      component: () => import('../views/guide/essentials/Watchers.vue'),
+    },
   ],
 });
 
