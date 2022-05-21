@@ -69,6 +69,41 @@
       </select>
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>value-bindings</legend>
+
+    <!--可以使用 true-value / false-value 来设置单选的 checkbox 的绑定值(默认为 true/false)-->
+    <div>
+      <p>{{ value08 }}</p>
+
+      <input v-model="value08" :false-value="'no'" :true-value="'yes'" type="checkbox" />
+    </div>
+
+    <hr />
+
+    <!--多选的 checkbox, 通过 :value 设置绑定值-->
+    <div>
+      <p>{{ value09 }}</p>
+      <ul>
+        <li><input v-model="value09" type="checkbox" :value="{ value: 'a' }" /> a</li>
+        <li><input v-model="value09" type="checkbox" :value="{ value: 'b' }" /> b</li>
+        <li><input v-model="value09" type="checkbox" :value="{ value: 'c' }" /> c</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!--radio 通过 :value 设置绑定值-->
+    <div>
+      <p>{{ value10 }}</p>
+      <ul>
+        <li><input v-model="value10" type="radio" :value="{ value: 'a' }" /> a</li>
+        <li><input v-model="value10" type="radio" :value="{ value: 'b' }" /> b</li>
+        <li><input v-model="value10" type="radio" :value="{ value: 'c' }" /> c</li>
+      </ul>
+    </div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
@@ -86,6 +121,11 @@
 
   const value06 = ref('a');
   const value07 = ref(['a']);
+
+  // --------------------------------------------------
+  const value08 = ref('yes');
+  const value09 = ref([]);
+  const value10 = ref({ value: 'b' });
 </script>
 
 <style lang="css" scoped></style>
