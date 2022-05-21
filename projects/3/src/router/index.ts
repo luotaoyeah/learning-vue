@@ -52,6 +52,11 @@ const router = createRouter({
       name: 'guide/essentials/forms',
       component: () => import('../views/guide/essentials/Forms.vue'),
     },
+    {
+      path: '/guide/essentials/lifecycle',
+      name: 'guide/essentials/lifecycle',
+      component: () => import('../views/guide/essentials/Lifecycle.vue'),
+    },
   ],
 });
 
