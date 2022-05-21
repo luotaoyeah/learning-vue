@@ -20,6 +20,18 @@
     <!--如下, 事件的绑定值是一个方法调用, 本质上是一段 js 代码, 属于第一类-->
     <button @click="fn01()">CLICK ME</button>
   </fieldset>
+
+  <fieldset>
+    <legend>accessing-event-argument-in-inline-handlers</legend>
+
+    <!--
+        事件的绑定值是一段代码时, 如何访问事件参数?
+          1. 使用特殊变量 $event
+          2. 外面包一个箭头函数, 用箭头函数来接收事件参数
+    -->
+    <button @click="fn02('foo', $event)">CLICK ME</button>
+    <button @click="(event) => fn02('bar', event)">CLICK ME</button>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
@@ -33,6 +45,10 @@
   function fn01() {
     foo.value++;
     bar.value++;
+  }
+
+  function fn02(message: string, event: MouseEvent) {
+    console.log(`${event.type}, ${message}`);
   }
 </script>
 
