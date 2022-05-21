@@ -42,6 +42,11 @@ const router = createRouter({
       name: 'guide/essentials/list',
       component: () => import('../views/guide/essentials/List.vue'),
     },
+    {
+      path: '/guide/essentials/event-handling',
+      name: 'guide/essentials/event-handling',
+      component: () => import('../views/guide/essentials/EventHandling.vue'),
+    },
   ],
 });
 
