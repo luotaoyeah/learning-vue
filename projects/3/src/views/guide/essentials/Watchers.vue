@@ -43,6 +43,15 @@
       <button @click="ref04++">++</button>
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>stopping-a-watcher</legend>
+
+    <div>
+      <button @click="ref05++">++</button>
+      <button @click="stop">stop watch</button>
+    </div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
@@ -160,6 +169,12 @@
   //   2. 设置了 immediate: true
   watchEffect(() => {
     console.log(`ref04.watchEffect: ${ref04.value}`);
+  });
+
+  // --------------------------------------------------
+  const ref05 = ref(0);
+  const stop = watch(ref05, (newValue, oldValue) => {
+    console.log(`ref05: ${oldValue}, ${newValue}`);
   });
 </script>
 
