@@ -17,6 +17,22 @@
       <button @click="reactive01.x++">++</button>
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>deep-watchers</legend>
+
+    <div>
+      <button
+        @click="
+          reactive02.x++;
+          ref01++;
+          ref02.x++;
+        "
+      >
+        ++
+      </button>
+    </div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
@@ -26,7 +42,7 @@
 
   const x = ref(0);
   const y = ref(0);
-  // 被监视的数据是一个 getter, 类似于 computed
+  // 被监视的是一个 getter, 类似于 computed
   watch(
     () => x.value + y.value,
     (newValue, oldValue) => {
@@ -48,13 +64,54 @@
     console.log(`${oldValue.x}, ${newValue.x}`);
   });
 
-  // 不能直接监视一个 reactive 对象的属性, 需要使用 getter 的形式来实现
+  // 不能直接监视 reactive 对象的属性, 需要使用 getter 的形式来监视
   watch(
     () => reactive01.x,
     (newValue, oldValue) => {
       console.log(`${oldValue}, ${newValue}`);
     },
   );
+
+  // --------------------------------------------------
+  const reactive02 = reactive({ x: 0 });
+
+  // 被监视的是 reactive 对象, 则默认为 deep 监视
+  watch(reactive02, (newValue, oldValue) => {
+    console.assert(newValue === oldValue);
+    console.log(`reactive02: %c${oldValue.x}, ${newValue.x}`, 'color:red');
+  });
+
+  // 被监视的是 getter, 则默认不是 deep 监视
+  watch(
+    () => reactive02,
+    (newValue, oldValue) => {
+      console.assert(newValue === oldValue);
+      console.log(`reactive02: %c${oldValue.x}, ${newValue.x}`, 'color:blue');
+    },
+    { deep: true },
+  );
+
+  const ref01 = ref(0);
+  watch(ref01, (newValue, oldValue) => {
+    console.log(`ref01: %c${oldValue}, ${newValue}`, 'color:green');
+  });
+
+  const ref02 = ref({ x: 0 });
+  // 被监视的是 ref, 且该 ref 是一个对象, 则默认不是 deep 监视
+  watch(
+    ref02,
+    (newValue, oldValue) => {
+      console.assert(newValue === oldValue);
+      console.log(`ref02: %c${oldValue.x}, ${newValue.x}`, 'color:green');
+    },
+    { deep: true },
+  );
+
+  // 被监视的是 ref.value, 由于 ref.value 是一个 reactive 对象, 因此默认是 deep 监视
+  watch(ref02.value, (newValue, oldValue) => {
+    console.assert(newValue === oldValue);
+    console.log(`ref02.value: %c${oldValue.x}, ${newValue.x}`, 'color:green');
+  });
 </script>
 
 <style lang="css" scoped></style>
