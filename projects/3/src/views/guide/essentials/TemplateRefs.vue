@@ -13,10 +13,19 @@
       <button @click="visible = !visible">toggle</button>
     </div>
   </fieldset>
+
+  <fieldset>
+    <legend>ref-on-component</legend>
+
+    <div>
+      <CompC ref="compCRef"></CompC>
+    </div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
   import { ref, watch } from 'vue';
+  import CompC from '@/components/CompC.vue';
 
   // http://localhost:8888/guide/essentials/template-refs
 
@@ -33,6 +42,12 @@
   function setRef01(el: HTMLInputElement | null) {
     console.log('el:', el);
   }
+
+  // --------------------------------------------------
+  const compCRef = ref<InstanceType<typeof CompC> | null>(null);
+  watch(compCRef, (newValue, oldValue) => {
+    console.log(`compCRef: { x: ${newValue?.x}, y: ${newValue?.y} }`);
+  });
 </script>
 
 <style lang="css" scoped></style>
