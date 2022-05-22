@@ -11,9 +11,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed, ComputedRef, reactive, WritableComputedRef } from 'vue';
-
   // http://localhost:8888/guide/essentials/computed
+  import { computed, ComputedRef, reactive, WritableComputedRef } from 'vue';
 
   const reactive01 = reactive({ x: 1 });
 

@@ -54,9 +54,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { defineComponent, reactive } from 'vue';
-
   // http://localhost:8888/guide/essentials/list
+  import { defineComponent, reactive } from 'vue';
 
   const obj01 = reactive({
     foo: 'A',

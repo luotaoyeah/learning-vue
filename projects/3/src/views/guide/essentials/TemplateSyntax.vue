@@ -62,9 +62,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue';
-
   // http://localhost:8888/guide/essentials/template-syntax
+  import { ref } from 'vue';
 
   const msg = ref('HELLO WORLD');
 

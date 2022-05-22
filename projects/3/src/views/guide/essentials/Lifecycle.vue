@@ -15,11 +15,10 @@
 </template>
 
 <script lang="ts" setup>
+  // http://localhost:8888/guide/essentials/lifecycle
   import CompA from '@/components/CompA.vue';
   import CompB from '@/components/CompB.vue';
   import { ref } from 'vue';
-
-  // http://localhost:8888/guide/essentials/lifecycle
 
   const visible = ref(true);
 </script>

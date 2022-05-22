@@ -55,9 +55,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { reactive, ref, watch, watchEffect } from 'vue';
-
   // http://localhost:8888/guide/essentials/watchers
+  import { reactive, ref, watch, watchEffect } from 'vue';
 
   const x = ref(0);
   const y = ref(0);

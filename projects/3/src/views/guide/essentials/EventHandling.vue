@@ -63,9 +63,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue';
-
   // http://localhost:8888/guide/essentials/event-handling
+  import { ref } from 'vue';
 
   const foo = ref(0);
   const bar = ref(0);

@@ -107,9 +107,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue';
-
   // http://localhost:8888/guide/essentials/forms
+  import { ref } from 'vue';
 
   const value01 = ref('foo');
   const value02 = ref('foo');

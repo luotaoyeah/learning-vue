@@ -35,9 +35,8 @@
 </template>
 
 <script lang="ts" setup>
-  import { reactive, Ref, ref, UnwrapRef, watch } from 'vue';
-
   // http://localhost:8888/guide/essentials/reactivity-fundamentals
+  import { reactive, Ref, ref, UnwrapRef, watch } from 'vue';
 
   const state = reactive({ count: 0, arr: [1, 2, 3] });
 

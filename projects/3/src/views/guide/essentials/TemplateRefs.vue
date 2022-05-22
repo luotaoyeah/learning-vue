@@ -24,10 +24,9 @@
 </template>
 
 <script lang="ts" setup>
+  // http://localhost:8888/guide/essentials/template-refs
   import { ref, watch } from 'vue';
   import CompC from '@/components/CompC.vue';
-
-  // http://localhost:8888/guide/essentials/template-refs
 
   const div01 = ref<HTMLDivElement | null>(null);
 
