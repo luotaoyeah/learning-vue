@@ -69,6 +69,11 @@ const router = createRouter({
       name: 'guide/components/registration',
       component: () => import('../views/guide/components/Registration.vue'),
     },
+    {
+      path: '/guide/components/props',
+      name: 'guide/components/props',
+      component: () => import('../views/guide/components/Props.vue'),
+    },
   ],
 });
 
