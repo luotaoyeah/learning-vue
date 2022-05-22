@@ -64,6 +64,11 @@ const router = createRouter({
       name: 'guide/essentials/component-basics',
       component: () => import('../views/guide/essentials/ComponentBasics.vue'),
     },
+    {
+      path: '/guide/components/registration',
+      name: 'guide/components/registration',
+      component: () => import('../views/guide/components/Registration.vue'),
+    },
   ],
 });
 
