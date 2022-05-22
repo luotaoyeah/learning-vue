@@ -8,7 +8,10 @@
   <fieldset>
     <legend>component-name-casing</legend>
 
-    <!--注册组件时使用 PascalCase 命名, 使用组件时 PascalCase 和 kebab-case 都可以-->
+    <!--
+        注册组件时通常使用 PascalCase,
+        使用组件时通常使用 PascalCase, 当然 kebab-case 也是支持的
+    -->
 
     <CompE></CompE>
     <comp-e></comp-e>
