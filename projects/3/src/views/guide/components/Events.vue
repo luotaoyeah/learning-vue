@@ -16,6 +16,12 @@
     <CompH @tClick01="fn05"></CompH>
     <CompH @t-click-01="fn06"></CompH>
   </fieldset>
+
+  <fieldset>
+    <legend>events-validation</legend>
+
+    <div></div>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
