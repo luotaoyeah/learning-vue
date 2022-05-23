@@ -74,6 +74,11 @@ const router = createRouter({
       name: 'guide/components/props',
       component: () => import('../views/guide/components/Props.vue'),
     },
+    {
+      path: '/guide/components/events',
+      name: 'guide/components/events',
+      component: () => import('../views/guide/components/Events.vue'),
+    },
   ],
 });
 
