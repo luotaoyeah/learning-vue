@@ -79,6 +79,11 @@ const router = createRouter({
       name: 'guide/components/events',
       component: () => import('../views/guide/components/Events.vue'),
     },
+    {
+      path: '/guide/components/v-model',
+      name: 'guide/components/v-model',
+      component: () => import('../views/guide/components/VModel.vue'),
+    },
   ],
 });
 
