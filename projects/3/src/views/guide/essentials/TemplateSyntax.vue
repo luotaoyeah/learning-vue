@@ -20,9 +20,6 @@
     <!--绑定值为 null/undefined 时, 属性会被移除-->
     <div :data-foo="msg" :data-bar="null" :data-baz="undefined">2</div>
 
-    <!--对于 boolean attribute, 空字符串会被当成 truthy 值-->
-    <button :disabled="''">button</button>
-
     <!--v-bind 后面不加 :some-attr, 表示同时绑定多个属性-->
     <div v-bind="attrs01" :data-baz="3">3</div>
   </fieldset>
@@ -57,7 +54,7 @@
     <div :[attr01]="6">FOO</div>
 
     <!--如果 argument 的绑定值为 null, 表示移除这个 directive（这儿的 directive 指的是 v-bind）-->
-    <div :[null]="6">BAR</div>
+    <div :[attr02]="6">BAR</div>
   </fieldset>
 </template>
 
@@ -75,6 +72,7 @@
   });
 
   const attr01 = 'data-foo';
+  const attr02: any = null;
 </script>
 
 <style scoped></style>

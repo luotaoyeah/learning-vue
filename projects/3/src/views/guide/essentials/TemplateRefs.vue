@@ -9,7 +9,7 @@
     <legend>function-refs</legend>
 
     <div>
-      <p><input v-if="visible" type="text" :ref="setRef01" /></p>
+      <p><input v-if="visible" :ref="setRef01" type="text" /></p>
       <button @click="visible = !visible">toggle</button>
     </div>
   </fieldset>
@@ -38,7 +38,7 @@
   const visible = ref<boolean>(true);
 
   // :ref 可以绑定一个函数, 函数第一个参数就是元素的实例对象,
-  function setRef01(el: HTMLInputElement | null) {
+  function setRef01(el: any | null) {
     console.log('el:', el);
   }
 

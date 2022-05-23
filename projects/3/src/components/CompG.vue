@@ -25,7 +25,7 @@
       },
     },
 
-    // 类型为 Object 时, default 需要定义成一个 factory function
+    // 类型为 Object/Array 时, default 需要定义成一个 factory function
     tA: {
       type: Object,
       default(props: any) {

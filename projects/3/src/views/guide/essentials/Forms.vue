@@ -7,7 +7,6 @@
     <div>
       <p>{{ value01 }}</p>
       <input v-model="value01" type="text" />
-      <input :value="value01" type="text" @input="value01 = $event.target.value" />
     </div>
 
     <hr />
@@ -77,7 +76,7 @@
     <div>
       <p>{{ value08 }}</p>
 
-      <input v-model="value08" :false-value="'no'" :true-value="'yes'" type="checkbox" />
+      <!--<input v-model="value08" :false-value="'no'" :true-value="'yes'" type="checkbox" />-->
     </div>
 
     <hr />

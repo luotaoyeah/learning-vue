@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-  import { Ref, ref } from 'vue';
+  import { type Ref, ref } from 'vue';
 
   const x = ref(6);
   const y = ref(9);

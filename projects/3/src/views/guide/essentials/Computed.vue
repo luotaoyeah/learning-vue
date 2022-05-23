@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
   // http://localhost:8888/guide/essentials/computed
-  import { computed, ComputedRef, reactive, WritableComputedRef } from 'vue';
+  import { computed, type ComputedRef, reactive, type WritableComputedRef } from 'vue';
 
   const reactive01 = reactive({ x: 1 });
 
