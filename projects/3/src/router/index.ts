@@ -84,6 +84,11 @@ const router = createRouter({
       name: 'guide/components/v-model',
       component: () => import('../views/guide/components/VModel.vue'),
     },
+    {
+      path: '/guide/components/attrs',
+      name: 'guide/components/attrs',
+      component: () => import('../views/guide/components/Attrs.vue'),
+    },
   ],
 });
 
