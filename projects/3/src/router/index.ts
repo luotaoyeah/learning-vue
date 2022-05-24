@@ -99,6 +99,11 @@ const router = createRouter({
       name: 'guide/components/provide-inject',
       component: () => import('../views/guide/components/ProvideInject.vue'),
     },
+    {
+      path: '/guide/components/async',
+      name: 'guide/components/async',
+      component: () => import('../views/guide/components/Async.vue'),
+    },
   ],
 });
 
