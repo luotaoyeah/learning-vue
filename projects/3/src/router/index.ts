@@ -94,6 +94,11 @@ const router = createRouter({
       name: 'guide/components/slots',
       component: () => import('../views/guide/components/Slots.vue'),
     },
+    {
+      path: '/guide/components/provide-inject',
+      name: 'guide/components/provide-inject',
+      component: () => import('../views/guide/components/ProvideInject.vue'),
+    },
   ],
 });
 
