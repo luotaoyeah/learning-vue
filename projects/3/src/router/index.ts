@@ -89,6 +89,11 @@ const router = createRouter({
       name: 'guide/components/attrs',
       component: () => import('../views/guide/components/Attrs.vue'),
     },
+    {
+      path: '/guide/components/slots',
+      name: 'guide/components/slots',
+      component: () => import('../views/guide/components/Slots.vue'),
+    },
   ],
 });
 
