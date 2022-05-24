@@ -1,5 +1,5 @@
 <template>
-  <CompK class='compk' foo="FOO" @click="fn01"></CompK>
+  <CompK class='compk' foo="FOO" @click="fn01" x y></CompK>
 </template>
 
 <script lang="ts" setup>
