@@ -6,6 +6,16 @@
       <template #default>BAR</template>
     </CompM>
   </fieldset>
+
+  <fieldset>
+    <legend>scoped-slots</legend>
+
+    <CompM v-slot="{ foo, bar }">{{ foo }} {{ bar }}</CompM>
+
+    <CompM>
+      <template #default="{ foo, bar }">{{ foo }} {{ bar }}</template>
+    </CompM>
+  </fieldset>
 </template>
 
 <script lang="ts" setup>
