@@ -104,6 +104,11 @@ const router = createRouter({
       name: 'guide/components/async',
       component: () => import('../views/guide/components/Async.vue'),
     },
+    {
+      path: '/guide/built-ins/keep-alive',
+      name: 'guide/built-ins/keep-alive',
+      component: () => import('../views/guide/built-ins/KeepAlive.vue'),
+    },
   ],
 });
 

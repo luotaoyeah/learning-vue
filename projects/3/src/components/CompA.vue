@@ -7,22 +7,22 @@
 </template>
 
 <script setup lang="ts">
-  import { onBeforeMount, onBeforeUnmount, onMounted, onUnmounted } from 'vue';
+  import { onActivated, onBeforeMount, onBeforeUnmount, onDeactivated, onMounted, onUnmounted } from 'vue';
 
   onMounted(() => {
-    console.log('%c onMounted()', 'color:red');
+    console.log('%c CompA.onMounted()', 'color:red');
   });
 
   onUnmounted(() => {
-    console.log('%c onUnmounted()', 'color:red');
+    console.log('%c CompA.onUnmounted()', 'color:red');
   });
 
   onBeforeMount(() => {
-    console.log('%c onBeforeMount()', 'color:red');
+    console.log('%c CompA.onBeforeMount()', 'color:red');
   });
 
   onBeforeUnmount(() => {
-    console.log('%c onBeforeUnmount()', 'color:red');
+    console.log('%c CompA.onBeforeUnmount()', 'color:red');
   });
 </script>
 
