@@ -124,6 +124,11 @@ const router = createRouter({
             name: '/vue-router/guide/essentials/route-matching-syntax/repeatable-params',
             component: () => import('../views/vue-router/guide/essentials/route-matching-syntax/RepeatableParams.vue'),
         },
+        {
+            path: '/pinia/core-concepts/defining-a-store',
+            name: '/pinia/core-concepts/defining-a-store',
+            component: () => import('../views/pinia/core-concepts/DefiningAStore.vue'),
+        },
     ],
 });
 
