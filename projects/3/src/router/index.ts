@@ -109,6 +109,11 @@ const router = createRouter({
       name: 'guide/built-ins/keep-alive',
       component: () => import('../views/guide/built-ins/KeepAlive.vue'),
     },
+    {
+      path: '/guide/extras/render-function',
+      name: 'guide/extras/render-function',
+      component: () => import('../views/guide/extras/RenderFunction.vue'),
+    },
   ],
 });
 
