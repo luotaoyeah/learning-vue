@@ -117,9 +117,12 @@ const router = createRouter({
         {
             path: '/vue-router/guide/essentials/route-matching-syntax/custom-regex-in-params/:id(\\d+)',
             name: '/vue-router/guide/essentials/route-matching-syntax/custom-regex-in-params',
-            component: () => import('../views/vue-router/guide/essentials/CustomRegexInParams.vue'),
-            strict: false,
-            sensitive: false,
+            component: () => import('../views/vue-router/guide/essentials/route-matching-syntax/CustomRegexInParams.vue'),
+        },
+        {
+            path: '/vue-router/guide/essentials/route-matching-syntax/repeatable-params/:ids(\\d)+/foo',
+            name: '/vue-router/guide/essentials/route-matching-syntax/repeatable-params',
+            component: () => import('../views/vue-router/guide/essentials/route-matching-syntax/RepeatableParams.vue'),
         },
     ],
 });
