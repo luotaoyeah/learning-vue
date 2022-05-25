@@ -1,13 +1,13 @@
 <template>
-  <CompK class='compk' foo="FOO" @click="fn01" x y></CompK>
+    <CompK class="compk" foo="FOO" @click="fn01" x y></CompK>
 </template>
 
 <script lang="ts" setup>
-  import CompK from '@/components/CompK.vue';
+    import CompK from '@/components/CompK.vue';
 
-  function fn01() {
-    console.log('click.CompK');
-  }
+    function fn01() {
+        console.log('click.CompK');
+    }
 </script>
 
 <style scoped></style>

@@ -1,7 +1,7 @@
 <template>
-  <fieldset>
-    <legend>F</legend>
-  </fieldset>
+    <fieldset>
+        <legend>F</legend>
+    </fieldset>
 </template>
 
 <script lang="ts" setup></script>

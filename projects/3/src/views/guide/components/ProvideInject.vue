@@ -1,18 +1,18 @@
 <template>
-  <fieldset>
-    <legend>inject</legend>
+    <fieldset>
+        <legend>inject</legend>
 
-    <CompO></CompO>
-  </fieldset>
+        <CompO></CompO>
+    </fieldset>
 </template>
 
 <script lang="ts" setup>
-  // http://localhost:8888/guide/components/provide-inject
+    // http://localhost:8888/guide/components/provide-inject
 
-  import { provide } from 'vue';
-  import CompO from '@/components/CompO.vue';
+    import { provide } from 'vue';
+    import CompO from '@/components/CompO.vue';
 
-  provide('provide01', 6);
+    provide('provide01', 6);
 </script>
 
 <style lang="css" scoped></style>

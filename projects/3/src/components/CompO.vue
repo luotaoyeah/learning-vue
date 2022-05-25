@@ -1,16 +1,16 @@
 <template>
-  <fieldset>
-    <legend>O</legend>
+    <fieldset>
+        <legend>O</legend>
 
-    <CompN></CompN>
-  </fieldset>
+        <CompN></CompN>
+    </fieldset>
 </template>
 
 <script lang="ts" setup>
-  import { provide } from 'vue';
-  import CompN from '@/components/CompN.vue';
+    import { provide } from 'vue';
+    import CompN from '@/components/CompN.vue';
 
-  provide('provide01', 9);
+    provide('provide01', 9);
 </script>
 
 <style scoped></style>
