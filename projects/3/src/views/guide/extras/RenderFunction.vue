@@ -20,9 +20,15 @@
 
         <D></D>
     </fieldset>
+
+    <fieldset>
+        <legend>v-if</legend>
+
+        <E></E>
+    </fieldset>
 </template>
 
-<script lang="ts" setup>
+<script lang="tsx" setup>
     // http://localhost:8888/guide/extras/render-function
 
     import { defineComponent, h, onMounted, ref } from 'vue';
@@ -73,6 +79,47 @@
 
             // vnode 不允许重复使用
             return () => [vnode01, vnode01];
+        },
+    });
+
+    const E = defineComponent({
+        setup() {
+            const visible = ref(true);
+            const items = [1, 2, 3];
+
+            // 函数组件, 并且使用了 JSX
+            const C01 = () => <div>{visible.value ? 'BAR' : undefined}</div>;
+            const C02 = () => (
+                <ul>
+                    {items.map((i) => (
+                        <li>{i}</li>
+                    ))}
+                </ul>
+            );
+
+            return () => [
+                h('div', [
+                    // v-if
+                    visible.value ? 'FOO' : undefined,
+                    h(C01),
+                    h(
+                        'button',
+                        {
+                            onClick: () => {
+                                visible.value = !visible.value;
+                            },
+                        },
+                        'TOGGLE',
+                    ),
+                ]),
+                h('div', [
+                    h(
+                        'ul',
+                        items.map((i) => h('li', i)),
+                    ),
+                    h(C02),
+                ]),
+            ];
         },
     });
 </script>
