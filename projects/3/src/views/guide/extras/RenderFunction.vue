@@ -4,6 +4,7 @@
 
         <A></A>
         <B></B>
+        <C></C>
     </fieldset>
 
     <fieldset>
@@ -12,6 +13,12 @@
         <CompR></CompR>
         <CompS></CompS>
         <CompS02></CompS02>
+    </fieldset>
+
+    <fieldset>
+        <legend>vnodes-must-be-unique</legend>
+
+        <D></D>
     </fieldset>
 </template>
 
@@ -50,6 +57,22 @@
                     'FOO',
                     h('div', ['BAR']),
                 ]);
+        },
+    });
+
+    const C = defineComponent({
+        setup() {
+            // render function 返回一个数组
+            return () => [h('div', '1'), h('div', '2'), h('div', '3')];
+        },
+    });
+
+    const D = defineComponent({
+        setup() {
+            const vnode01 = h('button', { onClick: () => console.log('A.click()') }, 'CLICK');
+
+            // vnode 不允许重复使用
+            return () => [vnode01, vnode01];
         },
     });
 </script>
