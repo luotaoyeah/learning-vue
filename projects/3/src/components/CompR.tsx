@@ -2,7 +2,11 @@ import { defineComponent } from 'vue';
 
 const CompR = defineComponent({
     setup() {
-        return () => <div>R</div>;
+        return () => (
+            <fieldset>
+                <legend>R</legend>
+            </fieldset>
+        );
     },
 });
 

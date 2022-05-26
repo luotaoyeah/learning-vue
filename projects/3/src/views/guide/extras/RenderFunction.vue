@@ -9,6 +9,8 @@
         <legend>jsx-tsx</legend>
 
         <CompR></CompR>
+        <CompS></CompS>
+        <CompS02></CompS02>
     </fieldset>
 </template>
 
@@ -17,6 +19,8 @@
 
     import { defineComponent, h } from 'vue';
     import { CompR } from '@/components/CompR';
+    import CompS from '@/components/CompS.vue';
+    import CompS02 from '@/components/CompS.tsx';
 
     const CompA = defineComponent({
         setup() {
