@@ -8,6 +8,16 @@
         <div>{{ store02.getFoo }}</div>
         <button @click="store02.incrementFoo()">++</button>
     </fieldset>
+
+    <fieldset>
+        <legend>accessing-the-state</legend>
+
+        <div>{{ store01.foo }}</div>
+        <button @click="store01.foo++">++</button>
+        <button @click="store01.$reset()">reset</button>
+        <button @click="store01.$patch({ foo: 3 })">patch</button>
+        <button @click="fn01">patch</button>
+    </fieldset>
 </template>
 
 <script lang="ts" setup>
@@ -18,6 +28,16 @@
 
     const store01 = useStore01Store();
     const store02 = useStore02Store();
+
+    function fn01() {
+        store01.$patch((state) => {
+            state.foo = 6;
+        });
+    }
+
+    store01.$subscribe((mutation, state) => {
+        console.log('mutation', mutation);
+    });
 </script>
 
 <style scoped></style>
