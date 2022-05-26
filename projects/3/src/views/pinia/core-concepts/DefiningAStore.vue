@@ -38,6 +38,14 @@
     store01.$subscribe((mutation, state) => {
         console.log('mutation', mutation);
     });
+
+    store01.$onAction(({ name, after }) => {
+        console.log(`$onAction.actions.${name}()`);
+
+        after((resolvedReturn) => {
+            console.log(`after.actions.${name}()`);
+        });
+    });
 </script>
 
 <style scoped></style>

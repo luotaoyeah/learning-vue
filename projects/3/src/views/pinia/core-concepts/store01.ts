@@ -9,6 +9,7 @@ const useStore01Store = defineStore('store01', {
     },
     actions: {
         incrementFoo() {
+            console.log('actions.incrementFoo()');
             this.foo++;
         },
     },
