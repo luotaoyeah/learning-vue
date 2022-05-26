@@ -2,7 +2,8 @@
     <fieldset>
         <legend>render-functions</legend>
 
-        <CompA></CompA>
+        <A></A>
+        <B></B>
     </fieldset>
 
     <fieldset>
@@ -17,14 +18,38 @@
 <script lang="ts" setup>
     // http://localhost:8888/guide/extras/render-function
 
-    import { defineComponent, h } from 'vue';
+    import { defineComponent, h, onMounted, ref } from 'vue';
     import { CompR } from '@/components/CompR';
     import CompS from '@/components/CompS.vue';
-    import CompS02 from '@/components/CompS.tsx';
+    import CompH from '@/components/CompH.vue';
+    import CompS02 from '@/components/CompS';
 
-    const CompA = defineComponent({
+    const A = defineComponent({
         setup() {
-            return () => h('div', { class: 'foo', style: { color: 'red' } }, ['HELLO']);
+            const ref01 = ref(null);
+
+            onMounted(() => {
+                console.log('ref01', ref01.value);
+            });
+
+            return () => h('div', { class: 'foo', style: { color: 'red' }, ref: ref01 }, ['A']);
+        },
+    });
+
+    const B = defineComponent({
+        setup() {
+            // attribute 和 property 都可以往 props 传, vue 会自行处理
+            return () =>
+                h('div', [
+                    h('div', { class: 'bar', innerHTML: 'B' }),
+                    h(CompH, {
+                        onTMove01: () => {
+                            console.log('t-move-01');
+                        },
+                    }),
+                    'FOO',
+                    h('div', ['BAR']),
+                ]);
         },
     });
 </script>
