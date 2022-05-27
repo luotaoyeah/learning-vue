@@ -129,6 +129,11 @@ const router = createRouter({
             name: '/pinia/core-concepts/defining-a-store',
             component: () => import('../views/pinia/core-concepts/DefiningAStore.vue'),
         },
+        {
+            path: '/vitejs/guide/features/glob-import',
+            name: '/vitejs/guide/features/glob-import',
+            component: () => import('../views/vitejs/guide/features/GlobImport.vue'),
+        },
     ],
 });
 

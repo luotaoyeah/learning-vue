@@ -24,3 +24,4 @@ console.log('import.meta\u200b.env.PROD', import.meta.env.PROD);
 console.log('import.meta\u200b.env.BASE_URL', import.meta.env.BASE_URL);
 console.log('import.meta\u200b.env.VITE_FOO', import.meta.env.VITE_FOO);
 console.log('import.meta\u200b.env.BAR', import.meta.env.BAR);
+console.log('import.meta\u200b.env.VITE_FOO_BAZ', import.meta.env.VITE_FOO_BAZ);
