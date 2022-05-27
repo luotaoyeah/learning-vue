@@ -39,6 +39,13 @@
         <G02></G02>
         <G04></G04>
     </fieldset>
+
+    <fieldset>
+        <legend>v-model</legend>
+
+        <H01></H01>
+        <H02></H02>
+    </fieldset>
 </template>
 
 <script lang="tsx" setup>
@@ -154,7 +161,11 @@
     // render function: 定义 slot outlet
     const G01: any = (props: any, { slots }: SetupContext) => h('fieldset', null, [h('legend', null, slots.default?.()), slots.content?.({ text: 'FOO' })]);
     // render function: 传递 slot content
-    const G02 = () => h(G01, null, { default: () => 'HEADER', content: ({ text }: { text: string }) => h('div', null, text) });
+    const G02 = () =>
+        h(G01, null, {
+            default: () => 'HEADER',
+            content: ({ text }: { text: string }) => h('div', null, text),
+        });
 
     // JSX: 定义 slot outlet
     const G03: any = (props: any, { slots }: SetupContext) => (
@@ -164,7 +175,46 @@
         </fieldset>
     );
     // JSX: 传递 slot content
-    const G04 = () => <G03>{{ default: () => 'HEADER', content: ({ text }: { text: string }) => <div>{text}</div> }}</G03>;
+    const G04 = () => (
+        <G03>
+            {{
+                default: () => 'HEADER',
+                content: ({ text }: { text: string }) => <div>{text}</div>,
+            }}
+        </G03>
+    );
+
+    // --------------------------------------------------
+    // v-model 需要拆成 props + emits 的形式
+    const H01 = defineComponent({
+        setup() {
+            const value01 = ref('foo');
+            return () => [
+                h('input', {
+                    value: value01.value,
+                    onInput: (event: InputEvent) => {
+                        value01.value = (event.target as any)?.value;
+                    },
+                }),
+                h('div', null, value01.value),
+            ];
+        },
+    });
+
+    const H02 = defineComponent({
+        setup() {
+            const value01 = ref('foo');
+            return () => [
+                <input
+                    value={value01.value}
+                    onInput={(event: Event) => {
+                        value01.value = (event.target as any)?.value;
+                    }}
+                ></input>,
+                <div>{value01.value}</div>,
+            ];
+        },
+    });
 </script>
 
 <style lang="css" scoped></style>
