@@ -32,12 +32,19 @@
 
         <F></F>
     </fieldset>
+
+    <fieldset>
+        <legend>rendering-slots</legend>
+
+        <G02></G02>
+        <G04></G04>
+    </fieldset>
 </template>
 
 <script lang="tsx" setup>
     // http://localhost:8888/guide/extras/render-function
 
-    import { defineComponent, h, onMounted, ref, resolveComponent, withModifiers } from 'vue';
+    import { defineComponent, h, onMounted, ref, resolveComponent, SetupContext, withModifiers } from 'vue';
     import { CompR } from '@/components/CompR';
     import CompS from '@/components/CompS.vue';
     import CompH from '@/components/CompH.vue';
@@ -136,11 +143,28 @@
         },
     });
 
+    // --------------------------------------------------
     const F01 = () => [<CompE></CompE>, <comp-e></comp-e>];
 
-    // h() 的第一个参数是组件时, 必须是组件对象,
+    // h() 的第一个参数是组件时, 必须是组件对象, 不能是组件名,
     // 如果无法直接访问组件对象(比如插件中注册的组件), 可以使用 resolveComponent() 方法获取组件对象
     const F = () => [h(resolveComponent('CompE')), h(resolveComponent('comp-e')), h(F01)];
+
+    // --------------------------------------------------
+    // render function: 定义 slot outlet
+    const G01: any = (props: any, { slots }: SetupContext) => h('fieldset', null, [h('legend', null, slots.default?.()), slots.content?.({ text: 'FOO' })]);
+    // render function: 传递 slot content
+    const G02 = () => h(G01, null, { default: () => 'HEADER', content: ({ text }: { text: string }) => h('div', null, text) });
+
+    // JSX: 定义 slot outlet
+    const G03: any = (props: any, { slots }: SetupContext) => (
+        <fieldset>
+            <legend>{slots.default?.()}</legend>
+            {slots.content?.({ text: 'FOO' })}
+        </fieldset>
+    );
+    // JSX: 传递 slot content
+    const G04 = () => <G03>{{ default: () => 'HEADER', content: ({ text }: { text: string }) => <div>{text}</div> }}</G03>;
 </script>
 
 <style lang="css" scoped></style>
