@@ -26,16 +26,23 @@
 
         <E></E>
     </fieldset>
+
+    <fieldset>
+        <legend>components</legend>
+
+        <F></F>
+    </fieldset>
 </template>
 
 <script lang="tsx" setup>
     // http://localhost:8888/guide/extras/render-function
 
-    import { defineComponent, h, onMounted, ref, withModifiers } from 'vue';
+    import { defineComponent, h, onMounted, ref, resolveComponent, withModifiers } from 'vue';
     import { CompR } from '@/components/CompR';
     import CompS from '@/components/CompS.vue';
     import CompH from '@/components/CompH.vue';
     import CompS02 from '@/components/CompS';
+    import CompE from '@/components/CompE.vue';
 
     const A = defineComponent({
         setup() {
@@ -128,6 +135,12 @@
             ];
         },
     });
+
+    const F01 = () => [<CompE></CompE>, <comp-e></comp-e>];
+
+    // h() 的第一个参数是组件时, 必须是组件对象,
+    // 如果无法直接访问组件对象(比如插件中注册的组件), 可以使用 resolveComponent() 方法获取组件对象
+    const F = () => [h(resolveComponent('CompE')), h(resolveComponent('comp-e')), h(F01)];
 </script>
 
 <style lang="css" scoped></style>
