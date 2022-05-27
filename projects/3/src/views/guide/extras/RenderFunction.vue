@@ -51,7 +51,7 @@
 <script lang="tsx" setup>
     // http://localhost:8888/guide/extras/render-function
 
-    import { defineComponent, h, onMounted, ref, resolveComponent, SetupContext, withModifiers } from 'vue';
+    import { defineComponent, h, onMounted, ref, resolveComponent, type SetupContext, withModifiers } from 'vue';
     import { CompR } from '@/components/CompR';
     import CompS from '@/components/CompS.vue';
     import CompH from '@/components/CompH.vue';
