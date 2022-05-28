@@ -134,6 +134,11 @@ const router = createRouter({
             name: '/vitejs/guide/features/glob-import',
             component: () => import('../views/vitejs/guide/features/GlobImport.vue'),
         },
+        {
+            path: '/lib/test-component',
+            name: '/lib/test-component',
+            component: () => import('../views/lib/TestComponent.vue'),
+        },
     ],
 });
 
