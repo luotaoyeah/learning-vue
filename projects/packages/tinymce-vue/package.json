@@ -8,6 +8,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@tinymce/tinymce-vue": "5.0.0",
         "vue": "3.2.47"
     },
     "devDependencies": {
@@ -16,9 +17,10 @@
         "vite": "4.1.4"
     },
     "prettier": {
-        "tabWidth": 4,
         "printWidth": 160,
+        "semi": true,
         "singleQuote": true,
-        "semi": true
+        "tabWidth": 4,
+        "vueIndentScriptAndStyle": true
     }
 }

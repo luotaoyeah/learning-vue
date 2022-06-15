@@ -1,12 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@tinymce/tinymce-vue': 5.0.0
   '@vitejs/plugin-vue': 4.0.0
   prettier: 2.8.4
   vite: 4.1.4
   vue: 3.2.47
 
 dependencies:
+  '@tinymce/tinymce-vue': 5.0.0_vue@3.2.47
   vue: 3.2.47
 
 devDependencies:
@@ -237,6 +239,15 @@ packages:
     dev: true
     optional: true
 
+  /@tinymce/tinymce-vue/5.0.0_vue@3.2.47:
+    resolution: {integrity: sha512-1HRCNa2eGdztOKShYAiHIry50LTU6YJG//qSP9AJElrXhb3BIBN0Bef6E56nZObVgwCgSmI4cnX35VU9D49aow==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      tinymce: 6.3.2
+      vue: 3.2.47
+    dev: false
+
   /@vitejs/plugin-vue/4.0.0_vite@4.1.4+vue@3.2.47:
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -446,6 +457,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /tinymce/6.3.2:
+    resolution: {integrity: sha512-nOVHk4FhHKQj48hi7fEptS1Se6CNzPtfIcDzTO70KoTcSiQIFzhhZjS5bPotSzFnQ4dIQJ4QPOd7sqNs6fXUrA==}
+    dev: false
 
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
