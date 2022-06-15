@@ -5,6 +5,7 @@
             plugins: 'lists link image table code help wordcount',
         }"
         api-key="no-api-key"
+        @paste="onPaste"
     ></Editor>
 
     <fieldset>
@@ -20,13 +21,13 @@
 
 <script setup>
     import Editor from '@tinymce/tinymce-vue';
-    import { ref, watchEffect } from 'vue';
+    import { ref } from 'vue';
 
     const content = ref('');
 
-    watchEffect(() => {
-        console.log(content.value);
-    });
+    function onPaste(event, editor) {
+        console.log(event, editor);
+    }
 </script>
 
 <style scoped></style>
