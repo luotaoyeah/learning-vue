@@ -1,17 +1,26 @@
 {
-  "name": "@luotao/learning-vue.emoji-mart-vue-fast",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.47"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "vite": "^4.1.4"
-  }
+    "name": "@luotao/learning-vue.emoji-mart-vue-fast",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "emoji-mart-vue-fast": "12.0.1",
+        "vue": "3.2.47"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "4.0.0",
+        "prettier": "2.8.4",
+        "vite": "4.1.4"
+    },
+    "prettier": {
+        "printWidth": 160,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "vueIndentScriptAndStyle": true
+    }
 }

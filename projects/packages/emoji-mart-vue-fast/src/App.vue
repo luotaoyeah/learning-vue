@@ -1,47 +1,83 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <fieldset>
+        <legend>all</legend>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+        <div class="row">
+            <Picker :data="emojiIndexAll" set="apple" @select="showEmojiAll" />
+        </div>
 
-  <main>
-    <TheWelcome />
-  </main>
+        <div class="row">
+            <div>
+                {{ emojisOutputAll }}
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>google</legend>
+
+        <div class="row">
+            <Picker :data="emojiIndexGoogle" set="google" @select="showEmojiGoogle" />
+        </div>
+
+        <div class="row">
+            <div>
+                {{ emojisOutputGoogle }}
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>twitter</legend>
+
+        <div class="row">
+            <Picker :data="emojiIndexTwitter" set="twitter" @select="showEmojiTwitter" />
+        </div>
+
+        <div class="row">
+            <div>
+                {{ emojisOutputTwitter }}
+            </div>
+        </div>
+    </fieldset>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup>
+    import all from 'emoji-mart-vue-fast/data/all.json';
+    import google from 'emoji-mart-vue-fast/data/google.json';
+    import twitter from 'emoji-mart-vue-fast/data/twitter.json';
+    import { EmojiIndex, Picker } from 'emoji-mart-vue-fast/src';
+    import { ref } from 'vue';
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+    let emojiIndexAll = ref(new EmojiIndex(all));
+    let emojisOutputAll = ref('');
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+    let emojiIndexGoogle = ref(new EmojiIndex(google));
+    let emojisOutputGoogle = ref('');
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+    let emojiIndexTwitter = ref(new EmojiIndex(twitter));
+    let emojisOutputTwitter = ref('');
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+    function showEmojiAll(emoji) {
+        console.log(emoji.short_name);
+        emojisOutputAll.value = emoji.native;
+    }
+
+    function showEmojiGoogle(emoji) {
+        emojisOutputGoogle.value = emoji.native;
+    }
+
+    function showEmojiTwitter(emoji) {
+        emojisOutputTwitter.value = emoji.native;
+    }
+</script>
+
+<style>
+    @import 'emoji-mart-vue-fast/css/emoji-mart.css';
+
+    .row {
+        display: flex;
+    }
+
+    .row > * {
+        margin: auto;
+    }
 </style>
